@@ -23,10 +23,6 @@
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module3-CodeScanning.md",
         "Order": 5
-      },
-      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module4-Building_a_DevSecOpsProgram.md",
-        "Order": 6
       }
     ]
   }
