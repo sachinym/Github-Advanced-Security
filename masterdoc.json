@@ -5,23 +5,23 @@
     "BaseURL": "https://github.com/CloudLabs-MOC/Github-Advanced-Security",
     "Files": [
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module%200%20-%20Setup%20and%20Automation.md/Module%200%20-%20Setup%20and%20Automation.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module0-Setup_and_Automation.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module%201%20-%20Software%20Composition%20Analysis.md/Module%201%20-%20Software%20Composition%20Analysis.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module1-Software_Composition_Analysis.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module%202%20-%20Secret%20Scanning.md/Module%202%20-%20Secret%20Scanning.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module2-SecretScanning.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module%203%20-%20Code%20Scanning.md/Module%203%20-%20Code%20Scanning.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module3-CodeScanning.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module%204%20-%20Building%20a%20DevSecOps%20Program.md/Module%204%20-%20Building%20a%20DevSecOps%20Program.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module4-Building_a_DevSecOpsProgram.md",
         "Order": 5
       }
     ]
