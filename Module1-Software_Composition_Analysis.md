@@ -67,29 +67,31 @@ Open the [GitHub Advisory Database](https://github.com/advisories) in a new brow
 
 ## Dependency submission API
 
-- **Background**: GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
+GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
+The process involves adding all dependencies from a repository to the dependency graph, particularly those resolved during software compilation or building, even if not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate pull requests.
 
-- **How it works**
-  - Add all dependencies from a repository to the dependency graph
-    - Especially those that are resolved when software is compiled or built
-      - Dependencies may not be listed in a manifest file, like a `pom.xml`
-  - When a new version of a dependency is released, Dependabot can use the data submitted with the dependency submission API to create a pull request
-    - Ensures that the application is always using the mose secure version of its dependencies
-    - Helps improve security and compliance
 
-- **How to use it**
-  - In the `WebGoat` repository, go to the `.github/workflows/DepGraph.yml` file
-  - Explain how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies
-    - Transitive dependencies are pulled in as part of the build process for this project
-  - Go to the **Actions** section, click on the **Dependency Graph Upload** action
-  - Click the **Run workflow** -> **Run workflow** (in Green) button
-  - Explain that this can also be used to create and upload SBOMs for analysis and alerting
-    - However, for the purposes of this demonstration, we will be using WebGoat instead of an SBOM
+1. In the `WebGoat` repository, go to the `.github/workflows/DepGraph.yml` file.
 
-![dependency-submission-api-action](https://user-images.githubusercontent.com/22803099/236020191-54e402b5-853c-4c72-9c3f-14e675eafaaf.png)
+   ![github-advisory-database](images/g16.png)
 
-- Once this has completed, go to the **Dependency Graph** tab, under the **Insights** section
-- Show the new critical vulnerabilities that have been identified in transitive dependencies
+1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies.Transitive dependencies are pulled in as part of the build process for this project
+
+1.  Go to the **Actions** section,from the top navigation pane and click on click on the **Dependency Graph Upload** action.
+
+    ![github-advisory-database](images/g17.png)
+
+1.  Click the **Run workflow** -> **Run workflow**  button
+
+    ![github-advisory-database](images/g18.png)
+
+1.  Once this is completed, go to the **Dependency Graph** tab, under the **Insights** section
+
+    ![github-advisory-database](images/g19.png)
+
+1.  This will show the new critical vulnerabilities that have been identified in transitive dependencies.
+
+    ![github-advisory-database](images/g20.png)
 
 
 ## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability.
@@ -150,15 +152,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
     ![github-advisory-database](images/g11.png)
 
-
-
-
-
-Next, introduce a branch protection rule on the `main` branch and watch as the failing status check is tagged with required and now your PR merge button is grayed out
-
-![dependency-review-branch-protection](https://user-images.githubusercontent.com/22803099/236020409-7bec4c4a-097c-480d-9dca-32799c321bfe.png)
-
-<img width="435" alt="image" src="https://github.com/ghas-bootcamp-admin/training-material/assets/1760475/85d3b6a5-59a1-4508-a6a7-3aa73432661f">
+11. Navigate to **Settings** click on **Branches** under code and automation and review the **Status check** that is required.
 
 
 - **Wrap up**
