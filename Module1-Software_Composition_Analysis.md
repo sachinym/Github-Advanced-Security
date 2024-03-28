@@ -11,16 +11,13 @@
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
 
-## Getting Started
+## Getting Started with GHAS
 
 If you followed `Module 0 - Setup and Automation`, you will have already enabled _Dependency graph_, _Dependabot alerts_, and _Dependabot security updates_ at both the repository and the organization level. If you are starting this module without having taken these steps, below are the instructions for turning on these features at the organization level:
 
 - Go to the Organization (`ghas-bootcamp-DATE-HANDLE`) and then **Settings** -> **Code Security and Analysis** and click `Enable all` for _Dependency graph_, _Dependablot alerts_, _Dependabot security updates_, and _GitHub Advanced Security_.
 
-  Once this is enabled, navigate to the `WebGoat` repository to begin working through this module.
-
-
-## Task 1: Turn on dependabot and other SCA features. Review results. 
+- Once this is enabled, navigate to the `WebGoat` repository to begin working through this module.
 
 Open the [GitHub Advisory Database](https://github.com/advisories) in a new browser window and work through the talk track below, which is taken from comments made by @Moose0621 in [this issue](https://github.com/github/field-security-specialists/issues/177#issuecomment-1440704862) related to the GHAS Bootcamp Renovation project.
 
@@ -47,6 +44,26 @@ Open the [GitHub Advisory Database](https://github.com/advisories) in a new brow
 1.  By accessing the GitHub API, the database can determine if there are any known vulnerabilities associated with the repositories being monitored. It scans the codebase and dependencies of projects to identify any vulnerabilities that have been reported and documented in the database.
 1.  **Dependabot**, a GitHub automation tool, plays a crucial role in the process. When vulnerabilities are detected within a repository, Dependabot generates alerts to notify the repository maintainers about the security issues.
 1.  In addition to generating alerts, Dependabot may take proactive steps to address the identified vulnerabilities. 
+
+## Task 1: Turn on dependabot and other SCA features. Review results. 
+
+1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
+
+   ![github-advisory-database](images/g12.png)
+
+1. From the left navigation pane, click on **Code Security and Analysis**
+
+   ![github-advisory-database](images/g13.png)
+
+1. Under **Dependabot** enable **Dependency graph**,**Dependabot Alerts** and **Dependabot security updates**.
+
+   ![github-advisory-database](images/g14.png)
+
+1. Dependabot raises pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise pull requests for version updates and/or for security updates. You manage these pull requests in the same way as any other pull request.
+
+1. You can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**.Notice the pull requests that were triggered automatically in the repository.
+
+   ![github-advisory-database](images/g15.png)
 
 ## Dependency submission API
 
