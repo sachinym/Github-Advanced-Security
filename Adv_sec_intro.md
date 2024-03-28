@@ -1,4 +1,4 @@
-# Exercise 01: GitHub Advanced Security Overview [Read-Only]
+# Module 01: GitHub Advanced Security Overview [Read-Only]
 
 ## Lab Scenario
 
