@@ -1,4 +1,15 @@
-# Module 1: Software Composition Analysis
+# Module 3: Software Composition Analysis
+
+## Lab Overview
+
+ In this lab, we will provide you with an introductory overview of GHAS, its components, and how to activate them within your GitHub environment. 
+
+## Lab Objectives
+
+- Task 1: Turn on dependabot and other SCA features. Review results. 
+- Task 2: Use the dependency submission action on a Java project. Review results. 
+- Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
+
 
 ## Getting Started
 
@@ -6,43 +17,36 @@ If you followed `Module 0 - Setup and Automation`, you will have already enabled
 
 - Go to the Organization (`ghas-bootcamp-DATE-HANDLE`) and then **Settings** -> **Code Security and Analysis** and click `Enable all` for _Dependency graph_, _Dependablot alerts_, _Dependabot security updates_, and _GitHub Advanced Security_.
 
-Once this is enabled, navigate to the `WebGoat` repository to begin working through this module.
+  Once this is enabled, navigate to the `WebGoat` repository to begin working through this module.
 
-## Dependabot
 
-## GitHub Advisory Database
+## Task 1: Turn on dependabot and other SCA features. Review results. 
 
-Open the [GitHub Advisory Database](https://github.com/advisories) and work through the talk track below, which is taken from comments made by @Moose0621 in [this issue](https://github.com/github/field-security-specialists/issues/177#issuecomment-1440704862) related to the GHAS Bootcamp Renovation project.
+Open the [GitHub Advisory Database](https://github.com/advisories) in a new browser window and work through the talk track below, which is taken from comments made by @Moose0621 in [this issue](https://github.com/github/field-security-specialists/issues/177#issuecomment-1440704862) related to the GHAS Bootcamp Renovation project.
 
-![github-advisory-database](https://user-images.githubusercontent.com/22803099/236020080-c4ab17ba-86b8-4e43-a762-92626d94c6c1.png)
+  ![github-advisory-database](images/g1.png)
 
-- **The Problem**
-  - Malicious actors have been leveraging open source to look for targets of opportunity
-  - Organizations have a responsibility to ensure they are using open source in a safe manner
-  - Dependabot provides automation to help scale dependency updates across your organization
+- **Now let us analyze the problem**
+
+    This talk track is intended to guide the reader through the analysis of a problem related to open-source security and the role of organizations in ensuring safe usage of open-source software. 
 
 - **What is the GitHub Advisory Database?**
-  - Curated DB of known security vulnerabilities across the open source ecosystem
-  - Community driven effort
-  - GitHub is a Certified CVE Numbering Authority
-    - Responsible for assigning CVEs to vulnerabilities in the open source ecosystem
-    - Publishes the second most CVEs behind MITRE
-  - DB -> [https://github.com/advisories](https://github.com/advisories)
-  - DB has grown substantially over the last several years
-    - 2022, added 3k newly reviewed CVEs
-    - 2023, added 17.5 million [new package licenses](https://github.blog/changelog/2023-07-10-new-license-information-for-17-5-million-packages/) to our DB
-      - Added support for Swift, Erlang, and Elixir packages
+
+ 1. **Curated DB of known security vulnerabilities**: The GitHub Advisory Database is a curated database that catalogues known security vulnerabilities across the open-source ecosystem. It serves as a centralized resource for developers to stay informed about security issues affecting the 
+  software libraries and packages they use in their projects.
+
+ 1. **Community-driven effort**: The GitHub Advisory Database is maintained through a community-driven effort, with contributions from security researchers, developers, and organizations. This collaborative approach helps ensure the accuracy and comprehensiveness of the database.
+
+ 1. **GitHub as a Certified CVE Numbering Authority**: GitHub is designated as a Certified CVE Numbering Authority, responsible for assigning CVEs (Common Vulnerabilities and Exposures) to vulnerabilities discovered in the open source ecosystem. This accreditation highlights GitHub's role in the cybersecurity landscape and its commitment to enhancing the security of open-source software.
+  
+    Overall, the GitHub Advisory Database plays a crucial role in enhancing the security of open-source software by providing developers with timely and comprehensive information about security vulnerabilities and advisories.
 
 - **How does it work?**
-  - Leverages the GitHub API to pull latest information
-    - Used to determine if there are any known vulnerabilities
-  - Dependabot will create an alert if vulnerabilities are found
-  - Dependabot may create a pull request if there is an update to fix the vulnerability
 
-- **How can I contribute?**
-  - If you find a CVE that is not in our GHADB, please let your account team know
-    - Share the CVE number with us, and we will prioritize it
-    - Our curation team has built tooling to prioritize unreviewed CVEs
+1.  The **GitHub Advisory Database** utilizes the GitHub API to fetch the latest information about security vulnerabilities. This API provides access to various data related to repositories, including vulnerability information, which the database leverages to stay updated with the latest security advisories.
+1.  By accessing the GitHub API, the database can determine if there are any known vulnerabilities associated with the repositories being monitored. It scans the codebase and dependencies of projects to identify any vulnerabilities that have been reported and documented in the database.
+1.  **Dependabot**, a GitHub automation tool, plays a crucial role in the process. When vulnerabilities are detected within a repository, Dependabot generates alerts to notify the repository maintainers about the security issues.
+1.  In addition to generating alerts, Dependabot may take proactive steps to address the identified vulnerabilities. 
 
 ## Dependency submission API
 
@@ -70,39 +74,67 @@ Open the [GitHub Advisory Database](https://github.com/advisories) and work thro
 - Once this has completed, go to the **Dependency Graph** tab, under the **Insights** section
 - Show the new critical vulnerabilities that have been identified in transitive dependencies
 
+
+## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability.
 ## Dependency Review Action
 
-- **What is it?**
-  - A GitHub Action that can be used to prevent vulnerable dependencies from being merged into a repository
-  - Can be used in tandem with the dependency submission API
-  - Can be configured to fail at a certain severity or license type
+The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
 
-- **How to use it**
-  - Go back to the **Actions** tab and click on the **New workflow** button on the top-left
-    - Search **_Dependency Review_** to find and configure the action.
-    - Click the _Configure_ button.
+1. In the WebGoat repo navigate to **Actions** and in the **Actions** click on **New workflow** from the left navigation pane.
 
-![dependency-review-action](https://user-images.githubusercontent.com/22803099/236020357-5ed786d6-1a0b-40f2-aa7f-2b6654c82e5e.png)
+    ![github-advisory-database](images/g2.png)
 
-> Note:
->
-> The workflow is already in the repository, but we are going to walk through the configuration of this workflow to understand how it works. Modify the existing workflow to demonstrate the functionality of the action (file: `dependency-review.yml`).
+    ![github-advisory-database](images/g3.png)
+ 
+ 
+ 1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
+   
+    ![github-advisory-database](images/g4.png)
 
-- On `Line 5` of the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Highlight this and open it in a new tab where you can scroll down to the **Configuration options**. We can copy the the example that includes the `fail-on-severity` and `deny-licenses` stanzas below the configuration options over our existing workflow.
+1. On `Line 5` of the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Highlight this and open it in a new tab
 
-- Modify the `WebGoat/pom.xml` file between `Line 154` and `Line 161`:
-  - Uncomment the following code block:
+   ![github-advisory-database](images/g5.png)
 
-```xml
+4. Now in this repository, scroll down to the **Configuration options**. We can copy  the example that includes the `fail-on-severity`.
+
+   ![github-advisory-database](images/g6.png)
+
+5. Paste the example next to the  `fail-on-severity`(line number 37) in the workflow file and click on **Commit Changes** in the right corner.
+
+    ![github-advisory-database](images/g7.png)
+
+6. Click on **Commit Changes** once again in the pop-up that appears.
+
+   ![github-advisory-database](images/g8.png)
+
+5. Now back in the **WebGoat** repository go to the **pom.xml** file.
+
+   ![github-advisory-database](images/g9.png)
+   
+6. Replace the `WebGoat/pom.xml` file between `Line 154` and `Line 161 with the below code`:
+ 
+      ```xml
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.13.1</version>
         </dependency>
-```
+     ```
 
-- Submit a pull request with the changes to the `pom.xml` file.
-- Note that the **_Dependency Review Action_** has failed due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+7. Click on **Commit Changes** twice.
+
+8. Now,click on **Pull Request** from the top navigation pane.
+
+   ![github-advisory-database](images/g10.png)
+
+9. Now, click on **New Pull Request** to create a Pull Request. 
+
+10. Navigate to the **Actions** section and notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+
+    ![github-advisory-database](images/g11.png)
+
+
+
 
 
 Next, introduce a branch protection rule on the `main` branch and watch as the failing status check is tagged with required and now your PR merge button is grayed out
@@ -121,3 +153,8 @@ Next, introduce a branch protection rule on the `main` branch and watch as the f
     - Dependency Review Action
   - Ask if there are any questions before moving on to the next section
   - Reinforce the need for SCA and how this happens in a developer-friendly fashion
+
+
+> Note:
+>
+> The workflow is already in the repository, but we are going to walk through the configuration of this workflow to understand how it works. Modify the existing workflow to demonstrate the functionality of the action (file: `dependency-review.yml`).
