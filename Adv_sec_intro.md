@@ -37,7 +37,29 @@ Here are some components of GHAS:
     With GitHub Advanced Security, Dependabot’s functionality is extended to include Dependency Review, allowing you to check for vulnerable dependencies within a pull request. This check enables you to address vulnerabilities before they are merged into a shared branch.
 
 ### Task 3: Where to turn on the different components of GHAS?  
-To enable any of the alerts from a repository level first navigate to your repository’s security tab.
 
+1. To enable any of the alerts from a repository level first navigate to your repository’s security tab.
 
-   
+   ![Picture1](./images/security-tab.png)
+
+2. Enable your alerts in the Security overview.
+
+   ![Picture1](./images/security-overview-page.png)
+
+3. Navigate to your repository's, click  Settings.
+
+   ![Picture1](./images/ghasr1.png)
+
+5. In the left sidebar, click **Code security & analysis**.
+
+6. Optionally, enable or disable a feature for all existing repositories.
+
+   ![Picture1](./images/ghasr2.png)
+   ![Picture1](./images/ghasr3.png)
+
+## Review
+ 
+In this lab you have completed the following:
++ What is GitHub Advanced Security?
++ What are the components of GHAS?
++ Where to turn on the different components of GHAS? 
