@@ -13,9 +13,10 @@ In this lab, you will perform:
 
 ### Task 1: What is GitHub Advanced Security?
 
-GitHub Advanced Security, or GHAS, is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. Here are some key aspects of GHAS:
+GitHub Advanced Security, or GHAS, is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
 
 ### Task 2: What are the components of GHAS?  
+Here are some components of GHAS:
 
 1. **Secret Scanning:** Secret scanning is a crucial security feature within GitHub Advanced Security (GHAS) designed to identify and mitigate the inadvertent exposure of sensitive information, such as API keys and tokens within the source code.
 
@@ -37,4 +38,6 @@ GitHub Advanced Security, or GHAS, is an integrated security suite tailored to e
 
 ### Task 3: Where to turn on the different components of GHAS?  
 To enable any of the alerts from a repository level first navigate to your repository’s security tab.
+
+
    
