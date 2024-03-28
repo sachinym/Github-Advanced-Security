@@ -9,7 +9,7 @@ In this lab, you will perform:
 - Task 2: What are the components of GHAS?  
 - Task 3: Where to turn on the different components of GHAS?  
 
-### Estimated timing:  minutes
+### Estimated timing: 20 minutes
 
 ### Task 1: What is GitHub Advanced Security?
 
