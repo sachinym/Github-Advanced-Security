@@ -1,5 +1,11 @@
 # Module 2: Secret Scanning
 
+## Lab Objectives
+- Task 1: Turn on secret scanning for the entire organization. Review results
+- Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
+- Task 3: Create a custom secret pattern and view the results 
+- Task 4: Understanding the results 
+
 ## Getting Started
 
 If you followed `Module 0 - Setup and Automation` you will have already enabled _GitHub Advanced Security_ at both the repository and the organization level. If you are starting this module without having taken these steps, below are the instructions for turning on these features at the organization level:
@@ -12,35 +18,42 @@ Once this is enabled, navigate to the `ghas-bootcamp-javascript` repository to b
 
 ![secret-scanning-findings](https://github.com/ghas-bootcamp-admin/training-material/assets/1760475/63ca66cf-c15f-4703-9553-6287a14724bd)
 
-## What is Secret Scanning?
+## Task 1: Turn on secret scanning for the entire organization. Review results
 
+## What is Secret Scanning?
 Before you share your screen, you'll want to start with a baseline understanding by first asking students what _they_ think Secret Scanning is. More often than not, students expect Secret Scanning to discover everything from AWS Credentials to hard-coded passwords like `Password123!`. Start by sharing what Secret Scanning can do out-of-the-box, and then mention _Custom Secret Patterns_ with plans to discuss it later in the module (time permitting).
 
 - As you walk through what Secret Scanning finds out-of-the-box, pull up the [Secret Scanning Patterns](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/secret-scanning-patterns) page to show which partner alerts we identify today. Make sure you are on the correct `Version` of the docs page when sharing this!
 
-- Next, show Secret Scanning in action by first reviewing the findings in `ghas-bootcamp-javascript`, followed by creating your own GitHub PAT and adding it to the code to show _Active Secrets_ detection. Do this by going to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**
+- Next, show Secret Scanning in action by first reviewing the findings in `ghas-bootcamp-javascript`, followed by creating your own GitHub PAT and adding it to the code to show _Active Secrets_ detection.
 
-![new personal acess token](https://user-images.githubusercontent.com/22803099/236021397-9bd37dda-a5d3-4269-bed8-ff7eeaacd53c.png)
+1. To create a GitHub PAT token, go to your profile, and then select **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**
 
-- From here, give your secret a name and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so it is safe to scroll to the bottom and click **Generate token**.
+![new personal acess token](images/PATtoken.png)
 
-- Once you've generated the token, click the "Copy" icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository. Open up _index.js_, click the pencil icon on the top-right of the code block and add ` var secret = "Your-Secret-Value"` to the code. Commit this to the default branch and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret. **Please note** that it may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
+2. Give your secret a name **Secret scanning** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so scroll to the bottom and click **Generate token**. Once you've generated the token, click the "Copy" icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository.
 
-- Once the secret is located in **Security** -> **Secret Scanning**, it's time to discuss validity checks for "Active" secrets. As of March 20th, 2023 we are currently working through the legal process to get agreement from our existing Secret Scanning partners on using endpoints to test whether key material is active. We have prioritized Cloud platforms first (Azure, AWS, and Google) as part of this process.
+3. Open _index.js_ file and click the pencil icon on the top-right of the code block to edit it and add ` var secret = "Your-Secret-Value"` to the code.
 
-- Validity checks help development and security teams prioritize remediation of known active secrets by rotating those credentials and updating the codebase. For secrets found in commit history, the Field Security team recommends using [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) to remove secrets in code history. The only _real_ way to secure a secret is to rotate that credential and leverage a secrets management platform to access that secret in code.
+   **Note:** Replace "Your-Secret-Value" with the secret value copied in the previous step. 
+
+4. Commit this to the default branch (Click on I'll fix this later if asked), and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret. **Please note** that it may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
+
+5. Once the secret is located in **Security** -> **Secret Scanning**, it's time to discuss validity checks for "Active" secrets. As of March 20th, 2023 we are currently working through the legal process to get agreement from our existing Secret Scanning partners on using endpoints to test whether key material is active. We have prioritized Cloud platforms first (Azure, AWS, and Google) as part of this process.
+
+6. Validity checks help development and security teams prioritize remediation of known active secrets by rotating those credentials and updating the codebase. For secrets found in commit history, the Field Security team recommends using [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) to remove secrets in code history. The only _real_ way to secure a secret is to rotate that credential and leverage a secrets management platform to access that secret in code.
 
 ![active-secret](https://user-images.githubusercontent.com/22803099/236021632-fd1e7325-0263-45a5-99cb-ebc0d16b84f6.png)
 
-- From here, go back to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and delete the secret you just pasted into the `ghas-bootcamp-javascript` repository. Once you've completed this step, go back to the **Security** -> **Secrets Scanning** section and review that the secret is now identified as a _"Possibly active secret"_.
+7. From here, go back to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and delete the secret you just pasted into the `ghas-bootcamp-javascript` repository. Once you've completed this step, go back to the **Security** -> **Secrets Scanning** section and review that the secret is now identified as a _"Possibly active secret"_.
 
 ![possibly-active-secret](https://user-images.githubusercontent.com/22803099/236021678-6d1e32a1-846a-4462-980b-0a4a5714e7df.png)
 
-## Push Protection
+## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
-- Next, we'll go to the `ghas-bootcamp-javascript` repository and enable Push Protection. Go to **Settings** -> **Code Security and Analysis** -> scroll down to **Push protection** and click "Enable".
+1.Go to the `ghas-bootcamp-javascript` repository and enable Push Protection. Go to **Settings** -> **Code Security and Analysis** -> scroll down to **Push protection** and click "Enable".
 
-- After this is enabled, we are going to go back through the process of creating a secret and pasting it into the codebase. Once again go to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**.
+2. After this is enabled, we are going to go back through the process of creating a secret and pasting it into the codebase. Once again go to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**.
 
 - From here, give your secret a name and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so it is safe to scroll to the bottom and click **Generate token**.
 
