@@ -65,7 +65,7 @@ Open the [GitHub Advisory Database](https://github.com/advisories) in a new brow
 
    ![github-advisory-database](images/g15.png)
 
-## Dependency submission API
+## Task 2: Use the dependency submission action on a Java project. Review results.
 
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph, particularly those resolved during software compilation or building, even if not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate pull requests.
@@ -155,17 +155,12 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 11. Navigate to **Settings** click on **Branches** under code and automation and review the **Status check** that is required.
 
 
-- **Wrap up**
-  - Summarize what you have covered so far:
-    - GitHub Advisory Database
-    - Dependabot Alerts
-    - Dependency Graph
-    - Dependency Submission API
-    - Dependency Review Action
-  - Ask if there are any questions before moving on to the next section
-  - Reinforce the need for SCA and how this happens in a developer-friendly fashion
+## Review
+
+In this module we have completed the following:
+ - Turned on dependabot and other SCA features
+-  Used the dependency submission action on a Java project.
+-  Used the dependency review action to stop a pull request that contains the log vulnerability. 
 
 
-> Note:
->
-> The workflow is already in the repository, but we are going to walk through the configuration of this workflow to understand how it works. Modify the existing workflow to demonstrate the functionality of the action (file: `dependency-review.yml`).
+
