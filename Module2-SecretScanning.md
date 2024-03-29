@@ -82,33 +82,37 @@ Before you share your screen, you'll want to start with a baseline understanding
 
 ## Task 3: Create a custom secret pattern and view the results 
 
-- Within the `ghas-bootcamp-javascript` repo there is a secret disclosed on line 27 of the file `index.js`. To discover secrets like this, we will go into this repository's **Settings** -> **Code Security and Analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
+1. Within the `ghas-bootcamp-javascript` repo there is a secret disclosed on line 27 of the file `index.js`. To discover secrets like this, we will go into this repository's **Settings** -> **Code Security and Analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
 
-![new-pattern-repository](https://user-images.githubusercontent.com/22803099/236021992-55d6faf3-5986-487d-93e7-b838b73b2f3e.png)
+    ![new-pattern-repository](./images/custom11.png)
 
-- When creating a new pattern, first supply a name and enter a test string for the pattern you're going to write. Because writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process. You can also refer to the Field Security team's open source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository which contains a number of useful examples.
+1. When creating a new pattern, first supply a name **Test-Pattern(1)** and enter a test string for the pattern **api-password: "gH4#kP!2w_"(5)**. Because writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process. You can also refer to the Field Security team's open source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository which contains a number of useful examples.
 
-- Using the [Generic Secrets / Passwords](https://github.com/advanced-security/secret-scanning-custom-patterns/tree/main/generic) from the Field Security team's repository, we grab the following pattern format:
+1. Using the [Generic Secrets / Passwords](https://github.com/advanced-security/secret-scanning-custom-patterns/tree/main/generic) from the Field Security team's repository, we grab the following pattern format:
 
   - ``[a-zA-Z0-9!.,$%&*+?^_`{|}()[\]\\/~-][a-zA-Z0-9\t !.,$%&*+?^_`{|}()[\]\\/~-]*``
 
-- You will also want to add a couple of values to the **Before secret** and **After secret** values. The following can be used for the **Before Secret**:
+- You will also want to add a couple of values to the **Before secret** and **After secret** values. The following can be used for the **Before Secret(3)**:
 
   - `(?:\A|[^a-zA-Z0-9])(?i)(?:api|jwt|mysql)?[_.-]?(?:[Pp]ass?(?:wo?r?d|code|phrase)|[Pp]wd|secret)[\t ]*(={1,3}|:)[\t ]*(?:["']|b["'])?`
 
-- The **After secret** that works in our example is as follows:
+- The **After secret(4)** that works in our example is as follows:
 
   - `(\z|[\r\n'"])`
 
-- Click **Save and dry run** to discover two values of concern - the first being the GitHub Personal Access Token we corrupted earlier, and the second being the `Password123!` value mentioned earlier.
+    ![push-protection1](./images/custom3.png)
 
-- This example captures everything we expect to see in a single repository - which can hold up to 100 patterns. Let's go ahead and apply this to the organization level by going to the `ghas-bc-HANDLE` and clicking **Settings** -> **Code security and analysis** -> **Secret scanning** and click the green **New pattern** button. Please note that the Organization can hold up to 500 custom patterns.
+1. Click **Save and dry run** to discover two values of concern - the first being the GitHub Personal Access Token we corrupted earlier, and the second being the `Password123!` value mentioned earlier.
 
-- Go ahead and apply the same pattern we used earlier at the repository level and click **Save and dry run**. You'll get a pop-up asking where to apply this secret; click the top radial that indicates "All repositories in this organization". The UI will then indicate that the dry run is queued - which is usually a great time to take a 10 or 15 minute break.
+    ![push-protection1](./images/custom4.png)
 
-- Wrap up this section by refreshing the page and doing a cursory review of the findings. You'll notice there are some false positives identified with the custom pattern we've written - if you're doing this in a two day format, encourage the students to spend some time refining the pattern further using the **Add requirement** button and see what they can come up with.
+1. This example captures everything we expect to see in a single repository - which can hold up to 100 patterns. Let's go ahead and apply this to the organization level by going to the `ghas-bc-HANDLE` and clicking **Settings** -> **Code security and analysis** -> **Secret scanning** and click the green **New pattern** button. Please note that the Organization can hold up to 500 custom patterns.
 
-- Even if you're doing this in a one-day format, it's worth highlighting the value of performing the **Dry run** before publishing the pattern to avoid notifying developers of false positives.
+1. Go ahead and apply the same pattern we used earlier at the repository level and click **Save and dry run**. You'll get a pop-up asking where to apply this secret; click the top radial that indicates "All repositories in this organization". The UI will then indicate that the dry run is queued - which is usually a great time to take a 10 or 15 minute break.
+
+1. Wrap up this section by refreshing the page and doing a cursory review of the findings. You'll notice there are some false positives identified with the custom pattern we've written - if you're doing this in a two day format, encourage the students to spend some time refining the pattern further using the **Add requirement** button and see what they can come up with.
+
+1. Even if you're doing this in a one-day format, it's worth highlighting the value of performing the **Dry run** before publishing the pattern to avoid notifying developers of false positives.
 
 ![some-false-positives](https://user-images.githubusercontent.com/22803099/236022561-fc998b79-c641-472e-bc8b-64d98b8b4c34.png)
 
