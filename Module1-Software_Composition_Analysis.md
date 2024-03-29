@@ -2,7 +2,7 @@
 
 ## Lab Overview
 
- In this lab, we will provide you with an introductory overview of GHAS, its components, and how to activate them within your GitHub environment. 
+ In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
 
 ## Lab Objectives
 
