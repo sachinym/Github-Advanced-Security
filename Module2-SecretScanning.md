@@ -30,7 +30,7 @@ Before you share your screen, you'll want to start with a baseline understanding
 
 1. To create a GitHub PAT token, go to your profile, and then select **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**
 
-![new personal acess token](images/PATtoken.png)
+  ![new personal acess token](images/PATtoken.png)
 
 2. Give your secret a name **Secret scanning** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so scroll to the bottom and click **Generate token**. Once you've generated the token, click the "Copy" icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository.
 
@@ -60,11 +60,15 @@ Before you share your screen, you'll want to start with a baseline understanding
 
 4. Once you've generated the token, click the "Copy" icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository. Open up _index.js_, click the pencil icon on the top-right of the code block and add `var secret2 = "Your-Secret-Value"` to the code. Commit the changes with the default options to the to attempt to push the code. This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
 
-  ![push-protection](./images/sscanningpop.png)
+    ![push-protection](./images/sscanningpop.png)
 
-  - This is a great opportunity to pause and discuss **WebHooks** - specifically how Security findings generate event driven outputs, which can be captured via Security Incident and Event Management (SIEM) integrations for monitoring and alerting. The important thing to mention here is that we take a "trust but verify" approach.
+    - This is a great opportunity to pause and discuss **WebHooks** - specifically how Security findings generate event driven outputs, which can be captured via Security Incident and Event Management (SIEM) integrations for monitoring and alerting. The important thing to mention here is that we take a "trust but verify" approach.
 
-  - It's worth mentioning that we have all heard about companies experiencing outages when hard-coded secrets are removed, and in such situations business leaders are going to expect developers to bring the service back online. We allow for push protection bypasses to take place for exactly this reason. If this happens on a repository of consequence for a company - security teams are going to want to know about it, which is where **WebHooks** can make a difference.
+    - It's worth mentioning that we have all heard about companies experiencing outages when hard-coded secrets are removed, and in such situations business leaders are going to expect developers to bring the service back online. We allow for push protection bypasses to take place for exactly this reason. If this happens on a repository of consequence for a company - security teams are going to want to know about it, which is where **WebHooks** can make a difference.
+
+5. Select the **It's used in tests** check box and click on **Allow secret** and commit the changes once again to push the code.
+
+    ![push-protection1](./images/commitchanges.png)
 
 5. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back through the process of creating a new personal acess token. Once again go to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**.
 
