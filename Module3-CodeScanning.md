@@ -98,10 +98,15 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
+1. In the **codeql.yml** file, we are going to copy **Line 69** of the workflow file `# queries: security-extended` (1) and append this to a new line we create for **Line 64** which will read `queries: security-extended`(2).Commit these changes to your main branch(3)
 
- Here, we are going to copy **Line 55** of the workflow file `# queries: security-extended,security-and-quality` and append this to a new line we create for **Line 50** which will read `queries: security-extended`. Commit these changes to your main branch and go to the **Actions** tab to confirm the CodeQL action is running.
+   ![github-advisory-database](images/gi.png)
+  
+1. Now,  go to the **Actions** tab to confirm the CodeQL action is running.
 
-![default-to-advanced](https://user-images.githubusercontent.com/22803099/236023025-12cee41d-5c93-404f-b3f2-595fe1149e49.png)
+   ![github-advisory-database](images/gj.png)
+
+
 
 - The Action takes approximately 3 minutes to run and should produce one `Query built from user-controlled sources` (SQL Injection) finding. During this time, it's worth reiterating what is happening behind the scenes with the engine hooking the compiler to build dataflows. It's also worth reiterating the differences between the _default_, _security-extended_, and _security-and-quality_ query suites during this time.
 
