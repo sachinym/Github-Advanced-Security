@@ -119,7 +119,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
    ![github-advisory-database](images/gl.png)
 
 
-1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying **Line 69** of the workflow file `# queries: security-extended` (1) and append this to a new line we create for **Line 64** which will read `queries: security-extended` (2) .Commit these changes to your main branch (3).
+1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying **Line 69** of the workflow file `# queries: security-extended` (1) and append this to a new line we create for **Line 64** which will read `queries: security-extended` (2). Commit these changes to your main branch (3).
 
    ![github-advisory-database](images/gi.png)
 
@@ -151,4 +151,11 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
 
-- And with that, you've completed Module 3! If you're following this course in order, you can now move on to **Module 4 - Building a DevSecOps Program** 🎉
+## Review
+
+In this lab you have completed the following:
+
+- Learnt how CodeQL is different from other static analysis tools
+- Turned on the default setup on a Python repository 
+- Turned on the advanced setup on a Java repository
+- Added some vulnerable code via a pull request and viewed the scan results in the PR.  
