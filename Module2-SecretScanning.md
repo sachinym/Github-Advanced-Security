@@ -124,7 +124,7 @@ Before you share your screen, you'll want to start with a baseline understanding
 
 In this task, we delve into comprehending the outcomes of secret scanning.
 
-1. We navigate through the repository's findings and demonstrate how Secret Scanning identifies potential vulnerabilities, followed by a practical demonstration of adding a GitHub Personal Access Token (PAT) to the codebase to exemplify Active Secrets detection.
+1. We navigated through the repository's findings and demonstrate how Secret Scanning identifies potential vulnerabilities, followed by a practical demonstration of adding a GitHub Personal Access Token (PAT) to the codebase to exemplify Active Secrets detection.
 
 1. After identifying active secrets, we discuss the significance of validity checks in prioritizing remediation efforts.
 
