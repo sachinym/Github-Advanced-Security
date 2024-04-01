@@ -1,4 +1,4 @@
-# Module : Scaling out GHAS (HOL)
+# Module : Scaling out GitHub Advanced Security (HOL)
 
 ## Lab Scenario
 
@@ -14,7 +14,7 @@ In this lab, you will perform:
 
 ## Task 1: How to grow adoption? How to communicate about GHAS internally? 
 
-Adopting GitHub Advanced Security (GHAS) can be approached in multiple ways and requires a strategic approach for success, especially in larger enterprises and organisations with thousands of repositories. The purpose of this to lay down a foundation for enterprises on how to adopt GHAS, but most importantly, scale it quickly and eciently.Enabling GitHub Advanced Security across a large organisation can be broken down into **six** core phases:
+Adopting GitHub Advanced Security can be approached in multiple ways and requires a strategic approach for success, especially in larger enterprises and organisations with thousands of repositories. The purpose of this to lay down a foundation for enterprises on how to adopt GHAS, but most importantly, scale it quickly and eciently.Enabling GitHub Advanced Security across a large organisation can be broken down into **six** core phases:
 
 1. **Align on your rollout strategy and goals**: Think about what success will look like, and align on how GHAS will be implemented in your company. This phase may only take a few days or a week, but it lays a solid foundation for the rest of the rollout.
 
@@ -41,6 +41,7 @@ Like the above phase, organisations tend to rush into the implementation phase, 
 GHAS is an ecosystem of multiple solutions; it's essential to start somewhere focused, not just with the rollout of GHAS. Typically, we see teams focus on code scanning, to begin with. Leverage the API's available and rollout code scanning by team and by language across your organisation automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
 
 ### Task 2: View the security overview dashboard and reports 
+
 In this task, you will explore the security overview dashboard and reports provided by GHAS to gain insights into your repository's security posture.
 
 1. On GitHub.com, navigate to the main page of the organization.
@@ -58,5 +59,6 @@ In this task, you will explore the security overview dashboard and reports provi
    ![Picture1](./images/dashboard2.png)
    
 1. Analyze the metrics and data provided in the reports to identify areas of improvement and prioritize security efforts.
+
 
 ### Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
