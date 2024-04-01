@@ -69,7 +69,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
    ![github-advisory-database](images/gf.png)
 
 
-// 1. we're going to turn on **Default** setup at the **Organization** level. Go to `ghas-bootcamp-DATE-HANDLE` and then **Settings** -> **Code security and analyis** -> scroll down to **Code scanning** and click **Enable all**. This will setup the _Default_ code scanning action with the _Default_ query suite on all eligible repositories (which is available for all CodeQL supported languages as of October 26, 2023).
+//    1. we're going to turn on **Default** setup at the **Organization** level. Go to `ghas-bootcamp-DATE-HANDLE` and then **Settings** -> **Code security and analyis** -> scroll down to **Code scanning** and click **Enable all**. This will setup the _Default_ code scanning action with the _Default_ query suite on all eligible repositories (which is available for all CodeQL supported languages as of October 26, 2023).
 
 
 ## Task 4: Turn on advanced setup on a Java repository. Customize the scan. View results. 
@@ -106,32 +106,46 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/gj.png)
 
-
-
-- The Action takes approximately 3 minutes to run and should produce one `Query built from user-controlled sources` (SQL Injection) finding. During this time, it's worth reiterating what is happening behind the scenes with the engine hooking the compiler to build dataflows. It's also worth reiterating the differences between the _default_, _security-extended_, and _security-and-quality_ query suites during this time.
-
-- Take some time to review this finding by going to **Security** -> **Code scanning** and clicking on the `Query built from user-controlled sources` finding. Highlight the **Show paths** functionality as well as the **Show more** details section below on how we highlight good (and bad) coding practices that make for more secure software.
-
-![show paths](https://user-images.githubusercontent.com/22803099/236023303-bb2c4113-4de8-4c17-905d-6fb7511269b3.png)
+## Task 5: Add some vulnerable code via a pull request and view the scan results in the PR.  
 
 ## Pull Request scans and Accurate Findings
 
-- Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository, heading over to **Settings** -> **Code security and analysis** -> scroll down to **Code scanning** and click the `...` and then click _Switched to advanced_. This will prompt us to turn-off the existing CodeQL workflow in order to avoid duplicating Actions runs.
+1. Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository.Follow the instructions from the **Getting Started** section in order to go to the `ghas-bootcamp-python` repository.
 
-- We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying **Line 55** of the workflow file `# queries: security-extended,security-and-quality` and append this to a new line we create for **Line 50** which will read `queries: security-extended`.
+1. Now, head over to **Settings** -> **Code security and analysis** -> scroll down to **Code scanning** and click the `...` and then click _Switched to advanced_. This will prompt us to turn-off the existing CodeQL workflow in order to avoid duplicating Actions runs.Click on **Disable CodeQL**
 
-![advanced-setup-codeql-yaml-changes](https://user-images.githubusercontent.com/22803099/236023514-cb7f0774-3c73-4408-b2bb-ba2a8995cca0.png)
+   ![github-advisory-database](images/gk.png)
 
-- Open `server/routes.py` in the Python repository and scroll down to **Line 40**.
-  - Ask the participants if there any vulnerabilities that stand out to them? (Hint: it has to do with SQL).
+   ![github-advisory-database](images/gl.png)
 
-- Uncomment the Python code starting from **line 41**, commit these changes to a new branch, and open a **Pull request** into the **main** branch.
-  - Because our _main_ branch isn't a `Protected Branch`, it may take a moment for the Action to trigger and the **Merge pull request** button will display _green_ until the Action kicks-off.
 
-![pull-request-scan](https://user-images.githubusercontent.com/22803099/236024225-46d38699-ffff-4067-9fff-0e4c5a92e8b2.png)
+1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying **Line 69** of the workflow file `# queries: security-extended` (1) and append this to a new line we create for **Line 64** which will read `queries: security-extended` (2) .Commit these changes to your main branch (3).
 
-- CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding. But why?
-  - Go to the **Files chyanged** tab and review the code we added.
+   ![github-advisory-database](images/gi.png)
+
+
+1. In the Code tab of the Python repository, navigate to the server folder to open `routes.py` file  and scroll down to **Line 40**.
+
+   ![github-advisory-database](images/gm.png)
+ 
+  
+1. Notice that this part of the code is related to the  vulnerabilities that  has to do with SQL.
+
+1. Uncomment the Python code starting from **line 38** until the end of the code. 
+
+   ![github-advisory-database](images/gn.png)
+
+1. Click on commit to commit these changes to a new branch,  click on **Create pull request**and open a **Pull request** into the **main** branch and click on **Create pull request** again.
+ 
+   ![github-advisory-database](images/go.png)
+
+   ![github-advisory-database](images/gp.png)
+     
+1. Because our main branch isn't a `Protected Branch`, it may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks-off.
+
+1. CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding. But why?
+
+1. Go to the **Files changed** tab and review the code we added.
   - What we find on **Line 54** is a `val` assignment calling to `login.objects.raw` - which does not exist as a function in this project.
     - While other Static Analysis tools would likely have marked **Line 50** as a SQL Injection, the CodeQL analysis performed as part of Code Scanning correctly marks this as `Clear-text logging of sensitive information` finding. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
 
