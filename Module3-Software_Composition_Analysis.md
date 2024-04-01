@@ -1,4 +1,4 @@
-# Module 3: Software Composition Analysis
+# Module 1: Software Composition Analysis
 
 ## Lab Overview
 
