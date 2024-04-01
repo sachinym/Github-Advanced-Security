@@ -120,4 +120,22 @@ Before you share your screen, you'll want to start with a baseline understanding
 
     ![push-protection1](./images/org3.png)
 
-- And with that, you've completed Module 2! If you're following this course in order, you can now move on to **Module 3 - Code Scanning** 🎉
+## Task 4: Understanding the results 
+
+In this task, we delve into comprehending the outcomes of secret scanning.
+
+1. We navigate through the repository's findings and demonstrate how Secret Scanning identifies potential vulnerabilities, followed by a practical demonstration of adding a GitHub Personal Access Token (PAT) to the codebase to exemplify Active Secrets detection.
+
+1. After identifying active secrets, we discuss the significance of validity checks in prioritizing remediation efforts.
+
+1. Next, we enable Push Protection in the ghas-bootcamp-javascript repository and simulate attempting to push a new secret.
+
+1. We created  custom secret patterns to uncover specific types of sensitive information.
+
+
+## Review
+
+In this lab we have completed the following:
+ - Turned on secret scanning for the entire organization.
+ - Turned on push protection and tried pushing a new secret (GitHub token) in a repository
+ - Created a custom secret pattern 
