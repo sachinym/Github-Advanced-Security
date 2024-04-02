@@ -144,6 +144,18 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
       scoop install hookdeck
       ```
 
+1. To allow traffic on port 1337
+
+      ```
+      netsh interface portproxy add v4tov4 listenport=1337 listenaddress=0.0.0.0 connectport=1337 connectaddress=127.0.0.1
+      ```
+
+1. To verify that the port is listening, you can use the following command:
+
+      ```
+      netstat -an | find "1337"
+      ```
+      
 1. Once the setup process is complete, the next step is to use the CLI to generate a webhook URL that points to the running API application.
 
       ```
@@ -167,6 +179,10 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/webhookcli.png)
 
+1. Copy the URL
+
+    ![Picture1](./images/payloadurl.png)
+   
 1. Navigate to your repository's, click  Settings.
 
    ![Picture1](./images/ghasr1.png)
