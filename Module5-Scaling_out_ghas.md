@@ -155,3 +155,13 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **What should your new source label be?** | type the text **Github** |
     | **What path should the webhooks be forwarded to (i.e.: /webhooks)?** | type **/log-github-webhook** |
     | **What's the connection label (i.e.: My API)?** | type **My Github Response Server** |
+
+1. With this information, the CLI will begin the process of generating the URL and once it's done, you will see the URL printed to the screen and the CLI indicating that it is ready to receive requests.
+
+    ![Picture1](./images/webhookcli1.png)
+
+1. Now copy and paste **Inspect and replay webhooks** URL into your browser, and copy the URL.
+
+    ![Picture1](./images/webhookcli1.png)
+
+1. 
