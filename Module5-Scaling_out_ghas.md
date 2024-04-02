@@ -62,3 +62,40 @@ In this task, you will explore the security overview dashboard and reports provi
 
 
 ### Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
+
+GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms, enabling automated workflows and real-time notifications based on repository activities.
+
+#### Task 3.1: Installing necessary tools.
+
+1. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button.
+
+     ```
+    #Install nodejs v16.8.0
+    $WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi","C:\node-v16.8.0-x64.msi")
+    $arguments = "/i `"C:\node-v16.8.0-x64.msi`" /quiet"
+    Start-Process msiexec.exe -ArgumentList $arguments -Wait
+    sleep 5
+      ```
+
+1. In the command prompt, run the following npm command.
+
+      ```
+      npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
+      ```
+
+1. To install the **Scoop** run the following command.
+
+      ```
+      iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+      ```
+
+1. Install git
+
+      ```
+      $WebClient = New-Object System.Net.WebClient
+      $WebClient.DownloadFile("https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe","C:\Git-2.44.0-64-bit.exe")
+      $arguments = "/install /quiet /norestart"
+      Start-Process "C:\dotnet-sdk-8.0.201-win-x64.exe" -ArgumentList $arguments -Wait
+      sleep 5
+      ```
