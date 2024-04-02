@@ -125,6 +125,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
       ```
       npm install
       ```
+      ```
+      npm start
+      ```
       
     ![Picture1](./images/npmstart.png)
    
