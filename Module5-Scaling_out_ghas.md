@@ -162,7 +162,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Now copy and paste **Inspect and replay webhooks** URL into your browser, and copy the URL.
 
-    ![Picture1](./images/webhookcli1.png)
+    ![Picture1](./images/webhookcli.png)
 
 1. Navigate to your repository's, click  Settings.
 
