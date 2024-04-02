@@ -229,4 +229,15 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Operating System** | **Windows** |
     | **Hosting options and plans** | **Consumption (Serverless)** |
 
+   ![Picture1](./images/functionapp1.png)
+   ![Picture1](./images/functionapp2.png)
+   
+1. Once the deployment is completed, click on **Go to resource**.
+
+1. On **Overview** page of function app, Under the section of **Function** click on **Create function**, it will open a page from them select **Deployment environment** as **Deploy in portal** and select the **HTTP trigger**, click to **Create**.
+
+   ![Picture1](./images/functionapp3.png)
+
+1. 
+
 1. 
