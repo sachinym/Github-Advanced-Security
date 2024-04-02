@@ -67,7 +67,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 #### Task 3.1: Installing necessary tools.
 
-1. search for **powershell** in windows search, select **Powershell ISE** and **Run as administrator**.
+1. Search for **powershell** in windows search, select **Powershell ISE** and **Run as administrator**.
 
     ![Picture1](./images/powershell.png)
    
@@ -209,3 +209,24 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    ![Picture1](./images/payloadaccept.png)
 
    >**Note**: It will take 3-5 minutes to show the status.
+
+#### Task 3.4: Push events to an outside reporting to Function App.
+
+1. Navigate to the Azure Portal search for **Function app (1)** in search bar, select **Function App (2)**.
+
+   ![Picture1](./images/functionapp.png)
+
+1. Click on create.
+
+1. On Basics of Create Function App, provide details for your label. Select **Review + create** at the bottom of the page.
+
+    | Setting | Action |
+    | -- | -- |
+    | **Subscription** | select your subscription |
+    | **Resource Group** | Select your resource group |
+    | **Function App name** | **function-webhooks** |
+    | **Do you want to deploy code or container image?** | **Code** |
+    | **Operating System** | **Windows** |
+    | **Hosting options and plans** | **Consumption (Serverless)** |
+
+1. 
