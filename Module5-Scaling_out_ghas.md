@@ -186,5 +186,5 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. On the console page in web it will give the **Accepted** Status of your webhooks.
 
-   ![Picture1](./images/payloadaccept.png.png)
+   ![Picture1](./images/payloadaccept.png)
 
