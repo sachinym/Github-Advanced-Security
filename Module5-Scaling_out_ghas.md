@@ -149,3 +149,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. This command starts an interactive session where the CLI collects information about the endpoint you're about to create. Below are the questions and the answers you should supply to each question.
 
+    | Question | Answer |
+    | -- | -- |
+    | **What source should you select?** | select **Create new source** |
+    | **What should your new source label be?** | type the text **Github** |
+    | **What path should the webhooks be forwarded to (i.e.: /webhooks)?** | type **/log-github-webhook** |
+    | **What's the connection label (i.e.: My API)?** | type **My Github Response Server** |
