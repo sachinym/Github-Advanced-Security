@@ -138,7 +138,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 1. Install the hookdeck by running the following commands.
 
       ```
-      scoop bucket add hookdeck <https://github.com/hookdeck/scoop-hookdeck-cli.git>
+      scoop bucket add hookdeck https://github.com/hookdeck/scoop-hookdeck-cli.git
       ```
       ```
       scoop install hookdeck
