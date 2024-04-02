@@ -180,11 +180,13 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 - **Secret**: You can leave this blank.
 - **SSL verification**: Leave this as the default option of **Enable SSL verification (3)**.
 - **Which events would you like to trigger this webhook?**: select the **Just the push event option (4)**.
-- **Active (6)**: Leave this checked to receive event details when the GitHub webhook is triggered.
-
+- **Active (5)**: Leave this checked to receive event details when the GitHub webhook is triggered.
+- Click on **Add Webhooks (6)**.
+      
    ![Picture1](./images/webhookpayload.png)
 
 1. On the console page in web it will give the **Accepted** Status of your webhooks.
 
    ![Picture1](./images/payloadaccept.png)
 
+   >**Note**: It will take 3-5 minutes to show the status.
