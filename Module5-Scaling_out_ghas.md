@@ -67,6 +67,10 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 #### Task 3.1: Installing necessary tools.
 
+1. search for **powershell** in windows search, select **Powershell ISE** and **Run as administrator**.
+
+    ![Picture1](./images/powershell.png)
+   
 1. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button.
 
      ```
@@ -78,11 +82,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     sleep 5
       ```
 
-1. In the command prompt, run the following npm command.
-
-      ```
-      npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
-      ```
+    ![Picture1](./images/nodejs1.png)
 
 1. To install the **Scoop** run the following command.
 
@@ -90,12 +90,62 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
       iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
       ```
 
-1. Install git
+1. To install the **git** run the following command
 
       ```
       $WebClient = New-Object System.Net.WebClient
       $WebClient.DownloadFile("https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe","C:\Git-2.44.0-64-bit.exe")
-      $arguments = "/install /quiet /norestart"
-      Start-Process "C:\dotnet-sdk-8.0.201-win-x64.exe" -ArgumentList $arguments -Wait
+      $arguments = "/VERYSILENT /NORESTART /NOCANCEL /SP-"
+      Start-Process "C:\Git-2.44.0-64-bit.exe" -ArgumentList $arguments -Wait
       sleep 5
       ```
+
+#### Task 3.2: Clone a demo API server for receiving GitHub webhooks
+
+1. Start **Visual Studio Code** from the desktop.
+
+    ![Picture1](./images/vscode1.png)
+
+1. In the Visual Studio Code terminal, click on **(...)** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
+
+    ![Picture1](./images/terminal.png)
+    
+1. Clone the repository by running the following command:
+
+      ```
+      git clone --single-branch --branch github-webhooks https://github.com/hookdeck/nodejs-webhook-server-example.git
+      ```
+
+1. Navigate to the root of the project and install the required dependencies by running the following commands:
+
+      ```
+      cd nodejs-webhook-server-example
+      ```
+
+      ```
+      npm install
+      ```
+      
+    ![Picture1](./images/npmstart.png)
+   
+   >**Note:** This will boot up the API application and print a message to the screen indicating that the API is now running and listening for connections on port 1337.
+   
+#### Task 3.3: Get the webhook URL
+
+1. Install the hookdeck by running the following commands.
+
+      ```
+      scoop bucket add hookdeck <https://github.com/hookdeck/scoop-hookdeck-cli.git>
+      ```
+      ```
+      scoop install hookdeck
+      ```
+
+1. Once the setup process is complete, the next step is to use the CLI to generate a webhook URL that points to the running API application.
+
+      ```
+      hookdeck listen 1337
+      ```
+
+1. This command starts an interactive session where the CLI collects information about the endpoint you're about to create. Below are the questions and the answers you should supply to each question.
+
