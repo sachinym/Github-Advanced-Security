@@ -5,7 +5,7 @@
  In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
 ## Lab Objectives
-
+In this lab, you will perform:
 - Task 1: Introduction to Code Scanning
 - Task 2: What is CodeQL and how is it different from other static analysis tools? 
 - Task 3: Turn on default setup on a Python repository. View results. 
