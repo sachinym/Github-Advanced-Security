@@ -20,12 +20,6 @@ Secret scanning is a GitHub Advanced Security feature that scans repositories fo
 
 Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the Security tab of the repository.
 
-Before you share your screen, you'll want to start with a baseline understanding by first asking students what _they_ think Secret Scanning is. More often than not, students expect Secret Scanning to discover everything from AWS Credentials to hard-coded passwords like `Password123!`. Start by sharing what Secret Scanning can do out-of-the-box, and then mention _Custom Secret Patterns_ with plans to discuss it later in the module (time permitting).
-
-  - As you walk through what Secret Scanning finds out-of-the-box, pull up the [Secret Scanning Patterns](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/secret-scanning-patterns) page to show which partner alerts we identify today. Make sure you are on the correct `Version` of the docs page when sharing this!
-
-  - Next, show Secret Scanning in action by first reviewing the findings in `ghas-bootcamp-javascript`, followed by creating your own GitHub PAT and adding it to the code to show _Active Secrets_ detection.
-
 1. To create a GitHub PAT token, go to your profile on top of right hand, and then select **Settings**.
 
    ![Picture1](./images/profilesetting.png)
