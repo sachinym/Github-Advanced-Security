@@ -312,6 +312,28 @@ You can create rulesets to control how users can interact with selected branches
 
 1. **Creating a branch or tag ruleset** 
 
+1. On GitHub, navigate to the main page of the repository.
+
+1. Under your repository name, click  Settings. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click Settings.
+
+   ![Picture1](./images/ghasr1.png)  
+
+1. In the left sidebar, under "Code and automation," click **Repository**, then click **Rulesets**
+
+   ![Picture1](./images/rulesets.png)    
+
+1. You can create a ruleset targeting branches, or a ruleset targeting tags.
+
+   - To create a ruleset targeting branches, click **New branch ruleset**.
+   - To create a ruleset targeting tags, select , then **click New tag ruleset**.
+
+   ![Picture1](./images/rulesetbranch.png)  
+  
+1. In the "General" section, type a name for the ruleset, then select  Disabled  and click one of the following enforcement statuses:
+
+   - **Active**: your ruleset will be enforced upon creation.
+   - **Disabled**: your ruleset will not be enforced.
+
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
 For more details, refer to the [GitHub documentation on rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
