@@ -1,6 +1,6 @@
 # Module 4: Code Scanning
 
-## Lab Overview
+## Lab Scenario
 
  In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
