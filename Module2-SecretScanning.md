@@ -25,6 +25,13 @@ Once this is enabled, navigate to the `ghas-bootcamp-javascript` repository to b
 ## Task 1: Turn on secret scanning for the entire organization. Review results
 
 ## What is Secret Scanning?
+
+In GitHub, secrets are any authentication credentials—like tokens or private keys—you might be using in a project to connect to an external service. If you commit a secret into a repository, anyone with read access to the repository can use it to access the external service with your privileges. That's where secret scanning comes into play.
+
+Secret scanning is a GitHub Advanced Security feature that scans repositories for known types of secrets. It prevents the fraudulent use of secrets that were committed accidentally.
+
+Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the Security tab of the repository.
+
 Before you share your screen, you'll want to start with a baseline understanding by first asking students what _they_ think Secret Scanning is. More often than not, students expect Secret Scanning to discover everything from AWS Credentials to hard-coded passwords like `Password123!`. Start by sharing what Secret Scanning can do out-of-the-box, and then mention _Custom Secret Patterns_ with plans to discuss it later in the module (time permitting).
 
   - As you walk through what Secret Scanning finds out-of-the-box, pull up the [Secret Scanning Patterns](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/secret-scanning-patterns) page to show which partner alerts we identify today. Make sure you are on the correct `Version` of the docs page when sharing this!
