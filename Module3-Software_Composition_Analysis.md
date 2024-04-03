@@ -5,7 +5,7 @@
  In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
 
 ## Lab Objectives
-
+In this lab, you will perform:
 - Task 1: Turn on dependabot and other SCA features. Review results. 
 - Task 2: Use the dependency submission action on a Java project. Review results. 
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
