@@ -1,4 +1,4 @@
-# Module 2: Secret Scanning
+# Module 02: Secret Scanning
 
 ## Lab Scenario
 
