@@ -314,4 +314,4 @@ You can create rulesets to control how users can interact with selected branches
 
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
-For more details, refer to the https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets
+For more details, refer to the [GitHub documentation on rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
