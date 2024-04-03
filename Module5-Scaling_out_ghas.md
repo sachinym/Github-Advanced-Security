@@ -230,6 +230,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Hosting options and plans** | **Consumption (Serverless)** |
 
    ![Picture1](./images/functionapp1.png)
+   
    ![Picture1](./images/functionapp2.png)
    
 1. Once the deployment is completed, click on **Go to resource**.
