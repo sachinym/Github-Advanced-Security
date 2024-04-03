@@ -204,11 +204,11 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
       
    ![Picture1](./images/webhookpayload.png)
 
-1. On the console page in web it will give the **Accepted** Status of your webhooks.
+13. On the console page in web it will give the **Accepted** Status of your webhooks.
 
-   ![Picture1](./images/payloadaccept.png)
+    ![Picture1](./images/payloadaccept.png)
 
-   >**Note**: It will take 3-5 minutes to show the status.
+    >**Note**: It will take 3-5 minutes to show the status.
 
 #### Task 3.4: Push events to an outside reporting to Function App.
 
@@ -264,37 +264,37 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/payloadhttp.png)
 
-1. Now go to **Repositories** section and click on **New Respsitories**.
+11. Now go to **Repositories** section and click on **New Respsitories**.
 
-   ![Picture1](./images/newrepo.png)
+    ![Picture1](./images/newrepo.png)
 
-1. Give the **Repositories name** as **Test-webhook (1)**, select the **Public (2)** and click on the **Create repositories (3)** to create them.
+12. Give the **Repositories name** as **Test-webhook (1)**, select the **Public (2)** and click on the **Create repositories (3)** to create them.
 
-   ![Picture1](./images/newrepo1.png)
+    ![Picture1](./images/newrepo1.png)
   
-   >**Note**: you can made some more changes to you repositories, it will send the POST request to function app.
+    >**Note**: you can made some more changes to you repositories, it will send the POST request to function app.
 
-1. Navigate to your repository's, click settings.
+13. Navigate to your repository's, click settings.
 
-    ![Picture1](./images/ghasr1.png)
+     ![Picture1](./images/ghasr1.png)
 
-1. Click on **webhook**, select the webhook you have created.
+14. Click on **webhook**, select the webhook you have created.
 
-1. Scrool down to bottom and will find some **Recent Deliveries**.
+15. Scrool down to bottom and will find some **Recent Deliveries**.
 
-   ![Picture1](./images/recentdelivery.png)
+    ![Picture1](./images/recentdelivery.png)
 
-1.  click to any deliveries. you will see their **Request** and **Response** column for more information.
+16.  click to any deliveries. you will see their **Request** and **Response** column for more information.
 
-    ![Picture1](./images/request.png)
+     ![Picture1](./images/request.png)
 
-    ![Picture1](./images/response.png)
+     ![Picture1](./images/response.png)
 
-1. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, click on **Invocations (2)** here it will give the most recent invocation traces.
+17. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, click on **Invocations (2)** here it will give the most recent invocation traces.
 
-    ![Picture1](./images/invocations.png)
+     ![Picture1](./images/invocations.png)
    
-   >**Note:** It will take 5-7 minutes to show.
+     >**Note:** It will take 5-7 minutes to show.
 
 #### Task 4: Talk about repository rulesets and how they can be used at scale [ Read Only ]
 
