@@ -104,7 +104,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Start **Visual Studio Code** from the desktop.
 
-    ![Picture1](./images/vscode1.png)
+    ![Picture1](./images/vscode1.jpg)
 
 1. In the Visual Studio Code terminal, click on **(...)** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
 
