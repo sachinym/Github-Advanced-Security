@@ -266,11 +266,15 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Now go to **Repositories** section and click on **New Respsitories**.
 
-1. Give the **Repositories name** as **Test-webhook**, select the **Public** and click on the **Create repositories** to create them.
+  ![Picture1](./images/newrepo.png)
 
-   >**Note**: you can made some more changes to you repositories, it will send the POST request to function app.
+1. Give the **Repositories name** as **Test-webhook (1)**, select the **Public (2)** and click on the **Create repositories (3)** to create them.
 
-1. Navigate to your repository's, click  Settings.
+  ![Picture1](./images/newrepo1.png)
+  
+  >**Note**: you can made some more changes to you repositories, it will send the POST request to function app.
+
+1. Navigate to your repository's, click settings.
 
    ![Picture1](./images/ghasr1.png)
 
@@ -278,10 +282,18 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Scrool down to bottom and will find some **Recent Deliveries**.
 
+   ![Picture1](./images/recentdeivery.png)
+
 1.  click to any deliveries. you will see their **Request** and **Response** column for more information.
+
+   ![Picture1](./images/request.png)
+
+   ![Picture1](./images/response.png)
 
 1. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, click on **Invocations (2)** here it will give the most recent invocation traces.
 
+   ![Picture1](./images/invocations.png)
+   
    >**Note:** It will take 5-7 minutes to show.
 
 #### Task 4: Talk about repository rulesets and how they can be used at scale [ Read Only ]
