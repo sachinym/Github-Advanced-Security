@@ -6,19 +6,19 @@
 In this lab, you will perform:
 
 - Task 1: What is GitHub Advanced Security? 
-- Task 2: What are the components of GHAS?  
-- Task 3: Where to turn on the different components of GHAS?  
+- Task 2: What are the components of GitHub Advanced Security?  
+- Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
 ### Estimated timing: 20 minutes
 
 ### Task 1: What is GitHub Advanced Security?
 
-GitHub Advanced Security, or GHAS, is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
+GitHub Advanced Security, is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
 
-### Task 2: What are the components of GHAS?  
-Here are some components of GHAS:
+### Task 2: What are the components of GitHub Advanced Security?  
+Here are some components of GitHub Advanced Security:
 
-1. **Secret Scanning:** Secret scanning is a crucial security feature within GitHub Advanced Security (GHAS) designed to identify and mitigate the inadvertent exposure of sensitive information, such as API keys and tokens within the source code.
+1. **Secret Scanning:** Secret scanning is a crucial security feature within GitHub Advanced Security designed to identify and mitigate the inadvertent exposure of sensitive information, such as API keys and tokens within the source code.
 
     This scanning process is essential for preventing unauthorized access and safeguarding confidential data. Secret scanning operates by searching for predefined patterns and signatures indicative of sensitive information, ensuring that potential security risks are promptly addressed. By default, secret scanning looks for highly accurate patterns that have been provided by a GitHub Partner, however, custom patterns can be created for other use cases.
 
@@ -36,7 +36,7 @@ Here are some components of GHAS:
 
     With GitHub Advanced Security, Dependabot’s functionality is extended to include Dependency Review, allowing you to check for vulnerable dependencies within a pull request. This check enables you to address vulnerabilities before they are merged into a shared branch.
 
-### Task 3: Where to turn on the different components of GHAS?  
+### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
 1. To enable any of the alerts from a repository level first navigate to your repository’s security tab.
 
@@ -61,5 +61,5 @@ Here are some components of GHAS:
  
 In this lab you have completed the following:
 + What is GitHub Advanced Security?
-+ What are the components of GHAS?
-+ Where to turn on the different components of GHAS? 
++ What are the components of GitHub Advanced Security?
++ Where to turn on the different components of GitHub Advanced Security? 
