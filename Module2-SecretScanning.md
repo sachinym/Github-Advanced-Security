@@ -10,6 +10,8 @@ In this lab, you will perform:
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understanding the results 
 
+### Estimated timing: 60 minutes
+
 ## Task 1: Turn on secret scanning for the entire organization. Review results
 
 ## What is Secret Scanning?
