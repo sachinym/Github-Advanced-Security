@@ -12,9 +12,7 @@ In this lab, you will perform:
 - Task 4: Turn on advanced setup on a Java repository. Customize the scan. View results. 
 - Task 5: Add some vulnerable code via a pull request and view the scan results in the PR.  
 
-## Getting Started
-
-If you followed `Module 0 - Setup and Automation`, you will have already enabled _GitHub Advanced Security_ at both the repository and the organization level. If you are starting this module without having taken these steps, please review that module to enable _GitHub Advanced Security_.
+### Estimated timing: 40 minutes
    
 ## Task 1: Introduction to Code Scanning 
 
