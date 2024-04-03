@@ -10,18 +10,6 @@ In this lab, you will perform:
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understanding the results 
 
-## Getting Started
-
-If you followed `Module 0 - Setup and Automation` you will have already enabled _GitHub Advanced Security_ at both the repository and the organization level. If you are starting this module without having taken these steps, below are the instructions for turning on these features at the organization level:
-
-- Go to the Organization (`ghas-bc-HANDLE`) and then **Settings** -> **Code Security and Analysis** and click `Enable all` for _GitHub Advanced Security_. It may take several minutes for the repositories to all be flagged with GHAS enabled, so you may need to fill the time by discussing what Secret Scanning does before working through the module.
-
-At the Organization level, `Enable all` for _Secret Scanning_. Also choose the checkboxes to opt in for new repos, validity checks, and non-provider patterns.
-
-Once this is enabled, navigate to the `ghas-bootcamp-javascript` repository to begin working through this module. This repository should have at-least 4 secret scanning findings (as of Dec 12th, 2023).
-
-![secret-scanning-findings](https://github.com/ghas-bootcamp-admin/training-material/assets/1760475/63ca66cf-c15f-4703-9553-6287a14724bd)
-
 ## Task 1: Turn on secret scanning for the entire organization. Review results
 
 ## What is Secret Scanning?
@@ -48,7 +36,7 @@ Before you share your screen, you'll want to start with a baseline understanding
 
 1. Give your secret a name **Secret scanning** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so scroll to the bottom and click **Generate token**. Once you've generated the token, click the "Copy" icon to the right of the secret value.
 
-  ![new personal acess token](images/PATtoken.png)
+   ![new personal acess token](images/PATtoken.png)
 
    ![Picture1](./images/token.png)  
 
@@ -64,7 +52,7 @@ Before you share your screen, you'll want to start with a baseline understanding
 
    ![Picture1](./images/javascript.png) 
 
-2. Open _index.js_ file and click the pencil icon on the top-right of the code block to edit it and add ` var secret = "Your-Secret-Value"` to the code, click on **Commit changes**.
+1. Open _index.js_ file and click the pencil icon on the top-right of the code block to edit it and add ` var secret = "Your-Secret-Value"` to the code, click on **Commit changes**.
 
    ![Picture1](./images/index.png)
 
@@ -72,7 +60,7 @@ Before you share your screen, you'll want to start with a baseline understanding
 
    >**Note:** Replace "Your-Secret-Value" with the secret value copied in the previous step. 
 
-4. Commit this to the default branch (Click on I'll fix this later if asked), and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
+1. Commit this to the default branch (Click on I'll fix this later if asked), and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
 
    ![Picture1](./images/allowsecret.png)    
 
@@ -80,7 +68,7 @@ Before you share your screen, you'll want to start with a baseline understanding
    
     >**Note:** that it may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-7. From here, go back to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and delete the secret you just pasted into the `ghas-bootcamp-javascript` repository. Once you've completed this step, go back to the **Security** -> **Secrets Scanning** section and review that the secret is now identified as a _"Possibly active secret"_.
+1. From here, go back to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and delete the secret you just pasted into the `ghas-bootcamp-javascript` repository. Once you've completed this step, go back to the **Security** -> **Secrets Scanning** section and review that the secret is now identified as a _"Possibly active secret"_.
 
    ![Picture1](./images/possibleactivesecret.png)
 
@@ -108,27 +96,33 @@ Before you share your screen, you'll want to start with a baseline understanding
 
    ![Picture1](./images/developersetting2.png)
 
-7. Once you've generated the token, click the "Copy" icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository. Open up _index.js_, click the pencil icon on the top-right of the code block and add `var secret2 = "Your-Secret-Value"` to the code. Commit the changes with the default options to the to attempt to push the code. This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
+1. Once you've generated the token, click the "Copy" icon to the right of the secret value.
+
+   ![Picture1](./images/token.png)  
+
+1. Return to the `ghas-bootcamp-javascript` repository.
+  
+1.  Open up _index.js_, click the pencil icon on the top-right of the code block and add `var secret2 = "Your-Secret-Value"` to the code.
+
+    ![Picture1](./images/index.png)
+
+    >**Note**: Commit the changes with the default options to the to attempt to push the code. This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
 
     ![push-protection](./images/sscanningpop.png)
 
-    - This is a great opportunity to pause and discuss **WebHooks** - specifically how Security findings generate event driven outputs, which can be captured via Security Incident and Event Management (SIEM) integrations for monitoring and alerting. The important thing to mention here is that we take a "trust but verify" approach.
-
-    - It's worth mentioning that we have all heard about companies experiencing outages when hard-coded secrets are removed, and in such situations business leaders are going to expect developers to bring the service back online. We allow for push protection bypasses to take place for exactly this reason. If this happens on a repository of consequence for a company - security teams are going to want to know about it, which is where **WebHooks** can make a difference.
-
-8. Select the **It's used in tests** check box and click on **Allow secret** and commit the changes once again to push the code.
+10. Select the **It's used in tests** check box and click on **Allow secret** and commit the changes once again to push the code.
 
     ![push-protection1](./images/commitchanges.png)
 
-9. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back through the process of creating a new personal acess token. Once again go to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**.
+11. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back through the process of creating a new personal acess token. Once again go to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**.
 
-10. Once again, give your secret a name **secret3** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so it is safe to scroll to the bottom and click **Generate token**.
+12. Once again, give your secret a name **secret3** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so it is safe to scroll to the bottom and click **Generate token**.
 
-11. Once you've generated the token, click the **Copy** icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository. Open up _index.js_, click the pencil icon on the top-right of the code block and add `var secret3 = "Your-Secret-Value"` to the code. **BEFORE YOU COMMIT YOUR CODE** go ahead and add some random letters and numbers to the end of the GitHub Personal Access Token you've added.
+13. Once you've generated the token, click the **Copy** icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository. Open up _index.js_, click the pencil icon on the top-right of the code block and add `var secret3 = "Your-Secret-Value"` to the code. **BEFORE YOU COMMIT YOUR CODE** go ahead and add some random letters and numbers to the end of the GitHub Personal Access Token you've added.
 
     ![push-protection1](./images/allsecrets.png)
 
-12. Before you've committed your changes, ask the students what they expect to happen. Some will probably guess that you should see a **Secret scanning** pop-up. Other's will have clued into the importance of only flagging on real secrets, and will say that you should not see a pop-up. In the end, this will _NOT_ cause a **Secret scanning** pop-up to appear. It's important to once-again reiterate that we focus on Push Protecting against secrets that we are highly confident are real, and that match the patterns expected from the algorithms are partners use to generate their credential material.
+14. In the end, this will _NOT_ cause a **Secret scanning** pop-up to appear. It's important to once-again reiterate that we focus on Push Protecting against secrets that we are highly confident are real, and that match the patterns expected from the algorithms are partners use to generate their credential material.
 
 ## Task 3: Create a custom secret pattern and view the results 
 
