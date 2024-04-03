@@ -15,14 +15,6 @@ In this lab, you will perform:
 ## Getting Started
 
 If you followed `Module 0 - Setup and Automation`, you will have already enabled _GitHub Advanced Security_ at both the repository and the organization level. If you are starting this module without having taken these steps, please review that module to enable _GitHub Advanced Security_.
-
-1. In the **github-adv-sec** click on repositories from the top navigation pane.
-
-   ![github-advisory-database](images/gc.png)
-
-1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at-least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
-
-   ![github-advisory-database](images/gd.png)
    
 ## Task 1: Introduction to Code Scanning 
 
@@ -48,6 +40,14 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Default Setup
 
+1. In the **github-adv-sec** click on repositories from the top navigation pane.
+
+   ![github-advisory-database](images/gc.png)
+
+1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at-least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
+
+   ![github-advisory-database](images/gd.png)
+
 1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security and Analysis** under Security.
 
    ![github-advisory-database](images/ga.png)
@@ -67,10 +67,6 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 1. After you've clicked the **Enable CodeQL** button, go to the _Actions_ tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes.
 
    ![github-advisory-database](images/gf.png)
-
-
-//    1. we're going to turn on **Default** setup at the **Organization** level. Go to `ghas-bootcamp-DATE-HANDLE` and then **Settings** -> **Code security and analyis** -> scroll down to **Code scanning** and click **Enable all**. This will setup the _Default_ code scanning action with the _Default_ query suite on all eligible repositories (which is available for all CodeQL supported languages as of October 26, 2023).
-
 
 ## Task 4: Turn on advanced setup on a Java repository. Customize the scan. View results. 
 
