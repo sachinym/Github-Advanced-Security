@@ -38,28 +38,51 @@ Before you share your screen, you'll want to start with a baseline understanding
 
   - Next, show Secret Scanning in action by first reviewing the findings in `ghas-bootcamp-javascript`, followed by creating your own GitHub PAT and adding it to the code to show _Active Secrets_ detection.
 
+1. To create a GitHub PAT token, go to your profile on top of right hand, and then select **Settings**.
 
-1. To create a GitHub PAT token, go to your profile, and then select **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and then clicking on **Generate new token** at the top and selecting **Generate new token (classic)**
+   ![Picture1](./images/profilesetting.png)
+
+1. Go to **Developer settings** -> **Personal access tokens (1)** -> **Tokens (classic) (2)** and then clicking on **Generate new token (3)** at the top and selecting **Generate new token (classic) (4)**
+
+   ![Picture1](./images/developersetting.png)
+
+1. Give your secret a name **Secret scanning** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so scroll to the bottom and click **Generate token**. Once you've generated the token, click the "Copy" icon to the right of the secret value.
 
   ![new personal acess token](images/PATtoken.png)
 
-2. Give your secret a name **Secret scanning** and set the **Expiration** to _"Custom..."_ and select the next calendar day. By default, no permissions are granted so scroll to the bottom and click **Generate token**. Once you've generated the token, click the "Copy" icon to the right of the secret value, and return to the `ghas-bootcamp-javascript` repository.
+   ![Picture1](./images/token.png)  
 
-3. Open _index.js_ file and click the pencil icon on the top-right of the code block to edit it and add ` var secret = "Your-Secret-Value"` to the code.
+1. Go to your profile on top of right hand, and then select **Your organizations**.
 
-   **Note:** Replace "Your-Secret-Value" with the secret value copied in the previous step. 
+   ![Picture1](./images/org.png) 
 
-4. Commit this to the default branch (Click on I'll fix this later if asked), and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret. **Please note** that it may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
+1. Select **github-adv-sec** from organizations.
 
-5. Once the secret is located in **Security** -> **Secret Scanning**, it's time to discuss validity checks for "Active" secrets. As of March 20th, 2023 we are currently working through the legal process to get agreement from our existing Secret Scanning partners on using endpoints to test whether key material is active. We have prioritized Cloud platforms first (Azure, AWS, and Google) as part of this process.
+   ![Picture1](./images/org1.png) 
 
-6. Validity checks help development and security teams prioritize remediation of known active secrets by rotating those credentials and updating the codebase. For secrets found in commit history, the Field Security team recommends using [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) to remove secrets in code history. The only _real_ way to secure a secret is to rotate that credential and leverage a secrets management platform to access that secret in code.
+1. Click on the **Repositories** and select **ghas-bootcamp-javascript**.
 
-![active-secret](https://user-images.githubusercontent.com/22803099/236021632-fd1e7325-0263-45a5-99cb-ebc0d16b84f6.png)
+   ![Picture1](./images/javascript.png) 
+
+2. Open _index.js_ file and click the pencil icon on the top-right of the code block to edit it and add ` var secret = "Your-Secret-Value"` to the code, click on **Commit changes**.
+
+   ![Picture1](./images/index.png)
+
+   ![Picture1](./images/index1.png)    
+
+   >**Note:** Replace "Your-Secret-Value" with the secret value copied in the previous step. 
+
+4. Commit this to the default branch (Click on I'll fix this later if asked), and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
+
+   ![Picture1](./images/allowsecret.png)    
+
+   ![Picture1](./images/secretscanning.png)
+   
+    >**Note:** that it may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
 7. From here, go back to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and delete the secret you just pasted into the `ghas-bootcamp-javascript` repository. Once you've completed this step, go back to the **Security** -> **Secrets Scanning** section and review that the secret is now identified as a _"Possibly active secret"_.
 
-![possibly-active-secret](https://user-images.githubusercontent.com/22803099/236021678-6d1e32a1-846a-4462-980b-0a4a5714e7df.png)
+   ![Picture1](./images/possibleactivesecret.png)
 
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
