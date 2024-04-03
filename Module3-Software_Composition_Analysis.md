@@ -1,6 +1,6 @@
 # Module 3: Software Composition Analysis
 
-## Lab Overview
+## Lab Scenario
 
  In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
 
