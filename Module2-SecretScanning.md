@@ -144,6 +144,10 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
     ![push-protection1](./images/custom4.png)
 
+1. Click on **Pubish pattern**
+
+   ![Picture1](./images/publishpattern.png) 
+
 1. This example captures everything we expect to see in a single repository - which can hold up to 100 patterns. Let's go ahead and apply this to the organization level by going to the `github-adv-sec` and clicking **Settings** -> **Code security and analysis** -> **Secret scanning** and click the green **New pattern** button. Please note that the Organization can hold up to 500 custom patterns.
 
 1. Go ahead and apply the same pattern we used earlier at the repository level and click **Save and dry run**. You'll get a pop-up asking where to apply this secret; click the top radial that indicates **All repositories in this organization**. The UI will then indicate that the dry run is queued - which is usually a great time to take a 10 or 15 minute break.
@@ -157,7 +161,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 1. Even if you're doing this in a one-day format, it's worth highlighting the value of performing the **Dry run** before publishing the pattern to avoid notifying developers of false positives.
 
     ![push-protection1](./images/org3.png)
-
+   
 ## Task 4: Understanding the results 
 
 In this task, we delve into comprehending the outcomes of secret scanning.
