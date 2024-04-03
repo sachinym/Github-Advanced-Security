@@ -1,6 +1,9 @@
 # Module 2: Secret Scanning
 
+## Lab Scenario
+
 ## Lab Objectives
+In this lab, you will perform:
 - Task 1: Turn on secret scanning for the entire organization. Review results
 - Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 - Task 3: Create a custom secret pattern and view the results 
