@@ -10,41 +10,6 @@ In this lab, you will perform:
 - Task 2: Use the dependency submission action on a Java project. Review results. 
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
-
-## Getting Started with GHAS
-
-If you followed `Module 0 - Setup and Automation`, you will have already enabled _Dependency graph_, _Dependabot alerts_, and _Dependabot security updates_ at both the repository and the organization level. If you are starting this module without having taken these steps, below are the instructions for turning on these features at the organization level:
-
-- Go to the Organization (`ghas-bootcamp-DATE-HANDLE`) and then **Settings** -> **Code Security and Analysis** and click `Enable all` for _Dependency graph_, _Dependablot alerts_, _Dependabot security updates_, and _GitHub Advanced Security_.
-
-- Once this is enabled, navigate to the `WebGoat` repository to begin working through this module.
-
-Open the [GitHub Advisory Database](https://github.com/advisories) in a new browser window and work through the talk track below, which is taken from comments made by @Moose0621 in [this issue](https://github.com/github/field-security-specialists/issues/177#issuecomment-1440704862) related to the GHAS Bootcamp Renovation project.
-
-  ![github-advisory-database](images/g1.png)
-
-- **Now let us analyze the problem**
-
-    This talk track is intended to guide the reader through the analysis of a problem related to open-source security and the role of organizations in ensuring safe usage of open-source software. 
-
-- **What is the GitHub Advisory Database?**
-
- 1. **Curated DB of known security vulnerabilities**: The GitHub Advisory Database is a curated database that catalogues known security vulnerabilities across the open-source ecosystem. It serves as a centralized resource for developers to stay informed about security issues affecting the 
-  software libraries and packages they use in their projects.
-
- 1. **Community-driven effort**: The GitHub Advisory Database is maintained through a community-driven effort, with contributions from security researchers, developers, and organizations. This collaborative approach helps ensure the accuracy and comprehensiveness of the database.
-
- 1. **GitHub as a Certified CVE Numbering Authority**: GitHub is designated as a Certified CVE Numbering Authority, responsible for assigning CVEs (Common Vulnerabilities and Exposures) to vulnerabilities discovered in the open source ecosystem. This accreditation highlights GitHub's role in the cybersecurity landscape and its commitment to enhancing the security of open-source software.
-  
-    Overall, the GitHub Advisory Database plays a crucial role in enhancing the security of open-source software by providing developers with timely and comprehensive information about security vulnerabilities and advisories.
-
-- **How does it work?**
-
-1.  The **GitHub Advisory Database** utilizes the GitHub API to fetch the latest information about security vulnerabilities. This API provides access to various data related to repositories, including vulnerability information, which the database leverages to stay updated with the latest security advisories.
-1.  By accessing the GitHub API, the database can determine if there are any known vulnerabilities associated with the repositories being monitored. It scans the codebase and dependencies of projects to identify any vulnerabilities that have been reported and documented in the database.
-1.  **Dependabot**, a GitHub automation tool, plays a crucial role in the process. When vulnerabilities are detected within a repository, Dependabot generates alerts to notify the repository maintainers about the security issues.
-1.  In addition to generating alerts, Dependabot may take proactive steps to address the identified vulnerabilities. 
-
 ## Task 1: Turn on dependabot and other SCA features. Review results. 
 
 1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
@@ -110,7 +75,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    
     ![github-advisory-database](images/g4.png)
 
-1. On `Line 5` of the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Highlight this and open it in a new tab
+1. On `Line 8` of the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Highlight this and open it in a new tab
 
    ![github-advisory-database](images/g5.png)
 
