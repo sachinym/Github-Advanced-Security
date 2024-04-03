@@ -1,4 +1,4 @@
-# Module 4: Building a DevSecOps Program
+# Module 04: Building a DevSecOps Program
 
 ## Getting Started
 
