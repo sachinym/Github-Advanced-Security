@@ -1,4 +1,4 @@
-# Module : Scaling out GitHub Advanced Security (HOL)
+# Module 05: Scaling out GitHub Advanced Security (HOL)
 
 ## Lab Scenario
 
