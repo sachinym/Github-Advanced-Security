@@ -297,3 +297,21 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    >**Note:** It will take 5-7 minutes to show.
 
 #### Task 4: Talk about repository rulesets and how they can be used at scale [ Read Only ]
+
+1. A ruleset is a named list of rules that applies to a repository. You can create rulesets to control how people can interact with selected branches and tags in a repository. You can control things like who can push commits to a certain branch, or who can delete or rename a tag. For example, you could set up a ruleset for your repository's feature branch that requires signed commits and blocks force pushes for all users except repository administrators.
+
+1. For each ruleset you create, you specify which branches or tags in your repository the ruleset applies to. You can use fnmatch syntax to define a pattern to target specific branches and tags. For example, you could use the pattern releases/**/* to target all branches in your repository whose name starts with the string releases/. 
+
+1. When you create a ruleset, you can allow certain users to bypass the rules in the ruleset. This can be users with a certain role, such as repository administrator, or it can be specific teams or GitHub Apps.
+
+1. There is a limit of 75 rulesets per repository.
+
+#### Task 1: Creating rulesets for a repository
+
+You can create rulesets to control how users can interact with selected branches and tags in a repository. When you create a ruleset, you can allow certain users to bypass the rules in the ruleset. This can be users with certain permissions, specific teams, or GitHub Apps.
+
+1. **Creating a branch or tag ruleset** 
+
+In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
+
+For more details, refer to the https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets
