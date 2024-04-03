@@ -1,4 +1,4 @@
-# Module 3: Software Composition Analysis
+# Module 03: Software Composition Analysis
 
 ## Lab Scenario
 
