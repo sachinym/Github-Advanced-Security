@@ -12,7 +12,7 @@ In this lab, you will perform:
 - Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 - Task 4: Talk about repository rulesets and how they can be used at scale 
 
-### Estimated timing:  minutes
+### Estimated timing: 60 minutes
 
 ## Task 1: How to grow adoption? How to communicate about GHAS internally? [ Read Only ]
 
