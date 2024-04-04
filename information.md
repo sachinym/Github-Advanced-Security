@@ -62,4 +62,4 @@
 
 1. If you encounter any issues while copying the issue, please click on the **Help** tab on the environment details page for tips and tricks. If the problem persists, reach out to our support team at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).
 
-   ![VM Warning](../media/help.png)
+   ![VM Warning](../images/help.png)
