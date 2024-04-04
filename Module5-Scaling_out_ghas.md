@@ -185,7 +185,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/webhookcli1.png)
 
-1. Now copy and paste **Inspect and replay webhooks** URL into your browser, and copy the URL.
+1. Now copy and paste **Inspect and replay webhooks** URL into your browser.
 
     ![Picture1](./images/webhookcli.png)
 
@@ -228,13 +228,14 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Click on create.
 
-1. On Basics of Create Function App, provide details for your label. Select **Review + create** at the bottom of the page.
+1. On Basics of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
     | **Subscription** | select your subscription |
     | **Resource Group** | Select your resource group |
     | **Function App name** | **function-webhooks** |
+    | **Run time stack** | **Node JS** |
     | **Do you want to deploy code or container image?** | **Code** |
     | **Operating System** | **Windows** |
     | **Hosting options and plans** | **Consumption (Serverless)** |
@@ -245,7 +246,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    
 1. Once the deployment is completed, click on **Go to resource**.
 
-1. On **Overview** page of function app, Under the section of **Function** click on **Create function**, it will open a page from them select **Deployment environment** as **Deploy in portal** and select the **HTTP trigger**, click to **Create**.
+1. On **Overview** page of function app, Under the  **Function** tab, click on **Create function**, it will open a  page for **Deployment environment**  search for and select  **HTTP trigger**, click to **Create**.
 
    ![Picture1](./images/functionapp3.png)
 
