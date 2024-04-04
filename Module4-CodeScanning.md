@@ -38,7 +38,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Default Setup
 
-1. In the **github-adv-sec** click on repositories from the top navigation pane.
+1. In the **github-adv-sec** organization, click on repositories from the top navigation pane.
 
    ![github-advisory-database](images/gc.png)
 
