@@ -211,6 +211,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 - **Which events would you like to trigger this webhook?**: select the **Just the push event option (4)**.
 - **Active (5)**: Leave this checked to receive event details when the GitHub webhook is triggered.
 - Click on **Add Webhooks (6)**.
+
      
     ![Picture1](./images/webhookpayload.png)
 
@@ -252,6 +253,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. On your **HttpTrigger** function, Click on the **Code + Test** under the **Developers** section and click on **Get Function URL** for copy.
 
+
    ![Picture1](./images/httptrigger.png)
 
 1. Navigate to your repository's, click  Settings.
@@ -272,6 +274,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 - **Which events would you like to trigger this webhook?**: select the **Just the push event option (4)**.
 - **Active (5)**: Leave this checked to receive event details when the GitHub webhook is triggered.
 - Click on **Add Webhooks (6)**.
+
 
      ![Picture1](./images/payloadhttp.png)
 
