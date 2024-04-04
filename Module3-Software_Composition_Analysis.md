@@ -124,7 +124,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 9. Now, click on **New Pull Request** to create a Pull Request. 
 
-10. Navigate to the **Actions** section and click on notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+10. Navigate to the **Actions** section and from the left navigation pane click on **Dependency Review**  notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
     ![github-advisory-database](images/gx1.png)
 
