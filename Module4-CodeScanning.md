@@ -1,4 +1,4 @@
-# Module 4: Code Scanning
+# Module 04: Code Scanning
 
 ## Lab Scenario
 
