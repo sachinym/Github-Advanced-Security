@@ -2,6 +2,8 @@
 
 ## Lab Scenario
 
+The lab scenario provides an overview of GitHub Advanced Security (GHAS) and its key components, along with instructions on how to enable them in a GitHub repository.
+
 ## Lab objectives
 In this lab, you will perform:
 
