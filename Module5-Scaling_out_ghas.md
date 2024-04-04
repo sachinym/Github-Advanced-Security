@@ -44,12 +44,18 @@ GHAS is an ecosystem of multiple solutions; it's essential to start somewhere fo
 
 In this task, you will explore the security overview dashboard and reports provided by GHAS to gain insights into your repository's security posture.
 
-1. On GitHub.com, navigate to the main page of the organization.
-   
+1. Go to your profile icon in the  top right corner, and then select **Your organizations**.
+
+   ![Picture1](./images/org.png) 
+     
+1. Select **github-adv-sec** from organizations.
+
+   ![Picture1](./images/org1.png) 
+
 1. Navigate to the **security** tab of your GitHub repository.
 
-   ![Picture1](./images/security-tab.png)
-  
+   ![Picture1](./images/g5c.png)
+
 1. Explore the security overview dashboard, Use the options at the top of the overview page to filter the group of alerts you want to see metrics for. All of the data and metrics on the page will change as you adjust the filters.
 
    ![Picture1](./images/dashboard1.png)
@@ -84,13 +90,15 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/nodejs1.png)
 
-1. To install the **Scoop** run the following command.
+1. To install **Scoop** copy the following command and paste it in the powershell editor, highlight the code and click **Run**.
 
       ```
       iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
       ```
 
-1. To install the **git** run the following command
+     ![Picture1](./images/g5a.png)
+
+1. To install **git** copy the following command and paste it in the powershell editor, highlight the code and click **Run**
 
       ```
       $WebClient = New-Object System.Net.WebClient
@@ -99,6 +107,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
       Start-Process "C:\Git-2.44.0-64-bit.exe" -ArgumentList $arguments -Wait
       sleep 5
       ```
+
+      ![Picture1](./images/g5b.png)
 
 #### Task 3.2: Clone a demo API server for receiving GitHub webhooks
 
