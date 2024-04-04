@@ -2,6 +2,8 @@
 
 ## Lab Scenario
 
+In this lab, you connected your GitHub account to Microsoft Defender for Cloud (formerly Azure Defender), enhancing security monitoring and threat detection capabilities. 
+
 ## Lab objectives
 In this lab, you will perform:
 
