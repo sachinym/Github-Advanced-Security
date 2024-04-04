@@ -163,7 +163,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 1. To verify that the port is listening, you can use the following command:
 
       ```
-      netstat -an | find "1337"
+      netstat -an | findstr "1337"
       ```
       
 1. Once the setup process is complete, the next step is to use the CLI to generate a webhook URL that points to the running API application.
