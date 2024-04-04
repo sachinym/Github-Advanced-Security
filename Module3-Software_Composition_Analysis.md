@@ -30,7 +30,7 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/g13.png)
 
-1. Under **Dependabot** enable **Dependency graph**,**Dependabot Alerts** and **Dependabot security updates**.
+1. Under **Dependabot** enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates** and **Dependabot version updates**.
 
    ![github-advisory-database](images/g14.png)
 
