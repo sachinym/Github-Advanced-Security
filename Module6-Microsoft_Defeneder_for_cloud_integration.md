@@ -5,13 +5,11 @@
 ## Lab objectives
 In this lab, you will perform:
 
-- Task 1: Connect your GitHub account to Microsoft Defender for Cloud: 
-- Task 2: What are the components of GitHub Advanced Security?  
-- Task 3: Where to turn on the different components of GitHub Advanced Security?  
+- Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
 ### Estimated timing:  minutes
 
-## Task 1: Connect your GitHub account to Microsoft Defender for Cloud:
+## Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
@@ -55,3 +53,7 @@ In this lab, you will perform:
    
    ![Picture1](./images/image11.png)                  
    
+## Review
+
+In this lab you have completed the following:
++ Connect your GitHub account to Microsoft Defender for Cloud
