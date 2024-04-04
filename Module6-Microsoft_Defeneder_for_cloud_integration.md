@@ -9,7 +9,7 @@ In this lab, you will perform:
 
 - Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
-### Estimated timing:  minutes
+### Estimated timing: 20 minutes
 
 ## Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
