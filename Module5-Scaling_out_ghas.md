@@ -2,6 +2,8 @@
 
 ## Lab Scenario
 
+The lab focuses on scaling out GitHub Advanced Security (GHAS) adoption, covering strategic approaches, security overview dashboards, webhooks integration, and repository rulesets. It emphasizes aligning GHAS rollout strategies, creating internal documentation, and scaling code and secret scanning. Additionally, it explores GHAS's security overview dashboard for insights and demonstrates webhook setup for external reporting tools like SIEM. Finally, it discusses the implementation of repository rulesets for enforcing branch and tag policies, enhancing security and compliance across repositories at scale.
+
 ## Lab objectives
 In this lab, you will perform:
 
@@ -351,3 +353,12 @@ You can create rulesets to control how users can interact with selected branches
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
 For more details, refer to the [GitHub documentation on rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+
+## Review
+
+In this lab you have completed the following:
+
++ How to grow adoption? How to communicate about GHAS internally?  
++ View the security overview dashboard and reports 
++ Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
++ Talk about repository rulesets and how they can be used at scale 
