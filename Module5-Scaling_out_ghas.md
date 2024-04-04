@@ -211,8 +211,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 - **Which events would you like to trigger this webhook?**: select the **Just the push event option (4)**.
 - **Active (5)**: Leave this checked to receive event details when the GitHub webhook is triggered.
 - Click on **Add Webhooks (6)**.
-      
-   ![Picture1](./images/webhookpayload.png)
+     
+    ![Picture1](./images/webhookpayload.png)
 
 13. On the console page in web it will give the **Accepted** Status of your webhooks.
 
