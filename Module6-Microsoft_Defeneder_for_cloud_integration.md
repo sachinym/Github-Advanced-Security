@@ -1,4 +1,4 @@
-# Module 06: Microsoft Defeneder for cloud integration
+# Module 06: Microsoft Defender for cloud integration
 
 ## Lab Scenario
 
