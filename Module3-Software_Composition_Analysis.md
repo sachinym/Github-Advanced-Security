@@ -10,7 +10,11 @@ In this lab, you will perform:
 - Task 2: Use the dependency submission action on a Java project. Review results. 
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
-### Estimated timing: 40 minutes
+## Estimated timing: 40 minutes
+
+## Architecture Diagram
+
+   ![Picture1](./images/ar03.png)
 
 ## Task 1: Turn on dependabot and other SCA features. Review results. 
 
