@@ -11,7 +11,11 @@ In this lab, you will perform:
 - Task 2: What are the components of GitHub Advanced Security?  
 - Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
-### Estimated timing: 20 minutes
+## Estimated timing: 20 minutes
+
+## Architecture Diagram
+
+   ![Picture1](./images/ar01.png)
 
 ### Task 1: What is GitHub Advanced Security?
 
