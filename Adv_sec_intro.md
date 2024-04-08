@@ -26,7 +26,7 @@ Here are some components of GitHub Advanced Security:
 
    **Secret scanning includes:**
     - Push protection proactively prevents secret leaks by scanning code on commit and blocking a push if a secret is present.
-    - The ability to easily view alerts and remediate them without ever having to leave GitHub.
+    - The ability to easily view alerts and remediate them.
 
 1. **Code Scanning:** Code scanning is an integral feature of GHAS that analyzes source code for security vulnerabilities and coding errors. It employs static analysis techniques to identify potential issues such as SQL injection, cross-site scripting, and buffer overflows. By providing automated feedback directly within the pull request workflow, code scanning enables developers to address vulnerabilities early in the development process.
 
