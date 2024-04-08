@@ -40,24 +40,25 @@ Here are some components of GitHub Advanced Security:
 
 ### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
-1. To enable any of the alerts from a repository level first navigate to your repository’s security tab.
-
-   ![Picture1](./images/security-tab.png)
-
-2. Enable your alerts in the Security overview.
-
-   ![Picture1](./images/security-overview-page.png)
-
-3. Navigate to your repository's, click  Settings.
+1. Navigate to your repository's, click  Settings.
 
    ![Picture1](./images/ghasr1.png)
 
-5. In the left sidebar, click **Code security & analysis**.
+1. In the left sidebar, click **Code security & analysis**.
 
-6. Optionally, enable or disable a feature for all existing repositories.
+1. Optionally, enable or disable a feature for repositories.
 
    ![Picture1](./images/ghasr2.png)
    ![Picture1](./images/ghasr3.png)
+
+1. To review, navigate to your repository’s Security tab.
+
+   ![Picture1](./images/security-tab.png)
+
+1. Here you can review your alerts in the Security overview.
+
+   ![Picture1](./images/security-overview-page.png)
+   
 
 ## Review
  
