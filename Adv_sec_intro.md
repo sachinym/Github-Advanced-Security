@@ -22,7 +22,7 @@ Here are some components of GitHub Advanced Security:
 
 1. **Secret Scanning:** Secret scanning is a crucial security feature within GitHub Advanced Security designed to identify and mitigate the inadvertent exposure of sensitive information, such as API keys and tokens within the source code.
 
-    This scanning process is essential for preventing unauthorized access and safeguarding confidential data. Secret scanning operates by searching for predefined patterns and signatures indicative of sensitive information, ensuring that potential security risks are promptly addressed. By default, secret scanning looks for highly accurate patterns that have been provided by a GitHub Partner, however, custom patterns can be created for other use cases.
+    This scanning process is essential for preventing unauthorized access and safeguarding confidential data. Secret scanning operates by searching for predefined patterns and signatures indicative of sensitive information, ensuring that potential security risks are promptly addressed. By default, secret scanning looks for highly accurate patterns that have been provided by a GitHub Partner, however, custom patterns can be created for other use cases. we can define custom patterns to identify secrets that are not detected by the default patterns supported by secret scanning. we can define custom patterns for our enterprise, organization, or repository.
 
    **Secret scanning includes:**
     - Push protection proactively prevents secret leaks by scanning code on commit and blocking a push if a secret is present.
