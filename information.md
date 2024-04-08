@@ -30,7 +30,7 @@
 
    ![VM Stop](./images/stop-vm.png)
 
-1. In the event that the notification **VM Access Session is Closed** arrives. Next, **Refresh** the page; If the notice still same the check under the **Resource** tab the Virtual Machine is running or stop state. 
+1. In the event that the notification **VM Access session is closed** arrives. Next, **Refresh** the page; If the notice still same the check under the **Resource** tab the Virtual Machine is running or stop state. 
 
    ![VM Stop](./images/notice.png)
 
