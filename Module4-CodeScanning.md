@@ -12,7 +12,11 @@ In this lab, you will perform:
 - Task 4: Turn on advanced setup on a Java repository. Customize the scan. View results. 
 - Task 5: Add some vulnerable code via a pull request and view the scan results in the PR.  
 
-### Estimated timing: 40 minutes
+## Estimated timing: 40 minutes
+
+## Architecture Diagram
+
+   ![Picture1](./images/ar05.png)
    
 ## Task 1: Introduction to Code Scanning 
 
