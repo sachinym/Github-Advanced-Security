@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-   ![Picture1](./images/ar05.png)
+   ![Picture1](./images/ar04.png)
    
 ## Task 1: Introduction to Code Scanning 
 
