@@ -12,7 +12,11 @@ In this lab, you will perform:
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understanding the results 
 
-### Estimated timing: 60 minutes
+## Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+   ![Picture1](./images/ar02.png)
 
 ## Task 1: Turn on secret scanning for the entire organization. Review results
 
