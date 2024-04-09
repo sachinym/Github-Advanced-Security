@@ -35,7 +35,11 @@ Duration: 10 minutes
    >**Note**: On the Welcome to Microsoft Edge page, select  **Start without your data**, on **Stay current with your browsing data** select **Confirm and continue** and on the help for importing Google browsing data page, select the  **Continue without this data**  button. Then, proceed to select  **Confirm and start browsing**  on the next page
 has context menu.
 
-1. Open the link in a browser window to login in GitHub https://github.com/login.
+1. Copy the link and open in a browser window to login in GitHub 
+
+   ```
+   https://github.com/login.
+   ```
 
 2. In the sign-in to GitHub page in edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
 
