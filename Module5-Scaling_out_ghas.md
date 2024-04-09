@@ -179,7 +179,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 You can create rulesets to control how users can interact with selected branches and tags in a repository. When you create a ruleset, you can allow certain users to bypass the rules in the ruleset. This can be users with certain permissions, specific teams, or GitHub Apps.
 
-1. **Creating a branch or tag ruleset** 
+1. Creating a branch or tag ruleset.
 
 1. On GitHub, navigate to the main page of the repository.
 
