@@ -53,4 +53,4 @@ has context menu.
 
    >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
    
-   ![Picture1](./images/device.png)
+   ![Picture1](./images/verify1.png)
