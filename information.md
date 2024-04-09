@@ -30,9 +30,19 @@
 
    ![VM Stop](./images/stop-vm.png)
 
-1. In the event that the notification **VM Access session is closed** arrives. Next, **Refresh** the page; If the notice still same the check under the **Resource** tab the Virtual Machine is running or stop state. 
+1. If you reopen the window and receive the notice as mention below:
 
    ![VM Stop](./images/notice.png)
+
+1. Go to the **Resources** tab from environment details page and check the Virtual Machine status as **VM running**.
+
+   ![VM Start](./images/uptime1.png)
+
+1. If the Virtual Machine status shown as **VM deallocated**, then click on **Start** button to run.
+
+   ![VM Start](./images/start-vm.png)
+
+   >**Note**: It will take upto 1 min to start the Virtual Machine. Once the Virtual Machine is Running, then **Refresh** the page.
 
 ## Virtual Machine Idle Stop Feature
 
