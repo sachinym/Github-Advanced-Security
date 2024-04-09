@@ -175,7 +175,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. There is a limit of 75 rulesets per repository.
 
-#### Task 1: Creating rulesets for a repository
+#### Creating rulesets for a repository
 
 You can create rulesets to control how users can interact with selected branches and tags in a repository. When you create a ruleset, you can allow certain users to bypass the rules in the ruleset. This can be users with certain permissions, specific teams, or GitHub Apps.
 
