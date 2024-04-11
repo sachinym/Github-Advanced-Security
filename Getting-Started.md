@@ -38,7 +38,7 @@ has a context menu.
 1. Copy the link and open it in a browser window to log in to GitHub 
 
    ```
-   https://github.com/login.
+   https://github.com/login
    ```
 
 2. In the sign-in to GitHub page in the Edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
