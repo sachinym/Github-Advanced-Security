@@ -60,7 +60,7 @@
    
 1. If you need to **Start** the Virtual Machine, click on **Resources** tab from environment details page and then click on the **Start** button.
 
-   ![VM Start](./images/start-vm1.png)
+   ![VM Start](./images/start-vm.png)
 
 ## Notification
 
