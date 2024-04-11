@@ -8,8 +8,8 @@ The lab scenario provides an overview of GitHub Advanced Security (GHAS) and its
 In this lab, you will perform:
 
 - Task 1: What is GitHub Advanced Security? 
-- Task 2: What are the components of GitHub Advanced Security?  
-- Task 3: Where to turn on the different components of GitHub Advanced Security?  
+- Task 2: What are the components of GitHub Advanced Security?  
+- Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
 ## Estimated timing: 20 minutes
 
@@ -19,9 +19,9 @@ In this lab, you will perform:
 
 ### Task 1: What is GitHub Advanced Security?
 
-GitHub Advanced Security, is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
+GitHub Advanced Security is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities, and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
 
-### Task 2: What are the components of GitHub Advanced Security?  
+### Task 2: What are the components of GitHub Advanced Security?  
 Here are some components of GitHub Advanced Security:
 
 1. **Secret Scanning:** Secret scanning is a crucial security feature within GitHub Advanced Security designed to identify and mitigate the inadvertent exposure of sensitive information, such as API keys and tokens within the source code.
@@ -42,9 +42,9 @@ Here are some components of GitHub Advanced Security:
 
     With GitHub Advanced Security, Dependabot’s functionality is extended to include Dependency Review, allowing you to check for vulnerable dependencies within a pull request. This check enables you to address vulnerabilities before they are merged into a shared branch.
 
-### Task 3: Where to turn on the different components of GitHub Advanced Security?  
+### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
-1. Navigate to your repository's, click  Settings.
+1. Navigate to your repository, and click  Settings.
 
    ![Picture1](./images/ghasr1.png)
 
@@ -69,4 +69,4 @@ Here are some components of GitHub Advanced Security:
 In this lab you have completed the following:
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
-+ Where to turn on the different components of GitHub Advanced Security? 
++ Where to turn on the different components of GitHub Advanced Security? 
