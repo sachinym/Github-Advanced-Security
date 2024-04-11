@@ -1,4 +1,4 @@
-# Module 06: Microsoft Defender for cloud integration
+# Module 06: Microsoft Defender for Cloud Integration
 
 ## Lab Scenario
 
@@ -25,7 +25,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/image2.png)
 
-1. Enter the Name for the connector as **ghaz-github (1)**, select your **Subscription (2)**, select **resource group (3)**, select **Region (3)**. Select **Next : Configure access > (5)**.
+1. Enter the Name for the connector as **ghaz-github (1)**, select your **Subscription (2)**, select **resource group (3)**, select **Region (3)**. Select **Next: Configure access > (5)**.
 
    ![Picture1](./images/image3.png)
 
@@ -55,7 +55,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/image10.png)
    
-1. After some minutes you will see the Github connector in the **Environment settings** page and in about 15 minutes.
+1. After some minutes you will see the GitHub connector in the **Environment settings** page and about 15 minutes.
    
    ![Picture1](./images/image11.png)                  
    
