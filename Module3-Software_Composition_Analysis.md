@@ -6,7 +6,7 @@
 
 ## Lab Objectives
 In this lab, you will perform:
-- Task 1: Turn on dependabot and other SCA features. Review results. 
+- Task 1: Turn on dependabot and other SCA features. Review results. 
 - Task 2: Use the dependency submission action on a Java project. Review results. 
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
@@ -16,7 +16,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar03.png)
 
-## Task 1: Turn on dependabot and other SCA features. Review results. 
+## Task 1: Turn on dependabot and other SCA features. Review results. 
 
 1. In the **github-adv-sec** organization, click on repositories from the top navigation pane.
 
@@ -38,9 +38,9 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/g14.png)
 
-1. Dependabot raises pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise pull requests for version updates and/or for security updates. You manage these pull requests in the same way as any other pull request.
+1. Dependabot raises pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise pull requests for version updates and/or security updates. You manage these pull requests in the same way as any other pull request.
 
-1. You can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**.Notice the pull requests that were triggered automatically in the repository.
+1. You can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
 
    ![github-advisory-database](images/g15.1.png)
 
@@ -93,7 +93,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g5.png)
 
-4. Now in this repository, scroll down to the **Configuration options**. We can copy  the example that includes the `fail-on-severity` possible values.
+4. Now in this repository, scroll down to the **Configuration options**. We can copy the example that includes the `fail-on-severity` possible values.
 
    ![github-advisory-database](images/g6.png)
 
@@ -135,9 +135,6 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 ## Review
 
 In this module we have completed the following:
- - Turned on dependabot and other SCA features
+ - Turned on dependabot and other SCA features
 -  Used the dependency submission action on a Java project.
 -  Used the dependency review action to stop a pull request that contains the log vulnerability. 
-
-
-
