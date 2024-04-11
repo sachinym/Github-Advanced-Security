@@ -1,6 +1,4 @@
-# Getting Started
-
-Duration: 10 minutes
+# Getting Started with Your GitHub Advanced Security
 
 1. Once the environment is provisioned, a virtual machine and lab guide will be loaded into your browser. To complete the lab, utilize this virtual machine during the session.
  
