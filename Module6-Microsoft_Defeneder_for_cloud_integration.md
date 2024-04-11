@@ -67,10 +67,12 @@ In this lab, you will perform:
 
    ![Picture1](./images/image10.png)
    
-1. After some minutes you will see the GitHub connector in the **Environment settings** page and about 15 minutes.
+1. You will get GitHub connector in the **Environment settings** page.
    
    ![Picture1](./images/image11.png)                  
    
+   >**Note:** It takes around 15 minutes to arrive.
+
 ## Review
 
 In this lab you have completed the following:
