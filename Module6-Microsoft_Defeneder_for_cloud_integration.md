@@ -21,6 +21,10 @@ In this lab, you will perform:
 
    ![Picture1](./images/image1.png)
 
+1. The **Getting Started** page will open; select **skip**.
+
+   ![Picture1](./images/image12.png)
+
 1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings (1)**, select **Add environment (2)** from the top and select **GitHub (3)** from dropdown.
 
    ![Picture1](./images/image2.png)
