@@ -22,7 +22,7 @@ Duration: 10 minutes
 
      ![](./images/splitwindows.png)
 
-1. Feel free to use Zoom in/Zoom out option in your respective browser in order to view the integrated environement clearly and to get the complete options in GitHub & VS Code.
+1. Feel free to use Zoom in/Zoom out option in your respective browser to view the integrated environment clearly and to get the complete options in GitHub & VS Code.
 
    ![Picture1](./images/resolution.png ) 
 
@@ -32,16 +32,16 @@ Duration: 10 minutes
 
    ![Picture1](./images/Edge.png)
 
-   >**Note**: On the Welcome to Microsoft Edge page, select  **Start without your data**, on **Stay current with your browsing data** select **Confirm and continue** and on the help for importing Google browsing data page, select the  **Continue without this data**  button. Then, proceed to select  **Confirm and start browsing**  on the next page
-has context menu.
+   >**Note**: On the Welcome to Microsoft Edge page, select  **Start without your data**, on **Stay current with your browsing data** select **Confirm and continue** and on the help for importing Google browsing data page, select the  **Continue without this data**  button. Then, proceed to select  **Confirm and start browsing**  on the next page
+has a context menu.
 
-1. Copy the link and open in a browser window to login in GitHub 
+1. Copy the link and open it in a browser window to log in to GitHub 
 
    ```
    https://github.com/login.
    ```
 
-2. In the sign-in to GitHub page in edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
+2. In the sign-in to GitHub page in the Edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
 
    ![Picture1](./images/github.png)
 
@@ -49,7 +49,7 @@ has context menu.
 
     ![Picture1](./images/2nd.png)
 
-1. Next, to get the authentication code, sign in to Outlook in the Lab VM through an **inPrivate** window (https://outlook.office365.com/mail/) with the github credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
+1. Next, to get the authentication code, sign in to Outlook in the Lab VM through an **inPrivate** window (https://outlook.office365.com/mail/) with the GitHub credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
 
    >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
    
