@@ -70,7 +70,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
    
     >**Note:** that it may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-1. From here, go back to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** and delete the secret you just pasted into the `ghas-bootcamp-javascript` repository. Once you've completed this step, go back to the **Security** -> **Secrets Scanning** section and review that the secret is now identified as a _"Possibly active secret"_.
+1. Review the secret is identified as  _"Possibly active secret"_.
 
    ![Picture1](./images/possibleactivesecret.png)
 
