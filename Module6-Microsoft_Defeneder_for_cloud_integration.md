@@ -25,9 +25,17 @@ In this lab, you will perform:
 
    ![Picture1](./images/image2.png)
 
-1. Enter the Name for the connector as **ghaz-github (1)**, select your **Subscription (2)**, select **resource group (3)**, select **Region (3)**. Select **Next: Configure access > (5)**.
+1. On the **GitHub Connection** page, under Account details, provide the below settings.
 
+   | Setting  | Value |
+   -----------|---------
+   | Connector name | ghaz-github |
+   | Resource group | Lab-VM |
+   | Location | East US |
+   
    ![Picture1](./images/image3.png)
+
+1. Select **Next: Configure access**.
 
 1. Click **Authorize** button.
        
