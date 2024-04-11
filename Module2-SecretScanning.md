@@ -173,6 +173,7 @@ In this task, we delve into comprehending the outcomes of secret scanning.
 ## Review
 
 In this lab we have completed the following:
- - Turned on secret scanning for the entire organization.
+ - Turned on secret scanning for the entire organization
  - Turned on push protection and tried pushing a new secret (GitHub token) in a repository
- - Created a custom secret pattern 
+ - Created a custom secret pattern and view the results 
+ - Understanding the results 
