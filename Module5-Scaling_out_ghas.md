@@ -7,7 +7,7 @@ The lab focuses on scaling out GitHub Advanced Security (GHAS) adoption, coverin
 ## Lab objectives
 In this lab, you will perform:
 
-- Task 1: How to grow adoption? How to communicate about GHAS internally?  
+- Task 1: How to grow adoption? How to communicate about GHAS internally?  
 - Task 2: View the security overview dashboard and reports 
 - Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 - Task 4: Talk about repository rulesets and how they can be used at scale 
@@ -18,9 +18,9 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar05.png) 
 
-## Task 1: How to grow adoption? How to communicate about GHAS internally? [ Read Only ]
+## Task 1: How to grow adoption? How to communicate about GHAS internally? [ Read Only ]
 
-Adopting GitHub Advanced Security can be approached in multiple ways and requires a strategic approach for success, especially in larger enterprises and organisations with thousands of repositories. The purpose of this to lay down a foundation for enterprises on how to adopt GHAS, but most importantly, scale it quickly and efficiently.Enabling GitHub Advanced Security across a large organisation can be broken down into **six** core phases:
+Adopting GitHub Advanced Security can be approached in multiple ways and requires a strategic approach for success, especially in larger enterprises and organizations with thousands of repositories. The purpose of this is to lay down a foundation for enterprises on how to adopt GHAS, but most importantly, scale it quickly and efficiently. Enabling GitHub Advanced Security across a large organization can be broken down into **six** core phases:
 
 1. **Align on your rollout strategy and goals**: Think about what success will look like, and align on how GHAS will be implemented in your company. This phase may only take a few days or a week, but it lays a solid foundation for the rest of the rollout.
 
@@ -40,17 +40,17 @@ Although it's appealing to rush into the implementation phase, take the time to 
 
 **Phase Two - Create Internal Documentation**
 
-Like the above phase, organisations tend to rush into the implementation phase, as that stage is perceived to provide the quickest time-to-value. However, without the proper documentation and asynchronous resources provided to aid developers, security engineers, etc., in consuming GHAS correctly, usually, the value gets lost in the rollout due to people not consuming GHAS in the correct way. Take the time to create internal documentation (such as training, how to remediate, where to go for questions, etc.), and then communicate this documentation (email, teams, slack, etc.) to the consumers of GHAS so once you rollout GHAS, teams and people know what to do.
+Like the above phase, organizations tend to rush into the implementation phase, as that stage is perceived to provide the quickest time-to-value. However, without the proper documentation and asynchronous resources provided to aid developers, security engineers, etc., in consuming GHAS correctly, usually, the value gets lost in the rollout due to people not correctly consuming GHAS. Take the time to create internal documentation (such as training, how to remediate, where to go for questions, etc.), and then communicate this documentation (email, teams, slack, etc.) to the consumers of GHAS so once you rollout GHAS, teams, and people know what to do.
 
 **Phase Three - Enable & Scale Code Scanning**
 
-GHAS is an ecosystem of multiple solutions; it's essential to start somewhere focused, not just with the rollout of GHAS. Typically, we see teams focus on code scanning, to begin with. Leverage the API's available and rollout code scanning by team and by language across your organisation automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
+GHAS is an ecosystem of multiple solutions; it's essential to start somewhere focused, not just with the rollout of GHAS. Typically, we see teams focus on code scanning, to begin with. Leverage the APIs available and rollout code scanning by the team and by language across your organization automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
 
 ### Task 2: View the security overview dashboard and reports 
 
 In this task, you will explore the security overview dashboard and reports provided by GHAS to gain insights into your repository's security posture.
 
-1. Go to your profile icon in the  top right corner, and then select **Your organizations**.
+1. Go to your profile icon in the top right corner, and then select **Your organizations**.
 
    ![Picture1](./images/org.png) 
      
@@ -73,7 +73,7 @@ In this task, you will explore the security overview dashboard and reports provi
 1. Analyze the metrics and data provided in the reports to identify areas of improvement and prioritize security efforts.
 
 
-### Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
+### Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
 
 GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms, enabling automated workflows and real-time notifications based on repository activities.
 
@@ -112,7 +112,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/trigger1.png)
 
-1. Navigate to your repository's, click  Settings.
+1. Navigate to your repository, and click  Settings.
 
    ![Picture1](./images/ghasr1.png)
 
@@ -141,15 +141,15 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/newrepo1.png)
   
-    >**Note**: you can made some more changes to you repositories, it will send the POST request to function app.
+    >**Note**: you can make some more changes to your repositories, it will send the POST request to the function app.
 
-13. Navigate to your repository's, click settings.
+13. Navigate to your repository, and click settings.
 
      ![Picture1](./images/ghasr1.png)
 
 14. Click on **webhook**, select the webhook you have created.
 
-15. Scrool down to bottom and will find some **Recent Deliveries**.
+15. Scroll down to the bottom and will find some **Recent Deliveries**.
 
     ![Picture1](./images/recentdelivery.png)
 
@@ -159,7 +159,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/response.png)
 
-17. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, click on **Invocations (2)** here it will give the most recent invocation traces.
+17. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, and click on **Invocations (2)** here it will give the most recent invocation traces.
 
      ![Picture1](./images/invocations.png)
    
@@ -194,7 +194,7 @@ You can create rulesets to control how users can interact with selected branches
 1. You can create a ruleset targeting branches, or a ruleset targeting tags.
 
    - To create a ruleset targeting branches, click **New branch ruleset**.
-   - To create a ruleset targeting tags, select , then **click New tag ruleset**.
+   - To create a ruleset targeting tags, select, then **click New tag ruleset**.
 
    ![Picture1](./images/rulesetbranch.png)  
   
@@ -211,7 +211,7 @@ For more details, refer to the [GitHub documentation on rulesets](https://docs.g
 
 In this lab you have completed the following:
 
-+ How to grow adoption? How to communicate about GHAS internally?  
++ How to grow adoption? How to communicate about GHAS internally?  
 + View the security overview dashboard and reports 
 + Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 + Talk about repository rulesets and how they can be used at scale 
