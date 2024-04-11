@@ -44,7 +44,23 @@ Here are some components of GitHub Advanced Security:
 
 ### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
-1. Navigate to your repository, and click  Settings.
+1. On the **Home** page, click on your **profile** on top of the right hand.
+
+   ![Picture1](./images/orgprofile.png) 
+
+1. Select **Your organizations**.
+
+   ![Picture1](./images/org.png) 
+
+1. Select **github-adv-sec** from organizations.
+
+   ![Picture1](./images/org1.png) 
+
+1. Click on the **Repositories** and select any repositories.
+
+   ![Picture1](./images/anyrepo.png) 
+
+1. In your repository, and click  Settings.
 
    ![Picture1](./images/ghasr1.png)
 
