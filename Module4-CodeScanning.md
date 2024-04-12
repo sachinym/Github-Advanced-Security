@@ -97,7 +97,7 @@ Code scanning on GitHub is a powerful feature. It is designed to enhance the sec
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**.
 
-1. In the **codeql.yml** file, we are going to copy **Line 69** of the workflow file **`# queries: security-extended` (1)** and append this to a new line we create for **Line 64**, which will read **`queries: security-extended`(2)**. Commit these changes to your **main branch (3)**.
+1. In the **codeql.yml** file, we are going to copy **Line 69** of the workflow file **`# queries: security-extended` (1)** and append this to a new line we create for **Line 64**, which will read **`queries: security-extended` (2)**. Commit these changes to your **main branch (3)**.
 
    ![github-advisory-database](images/gi.png)
   
@@ -145,8 +145,8 @@ Code scanning on GitHub is a powerful feature. It is designed to enhance the sec
 1. CodeQL does not flag this pull request with a **_Query built from user-controlled sources_**. But why?
 
 1. Go to the **Files changed** tab and review the code we added.
-  - What we find on **Line 54** is a **`val`** assignment calling to **`login.objects.raw`**, - which does not exist as a function in this project.
-    - While other static analysis tools would likely have marked **Line 50** as a SQL injection, the CodeQL analysis performed as part of code scanning correctly marks this as a **`Clear-text logging of sensitive information`**,. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
+  - What we find on **Line 54** is a **`val`** assignment calling **`login.objects.raw`**, which does not exist as a function in this project.
+    - While other static analysis tools would likely have marked **Line 50** as a SQL injection, the CodeQL analysis performed as part of code scanning correctly marks this as a **`Clear-text logging of sensitive information`**. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
 
 ![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
 
