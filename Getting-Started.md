@@ -8,6 +8,10 @@ Welcome to our GitHub Advanced Security workshop!, you'll learn about key featur
  
    ![Access Your VM and Lab Guide](./images/gt1.1.png)
 
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+
 1. To get the lab environment details, you can select the **Environment Details** tab.
 
     ![Picture1](./images/2nd.png)
