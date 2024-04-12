@@ -2,69 +2,69 @@
 
 ## Lab Scenario
 
- In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
+In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
 
 ## Lab Objectives
 In this lab, you will perform:
-- Task 1: Turn on dependabot and other SCA features. Review results. 
+- Task 1: Turn on Dependabot and other SCA features. Review results. 
 - Task 2: Use the dependency submission action on a Java project. Review results. 
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
-## Estimated timing: 40 minutes
+## Estimated Timing: 40 minutes
 
 ## Architecture Diagram
 
    ![Picture1](./images/ar03.png)
 
-## Task 1: Turn on dependabot and other SCA features. Review results. 
+## Task 1: Turn on Dependabot and other SCA features. Review results. 
 
 1. In the **github-adv-sec** organization, click on repositories from the top navigation pane.
 
    ![github-advisory-database](images/gc.png)
 
-1. From the list of repositories click on **ghas-bootcamp-webgoat** to begin working through this module. 
+1. From the list of repositories, click on **ghas-bootcamp-webgoat** to begin working through this module. 
 
    ![github-advisory-database](images/gx3.png)
 
-1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
+1. In the WebGoat repository, navigate to **Settings** from the top navigation pane.
 
    ![github-advisory-database](images/g12.png)
 
-1. From the left navigation pane, click on **Code Security and Analysis**
+1. From the left navigation pane, click on **Code Security and Analysis**.
 
    ![github-advisory-database](images/g13.png)
 
-1. Under **Dependabot** enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates** and **Dependabot version updates**.
+1. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot version updates**.
 
    ![github-advisory-database](images/g14.png)
 
-1. Dependabot raises pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise pull requests for version updates and/or security updates. You manage these pull requests in the same way as any other pull request.
+1. Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
 
-1. You can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
+1. You can check the Pull requests that are automatically triggered through the Depandabot by navigating to the **Security** tab from the top menu. Under **Vulnerabilities**, click on **Dependabot**. Notice the Pull requests that were triggered automatically in the repository.
 
    ![github-advisory-database](images/g15.1.png)
 
-## Task 2: Use the dependency submission action on a Java project. Review results.
+## Task 2: Use the dependency submission action on a Java project. Review results
 
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
-The process involves adding all dependencies from a repository to the dependency graph, particularly those resolved during software compilation or building, even if not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate pull requests.
+The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
 
 
-1. In the `ghas-bootcamp-webgoat` repository, go to the `.github/workflows/DepGraph.yml` file.
+1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/DepGraph.yml`** file.
 
    ![github-advisory-database](images/g16.png)
 
-1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project
+1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
 
-1.  Go to the **Actions** section, from the top navigation pane and click on click on the **Dependency Graph Upload** action from the left navigation pane.
+1.  Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
 
     ![github-advisory-database](images/g17.png)
 
-1.  Click the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
+1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
     ![github-advisory-database](images/g18.png)
 
-1.  Once this is completed, go to the **Dependency Graph** tab, under the **Insights** section in the top navigation pane.
+1.  Once this is completed, go to the **Dependency Graph** tab under the **Insights** section in the top navigation pane.
 
     ![github-advisory-database](images/g19.png)
 
@@ -73,12 +73,12 @@ The process involves adding all dependencies from a repository to the dependency
     ![github-advisory-database](images/g20.png)
 
 
-## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability.
+## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability
 ## Dependency Review Action
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
 
-1. In the ghas-bootcamp-webgoat repo navigate to **Actions** and in the **Actions** click on **New workflow** from the left navigation pane.
+1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
 
     ![github-advisory-database](images/g2.1.png)
 
@@ -89,15 +89,15 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    
     ![github-advisory-database](images/g4.png)
 
-1. On `Line 8` of the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Copy this link and open it in a new tab
+1. On `Line 8` of the Action workflow configuration, there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Copy this link and open it in a new tab.
 
    ![github-advisory-database](images/g5.png)
 
-4. Now in this repository, scroll down to the **Configuration options**. We can copy the example that includes the `fail-on-severity` possible values.
+4. Now, in this repository, scroll down to the **Configuration options**. We can copy the example that includes the **`fail-on-severity`** possible values.
 
    ![github-advisory-database](images/g6.png)
 
-5. Paste the example next to the  `fail-on-severity`(line number 37) in the workflow file and click on **Commit Changes** in the top right corner.
+5. Paste the example next to the **`fail-on-severity`** (line number 37) in the workflow file and click on **Commit Changes** in the top right corner.
 
     ![github-advisory-database](images/g7.png)
 
@@ -105,11 +105,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g8.png)
 
-5. Now back in the **ghas-bootcamp-webgoat** repository go to the **pom.xml** file.
+5. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
    ![github-advisory-database](images/g9.png)
    
-6. Replace the `WebGoat/pom.xml` file between `Line 154` and `Line 161' with the below code:
+6. Replace the **`WebGoat/pom.xml`** file between `Line 154` and `Line 161' with the below code:
  
       ```xml
         <dependency>
@@ -122,19 +122,19 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 7. Click on **Commit Changes** twice.
 
-8. Now, click on **Pull Request** from the top navigation pane.
+8. Now, click on **Pull Requests** from the top navigation pane.
 
    ![github-advisory-database](images/g10.png)
 
-9. Now, click on **New Pull Request** to create a Pull Request. 
+9. Now, click on **New Pull Request** to create a **Pull Request**. 
 
-10. Navigate to the **Actions** section and from the left navigation pane click on **Dependency Review**  notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+10. Navigate to the **Actions** section, and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
     ![github-advisory-database](images/gx1.png)
 
 ## Review
 
-In this module we have completed the following:
- - Turned on dependabot and other SCA features
+In this module, we have completed the following:
+ - Turned on Dependabot and other SCA features.
 -  Used the dependency submission action on a Java project.
--  Used the dependency review action to stop a pull request that contains the log vulnerability. 
+-  Used the dependency review action to stop a Pull Request that contains the log vulnerability. 
