@@ -4,12 +4,12 @@
 
 In this lab, you connected your GitHub account to Microsoft Defender for Cloud (formerly Azure Defender), enhancing security monitoring and threat detection capabilities. 
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform:
 
 - Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
-## Estimated timing: 20 minutes
+## Estimated Timing: 20 minutes
 
 ## Architecture Diagram
 
@@ -17,7 +17,7 @@ In this lab, you will perform:
 
 ## Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
-1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+1. In the search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
    ![Picture1](./images/image1.png)
 
@@ -25,7 +25,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/image12.jpg)
 
-1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings (1)**, select **Add environment (2)** from the top and select **GitHub (3)** from dropdown.
+1. In the left menu for Microsoft Defender for Cloud, under **Management**, select **Environment settings (1)**, select **Add environment (2)** from the top and then select **GitHub (3)** from the dropdown.
 
    ![Picture1](./images/image2.png)
 
@@ -41,25 +41,25 @@ In this lab, you will perform:
 
 1. Select **Next: Configure access**.
 
-1. Click **Authorize** button.
+1. Click the **Authorize** button.
        
    ![Picture1](./images/image4.png)
 
-1. Click on **Authorize Microsoft Security Devops** to *Authorize*.
+1. Click on **Authorize Microsoft Security Devops** to **Authorize**.
    
    ![Picture1](./images/image5.png)
 
-1. After the authorization is complete, click on the **Install** under *Install DevOps security app*.
+1. After the authorization is complete, click on **Install** under the **Install DevOps security app** option.
    
    ![Picture1](./images/image6.png)
 
-1. Select your github organization for **All repositories** and click to **Install**.
+1. Select your GitHub organization for **All repositories** and click on **Install**.
    
    ![Picture1](./images/image7.png)
    
    ![Picture1](./images/image8.png)
 
-1. Click on **Next : Review and generate**.
+1. Click on **Next: Review and generate**.
    
    ![Picture1](./images/image9.png)
 
@@ -75,5 +75,5 @@ In this lab, you will perform:
 
 ## Review
 
-In this lab you have completed the following:
-+ Connect your GitHub account to Microsoft Defender for Cloud
+In this lab, you have completed the following:
++ Connected your GitHub account to Microsoft Defender for Cloud
