@@ -28,7 +28,7 @@ Adopting GitHub Advanced Security can be approached in multiple ways and require
 
 1. **Pilot programs:** Optionally, pilot an initial rollout to a few high-impact projects and teams. This will allow an initial group within your company to get familiar with GHAS before you roll out to the remainder of your company.
 
-1. **Create internal documentation:** Create and communicate internal documentation for the consumers of GHAS. Without proper documentation provided to developers, security engineers, and others who will be using GHAS, the value will get lost in the rollout.
+1. **Create internal documentation:** Create and communicate internal documentation for the GHAS consumers. Without proper documentation provided to developers, security engineers, and others who will be using GHAS, the value will get lost in the rollout.
 
 1. **Rollout and scale code scanning:** Leveraging the available APIs, automatically rollout code scanning by team and by language across your enterprise, using the repository data you collected earlier.
 
@@ -40,11 +40,11 @@ Although it's appealing to rush into the implementation phase, take the time to 
 
 **Phase Two - Create Internal Documentation**
 
-Like the above phase, organizations tend to rush into the implementation phase, as that stage is perceived to provide the quickest time-to-value. However, without the proper documentation and asynchronous resources provided to aid developers, security engineers, etc., in consuming GHAS correctly, usually, the value gets lost in the rollout due to people not correctly consuming GHAS. Take the time to create internal documentation (such as training, how to remediate, where to go for questions, etc.), and then communicate this documentation (email, teams, slack, etc.) to the consumers of GHAS so once you rollout GHAS, teams, and people know what to do.
+Like the above phase, organizations tend to rush into the implementation phase, as that stage is perceived to provide the quickest time-to-value. However, without the proper documentation and asynchronous resources provided to aid developers, security engineers, etc., in consuming GHAS correctly, the value gets lost in the rollout due to people not correctly consuming GHAS. Take the time to create internal documentation (such as training, how to remediate, where to go for questions, etc.) and then communicate this documentation (email, teams, slack, etc.) to the consumers of GHAS. So once you roll out GHAS, teams and people know what to do.
 
 **Phase Three - Enable & Scale Code Scanning**
 
-GHAS is an ecosystem of multiple solutions; it's essential to start somewhere focused, not just with the rollout of GHAS. Typically, we see teams focus on code scanning, to begin with. Leverage the APIs available and rollout code scanning by the team and by language across your organization automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
+GHAS is an ecosystem of multiple solutions. It's essential to start somewhere focused, not just with the rollout of GHAS. Typically, teams focus on code scanning to begin with. Leverage the APIs available and rollout code scanning by the team and by language across your organization automatically. This allows you to scale in an automated fashion and removes a lot of manual, repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
 
 ### Task 2: View the security overview dashboard and reports 
 
@@ -86,12 +86,12 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Click on create.
 
-1. On Basics of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
+1. On the basis of the **create Function App**, provide details as mentioned in the table below, select **Review + create** at the bottom of the page, and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
-    | **Subscription** | select your subscription |
-    | **Resource Group** | Select your resource group |
+    | **Subscription** | Select your Subscription |
+    | **Resource Group** | Select your Resource Group |
     | **Function App name** | **function-webhooks** |
     | **Run time stack** | **Node JS** |
     | **Do you want to deploy code or container image?** | **Code** |
@@ -104,7 +104,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    
 1. Once the deployment is completed, click on **Go to resource**.
 
-1. On **Overview** page of function app, Under the **Function** tab, click on **Create function**, it will open a  page for **Deployment environment**  search for and select **HTTP trigger**, click to **Create**.
+1. On the **Overview** page of the **Function app**, under the **Function** tab, click on the **Create function**. It will open a  page for **Deployment environment**. Search for and select the **HTTP trigger**. Click on **Create**.
 
    ![Picture1](./images/functionapp3.png)
 
@@ -112,7 +112,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/trigger1.png)
 
-1. Navigate to your repository, and click  Settings.
+1. Navigate to your repository and click on **Settings**.
 
    ![Picture1](./images/ghasr1.png)
 
@@ -120,7 +120,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/webhook1.png)
 
-1. Click on **Add Webhooks**. and give your github password.
+1. Click on **Add Webhooks** and enter your GitHub password.
 
 1. On the webhook form displayed, paste the **Get Function URL** generated by the HttpTrigger into the **Payload URL (1)** field.
 
@@ -149,7 +149,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 14. Click on **webhook**, select the webhook you have created.
 
-15. Scroll down to the bottom and will find some **Recent Deliveries**.
+15. Scroll down to the bottom, and you will find some **Recent Deliveries**.
 
     ![Picture1](./images/recentdelivery.png)
 
@@ -165,43 +165,43 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    
      >**Note:** It will take 5-7 minutes to show.
 
-#### Task 4: Talk about repository rulesets and how they can be used at scale [ Read Only ]
+#### Task 4: Talk about repository rulesets and how they can be used at scale [Read Only]
 
-1. A ruleset is a named list of rules that applies to a repository. You can create rulesets to control how people can interact with selected branches and tags in a repository. You can control things like who can push commits to a certain branch, or who can delete or rename a tag. For example, you could set up a ruleset for your repository's feature branch that requires signed commits and blocks force pushes for all users except repository administrators.
+1. A ruleset is a named list of rules that applies to a repository. You can create rulesets to control how people interact with selected branches and tags in a repository. You can also control things like who can push commits to a certain branch or who can delete or rename a tag. For example, you could set up a ruleset for your repository's feature branch that requires signed commits and blocks force pushes for all users except repository administrators.
 
-1. For each ruleset you create, you specify which branches or tags in your repository the ruleset applies to. You can use fnmatch syntax to define a pattern to target specific branches and tags. For example, you could use the pattern releases/**/* to target all branches in your repository whose name starts with the string releases/. 
+1. For each ruleset you create, you specify which branches or tags in your repository the ruleset applies to. You can use the **fnmatch syntax** to define a pattern and target specific branches and tags. For example, you could use the pattern releases/**/* to target all branches in your repository whose name starts with the string releases/.
 
-1. When you create a ruleset, you can allow certain users to bypass the rules in the ruleset. This can be users with a certain role, such as repository administrator, or it can be specific teams or GitHub Apps.
+1. When you create a ruleset, you can allow certain users to bypass the rules. This can be users with a certain role, such as repository administrator, or it can be specific teams or GitHub apps.
 
 1. There is a limit of 75 rulesets per repository.
 
 #### Creating rulesets for a repository
 
-You can create rulesets to control how users can interact with selected branches and tags in a repository. When you create a ruleset, you can allow certain users to bypass the rules in the ruleset. This can be users with certain permissions, specific teams, or GitHub Apps.
+You can create rulesets to control how users interact with selected branches and tags in a repository. When you create a ruleset, you can allow certain users to bypass the rules. This can be users with certain permissions, specific teams, or GitHub apps.
 
-1. Creating a branch or tag ruleset.
+1. Create a **branch** or tag **ruleset**.
 
-1. On GitHub, navigate to the main page of the repository.
+1. On GitHub, navigate to the **main page** of the repository.
 
-1. Under your repository name, click  Settings. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click Settings.
+1. Under your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click on **Settings**.
 
    ![Picture1](./images/ghasr1.png)  
 
-1. In the left sidebar, under "Code and automation," click **Repository**, then click **Rulesets**
+1. In the left sidebar, under **"Code and automation,"** click **Repository**, then click on **Rulesets**.
 
    ![Picture1](./images/rulesets.png)    
 
 1. You can create a ruleset targeting branches, or a ruleset targeting tags.
 
-   - To create a ruleset targeting branches, click **New branch ruleset**.
-   - To create a ruleset targeting tags, select, then **click New tag ruleset**.
+   - To create a ruleset targeting branches, click on **New branch ruleset**.
+   - To create a ruleset targeting tags, select **New tag ruleset**.
 
    ![Picture1](./images/rulesetbranch.png)  
   
-1. In the "General" section, type a name for the ruleset, then select  Disabled  and click one of the following enforcement statuses:
+1. In the **"General"** section, type a name for the ruleset, then select **Disabled**  and click one of the following enforcement statuses:
 
-   - **Active**: your ruleset will be enforced upon creation.
-   - **Disabled**: your ruleset will not be enforced.
+   - **Active**: Your ruleset will be enforced upon creation.
+   - **Disabled**: Your ruleset will not be enforced.
 
 In summary, repository rulesets enhance security, compliance, and consistency across repositories, especially when managing large-scale projects. 
 
@@ -209,7 +209,7 @@ For more details, refer to the [GitHub documentation on rulesets](https://docs.g
 
 ## Review
 
-In this lab you have completed the following:
+In this lab, you have completed the following:
 
 + How to grow adoption? How to communicate about GHAS internally?  
 + View the security overview dashboard and reports 
