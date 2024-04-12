@@ -12,6 +12,10 @@ Welcome to our GitHub Advanced Security workshop!, you'll learn about key featur
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+
 1. To get the lab environment details, you can select the **Environment Details** tab.
 
     ![Picture1](./images/2nd.png)
