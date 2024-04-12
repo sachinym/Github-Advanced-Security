@@ -4,7 +4,7 @@ Welcome to our GitHub Advanced Security workshop!, you'll learn about key featur
 
 ## Accessing Your Lab Environment
  
-1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser. To complete the lab, utilize this virtual machine during the session.
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser. To complete the lab, utilize this virtual machine during the session.
  
    ![Access Your VM and Lab Guide](./images/gt1.1.png)
 
@@ -16,9 +16,9 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-1. To get the lab environment details, you can select the **Environment Details** tab.
+   ![Picture1](./images/2nd.png)
 
-    ![Picture1](./images/2nd.png)
+   ![Picture1](./images/2nd1.png)   
 
 1. Also, you can **start, stop, and restart** the virtual machines from the **Resources** tab.
 
