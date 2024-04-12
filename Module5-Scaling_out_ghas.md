@@ -9,7 +9,7 @@ In this lab, you will perform:
 
 - Task 1: How to grow adoption? How to communicate about GHAS internally?  
 - Task 2: View the security overview dashboard and reports 
-- Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
+- Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 - Task 4: Talk about repository rulesets and how they can be used at scale 
 
 ## Estimated timing: 60 minutes
@@ -54,15 +54,15 @@ In this task, you will explore the security overview dashboard and reports provi
 
    ![Picture1](./images/org.png) 
      
-1. Select **github-adv-sec** from organizations.
+1. Select **github-adv-sec** from Organizations.
 
    ![Picture1](./images/org1.png) 
 
-1. Navigate to the **security** tab of your GitHub repository.
+1. Navigate to the **Security** tab of your GitHub repository.
 
    ![Picture1](./images/g5c.png)
 
-1. Explore the security overview dashboard, Use the options at the top of the overview page to filter the group of alerts you want to see metrics for. All of the data and metrics on the page will change as you adjust the filters.
+1. Explore the security overview dashboard. Use the options at the top of the **Overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
    ![Picture1](./images/dashboard1.png)
    
@@ -73,14 +73,14 @@ In this task, you will explore the security overview dashboard and reports provi
 1. Analyze the metrics and data provided in the reports to identify areas of improvement and prioritize security efforts.
 
 
-### Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
+### Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
 
 GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms, enabling automated workflows and real-time notifications based on repository activities.
 
 
 #### Push events to an outside reporting to Function App.
 
-1. Navigate to the Azure Portal search for **Function app (1)** in search bar, select **Function App (2)**.
+1. Navigate to the Azure Portal search for **Function App (1)** in search bar, select **Function App (2)**.
 
    ![Picture1](./images/functionapp.png)
 
@@ -104,7 +104,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    
 1. Once the deployment is completed, click on **Go to resource**.
 
-1. On **Overview** page of function app, Under the  **Function** tab, click on **Create function**, it will open a  page for **Deployment environment**  search for and select  **HTTP trigger**, click to **Create**.
+1. On **Overview** page of function app, Under the **Function** tab, click on **Create function**, it will open a  page for **Deployment environment**  search for and select **HTTP trigger**, click to **Create**.
 
    ![Picture1](./images/functionapp3.png)
 
@@ -141,7 +141,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/newrepo1.png)
   
-    >**Note**: you can make some more changes to your repositories, it will send the POST request to the function app.
+    >**Note**: you can make some more changes to your repositories, it will send the POST request to the Function App.
 
 13. Navigate to your repository, and click settings.
 
@@ -159,7 +159,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/response.png)
 
-17. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, and click on **Invocations (2)** here it will give the most recent invocation traces.
+17. Navigate back to your Function App, Click on **Monitor (1)** under the **Developers** section, and click on **Invocations (2)** here it will give the most recent invocation traces.
 
      ![Picture1](./images/invocations.png)
    
@@ -213,5 +213,5 @@ In this lab you have completed the following:
 
 + How to grow adoption? How to communicate about GHAS internally?  
 + View the security overview dashboard and reports 
-+ Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
++ Review Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 + Talk about repository rulesets and how they can be used at scale 
