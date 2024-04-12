@@ -2,9 +2,9 @@
 
 ## Lab Scenario
 
-The lab focuses on scaling out GitHub Advanced Security (GHAS) adoption, covering strategic approaches, security overview dashboards, webhooks integration, and repository rulesets. It emphasizes aligning GHAS rollout strategies, creating internal documentation, and scaling code and secret scanning. Additionally, it explores GHAS's security overview dashboard for insights and demonstrates webhook setup for external reporting tools like SIEM. Finally, it discusses the implementation of repository rulesets for enforcing branch and tag policies, enhancing security and compliance across repositories at scale.
+The lab focuses on scaling out GitHub Advanced Security (GHAS) adoption, covering strategic approaches, security overview dashboards, webhooks integration, and repository rulesets. It emphasizes aligning GHAS rollout strategies, creating internal documentation, scaling code, and secret scanning. Additionally, it explores GHAS's security overview dashboard for insights and demonstrates webhook setup for external reporting tools like SIEM. Finally, it discusses the implementation of repository rulesets for enforcing branch and tag policies, enhancing security and compliance across repositories at scale.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform:
 
 - Task 1: How to grow adoption? How to communicate about GHAS internally?  
@@ -12,81 +12,81 @@ In this lab, you will perform:
 - Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
 - Task 4: Talk about repository rulesets and how they can be used at scale 
 
-## Estimated timing: 60 minutes
+## Estimated Timing: 60 minutes
 
 ## Architecture Diagram
 
    ![Picture1](./images/ar05.png) 
 
-## Task 1: How to grow adoption? How to communicate about GHAS internally? [ Read Only ]
+## Task 1: How to grow adoption? How to communicate about GHAS internally? [Read Only]
 
-Adopting GitHub Advanced Security can be approached in multiple ways and requires a strategic approach for success, especially in larger enterprises and organizations with thousands of repositories. The purpose of this is to lay down a foundation for enterprises on how to adopt GHAS, but most importantly, scale it quickly and efficiently. Enabling GitHub Advanced Security across a large organization can be broken down into **six** core phases:
+Adopting GitHub Advanced Security can be approached in multiple ways. It requires a strategic approach for success, especially in larger enterprises and organizations with thousands of repositories. This aims to lay the foundation for enterprises on how to adopt GHAS, but most importantly, scale it quickly and efficiently. Enabling GitHub Advanced Security across a large organization can be broken down into **six** core phases:
 
-1. **Align on your rollout strategy and goals**: Think about what success will look like, and align on how GHAS will be implemented in your company. This phase may only take a few days or a week, but it lays a solid foundation for the rest of the rollout.
+1. **Align your rollout strategy and goals**: Think about what success will look like, and align on how GHAS will be implemented in your company. This phase may only take a few days or a week, but it lays a solid foundation for the rest of the rollout.
 
 1. **Preparing to enable at scale:** Prepare developers, collect data about your repositories, and ensure you're ready for the next phase.
 
-1. **Pilot programs:** Optionally, pilot an initial rollout to a few high-impact projects and teams. This will allow an initial group within your company to get familiar with GHAS before you roll out to the remainder of your company.
+1. **Pilot programs:** Optionally, pilot an initial rollout to a few high-impact projects and teams. This will allow an initial group within your company to get familiar with GHAS before you roll it out to the remainder of your company.
 
-1. **Create internal documentation:** Create and communicate internal documentation for the consumers of GHAS. Without proper documentation provided to developers, security engineers, and others who will be using GHAS, the value will get lost in the rollout.
+1. **Create internal documentation:** Create and communicate internal documentation for the GHAS consumers. Without proper documentation provided to developers, security engineers, and others who will be using GHAS. The value will get lost in the rollout.
 
-1. **Rollout and scale code scanning:** Leveraging the available APIs, automatically rollout code scanning by team and by language across your enterprise, using the repository data you collected earlier.
+1. **Rollout and scale code scanning:** Leverage the available APIs, automatically rollout code scanning by team and by language across your enterprise using the repository data you collected earlier.
 
 1. **Rollout and scale secret scanning:** Roll out secret scanning, which involves less configuration and is therefore simpler to adopt than code scanning. Still, it's critical to have a strategy for handling new and old results.
    
 **Phase One - Strategic Enablement Alignment**
 
-Although it's appealing to rush into the implementation phase, take the time to align on how GHAS will be implemented in your enterprise. Additionally, think about what success could look like in the 3,6 and 9 months after adoption. This phase may only take a few days or a week, but it lays a solid foundation for the rest of the rollout.
+Although it's appealing to rush into the implementation phase, take the time to align on how GHAS will be implemented in your enterprise. Additionally, think about what success could look like in the 3, 6, and 9 months after adoption. This phase may only take a few days or a week, but it lays a solid foundation for the rest of the rollout.
 
 **Phase Two - Create Internal Documentation**
 
-Like the above phase, organizations tend to rush into the implementation phase, as that stage is perceived to provide the quickest time-to-value. However, without the proper documentation and asynchronous resources provided to aid developers, security engineers, etc., in consuming GHAS correctly, usually, the value gets lost in the rollout due to people not correctly consuming GHAS. Take the time to create internal documentation (such as training, how to remediate, where to go for questions, etc.), and then communicate this documentation (email, teams, slack, etc.) to the consumers of GHAS so once you rollout GHAS, teams, and people know what to do.
+Like the above phase, organizations tend to rush into the implementation phase, as that stage is perceived to provide the quickest time-to-value. However, without the proper documentation and asynchronous resources provided to aid developers, security engineers, etc, in consuming GHAS correctly, the value gets lost in the rollout due to people not correctly consuming GHAS. Take the time to create internal documentation (such as training, how to remediate, where to go for questions, etc.), and then communicate this documentation (email, teams, slack, etc.) to the consumers of GHAS. So once you roll out GHAS, teams and people know what to do.
 
 **Phase Three - Enable & Scale Code Scanning**
 
-GHAS is an ecosystem of multiple solutions; it's essential to start somewhere focused, not just with the rollout of GHAS. Typically, we see teams focus on code scanning, to begin with. Leverage the APIs available and rollout code scanning by the team and by language across your organization automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
+GHAS is an ecosystem of multiple solutions. It's essential to start somewhere focused, not just with the rollout of GHAS. Typically, teams focus on code scanning to begin with. Leverage the APIs available and rollout code scanning by the team and by language across your organization automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
 
 ### Task 2: View the security overview dashboard and reports 
 
-In this task, you will explore the security overview dashboard and reports provided by GHAS to gain insights into your repository's security posture.
+In this task, you will explore the GHAS security overview dashboard and reports to gain insights into your repository's security posture.
 
-1. Go to your profile icon in the top right corner, and then select **Your organizations**.
+1. Go to your **profile icon** in the top right corner, and then select **Your organizations**.
 
    ![Picture1](./images/org.png) 
      
-1. Select **github-adv-sec** from organizations.
+1. Select **github-adv-sec** from **organizations**.
 
    ![Picture1](./images/org1.png) 
 
-1. Navigate to the **security** tab of your GitHub repository.
+1. Navigate to the **security** tab of your **GitHub repository**.
 
    ![Picture1](./images/g5c.png)
 
-1. Explore the security overview dashboard, Use the options at the top of the overview page to filter the group of alerts you want to see metrics for. All of the data and metrics on the page will change as you adjust the filters.
+1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
    ![Picture1](./images/dashboard1.png)
    
-1. For the alert trends graph at the top of the page, you can click  Open alerts or  Closed alerts to toggle between showing the trends for open or closed alerts. The toggle will only affect the alert trends graph.
+1. For the alert trends graph at the top of the page, you can click **Open alerts or  Closed alerts** to toggle between showing the trends for Open or Closed alerts. The toggle will only affect the alert trends graph.
 
    ![Picture1](./images/dashboard2.png)
    
-1. Analyze the metrics and data provided in the reports to identify areas of improvement and prioritize security efforts.
+1. Analyze the metrics and data provided in the reports to identify areas for improvement and prioritize security efforts.
 
 
 ### Task 3: Review webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
 
-GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms, enabling automated workflows and real-time notifications based on repository activities.
+GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms. Thus enabling automated workflows and real-time notifications based on repository activities.
 
 
-#### Push events to an outside reporting to Function App.
+#### Push events to an outside reporting function in the App.
 
-1. Navigate to the Azure Portal search for **Function app (1)** in search bar, select **Function App (2)**.
+1. Navigate to the Azure Portal and search for **Function app (1)** in the search bar. Select **Function App (2)**.
 
    ![Picture1](./images/functionapp.png)
 
-1. Click on create.
+1. Click on **Create**.
 
-1. On Basics of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
+1. On the basis of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
@@ -94,7 +94,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Resource Group** | Select your resource group |
     | **Function App name** | **function-webhooks** |
     | **Run time stack** | **Node JS** |
-    | **Do you want to deploy code or container image?** | **Code** |
+    | **Do you want to deploy code or a container image?** | **Code** |
     | **Operating System** | **Windows** |
     | **Hosting options and plans** | **Consumption (Serverless)** |
 
@@ -104,62 +104,62 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    
 1. Once the deployment is completed, click on **Go to resource**.
 
-1. On **Overview** page of function app, Under the  **Function** tab, click on **Create function**, it will open a  page for **Deployment environment**  search for and select  **HTTP trigger**, click to **Create**.
+1. On the **Overview** page of the **Function app**, under the  **Function** tab, click on **Create function**. It will open a  page for **Deployment environment**. Search for and select **HTTP trigger**. Click on **Create**.
 
    ![Picture1](./images/functionapp3.png)
 
-1. On your **HttpTrigger** function, Click on the **Code + Test** under the **Developers** section and click on **Get Function URL** for copy.
+1. On your **HttpTrigger** function, click on the **Code + Test** under the **Developer** section and click on **Get function URL** to copy.
 
     ![Picture1](./images/trigger1.png)
 
-1. Navigate to your repository, and click  Settings.
+1. Navigate to your repository, and click on **Settings**.
 
    ![Picture1](./images/ghasr1.png)
 
-1. Click on **webhook**.
+1. Click on **Webhook**.
 
    ![Picture1](./images/webhook1.png)
 
-1. Click on **Add Webhooks**. and give your github password.
+1. Click on **Add Webhooks** and give your GitHub password.
 
-1. On the webhook form displayed, paste the **Get Function URL** generated by the HttpTrigger into the **Payload URL (1)** field.
+1. On the Webhook form displayed, paste the **Get function URL** generated by the HttpTrigger into the **Payload URL (1)** field.
 
-   - **Content type**: Select **application/json (2)** so that you can receive the payload as a JSON object.
+   - **Content type**: Select **application/JSON (2)** so that you can receive the payload as a JSON object.
    - **Secret**: You can leave this blank.
    - **SSL verification**: Leave this as the default option of **Enable SSL verification (3)**.
-   - **Which events would you like to trigger this webhook?**: select the **Just the push event option (4)**.
-   - **Active (5)**: Leave this checked to receive event details when the GitHub webhook is triggered.
+   - **Which events would you like to trigger this webhook?** Select the **Just the push event option (4)**.
+   - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
    ![Picture1](./images/payload1.png)
 
-11. Now go to **Repositories** section and click on **New Respsitories**.
+11. Now go to the **Repositories** section and click on **New Respsitories**.
 
     ![Picture1](./images/newrepo.png)
 
-12. Give the **Repositories name** as **Test-webhook (1)**, select the **Public (2)** and click on the **Create repositories (3)** to create them.
+12. Give the **Repositories name** as **Test-webhook (1)**, select **Public (2)**, and click on **Create repositories (3)** to create them.
 
     ![Picture1](./images/newrepo1.png)
   
-    >**Note**: you can make some more changes to your repositories, it will send the POST request to the function app.
+    >**Note**: You can make some more changes to your repositories. It will send the POST request to the function app.
 
-13. Navigate to your repository, and click settings.
+13. Navigate to your repository, and click on **settings**.
 
      ![Picture1](./images/ghasr1.png)
 
-14. Click on **webhook**, select the webhook you have created.
+14. Click on **Webhook** and select the Webhook you have created.
 
-15. Scroll down to the bottom and will find some **Recent Deliveries**.
+15. Scroll down to the bottom and you will find some **Recent Deliveries**.
 
     ![Picture1](./images/recentdelivery.png)
 
-16.  click to any deliveries. you will see their **Request** and **Response** column for more information.
+16.  Click on any deliveries. You will see their **Request** and **Response** column for more information.
 
      ![Picture1](./images/request.png)
 
      ![Picture1](./images/response.png)
 
-17. Navigate back to your Function app, Click on **Monitor (1)** under the **Developers** section, and click on **Invocations (2)** here it will give the most recent invocation traces.
+17. Navigate back to your **Function app**. Click on **Monitor (1)** under the **Developers** section, and click on **Invocations (2)**. Here, it will give the most recent invocation traces.
 
      ![Picture1](./images/invocations.png)
    
