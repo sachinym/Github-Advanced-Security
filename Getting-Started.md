@@ -24,25 +24,17 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](media/spl.png)
+![Use the Split Window Feature](./images/spl.png)
  
 ## Managing Your Virtual Machine
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](media/res.png)
-   
-1. Also, you can **start, stop, and restart** the virtual machines from the **Resources** tab.
-
-   ![Picture1](./images/gt3.png)     
+   ![Manage Your Virtual Machine](./images/res.png)   
 
 1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
 
      ![Picture1](./images/gt4.png ) 
-
-1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
-
-     ![](./images/splitwindows.png)
 
 1. Feel free to use Zoom in/Zoom out option in your respective browser to view the integrated environment clearly and to get the complete options in GitHub & VS Code.
 
