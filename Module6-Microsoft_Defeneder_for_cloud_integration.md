@@ -73,6 +73,8 @@ In this lab, you will perform:
    
    >**Note:** It takes around 15 minutes to arrive.
 
+Please feel free to go through the link for further understanding:[Public Roadmap](https://github.com/orgs/github/projects/4247/views/6)
+
 ## Review
 
 In this lab, you have completed the following:
