@@ -52,7 +52,7 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/org.png) 
 
-1. Select **github-adv-sec** from organizations.
+1. Select **github-bootcamp-cloudlabsaiuser-####** from organizations.
 
    ![Picture1](./images/org1.png) 
 
