@@ -79,7 +79,7 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/security-overview-page.png)
    
-Please feel free to go through the document for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
+Please feel free to go through the links for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) and [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
 
 ## Review
  
