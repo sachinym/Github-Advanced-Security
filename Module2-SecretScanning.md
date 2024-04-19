@@ -170,6 +170,8 @@ In this task, we delve into comprehending the outcomes of secret scanning.
 
 1. We created custom secret patterns to uncover specific types of sensitive information.
 
+Please feel free to go through the documents for further understanding:[Security](https://github.blog/category/security/)
+
 ## Review
 
 In this lab, we have completed the following:
