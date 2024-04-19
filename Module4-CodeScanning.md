@@ -149,6 +149,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
 
+Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
+
 ## Review
 
 In this lab you have completed the following:
