@@ -73,7 +73,11 @@ In this lab, you will perform:
    
    >**Note:** It takes around 15 minutes to arrive.
 
-Please feel free to go through the link for further understanding:[Public Roadmap](https://github.com/orgs/github/projects/4247/views/6)
+Please feel free to go through the below links for further understanding:
+1. [Public Roadmap](https://github.com/orgs/github/projects/4247/views/6)
+2. [Application Security](https://info.microsoft.com/US-DevOps-VDEO-FY24-02Feb-12-GitHub-and-AI-A-Powerful-Duo-for-Application-Security-Testing-SRGCM11732_LP01-Registration---Form-in-Body.html)
+3. [Application Security Testing](https://www.microsoft.com/en-us/industry?rtc=1)
+4. [Introducing AI-powered application security testing with GitHub Advanced Security](https://github.blog/2023-11-08-ai-powered-appsec/)
 
 ## Review
 
