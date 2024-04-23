@@ -61,7 +61,7 @@ has a context menu.
 
    >**Note:** Navigate to the **Environment** tab to view the key-value pairs of the **GitHub Org User**, and **GitHub Org Password**. You can use the copy buttons under the actions column to have the values copied instantly. Alternatively, it is suggested to have the values copied over onto a notepad for easy accessibility. 
 
-    ![Picture1](./images/2nd.png)
+    ![Picture1](./images/2nd1.png)
 
 1. Next, to get the authentication code, sign in to Outlook in the Lab VM through an **inPrivate** window (https://outlook.office365.com/mail/) with the GitHub credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
 
