@@ -46,9 +46,9 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](./images/org.png) 
 
-1. Select **github-adv-sec** from organizations.
+1. Select **github-bootcamp-cloudlabsaiuser-####** from organizations.
 
-   ![Picture1](./images/org1.png) 
+   ![Picture1](./images/org-new1.png) 
 
 1. Click on **Repositories** and select **ghas-bootcamp-javascript**.
 
@@ -67,6 +67,8 @@ Secret scanning automatically scans your entire Git history on all branches pres
    ![Picture1](./images/allowsecret.png)    
 
    ![Picture1](./images/secretscanning.png)
+
+   >**Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security and analysis** option from the left navigation pane to view the option.
    
     >**Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
@@ -156,7 +158,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](./images/publishpattern.png) 
 
-1. This example captures everything we expect to see in a single repository, which can hold up to 100 patterns. Let's go ahead and apply this to the organization level by going to **`github-adv-sec`** and clicking **Settings** -> **Code security and analysis** -> **Secret scanning**. Finally, click the green **New pattern** button. Please note that the organization can hold up to 500 custom patterns.
+1. This example captures everything we expect to see in a single repository, which can hold up to 100 patterns. Let's go ahead and apply this to the organization level by going to **`github-bootcamp-cloudlabsaiuser-####`** and clicking **Settings** -> **Code security and analysis** -> **Secret scanning**. Finally, click the green **New pattern** button. Please note that the organization can hold up to 500 custom patterns.
    
 ## Task 4: Understanding the results 
 
