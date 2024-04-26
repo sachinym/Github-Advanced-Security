@@ -68,3 +68,7 @@ has a context menu.
    >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
    
    ![Picture1](./images/verify1.png)
+
+1. Click "Next" from the bottom right corner to embark on your Lab journey!
+
+   ![Picture1](./images/next.png)
