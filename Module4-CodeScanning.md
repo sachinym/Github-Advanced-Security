@@ -42,9 +42,9 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Default Setup
 
-1. In the **github-adv-sec** organization, click on repositories from the top navigation pane.
+1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](images/gc.png)
+   ![github-advisory-database](images/new-repo.png)
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
@@ -76,7 +76,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
  Now, let us enable  Advanced set-up in a different repository.
 
-1. In the **github-adv-sec** click on repositories from the top navigation pane.
+1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
 
    ![github-advisory-database](images/gc.png)
 
