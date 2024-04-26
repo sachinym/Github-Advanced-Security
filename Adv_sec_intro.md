@@ -54,7 +54,7 @@ Here are some of the components of GitHub Advanced Security:
 
 1. Select **github-bootcamp-cloudlabsaiuser-####** from organizations.
 
-   ![Picture1](./images/org-new.png) 
+   ![Picture1](./images/org-new1.png) 
 
 1. Click on the **Repositories** and select any repositories.
 
