@@ -18,9 +18,9 @@ In this lab, you will perform:
 
 ## Task 1: Turn on Dependabot and other SCA features. Review results. 
 
-1. In the **github-adv-sec** organization, click on repositories from the top navigation pane.
+1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](images/gc.png)
+   ![github-advisory-database](images/new-repo.png)
 
 1. From the list of repositories, click on **ghas-bootcamp-webgoat** to begin working through this module. 
 
