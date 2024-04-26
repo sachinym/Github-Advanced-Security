@@ -54,9 +54,9 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](./images/org.png) 
      
-1. Select **github-adv-sec** from **organizations**.
+1. Select **github-bootcamp-cloudlabsaiuser-####** from **organizations**.
 
-   ![Picture1](./images/org1.png) 
+   ![Picture1](./images/org-new1.png) 
 
 1. Navigate to the **security** tab of your **GitHub repository**.
 
