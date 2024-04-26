@@ -58,7 +58,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](./images/org-new1.png) 
 
-1. Navigate to the **security** tab of your **GitHub repository**.
+1. Navigate to the **security** tab of your **GitHub Organization**.
 
    ![Picture1](./images/g5c.png)
 
