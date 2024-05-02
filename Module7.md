@@ -148,3 +148,10 @@
 
     >**Note**: It will take 3-5 minutes to show the status.
 
+#### Task 6: Security Operations for CodeQL.
+
+1. Start **Visual Studio Code** from the desktop.
+
+    ![Picture1](./images/vscode1.jpg)
+
+1. In the Visual Studio Code, Click on **Extensions**, search and select the **codeQl**
