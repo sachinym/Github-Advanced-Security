@@ -66,10 +66,27 @@ Here are some of the components of GitHub Advanced Security:
 
 1. In the left sidebar, click on **Code security & analysis**.
 
-1. Enable **Dependabot:**,**Code Scanning:** and **Secret Scanning**, feature for repositories.
+1. Enable **Dependabot**, **Code Scanning** and **Secret Scanning**, feature for repositories.
 
-   ![Picture1](./images/ghasr2.png)
-   ![Picture1](./images/ghasr3.png)
+1. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
+
+   ![github-advisory-database](images/g14.png)
+
+1. Under **Code Scanning** option. Click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
+
+   ![github-advisory-database](images/gb.png)
+
+1. Leave the query suite on Default and click the **Enable CodeQL** button.
+
+   ![github-advisory-database](images/ge.png)
+
+1. Under **Secret Scanning**, click on **enable**.
+
+   ![Picture1](./images/mod2ss1.png)
+
+1. Select **enable** to activate Push Protection.
+
+   ![Picture1](./images/mod2ss2.png)
 
 1. To review, navigate to your repository’s Security tab.
 
