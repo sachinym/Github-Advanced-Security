@@ -69,6 +69,10 @@ Secret scanning automatically scans your entire Git history on all branches pres
 1. Select **enable** to activate Push Protection.
 
    ![Picture1](./images/mod2ss2.png)
+
+1. Navigate to **Code** from the top navigation pane.
+
+   ![Picture1](./images/mod2code1.png)
    
 1. Open the **_index.js_** file and click the pencil icon at the top-right of the code block to edit it. Add **` var secret = "Your-Secret-Value"`** to the code, and click on **Commit changes**.
 
