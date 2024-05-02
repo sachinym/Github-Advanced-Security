@@ -66,7 +66,7 @@ Here are some of the components of GitHub Advanced Security:
 
 1. In the left sidebar, click on **Code security & analysis**.
 
-1. Optionally, enable or disable a feature for repositories.
+1. Enable **Dependabot:**,**Code Scanning:** and **Secret Scanning**, feature for repositories.
 
    ![Picture1](./images/ghasr2.png)
    ![Picture1](./images/ghasr3.png)
