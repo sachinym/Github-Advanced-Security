@@ -73,6 +73,14 @@ In this lab, you will perform:
    
    >**Note:** It takes around 15 minutes to arrive.
 
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="18b96a1a-7f72-4440-8d0b-ce63614a0abb" />
+
 Please feel free to go through the below links for further understanding:
 1. [Public Roadmap](https://github.com/orgs/github/projects/4247/views/6)
 2. [Application Security](https://info.microsoft.com/US-DevOps-VDEO-FY24-02Feb-12-GitHub-and-AI-A-Powerful-Duo-for-Application-Security-Testing-SRGCM11732_LP01-Registration---Form-in-Body.html)
