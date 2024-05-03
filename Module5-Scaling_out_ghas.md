@@ -171,6 +171,14 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    
      >**Note:** It will take 5-7 minutes to show.
 
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="c812660e-bf0e-4f9b-8621-fc3bf5af35a8" />
+
 #### Task 4: Talk about repository rulesets and how they can be used at scale [Read Only]
 
 1. A ruleset is a named list of rules that applies to a repository. You can create rulesets to control how people interact with selected branches and tags in a repository. You can also control things like who can push commits to a certain branch or who can delete or rename a tag. For example, you could set up a ruleset for your repository's feature branch that requires signed commits and blocks force pushes for all users except repository administrators.
