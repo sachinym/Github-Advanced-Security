@@ -98,15 +98,21 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Operating System** | **Windows** |
     | **Hosting options and plans** | **Consumption (Serverless)** |
 
+   >**Note**: To make the **Function App name** unique, append a few random digits to the end of it, for example: **function-webhooks321**.
+
    ![Picture1](./images/functionapp1.png)
    
    ![Picture1](./images/functionapp2.png)
    
 1. Once the deployment is completed, click on **Go to resource**.
 
-1. On the **Overview** page of the **Function app**, under the  **Function** tab, click on **Create function**. It will open a  page for **Deployment environment**. Search for and select **HTTP trigger**. Click on **Create**.
+1. On the **Overview (1)** page of the **Function app**, under the  **Function** tab, click on **Create function (2)**. It will open a  page for **Create function**. Search for and select **HTTP trigger (3)**. Click on **Next (4)**.
 
    ![Picture1](./images/functionapp3.png)
+
+1. On Template details page, leave the default options and click on **Create**.
+
+   ![Picture1](./images/mod5functionapp3.png)
 
 1. On your **HttpTrigger** function, click on the **Code + Test** under the **Developer** section and click on **Get function URL** to copy.
 
