@@ -114,8 +114,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/mod5functionapp3.png)
 
-1. On your **HttpTrigger** function, click on the **Code + Test** under the **Developer** section and click on **Get function URL** to copy.
-
+1. Go to the **Developer** section of your **HttpTrigger** function, click on **Code + Test (1)**, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
+   
     ![Picture1](./images/trigger1.png)
 
 1. Navigate to your repository, and click on **Settings**.
