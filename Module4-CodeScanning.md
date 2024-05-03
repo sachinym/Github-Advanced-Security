@@ -54,6 +54,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/ga.png)
 
+   >**Note**: Zoom out of the page if you are unable to see the **Setting**.
+
 1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
 
    ![github-advisory-database](images/gb.png)
