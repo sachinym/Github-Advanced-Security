@@ -154,7 +154,7 @@
 
     ![Picture1](./images/vscode1.jpg)
 
-1. In the Visual Studio Code, Click on **Extensions**, search and select the **codeQl**, click on **install**.
+1. In the Visual Studio Code, Click on **Extensions**, search and select the **CodeQL**, click on **install**.
 
     ![Picture1](./images/vscodeql1.jpg)
 
@@ -184,3 +184,40 @@
 1. Select **Yes, I trust the authors**.
 
     ![Picture1](./images/clonerepo2.png)
+
+1. Go to **Account** icon from bottom and click on **Sign in with GitHub to use CodeQL**.
+
+    ![Picture1](./images/clonerepo3.png)
+
+1. Sign in with GitHub Credentials and on the **Authorize GitHub for VS Code** page click on the **Authorize Visual-Studio-Code.**
+
+    ![Picture1](./images/clonerepo4.png)
+
+1. If you get the pop-up, The site is trying to open the Visual Studio Code then click on **Open**. It will navigate back to the Visual Studio.
+
+    ![Picture1](./images/clonerepo5.png)
+
+1. Go to the **CodeQL** extension and move the cursor over the **Database**, click on the **GitHub** icon.
+
+    ![Picture1](./images/clonerepo6.png)  
+
+1. Add the Database by the following command and press enter.
+
+    ```
+    https://github.com/github-bootcamp-cloudlabsuser-xxx/ghas-bootcamp-python
+    ```
+    >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+
+    ![Picture1](./images/clonerepo7.png)
+
+1. Go to the **Queries** section, click on **Create query** option and select **Python** as your target query language.
+
+    ![Picture1](./images/clonerepo8.png)
+
+1. It will show up the location for query, press **enter**.
+
+    ![Picture1](./images/clonerepo9.png)
+
+1. It will generate the simple query, click on the **Run** (1) and analyze the result.
+
+    ![Picture1](./images/clonerepo10.png)
