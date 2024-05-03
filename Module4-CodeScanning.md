@@ -157,7 +157,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
 
-#### Task 6: Security Operations for CodeQL.
+#### Task 6: CodeQL Query Operations in Visual Studio.
 
 1. Start **Visual Studio Code** from the desktop.
 
