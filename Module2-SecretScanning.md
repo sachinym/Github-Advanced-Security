@@ -96,6 +96,8 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](./images/possibleactivesecret.png)
 
+   <validation step="48341224-6086-4ce1-a337-9ec19e1e9582" />
+
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code Security and Analysis** -> scroll down to **Push protection** and click **Enable**.
