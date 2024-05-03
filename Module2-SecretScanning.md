@@ -102,7 +102,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-   <validation step="48341224-6086-4ce1-a337-9ec19e1e9582" />
+<validation step="48341224-6086-4ce1-a337-9ec19e1e9582" />
 
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
