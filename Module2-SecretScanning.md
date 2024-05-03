@@ -178,7 +178,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](./images/publishpattern.png) 
 
-1. This example captures everything we expect to see in a single repository, which can hold up to 100 patterns. Let's go ahead and apply this to the organization level by going to **`github-bootcamp-cloudlabsaiuser-####`** and clicking **Settings** -> **Code security and analysis** -> **Secret scanning**. Finally, click the green **New pattern** button. Please note that the organization can hold up to 500 custom patterns.
+1. This example captures everything we expect to see in a single repository, which can hold up to 100 patterns.
    
 ## Task 4: Understanding the results 
 
