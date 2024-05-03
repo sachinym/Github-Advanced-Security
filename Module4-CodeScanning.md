@@ -147,7 +147,81 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
   - What we find on **Line 54** is a **`val`** assignment calling **`login.objects.raw`**, which does not exist as a function in this project.
   - While other static analysis tools would likely have marked **Line 50** as a SQL injection, the CodeQL analysis performed as part of code scanning correctly marks this as a **`Clear-text logging of sensitive information`**. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
 
-![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
+    ![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
+
+#### Task 6: Security Operations for CodeQL.
+
+1. Start **Visual Studio Code** from the desktop.
+
+    ![Picture1](./images/vscode1.jpg)
+
+1. In the Visual Studio Code, Click on **Extensions**, search and select the **CodeQL**, click on **install**.
+
+    ![Picture1](./images/vscodeql1.jpg)
+
+1. In the Visual Studio Code terminal, click on **(...)** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
+
+    ![Picture1](./images/terminal.png)
+
+1. Change the location to **Desktop** for easy navigation.
+
+    ```
+    cd Desktop
+    ```
+    
+1. Clone the repository by running the following command:
+
+      ```
+      git clone --recursive https://github.com/github-bootcamp-cloudlabsuser-xxx/ghas-bootcamp-python.git
+      ```
+      >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+
+    ![Picture1](./images/clonerepo.png)
+
+1. Go to the **Explorer** in the upper left corner, select **Open Folder**, select the folder you cloned from the **Desktop**, and then click **Select Folder**.
+
+    ![Picture1](./images/clonerepo1.png)
+
+1. Select **Yes, I trust the authors**.
+
+    ![Picture1](./images/clonerepo2.png)
+
+1. Go to **Account** icon from bottom and click on **Sign in with GitHub to use CodeQL**.
+
+    ![Picture1](./images/clonerepo3.png)
+
+1. Sign in with GitHub Credentials and on the **Authorize GitHub for VS Code** page click on the **Authorize Visual-Studio-Code.**
+
+    ![Picture1](./images/clonerepo4.png)
+
+1. If you get the pop-up, The site is trying to open the Visual Studio Code then click on **Open**. It will navigate back to the Visual Studio.
+
+    ![Picture1](./images/clonerepo5.png)
+
+1. Go to the **CodeQL** extension and move the cursor over the **Database**, click on the **GitHub** icon.
+
+    ![Picture1](./images/clonerepo6.png)  
+
+1. Add the Database by the following command and press enter.
+
+    ```
+    https://github.com/github-bootcamp-cloudlabsuser-xxx/ghas-bootcamp-python
+    ```
+    >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+
+    ![Picture1](./images/clonerepo7.png)
+
+1. Go to the **Queries** section, click on **Create query** option and select **Python** as your target query language.
+
+    ![Picture1](./images/clonerepo8.png)
+
+1. It will show up the location for query, press **enter**.
+
+    ![Picture1](./images/clonerepo9.png)
+
+1. It will generate the simple query, click on the **Run** (1) and analyze the result.
+
+    ![Picture1](./images/clonerepo10.png)
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
