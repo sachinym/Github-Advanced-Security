@@ -110,7 +110,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="fdc513c6-e817-48a5-aec1-8875b2e7b0a4" />
+<validation step="fdc513c6-e817-48a5-aec1-8875b2e7b0a4" />
 
 ## Task 5: Add some vulnerable code via a pull request and view the scan results in the PR.  
 
