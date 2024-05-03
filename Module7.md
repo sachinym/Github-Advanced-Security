@@ -154,4 +154,33 @@
 
     ![Picture1](./images/vscode1.jpg)
 
-1. In the Visual Studio Code, Click on **Extensions**, search and select the **codeQl**
+1. In the Visual Studio Code, Click on **Extensions**, search and select the **codeQl**, click on **install**.
+
+    ![Picture1](./images/vscodeql1.jpg)
+
+1. In the Visual Studio Code terminal, click on **(...)** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
+
+    ![Picture1](./images/terminal.png)
+
+1. Change the location to **Desktop** for easy navigation.
+
+    ```
+    cd Desktop
+    ```
+    
+1. Clone the repository by running the following command:
+
+      ```
+      git clone --recursive https://github.com/github-bootcamp-cloudlabsuser-xxx/ghas-bootcamp-python.git
+      ```
+      >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+
+    ![Picture1](./images/clonerepo.png)
+
+1. Go to the **Explorer** in the upper left corner, select **Open Folder**, select the folder you cloned from the **Desktop**, and then click **Select Folder**.
+
+    ![Picture1](./images/clonerepo1.png)
+
+1. Select **Yes, I trust the authors**.
+
+    ![Picture1](./images/clonerepo2.png)
