@@ -59,6 +59,8 @@ has a context menu.
 
    ![Picture1](./images/github.png)
 
+   >**Note:**  Make sure to utilize the given **course credentials** rather than a personal account.
+   
    >**Note:** Navigate to the **Environment** tab to view the key-value pairs of the **GitHub Org User**, and **GitHub Org Password**. You can use the copy buttons under the actions column to have the values copied instantly. Alternatively, it is suggested to have the values copied over onto a notepad for easy accessibility. 
 
     ![Picture1](./images/2nd1.png)
