@@ -180,7 +180,9 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Click on **Pubish pattern**.
 
-   ![Picture1](./images/publishpattern.png) 
+   ![Picture1](./images/publishpattern.png)
+
+   >**Note:** Please click **reload** if you are unable to see the **Publish pattern**.
 
 1. This example captures everything we expect to see in a single repository, which can hold up to 100 patterns.
    
