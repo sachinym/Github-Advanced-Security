@@ -66,9 +66,7 @@ Here are some of the components of GitHub Advanced Security:
 
 1. In the left sidebar, click on **Code security & analysis**.
 
-1. Enable **Dependabot**, **Code Scanning** and **Secret Scanning**, feature for repositories.
-
-1. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
+1. Enable **Dependabot**, **Code Scanning** and **Secret Scanning**, for repositories. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
 
    ![github-advisory-database](images/g14.png)
 
