@@ -82,9 +82,9 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the previous step.  
 
-1. Commit this to the default branch **(Click on I'll fix this later if asked)**, and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
+1. Commit this to the default branch, and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
 
-   ![Picture1](./images/allowsecret.png)    
+   ![Picture1](./images/allowsecrett1.png)    
 
    ![Picture1](./images/secretscanning.png)
 
