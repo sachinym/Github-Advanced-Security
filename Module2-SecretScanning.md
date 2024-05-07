@@ -62,6 +62,14 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![github-advisory-database](images/g13.png)
 
+1. Enable **GitHub Advanced Security** option.
+
+   ![github-advanced-security](images/ghasopt.png)
+
+1. Click on **Enable GitHub Advanced Security for this repository**.
+        
+   ![github-advanced-security](images/ghasopt1.png)
+
 1. scroll down to **Secret Scanning**, click on **enable**.
 
    ![Picture1](./images/mod2ss1.png)
