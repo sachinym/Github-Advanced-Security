@@ -80,7 +80,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](images/gc.png)
+   ![github-advisory-database](images/new-repo.png)
 
 1. From the list of repositories click on **ghas-bootcamp-java** to begin working through this module. 
 
@@ -134,10 +134,9 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/gl.png)
 
+1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying **Line 70** of the workflow file `# queries: security-extended` (1) and append this to a new line we create for **Line 64** which will read `queries: security-extended` (2). Commit these changes to your main branch (3).
 
-1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying **Line 69** of the workflow file `# queries: security-extended` (1) and append this to a new line we create for **Line 64** which will read `queries: security-extended` (2). Commit these changes to your main branch (3).
-
-   ![github-advisory-database](images/gi.png)
+   ![github-advisory-database](images/git1.png)
 
 
 1. In the Code tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
