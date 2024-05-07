@@ -164,7 +164,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
   - What we find on **Line 54** is a **`val`** assignment calling **`login.objects.raw`**, which does not exist as a function in this project.
   - While other static analysis tools would likely have marked **Line 50** as a SQL injection, the CodeQL analysis performed as part of code scanning correctly marks this as a **`Clear-text logging of sensitive information`**. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
 
-    ![clear-text-logging-finding](https://user-images.githubusercontent.com/22803099/236024335-4a1c08bd-8885-4780-b489-3fc6e42838b0.png)
+    ![clear-text-logging-finding](images/prfail.png)
 
 #### Task 6: CodeQL Query Operations in Visual Studio.
 
