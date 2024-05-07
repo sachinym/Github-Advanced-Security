@@ -66,10 +66,6 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](./images/mod2ss1.png)
 
-1. Select **enable** to activate Push Protection.
-
-   ![Picture1](./images/mod2ss2.png)
-
 1. Navigate to **Code** from the top navigation pane.
 
    ![Picture1](./images/mod2code1.png)
@@ -110,7 +106,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Picture1](./images/pushprotection.png)
 
-   ![Picture1](./images/pushprotection1.png)
+   ![Picture1](./images/mod2ss2.png)
 
    >**Note**: If it's already enabled, then there is no need to change it.
 
