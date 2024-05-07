@@ -1,3 +1,7 @@
+1. Select **enable** to activate Push Protection.
+
+   ![Picture1](./images/mod2ss2.png)
+
 #### Task 3.1: Installing necessary tools.
 
 1. Search for **powershell** in windows search, select **Powershell ISE** and **Run as administrator**.
