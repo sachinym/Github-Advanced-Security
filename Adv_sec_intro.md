@@ -28,6 +28,8 @@ Here are some of the components of GitHub Advanced Security:
 
     This scanning process is essential for preventing unauthorized access and safeguarding confidential data. Secret scanning operates by searching for predefined patterns and signatures indicative of sensitive information, ensuring that potential security risks are promptly addressed. By default, secret scanning looks for highly accurate patterns that have been provided by a GitHub partner. However, custom patterns can be created for other use cases. We can define custom patterns to identify secrets that are not detected by the default patterns supported by secret scanning. We can define custom patterns for our enterprise, organization, or repository.
 
+   Refer to the link for more information. [Secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
+
    **Secret scanning includes:**
     - Push protection proactively prevents secret leaks by scanning code on commits and blocking a push if a secret is present.
     - The ability to easily view alerts and remediate them.
@@ -36,11 +38,15 @@ Here are some of the components of GitHub Advanced Security:
 
     Code scanning enhances the overall security of a software development project by identifying and addressing security vulnerabilities in the codebase before they reach production. By fostering a proactive approach to security, code scanning helps minimize the potential impact of security threats, improves code quality, and accelerates the development cycle by reducing the time spent on post-deployment issue resolution.
 
+   Refer to the link for more information. [Code Scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning)
+
 1. **Dependabot:** Dependabot is an automated dependency management tool responsible for keeping project dependencies up-to-date. It regularly checks for updates to libraries and frameworks used in a project and automatically opens pull requests to update dependencies to their latest, secure versions. Dependabot contributes to maintaining a secure and stable development environment by addressing vulnerabilities present in outdated dependencies.
 
     In a secure software development life cycle, managing dependencies is crucial to minimizing the risk of exploiting known vulnerabilities. Dependabot streamlines the process of updating dependencies, ensuring that projects benefit from the latest security patches and improvements. By automating this aspect of security, Dependabot contributes to creating a resilient and secure foundation for the entire development process.
 
     With GitHub Advanced Security, Dependabot’s functionality is extended to include dependency review. Thus allowing you to check for vulnerable dependencies within a pull request. Also, this check enables you to address vulnerabilities before they are merged into a shared branch.
+
+   Refer to the link for more information. [Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
 
 ### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
