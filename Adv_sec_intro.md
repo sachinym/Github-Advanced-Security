@@ -70,6 +70,14 @@ Here are some of the components of GitHub Advanced Security:
 
    ![github-advisory-database](images/g14.png)
 
+1. Enable **GitHub Advanced Security** option.
+
+   ![github-advanced-security](images/ghasopt.png)
+
+1. Click on **Enable GitHub Advanced Security for this repository**.
+        
+   ![github-advanced-security](images/ghasopt1.png)
+   
 1. Under **Code Scanning** option. Click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
 
    ![github-advisory-database](images/gb.png)
@@ -92,7 +100,7 @@ Here are some of the components of GitHub Advanced Security:
 
 1. Here, you can review your alerts in the security overview.
 
-   ![Picture1](./images/security-overview-page.png)
+   ![Picture1](./images/security-overview-paget1.png)
    
 Please feel free to go through the links for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) and [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
 
