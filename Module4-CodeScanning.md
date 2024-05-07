@@ -106,7 +106,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
-1. In the **codeql.yml** file, we are going to copy **Line 69** of the workflow file **`# queries: security-extended` (1)** and append this to a new line we create for **Line 64**, which will read **`queries: security-extended` (2)**. Commit these changes to your **main branch (3)**.
+1. In the **codeql.yml** file, we are going to copy **Line 70** of the workflow file **`# queries: security-extended` (1)** and append this to a new line we create for **Line 64**, which will read **`queries: security-extended` (2)**. Commit these changes to your **main branch (3)**.
 
    ![github-advisory-database](images/gi.png)
   
