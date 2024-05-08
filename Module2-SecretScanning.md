@@ -28,6 +28,14 @@ Secret scanning is a GitHub Advanced Security feature that scans repositories fo
 
 Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed to a private or public repository in your project, secret scanning notifies all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the **Security** tab of the repository.
 
+## What is Personal Access Tokens?
+
+Personal access tokens or (PAT) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.
+
+Personal access tokens are intended to access GitHub resources on behalf of yourself. Users can generate PATs in their GitHub account settings and configure the specific permissions and scopes for the token, limiting what actions it can perform.
+ 
+Refer to the link for more information. [Personal Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+
 1. To create a GitHub PAT token, go to your profile on top of the right hand, and then select **Settings**.
 
    ![Picture1](./images/profilesetting.png)
