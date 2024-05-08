@@ -1,3 +1,9 @@
+Note: Upon clicking the validate button for this exercise, you'll receive a prompt to input your GitHub username. To find your GitHub username, simply click on your profile image within your GitHub account. After entering your username, proceed by selecting Submit.
+
+Provide your Orgnization name as Username to validate, **github-bootcamp-cloudlabsuser-xxx**.
+
+Note: Make sure to update the name of your organization, github-bootcamp-cloudlabsuser-xxx.
+
 
 1. Enable **GitHub Advanced Security** option.
 
