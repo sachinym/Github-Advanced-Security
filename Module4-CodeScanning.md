@@ -92,14 +92,6 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/ga.png)
 
-1. Enable **GitHub Advanced Security** option.
-
-   ![github-advanced-security](images/ghasopt.png)
-
-1. Click on **Enable GitHub Advanced Security for this repository**.
-        
-   ![github-advanced-security](images/ghasopt1.png)
-
 1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and click on **Advanced**
 
    ![github-advisory-database](images/gh.png)
