@@ -1,3 +1,12 @@
+
+1. Enable **GitHub Advanced Security** option.
+
+   ![github-advanced-security](images/ghasopt.png)
+
+1. Click on **Enable GitHub Advanced Security for this repository**.
+        
+   ![github-advanced-security](images/ghasopt1.png)
+   
 1. Select **enable** to activate Push Protection.
 
    ![Picture1](./images/mod2ss2.png)
