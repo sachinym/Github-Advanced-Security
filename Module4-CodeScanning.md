@@ -108,7 +108,13 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    >**Note:** Upon clicking the **validate** button for this exercise, you'll receive a prompt to input your GitHub username.Provide your **Orgnization name** as Username to validate, **github-bootcamp-cloudlabsuser-xxx**.
+    
+    >**Note:** Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+    
+  	 ![github-advanced-security](images/validate.png)
+   
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
