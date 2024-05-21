@@ -36,6 +36,8 @@ Personal access tokens are intended to access GitHub resources on behalf of your
  
 Refer to the link for more information. [Personal Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
+  >**Note:** If you haven't already **signed in** to GitHub, proceed to the Getting Started page and complete steps **1** through **4** of the **Login to Github** form.
+
 1. To create a GitHub PAT token, go to your profile on top of the right hand, and then select **Settings**.
 
    ![Picture1](./images/profilesetting.png)
