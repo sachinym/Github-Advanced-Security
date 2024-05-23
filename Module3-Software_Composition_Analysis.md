@@ -84,7 +84,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
     ![github-advisory-database](images/g3.png)
  
  
- 1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
+1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
    
     ![github-advisory-database](images/g4.png)
 
@@ -92,23 +92,23 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g5.png)
 
-4. Now, in this repository, scroll down to the **Configuration options**. We can copy the example that includes the **`fail-on-severity`** possible values.
+1. Now, in this repository, scroll down to the **Configuration options**. We can copy the example that includes the **`fail-on-severity`** possible values.
 
    ![github-advisory-database](images/g6.png)
 
-5. Paste the example next to the  `fail-on-severity`(line number 37) in the workflow file and click on **Commit Changes** in the top right corner.
+1. Paste the example next to the  `fail-on-severity`(line number 37) in the workflow file and click on **Commit Changes** in the top right corner.
 
     ![github-advisory-database](images/g7.png)
 
-6. Click on **Commit Changes** once again in the pop-up that appears.
+1. Click on **Commit Changes** once again in the pop-up that appears.
 
    ![github-advisory-database](images/g8.png)
 
-5. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
+1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
    ![github-advisory-database](images/g9.png)
    
-6. Replace the **`WebGoat/pom.xml`** file between `Line 154` and `Line 161' with the below code:
+1. Replace the **`WebGoat/pom.xml`** file between `Line 154` and `Line 161' with the below code:
  
       ```xml
         <dependency>
@@ -119,15 +119,15 @@ The dependency review action is a GitHub Action designed for this purpose, preve
      ```
     ![github-advisory-database](images/gx2.png)
 
-7. Click on **Commit Changes** twice.
+1. Click on **Commit Changes** twice.
 
-8. Now, click on **Pull Requests** from the top navigation pane.
+1. Now, click on **Pull Requests** from the top navigation pane.
 
    ![github-advisory-database](images/g10.png)
 
-9. Now, click on **New Pull Request** to create a **Pull Request**. 
+1. Now, click on **New Pull Request** to create a **Pull Request**.
 
-10. Navigate to the **Actions** section, and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+1. Navigate to the **Actions** section, and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
     ![github-advisory-database](images/gx1.png)
 
