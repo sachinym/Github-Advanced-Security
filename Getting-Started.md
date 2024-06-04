@@ -71,6 +71,14 @@ has a context menu.
    
    ![Picture1](./images/verify1.png)
 
+1. Accept the GitHub invitation using the same Outlook account.
+
+    ![Picture1](./images/invitation.png)
+
+1. Click the invitation link to join, once it opens in Github.
+
+    ![Picture1](./images/invitation.png)
+
 1. Click "Next" from the bottom right corner to embark on your Lab journey!
 
    ![Picture1](./images/next.png)
