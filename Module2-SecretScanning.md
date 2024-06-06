@@ -111,7 +111,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
     
     >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
-  	 ![github-advanced-security](images/validate.png)
+  	 ![github-advanced-security](images/ghas-exercise1-8.png)
    
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
