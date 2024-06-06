@@ -56,7 +56,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    ![Picture1](./images/org.png) 
 
-1. Select **github-bootcamp-cloudlabsaiuser-####** from organizations.
+1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
 
    ![Picture1](./images/org-new1.png) 
 
@@ -72,7 +72,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    ![github-advisory-database](images/g13.png)
 
-1. scroll down to **Secret Scanning**, click on **enable**.
+1. Scroll down to **Secret Scanning**, click on **enable**.
 
    ![Picture1](./images/mod2ss1.png)
 
@@ -86,7 +86,9 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    ![Picture1](./images/index1.png)    
 
-   >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the previous step.  
+   >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
+
+1. If you get a tab to allow secret then Click on the **Allow Secret** button.
 
 1. Commit this to the default branch, and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
 
@@ -105,9 +107,9 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **validate** button for this exercise, you'll receive a prompt to input your GitHub username.Provide your **Orgnization name** as Username to validate, **github-bootcamp-cloudlabsuser-xxx**.
+    >**Note:** Upon clicking the **validate** button for this exercise, you'll receive a prompt to input your GitHub username.Provide your **Organization name** as Username to validate, **github-bootcamp-cloudlabsuser-xxx**.
     
-    >**Note:** Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
   	 ![github-advanced-security](images/validate.png)
    
@@ -118,7 +120,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
-1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code Security and Analysis** -> scroll down to **Push protection** and click **Enable**.
+1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code security and analysis** -> scroll down to **Push protection** and click **Enable**.
 
    ![Picture1](./images/pushprotection.png)
 
@@ -136,7 +138,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    ![Picture1](./images/developersetting.png)
 
-1. From here, give your secret a name, **secret2**," set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
+1. From here, give your secret a name, **secret2**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
    ![Picture1](./images/developersetting2.png)
 
@@ -146,11 +148,11 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
 1. Return to the **`ghas-bootcamp-javascript`** repository.
   
-1.  Open up **_index.js_**, click the pencil icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code.
+1.  Open up **_index.js_**, click the pencil icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
 
     ![Picture1](./images/index.png)
 
-    >**Note**: Commit the changes with the default options to the attempt to push the code. This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
+    >**Note**: This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
 
     ![push-protection](./images/sscanningpop.png)
 
@@ -170,7 +172,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
 ## Task 3: Create a custom secret pattern and view the results 
 
-1. Within the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed on line 27 of the file **`index.js`**. To discover secrets like this, we will go into this repository's **Settings** -> **Code Security and Analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
+1. Within the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed on line 27 of the file **`index.js`**. To discover secrets like this, we will go into this repository's **Settings** -> **Code security and analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
 
     ![new-pattern-repository](./images/custom11.png)
 
