@@ -58,11 +58,11 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/org.png) 
 
-1. Select **github-bootcamp-cloudlabsaiuser-####** from organizations.
+1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
 
    ![Picture1](./images/org-new1.png) 
 
-1. Click on the **Repositories** and select any repositories.
+1. Click on the **Repositories** and select any repository.
 
    ![Picture1](./images/anyrepo.png) 
 
@@ -70,9 +70,9 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/ghasr1.png)
 
-1. In the left sidebar, click on **Code security & analysis**.
+1. In the left sidebar, click on **Code security and analysis**.
 
-1. To enable **Dependabot**, **Code Scanning** and **Secret Scanning**, for repositories. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
+1. Make sure to enable **Dependabot**, **Code Scanning** and **Secret Scanning**, for repository if not enabled. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
 
    ![github-advisory-database](images/g14.png)
    
