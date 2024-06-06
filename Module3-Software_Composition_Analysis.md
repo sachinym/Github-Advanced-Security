@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Task 1: Turn on Dependabot and other SCA features. Review results. 
 
-1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
+1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization, click on **Repositories** from the top navigation pane.
 
    ![github-advisory-database](images/new-repo.png)
 
@@ -30,11 +30,11 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/g12.png)
 
-1. From the left navigation pane, click on **Code Security and Analysis**.
+1. From the left navigation pane, click on **Code security and analysis**.
 
    ![github-advisory-database](images/g13.png)
 
-1. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot version updates**.
+1. Make sure to enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot version updates** under **Dependabot** if not enabled.
 
    ![github-advisory-database](images/g14.png)
 
@@ -59,6 +59,8 @@ The process involves adding all dependencies from a repository to the dependency
 
     ![github-advisory-database](images/g17.png)
 
+    >**Note:** If you don't see the option **Dependency Graph Upload** under action, then edit the **`.github/workflows/DepGraph.yml`** file and save it as **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file
+ 
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
     ![github-advisory-database](images/g18.png)
@@ -104,6 +106,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g8.png)
 
+    >**Note:** If you get an error while commiting changes asfile couldnot be edited. Then, rename the file **dependency-review.yml** to **dependency-review1.yml** and then try again to commit the changes in new file.
+
 1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
    ![github-advisory-database](images/g9.png)
@@ -121,11 +125,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. Click on **Commit Changes** twice.
 
-1. Now, click on **Pull Requests** from the top navigation pane.
+1. Now, click on **Pull requests** from the top navigation pane.
 
    ![github-advisory-database](images/g10.png)
 
-1. Now, click on **New Pull Request** to create a **Pull Request**.
+1. Now, click on **New pull request** to create a **Pull Request**.
 
 1. Navigate to the **Actions** section, and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
@@ -136,7 +140,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
     >**Note:** Upon clicking the **validate** button for this exercise, you'll receive a prompt to input your GitHub username.Provide your **Orgnization name** as Username to validate, **github-bootcamp-cloudlabsuser-xxx**.
     
-    >**Note:** Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
   	 ![github-advanced-security](images/validate.png)
    
