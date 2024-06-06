@@ -60,7 +60,7 @@ Here are some of the components of GitHub Advanced Security:
 
 1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
 
-   ![Picture1](./images/org-new1.png) 
+   ![Picture1](./images/ghas-exercise1-4.png) 
 
 1. Click on the **Repositories** and select any repository.
 
@@ -82,7 +82,7 @@ Here are some of the components of GitHub Advanced Security:
 
 1. Leave the query suite on Default and click the **Enable CodeQL** button.
 
-   ![github-advisory-database](images/ge.png)
+   ![github-advisory-database](images/ghas-exercise1-5.png)
 
 1. Under **Secret Scanning**, click on **enable**.
 
