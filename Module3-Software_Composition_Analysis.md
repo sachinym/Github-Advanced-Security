@@ -90,7 +90,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    
     ![github-advisory-database](images/g4.png)
 
-1. On `Line 8` of the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action). Copy this link and open it in a new tab.
+1. In the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action) as shown in the below screenshot. Copy this link and open it in a new tab.
 
    ![github-advisory-database](images/g5.png)
 
@@ -98,7 +98,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g6.png)
 
-1. Paste the example next to the  `fail-on-severity`(line number 37) in the workflow file and click on **Commit Changes** in the top right corner.
+1. Paste the example next to the  `fail-on-severity` in the workflow file as shown in the below screenshot and click on **Commit Changes** in the top right corner.
 
     ![github-advisory-database](images/g7.png)
 
@@ -112,7 +112,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g9.png)
    
-1. Replace the **`WebGoat/pom.xml`** file between `Line 154` and `Line 161' with the below code:
+1. Replace the **`WebGoat/pom.xml`** file as shown in the below screenshot with the below code:
  
       ```xml
         <dependency>
