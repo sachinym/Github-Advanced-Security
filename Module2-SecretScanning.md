@@ -54,7 +54,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
 1. Go to your profile on top of the right hand, and then select **Your organizations**.
 
-   ![Picture1](./images/org.png) 
+   ![Picture1](./images/ghas-exercise1-4.png) 
 
 1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
 
@@ -107,7 +107,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **github-bootcamp-cloudlabsuser-xxx**.
+    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
     >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
