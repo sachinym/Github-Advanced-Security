@@ -54,7 +54,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](./images/org.png) 
      
-1. Select **github-bootcamp-cloudlabsaiuser-####** from **organizations**.
+1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from **organizations**.
 
    ![Picture1](./images/org-new1.png) 
 
@@ -84,26 +84,26 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/functionapp.png)
 
-1. Click on **Create**.
+1. Click on **+ Create**.
 
-1. On the basis of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
+1. From the Create Function App tab, select **Consumption** and select **Next**.
+
+   ![Picture1](./images/ghas-exercise1-9.png)
+
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
-    | **Subscription** | Select your Subscription |
-    | **Resource Group** | Select your Resource Group |
-    | **Function App name** | **function-webhooks** |
-    | **Run time stack** | **Node JS** |
-    | **Do you want to deploy code or a container image?** | **Code** |
+    | **Subscription** | Keep it as default |
+    | **Resource Group** | Lab-VM |
+    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/>** |
+    | **Runtime stack** | **Node.js** |
     | **Operating System** | **Windows** |
-    | **Hosting options and plans** | **Consumption (Serverless)** |
 
-   >**Note**: To make the **Function App name** unique, append a few random digits to the end of it, for example: **function-webhooks321**.
+   ![Picture1](./images/ghas-exercise1-10.png)
 
-   ![Picture1](./images/functionapp1.png)
-   
-   ![Picture1](./images/functionapp2.png)
-   
+     >**Note:** Keep rest of the options as default.
+ 
 1. Once the deployment is completed, click on **Go to resource**.
 
 1. On the **Overview (1)** page of the **Function app**, under the  **Function** tab, click on **Create function (2)**. It will open a  page for **Create function**. Search for and select **HTTP trigger (3)**. Click on **Next (4)**.
@@ -165,9 +165,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/response.png)
 
-17. Navigate back to your **Function app**. Click on **Monitor (1)** under the **Developers** section, and click on **Invocations (2)**. Here, it will give the most recent invocation traces.
+17. Navigate back to your **Function app**. Click on **Invocations (1)**. Here, it will give the most recent invocation traces.
 
-     ![Picture1](./images/invocations.png)
+     ![Picture1](./images/ghas-exercise1-12.png)
    
      >**Note:** It will take 5-7 minutes to show.
 
