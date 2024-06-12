@@ -34,15 +34,19 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/g13.png)
 
-1. Make sure to enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot version updates** under **Dependabot** if not enabled.
+1. Now enable all the dependecy requirments, **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot version updates** under **Dependabot** if not enabled.
 
    ![github-advisory-database](images/g14.png)
 
-1. Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
+   >**Info:** Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
 
-1. You can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
+1. Now you can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
+
+   >**Note:** The number of dependency alerts can be differ for you as it takes some time to scan the whole repositry. 
 
    ![github-advisory-database](images/g15.1.png)
+   
+   ![github-advisory-database](images/dependPR.png)
 
 ## Task 2: Use the dependency submission action on a Java project. Review results
 
@@ -52,12 +56,15 @@ The process involves adding all dependencies from a repository to the dependency
 1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/DepGraph.yml`** file.
 
    ![github-advisory-database](images/g16.png)
+       
+   ![github-advisory-database](images/mavendevices.png)
 
 1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
 
 1.  Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
 
     ![github-advisory-database](images/g17.png)
+
 
     >**Note:** If you don't see the option **Dependency Graph Upload** under action, then edit the **`.github/workflows/DepGraph.yml`** file and save it as **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file
  
