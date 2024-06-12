@@ -5,12 +5,12 @@
  In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
 ## Lab Objectives
-In this lab, you will perform:
-- Task 1: Introduction to Code Scanning
-- Task 2: What is CodeQL and how is it different from other static analysis tools? 
-- Task 3: Turn on the default setup on a Python repository. View results. 
-- Task 4: Turn on advanced setup on a Java repository. Customize the scan. View results. 
-- Task 5: Add some vulnerable code via a pull request and view the scan results in the PR.  
+In this lab, you will learn and perform:
+- Introduction to Code Scanning
+- What is CodeQL and how is it different from other static analysis tools? 
+- Task 1: Turn on the default setup on a Python repository. View results. 
+- Task 2: Turn on advanced setup on a Java repository. Customize the scan. View results. 
+- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR.  
 
 ## Estimated timing: 40 minutes
 
@@ -64,15 +64,15 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/ge.png)
 
-1. While that runs, let us see the difference between the two query suites.
-  - The Default query suite (also known as the `code-scanning` query suite in the _Advanced_ setup) has a less than 10% False Positive rate from findings within the Open Source ecosystem. We focus very heavily on providing true positive findings that are remotely exploitable, and this suite is the most "dialed in" in terms of findings.
-  - The Extended query suite (also known as the `security-extended` query suite in the _Advanced_ setup) has a less than 30% False Positive rate from findings within the Open Source ecosystem. You will find several interesting queries pulled into this suite, including _Memory Exploitation_ findings for C/C++ and other slightly more niche security vulnerabilities in other languages.
+1. While that runs (It'll take approx. 5 minutes to get it enabled), let us see the difference between the two query suites.
+	  - The Default query suite (also known as the `code-scanning` query suite in the _Advanced_ setup) has a less than 10% False Positive rate from findings within the Open Source ecosystem. We focus very heavily on providing true positive findings that are remotely exploitable, and this suite is the most "dialed in" in terms of findings.
+	  - The Extended query suite (also known as the `security-extended` query suite in the _Advanced_ setup) has a less than 30% False Positive rate from findings within the Open Source ecosystem. You will find several interesting queries pulled into this suite, including _Memory Exploitation_ findings for C/C++ and other slightly more niche security vulnerabilities in other languages.
 
-1. After you've clicked the **Enable CodeQL** button, go to the _Actions_ tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes.
+1. After you've clicked the **Enable CodeQL** button, go to the _Actions_ tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes. You can also check more configuration and details inside the the github action run.
 
    ![github-advisory-database](images/gf.png)
 
-## Task 2: Turn on advanced setup on a Java repository. Customize the scan. View results. 
+## Task 2: Turn on advanced setup on a Java repository, Customize the scan and view results. 
 
 ## Advanced Setup
 
@@ -98,14 +98,19 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
-1. In the **codeql.yml** file, we are going to copy from the workflow file **`# queries: security-extended` (1)** and append this to a new line , which will read **`queries: security-extended` (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**.
+1. In the **codeql.yml** file, we are going to copy from the workflow file **`# queries: security-extended` (1)** and append this to a new line , which will read **`queries: security-extended` (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove **#** to uncomment it. 
 
    ![github-advisory-database](images/gi.png)
   
 1. Now,  go to the **Actions** tab to confirm the CodeQL action is running.
 
    ![github-advisory-database](images/gj.png)
+   
+1. You can also review the code and results of that action.
 
+   ![github-advisory-database](images/runactions.png)
+
+   
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
