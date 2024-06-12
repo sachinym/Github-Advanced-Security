@@ -88,9 +88,9 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
 
-1. If you get a tab to allow secret then Click on the **Allow Secret** button.
+1. Once you get a tab to allow secret then Click on the **Allow Secret** button.
 
-1. Commit this to the default branch, and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
+1. Click on Commit changes again and commit directly to default branch, and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
 
    ![Picture1](./images/allowsecrett1.png)    
 
@@ -100,7 +100,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
    
     >**Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-1. Review the secret is identified as  _"Possibly active secret"_.
+1. Review the secret is identified as  _"Possibly active secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
 
    ![Picture1](./images/possibleactivesecret.png)
 
@@ -148,7 +148,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
 1. Return to the **`ghas-bootcamp-javascript`** repository.
   
-1.  Open up **_index.js_**, click the pencil icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
+1.  Open up **_index.js_**, click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
 
     ![Picture1](./images/index.png)
 
@@ -176,7 +176,9 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
     ![new-pattern-repository](./images/custom11.png)
 
-1. When creating a new pattern, first include the name **Test-Pattern(1)** and enter a test string for the pattern **api-password: "gH4$kP!2w_"(5)**. Because writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process. You can also refer to the Field Security team's open-source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository, which contains several useful examples.
+1. When creating a new pattern, first include the name **Test-Pattern  (1)** and enter a test string for the pattern **api-password: "gH4$kP!2w_  "(5)**. Because writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
+
+   >**Note:** You can also refer to the Field Security team's open-source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository, which contains several useful examples.
 
 1. Using the [Generic Secrets / Passwords](https://github.com/advanced-security/secret-scanning-custom-patterns/tree/main/generic) from the field security team's repository, we grab the following pattern format:
 
