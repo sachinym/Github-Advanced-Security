@@ -66,7 +66,7 @@ The process involves adding all dependencies from a repository to the dependency
     ![github-advisory-database](images/g17.png)
 
 
-    >**Note:** If you don't see the option **Dependency Graph Upload** under action, then edit the **`.github/workflows/DepGraph.yml`** file and save it as **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file
+    >**Note:** If you don't see the **Dependency Graph Upload** action under workflows, then edit the **`.github/workflows/DepGraph.yml`** file and just change the extenion with **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file. Also you might see that the action already completed, this happened because we have edited the file and it got triggered automatically. You can rerun it to get the more details. 
  
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
@@ -82,6 +82,7 @@ The process involves adding all dependencies from a repository to the dependency
 
 
 ## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability
+
 ## Dependency Review Action
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
@@ -105,15 +106,16 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g6.png)
 
-1. Paste the example next to the  `fail-on-severity` in the workflow file as shown in the below screenshot and click on **Commit Changes** in the top right corner.
+1. Paste the example next to the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **#** as shown in the below screenshot and click on **Commit Changes** in the top right corner.
 
     ![github-advisory-database](images/g7.png)
+   ![github-advisory-database](images/uncmnt.png)
 
 1. Click on **Commit Changes** once again in the pop-up that appears.
 
    ![github-advisory-database](images/g8.png)
 
-    >**Note:** If you get an error while commiting changes asfile couldnot be edited. Then, rename the file **dependency-review.yml** to **dependency-review1.yml** and then try again to commit the changes in new file.
+    >**Note:** If you get an error while commiting changes as file could not be edited. to fix that, rename the file **dependency-review.yml** to **dependency-review1.yml** and then try again to commit the changes in new action file.
 
 1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
@@ -130,15 +132,19 @@ The dependency review action is a GitHub Action designed for this purpose, preve
      ```
     ![github-advisory-database](images/gx2.png)
 
-1. Click on **Commit Changes** twice.
+1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
 
-1. Now, click on **Pull requests** from the top navigation pane.
+   ![github-advisory-database](images/proposechanges.png)
 
-   ![github-advisory-database](images/g10.png)
+1. Now, click on raise **Pull requests**. No need to merge the PR.
 
-1. Now, click on **New pull request** to create a **Pull Request**.
+   ![github-advisory-database](images/createpr.png)
 
-1. Navigate to the **Actions** section, and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+1. You will see after few seconds that all the checks got failed due to the dependency review action.
+
+   ![github-advisory-database](images/prfail.png)
+
+1. You can also see the error details on **Actions** section, navigate to action section and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
     ![github-advisory-database](images/gx1.png)
 
