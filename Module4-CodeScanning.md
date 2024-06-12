@@ -18,12 +18,12 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar04.png)
    
-## Task 1: Introduction to Code Scanning 
+## Introduction to Code Scanning 
 
 Code scanning in GitHub is a powerful feature designed to enhance the security of your software projects by automatically identifying and alerting you to potential security vulnerabilities in your codebase. Leveraging advanced static analysis techniques, and code scanning helps detect security flaws, bugs, and other issues early in the development process, enabling developers to address them proactively before they escalate into larger problems. 
 
 
-## Task 2: What is CodeQL and how is it different from other static analysis tools?
+## What is CodeQL and how is it different from other static analysis tools?
 
 1. Code Scanning, powered by the CodeQL engine, performs thorough static analysis by accessing source code and integrating with the build process for compiled languages (or simulating compilation for interpreted languages). This approach ensures precise mapping of data flow and the ability to differentiate between remote and local sources. 
 
@@ -38,7 +38,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 1. For `interpreted` languages, like Javascript and Python, the CodeQL engine performs a depth-first, recursive extraction of the code where `DataFlow` nodes are created from things like `return` statements and passing variables from one function to another. We can gain a comprehensive view of the application and avoid flagging false positive vulnerabilities in code that is never called or executed.
 
 
-## Task 3: Turn on the default setup on a Python repository. View results. 
+## Task 1: Turn on the default setup on a Python repository. View results. 
 
 ## Default Setup
 
@@ -72,7 +72,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/gf.png)
 
-## Task 4: Turn on advanced setup on a Java repository. Customize the scan. View results. 
+## Task 2: Turn on advanced setup on a Java repository. Customize the scan. View results. 
 
 ## Advanced Setup
 
@@ -120,7 +120,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 <validation step="fdc513c6-e817-48a5-aec1-8875b2e7b0a4" />
 
-## Task 5: Add some vulnerable code via a pull request and view the scan results in the PR.  
+## Task 3: Add some vulnerable code via a pull request and view the scan results in the PR.  
 
 ## Pull Request scans and Accurate Findings
 
@@ -164,7 +164,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![clear-text-logging-finding](images/prfail.png)
 
-#### Task 6: CodeQL Query Operations in Visual Studio.
+#### Task 4: CodeQL Query Operations in Visual Studio.
 
 1. Start **Visual Studio Code** from the desktop.
 
