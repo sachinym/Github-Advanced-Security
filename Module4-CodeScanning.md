@@ -225,7 +225,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 1. Add the Database by the following command and press enter.
 
     ```
-    https://github.com/github-bootcamp-cloudlabsuser-xxx/ghas-bootcamp-python
+    https://github.com/github-bootcamp-xxxx-cloudlabsuser-xxx/ghas-bootcamp-python
     ```
     >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
 
