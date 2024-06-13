@@ -149,13 +149,13 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
   
     >**Note**: You can make some more changes to your repositories. It will send the POST request to the function app.
 
-13. Navigate to your repository, and click on **settings**.
+13. Navigate back to your organization, and click on **settings**.
 
      ![Picture1](./images/ghasr1.png)
 
 14. Click on **Webhook** and select the Webhook you have created.
 
-15. Scroll down to the bottom and you will find some **Recent Deliveries**.
+15. Scroll down to the bottom and you will find some **Recent Deliver	ies**.
 
     ![Picture1](./images/recentdelivery.png)
 
@@ -197,7 +197,7 @@ You can create rulesets to control how users interact with selected branches and
 
 1. On GitHub, navigate to the **main page** of the repository.
 
-1. Under your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click on **Settings**.
+1. Under any of	 your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click on **Settings**.
 
    ![Picture1](./images/ghasr1.png)  
 
