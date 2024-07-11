@@ -121,7 +121,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g9.png)
    
-1. Add the provided code to the **WebGoat/pom.xml** file as shown in the below screenshotwith the below code.
+1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot and delete the existing lines as mentioned.
  
       ```xml
         <dependency>
@@ -130,6 +130,9 @@ The dependency review action is a GitHub Action designed for this purpose, preve
             <version>2.13.1</version>
         </dependency>
      ```
+
+    ![github-advisory-database](images/gx2at.png)
+
     ![github-advisory-database](images/gx2.png)
 
 1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
