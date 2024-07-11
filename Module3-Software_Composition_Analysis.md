@@ -65,8 +65,7 @@ The process involves adding all dependencies from a repository to the dependency
 
     ![github-advisory-database](images/g17.png)
 
-
-    >**Note:** If you don't see the **Dependency Graph Upload** action under workflows, then edit the **`.github/workflows/DepGraph.yml`** file and just change the extenion with **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file. Also you might see that the action already completed, this happened because we have edited the file and it got triggered automatically. You can rerun it to get the more details. 
+ 	   >**Note:** If you don't see the **Dependency Graph Upload** action under workflows, then edit the **`.github/workflows/DepGraph.yml`** file and just change the extenion with **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file. Also you might see that the action already completed, this happened because we have edited the file and it got triggered automatically. You can rerun it to get the more details. 
  
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
@@ -79,7 +78,6 @@ The process involves adding all dependencies from a repository to the dependency
 1.  This will show the new critical vulnerabilities that have been identified in transitive dependencies.
 
     ![github-advisory-database](images/g20.png)
-
 
 ## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability
 
