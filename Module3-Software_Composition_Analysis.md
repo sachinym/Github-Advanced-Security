@@ -108,6 +108,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. Paste the example next to the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **#** as shown in the below screenshot and click on **Commit Changes** in the top right corner.
 
+	>**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: low, moderate, high, critical** is directly below the **comment-summary-in-pr: always** line, as shown below:
+
     ![github-advisory-database](images/g7.png)
    ![github-advisory-database](images/uncmnt.png)
 
@@ -121,7 +123,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g9.png)
    
-1. Replace the **`WebGoat/pom.xml`** file as shown in the below screenshot with the below code:
+1. Add the provided code to the **WebGoat/pom.xml** file as shown in the below screenshotwith the below code.
  
       ```xml
         <dependency>
