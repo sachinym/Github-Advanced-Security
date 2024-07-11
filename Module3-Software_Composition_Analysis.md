@@ -16,7 +16,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar03.png)
 
-## Task 1: Turn on Dependabot and other SCA features. Review results. 
+## Task 1: Turn on Dependabot and other SCA features and review results. 
 
 1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization, click on **Repositories** from the top navigation pane.
 
@@ -48,7 +48,7 @@ In this lab, you will perform:
    
    ![github-advisory-database](images/dependPR.png)
 
-## Task 2: Use the dependency submission action on a Java project. Review results
+## Task 2: Use the dependency submission action on a Webgoat project and review results
 
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
