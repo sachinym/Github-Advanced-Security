@@ -8,8 +8,8 @@
 In this lab, you will learn and perform:
 - Introduction to Code Scanning
 - What is CodeQL and how is it different from other static analysis tools? 
-- Task 1: Turn on the default setup on a Python repository and view results 
-- Task 2: Turn on advanced setup on a Java repository. Customize the scan and view results 
+- Task 1: Turn on the default setup on a Python repository
+- Task 2: Turn on advanced setup on a Java repository
 - Task 3: Add some vulnerable code via a pull request and view the scan results in the PR
 - Task 4: CodeQL Query Operations in Visual Studio  
 
@@ -38,7 +38,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 1. For `interpreted` languages, like Javascript and Python, the CodeQL engine performs a depth-first, recursive extraction of the code where `DataFlow` nodes are created from things like `return` statements and passing variables from one function to another. We can gain a comprehensive view of the application and avoid flagging false positive vulnerabilities in code that is never called or executed.
 
-## Task 1: Turn on the default setup on a Python repository and view results 
+## Task 1: Turn on the default setup on a Python repository
 
 ## Default Setup
 
@@ -72,7 +72,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/gf.png)
 
-## Task 2: Turn on advanced setup on a Java repository, Customize the scan and view results 
+## Task 2: Turn on advanced setup on a Java repository
 
 ## Advanced Setup
 
@@ -98,7 +98,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
-1. In the **codeql.yml** file, we are going to copy from the workflow file **`# queries: security-extended` (1)** and append this to a new line , which will read **`queries: security-extended` (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove **#** to uncomment it. 
+1. Now you are redirect you to the codeql.yml file in github/ workflows, and we need to copy from the **codeql.yml** file **# queries: security-extended (1)** and append this to a new line , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
    ![github-advisory-database](images/gi.png)
   
