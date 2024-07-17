@@ -10,7 +10,8 @@ In this lab, you will learn and perform:
 - What is CodeQL and how is it different from other static analysis tools? 
 - Task 1: Turn on the default setup on a Python repository and view results 
 - Task 2: Turn on advanced setup on a Java repository. Customize the scan and view results 
-- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR  
+- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR
+- Task 4: CodeQL Query Operations in Visual Studio  
 
 ## Estimated timing: 40 minutes
 
@@ -168,7 +169,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![clear-text-logging-finding](images/prfail.png)
 
-### Task 3.2: CodeQL Query Operations in Visual Studio
+## Task 4: CodeQL Query Operations in Visual Studio
 
 1. Start **Visual Studio Code** from the desktop.
 
