@@ -8,9 +8,9 @@
 In this lab, you will learn and perform:
 - Introduction to Code Scanning
 - What is CodeQL and how is it different from other static analysis tools? 
-- Task 1: Turn on the default setup on a Python repository. View results. 
-- Task 2: Turn on advanced setup on a Java repository. Customize the scan. View results. 
-- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR.  
+- Task 1: Turn on the default setup on a Python repository and view results 
+- Task 2: Turn on advanced setup on a Java repository. Customize the scan and view results 
+- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR  
 
 ## Estimated timing: 40 minutes
 
@@ -37,8 +37,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 1. For `interpreted` languages, like Javascript and Python, the CodeQL engine performs a depth-first, recursive extraction of the code where `DataFlow` nodes are created from things like `return` statements and passing variables from one function to another. We can gain a comprehensive view of the application and avoid flagging false positive vulnerabilities in code that is never called or executed.
 
-
-## Task 1: Turn on the default setup on a Python repository. View results. 
+## Task 1: Turn on the default setup on a Python repository and view results 
 
 ## Default Setup
 
@@ -72,7 +71,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/gf.png)
 
-## Task 2: Turn on advanced setup on a Java repository, Customize the scan and view results. 
+## Task 2: Turn on advanced setup on a Java repository, Customize the scan and view results 
 
 ## Advanced Setup
 
@@ -125,9 +124,9 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 <validation step="fdc513c6-e817-48a5-aec1-8875b2e7b0a4" />
 
-## Task 3: Add some vulnerable code via a pull request and view the scan results in the PR.  
+## Task 3: Add some vulnerable code via a pull request and view the scan results in the PR  
 
-## Pull Request scans and Accurate Findings
+### Task 3.1: Pull Request scans and Accurate Findings
 
 1. Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository. Follow the instructions from the **Getting Started** section to go to the `ghas-bootcamp-python` repository.
 
@@ -169,7 +168,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![clear-text-logging-finding](images/prfail.png)
 
-#### Task 4: CodeQL Query Operations in Visual Studio.
+### Task 3.2: CodeQL Query Operations in Visual Studio
 
 1. Start **Visual Studio Code** from the desktop.
 
@@ -191,10 +190,11 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
     
 1. Clone the repository by running the following command:
 
+      >**Note**: Make sure to update the name of your organization, **github-bootcamp-xxxx-cloudlabsuserxxx**.
+
       ```
-      git clone --recursive https://github.com/github-bootcamp-cloudlabsuser-xxx/ghas-bootcamp-python.git
+      git clone --recursive https://github.com/github-bootcamp-xxxx-cloudlabsuserxxx/ghas-bootcamp-python.git
       ```
-      >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
 
     ![Picture1](./images/clonerepo.png)
 
@@ -224,10 +224,11 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 1. Add the Database by the following command and press enter.
 
+    >**Note**: Make sure to update the name of your organization, **github-bootcamp-xxxx-cloudlabsuserxxx**.
+
     ```
-    https://github.com/github-bootcamp-xxxx-cloudlabsuser-xxx/ghas-bootcamp-python
+    https://github.com/github-bootcamp-xxxx-cloudlabsuserxxx/ghas-bootcamp-python
     ```
-    >**Note**: Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
 
     ![Picture1](./images/clonerepo7.png)
 
