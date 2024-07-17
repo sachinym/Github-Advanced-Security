@@ -7,7 +7,7 @@ This lab guides users through enabling GitHub secret scanning for an organizatio
 ## Lab Objectives
 In this lab, you will perform:
 
-- Task 1: Turn on secret scanning for the entire organization. Review results
+- Task 1: Turn on secret scanning for the entire organization aand review results
 - Task 2: Turn on push protection and try pushing a new secret (a GitHub token) into a repository
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understand the results 
@@ -18,7 +18,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar02.png)
 
-## Task 1: Turn on secret scanning for the entire organization. Review results
+## Task 1: Turn on secret scanning for the entire organization and review results
 
 ## What is secret scanning?
 
