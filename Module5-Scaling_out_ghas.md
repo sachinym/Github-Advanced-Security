@@ -147,7 +147,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/newrepo1.png)
   
-    >**Note**: You can make some more changes to your repositories. It will send the POST request to the function app.
+    >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
 13. Navigate back to your organization, and click on **settings**.
 
