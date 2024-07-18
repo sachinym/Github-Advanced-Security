@@ -143,7 +143,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/newrepo.png)
 
-12. Give the **Repositories name** as **Test-webhook (1)**, select **Public (2)**, and click on **Create repositories (3)** to create them.
+12. To create the repositories, name them **Test-webhook** (1), select **Public** (2), and ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
 
     ![Picture1](./images/newrepo1.png)
   
