@@ -73,6 +73,12 @@ In this lab, you will perform:
    
    >**Note:** It takes around 15 minutes to arrive.
 
+1. In Microsoft Defender for Cloud, navigate to the **Recommendations** section. Here, you will find the recommendations related to GitHub. These recommendations will provide insights and best practices to enhance the security and compliance of your GitHub repositories integrated with Azure services.
+
+   ![](./images/recomendations.png)
+
+  >**Note**: It may take up to 24 hours for the changes to be reflected.
+
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
