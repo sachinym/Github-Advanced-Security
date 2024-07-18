@@ -77,7 +77,7 @@ In this lab, you will perform:
 
    ![](./images/recomendations.png)
 
-  >**Note**: It may take up to 24 hours for the changes to be reflected.
+  >**Note**: It may take up to 24 hours for the changes to be reflected, and there is a possibility that you may receive different recommendations.
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
