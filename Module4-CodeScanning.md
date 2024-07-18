@@ -160,8 +160,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
    ![github-advisory-database](images/gp.png)
      
 1. Because our main branch isn't a `Protected Branch`, it may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
-
-1. CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding. But why?
+ - CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding. But why?
 
 1. Go to the **Files changed** tab and review the code we added.
   - What we find on **Line 54** is a **`val`** assignment calling **`login.objects.raw`**, which does not exist as a function in this project.
@@ -244,6 +243,37 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 1. It will generate the simple query, click on the **Run** (1) and analyze the result.
 
     ![Picture1](./images/clonerepo10.png)
+
+1. Now, replace the existing code with the provided code snippet. Then, click on the **Run** button to execute it.
+
+  - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
+
+	  ```
+	  import python
+	import semmle.python.types.Builtins
+	
+	predicate named_entity(string name, string kind) {
+	  exists(Builtin::special(name)) and kind = "special"
+	  or
+	  exists(Builtin::builtin(name)) and kind = "builtin"
+	  or
+	  exists(Module m | m.getName() = name) and kind = "module"
+	  or
+	  exists(File f | f.getShortName() = name + ".py") and kind = "file"
+	}
+	
+	from string name, string kind
+	where
+	  name in ["foo", "baz", "main", "os", "sys", "re"] and
+	  named_entity(name, kind)
+	select name, kind order by name, kind
+	  ```
+
+    ![Picture1](./images/module4task4code1.png)
+
+1. This results helps to understand the classification and usage of these entities in the code.
+
+    ![Picture1](./images/module4task4code2.png)
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
