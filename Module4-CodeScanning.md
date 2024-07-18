@@ -271,7 +271,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![Picture1](./images/module4task4code1.png)
 
-1. This results helps to understand the classification and usage of these entities in the code.
+17. This results helps to understand the classification and usage of these entities in the code.
 
     ![Picture1](./images/module4task4code2.png)
 
