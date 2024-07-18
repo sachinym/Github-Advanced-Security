@@ -149,6 +149,98 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
+13. Click on **Add file** (1) and then click on **Create new file** (2).
+
+     ![Picture1](./images/lab7testwebhook1.png)
+
+14. Create a file named **issue-template.md** (1), add the provided code into the file, and then click on **Commit changes** (3) to save.
+
+    ```
+    ## Build Failure
+
+    **Workflow:** ${{ github.workflow }}  
+    **Branch:** ${{ github.ref }}  
+    **Commit:** ${{ github.sha }}  
+    **Actor:** ${{ github.actor }}  
+
+    ### Logs
+    See the attached logs for more details.
+    ```
+
+     ![Picture1](./images/lab7testwebhook2.png)
+
+15. **Commit changes** the new file to your repository.
+
+     ![Picture1](./images/lab7testwebhook3.png)
+
+16. Navigate to the **Actions** tab to view and manage your GitHub Actions workflows.
+
+     ![Picture1](./images/lab7testwebhook4.png)
+
+17. On the **Get Started with GitHub Actions** page, click on the **Configure** button to begin setting up a workflow.
+
+     ![Picture1](./images/lab7testwebhook5.png)
+
+18. Change the file name of the YAML configuration file to **ci.yml** (1). Paste the provided **code** (2) into this file to define the workflow configuration. Finally, click on **Commit changes** (3) to save the file with these updates.
+
+	```
+	name: CI 
+	
+	on: [push, pull_request] 
+	
+	jobs: 
+	  build: 
+	    runs-on: ubuntu-latest 
+	
+	    steps: 
+	      - name: Check out the repository 
+	        uses: actions/checkout@v2 
+	
+	      - name: Set up Python 
+	        uses: actions/setup-python@v2 
+	        with: 
+	          python-version: '3.x' 
+	
+	      - name: Install dependencies 
+	        run: | 
+	          python -m pip install --upgrade pip 
+	          pip install -r requirements.txt 
+	
+	      - name: Run tests 
+	        id: run-tests 
+	        run: | 
+	          pytest --junitxml=test-results.xml 
+	        continue-on-error: true 
+	
+	      - name: Upload Test Results 
+	        if: always() 
+	        uses: actions/upload-artifact@v2 
+	        with: 
+	          name: test-results 
+	          path: test-results.xml 
+	
+	      - name: Create GitHub Issue on Failure 
+	        if: failure() 
+	        uses: actions/create-issue@v2 
+	        with: 
+	          token: ${{ secrets.GITHUB_TOKEN }} 
+	          title: Build Failure 
+	          body-path: ./issue-template.md 
+	          labels: bug 
+	          assignees: your-github-username 
+	 
+	```
+
+     ![Picture1](./images/lab7testwebhook6.png)
+
+19. **Commit changes** the new file to your repository.
+
+     ![Picture1](./images/lab7testwebhook7.png)
+
+20. Navigate to the **Actions** tab (1) where you'll find that the creation of **ci.yml** (2) failed due to an issue.
+
+     ![Picture1](./images/lab7testwebhook8.png)
+
 13. Navigate back to your organization, and click on **settings**.
 
      ![Picture1](./images/ghasr1.png)
