@@ -77,7 +77,11 @@ In this lab, you will perform:
 
    ![](./images/recomendations.png)
 
-  >**Note**: It may take up to 24 hours for the changes to be reflected, and there is a possibility that you may receive different recommendations.
+    >**Note**: It may take up to 24 hours for the changes to be reflected, and there is a possibility that you may receive different recommendations.
+
+1. Navigate to each recommendation for further information to explore detailed insights and actionable steps provided by Microsoft Defender for Cloud.
+
+   ![](./images/lab6recommendationat1.png)
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
