@@ -17,19 +17,21 @@ In this lab, you will perform:
 
 ## Task 1: Connect your GitHub account to Microsoft Defender for Cloud
 
-1. In the search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+Microsoft Defender for Cloud integrates with GitHub to provide enhanced security for your repositories. It offers continuous monitoring, identifies vulnerabilities, and provides actionable recommendations to help you remediate issues, ensuring your codebase remains secure and compliant.
+
+1. In the search bar of the Azure portal, type **Defender**. From the search results, select **Microsoft Defender for Cloud**. This will navigate you to the Microsoft Defender for Cloud dashboard.
 
    ![Picture1](./images/image1.png)
 
-1. The **Getting Started** page will open; select **skip**.
+1. The **Getting Started** page will open by default. Select **Skip** to proceed directly to the main Microsoft Defender for Cloud dashboard.
 
    ![Picture1](./images/image12.jpg)
 
-1. In the left menu for Microsoft Defender for Cloud, under **Management**, select **Environment settings (1)**, select **Add environment (2)** from the top and then select **GitHub (3)** from the dropdown.
+1. In the Microsoft Defender for Cloud left menu, under **Management**, select **Environment settings (1)**. Click **Add environment (2)** from the top, then choose **GitHub (3)** from the dropdown. Follow the prompts to connect your GitHub account and configure the environment settings.
 
    ![Picture1](./images/image2.png)
 
-1. On the **GitHub Connection** page, under Account details, provide the below settings.
+1. On the **GitHub Connection** page, under **Account details**, provide the required settings as specified.
 
    | Setting  | Value |
    -----------|---------
@@ -39,35 +41,35 @@ In this lab, you will perform:
    
    ![Picture1](./images/image3.png)
 
-1. Select **Next: Configure access**.
+1. Select **Next: Configure access** to proceed to the next step.
 
-1. Click the **Authorize** button.
+1. Click the **Authorize** button to grant Microsoft Defender for Cloud access to your GitHub account.
        
    ![Picture1](./images/image4.png)
 
-1. Click on **Authorize Microsoft Security Devops** to **Authorize**.
+1. Click on **Authorize Microsoft Security DevOps** to grant authorization.
    
    ![Picture1](./images/image5.png)
 
-1. After the authorization is complete, click on **Install** under the **Install DevOps security app** option.
+1. After authorization is complete, click on **Install** under the **Install DevOps Security App** option to finalize the setup.
    
    ![Picture1](./images/image6.png)
 
-1. Select your GitHub organization for **All repositories** and click on **Install**.
+1. Select your GitHub organization for **All repositories** and click on **Install** to apply the integration.
    
    ![Picture1](./images/image7.png)
    
    ![Picture1](./images/image8.png)
 
-1. Click on **Next: Review and generate**.
+1. Click on **Next: Review and generate** to proceed to the final review.
    
    ![Picture1](./images/image9.png)
 
-1. Review your details and click on **Create**.
+1. Review your details and click on **Create** to finalize the setup and complete the integration process.
 
    ![Picture1](./images/image10.png)
    
-1. You will get GitHub connector in the **Environment settings** page.
+1. You will see the GitHub connector listed on the **Environment settings** page.
    
    ![Picture1](./images/image11.png)                  
    
@@ -85,9 +87,9 @@ In this lab, you will perform:
 
 1. Now click on the **Findings** tab (1). Here, you will see a comprehensive list of security alerts that have been detected. Select any alert to access detailed information, including:
 
-- **Description**: An explanation of the issue and how it was detected.
-- **Severity**: The level of threat posed by the vulnerability, helping you prioritize your response.
-- **Additional Information**: Further details, to help you understand and address the issue effectively.
+	- **Description**: An explanation of the issue and how it was detected.
+	- **Severity**: The level of threat posed by the vulnerability, helping you prioritize your response.
+	- **Additional Information**: Further details, to help you understand and address the issue effectively.
 
    ![](./images/lab6recommendationat2.png)
 
