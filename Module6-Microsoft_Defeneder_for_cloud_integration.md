@@ -79,9 +79,41 @@ In this lab, you will perform:
 
     >**Note**: It may take up to 24 hours for the changes to be reflected, and there is a possibility that you may receive different recommendations.
 
-1. Navigate to each recommendation for further information to explore detailed insights and actionable steps provided by Microsoft Defender for Cloud.
+1. Navigate to each recommendation for detailed insights and actionable steps provided by Microsoft Defender for Cloud. Review the remediation section to explore potential vulnerabilities and their resolutions.
 
    ![](./images/lab6recommendationat1.png)
+
+1. Now click on the **Findings** tab (1). Here, you will see a comprehensive list of security alerts that have been detected. Select any alert to access detailed information, including:
+
+- **Description**: An explanation of the issue and how it was detected.
+- **Severity**: The level of threat posed by the vulnerability, helping you prioritize your response.
+- **Additional Information**: Further details, to help you understand and address the issue effectively.
+
+   ![](./images/lab6recommendationat2.png)
+
+1. Now, navigate back to your Defender for Cloud dashboard. Under the **Cloud Security** section (1), click on **DevOps security** (2). Here, you will find all your GitHub repositories. Click on **ghas-bootcamp-webgoat** (3) to view the recommendations and alerts associated with this repository.
+
+   ![](./images/lab6recommendationat3.png)
+
+1. In the **Recommendations** section (1), click on **GitHub repositories should have code scanning findings resolved** (2). This will provide you with specific recommendations for addressing code scanning issues.
+
+   ![](./images/lab6recommendationat4.png)
+
+1. Here, you can review the **Description** to understand the nature of the issue. Click on **Remediate** to get detailed information on possible resolutions and steps to mitigate the vulnerability.
+
+   ![](./images/lab6recommendationat5.png)
+
+1. Now, click on the **Findings** tab (1). Here, you can find the security checks performed by GitHub related to code scanning. These findings provide detailed insights into the identified vulnerabilities.
+
+   ![](./images/lab6recommendationat6.png)
+
+1. Click on any one of the findings to get its detailed **Description**, general information like **Severity**, and additional information. This will help you understand the issue in depth and take appropriate actions.
+
+   ![](./images/lab6recommendationat7.png)
+
+1. Now, navigate back to your GitHub account and go to the **ghas-bootcamp-webgoat** repository. Click on the **Security** tab (1) and then go to the **Code scanning** alerts (2). Here, you will find all the alerts related to secret scanning. These results should match the security alerts reflected in your Defender for Cloud.
+
+   ![](./images/lab6recommendationat8.png)
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
