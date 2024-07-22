@@ -71,6 +71,8 @@ has a context menu.
    
    ![Picture1](./images/verify1.png)
 
+   >**Note:** Please do not enable Two-Factor Authentication (2FA) after logging into GitHub for this lab. To avoid complications, use GitHub user accounts as outlined in the lab instructions. This will help prevent any issues related to 2FA validation during the exercise.
+
 1. Accept the GitHub invitation using the same Outlook account.
 
     ![Picture1](./images/invitation.png)
