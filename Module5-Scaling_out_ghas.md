@@ -139,6 +139,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/payload1.png)
 
+   >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
+
 11. Now go to the **Repositories** section and click on **New Respsitories**.
 
     ![Picture1](./images/newrepo.png)
