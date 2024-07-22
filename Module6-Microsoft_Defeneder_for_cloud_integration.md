@@ -97,6 +97,8 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 
    ![](./images/lab6recommendationat3.png)
 
+   >**Note:** You can review all your repositories to see their recommendations and alerts.
+
 1. In the **Recommendations** section (1), click on **GitHub repositories should have code scanning findings resolved** (2). This will provide you with specific recommendations for addressing code scanning issues.
 
    ![](./images/lab6recommendationat4.png)
