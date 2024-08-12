@@ -42,9 +42,9 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Default Setup
 
-1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
+1. In the **github-bootcamp-#####-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](images/new-repo.png)
+   ![github-advisory-database](images/getrepo.png)
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
@@ -78,9 +78,9 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
  Now, let us enable  Advanced set-up in a different repository.
 
-1. In the **github-bootcamp-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
+1. In the **github-bootcamp-#####-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
 
-   ![github-advisory-database](images/new-repo.png)
+   ![github-advisory-database](images/getrepo.png)
 
 1. From the list of repositories click on **ghas-bootcamp-java** to begin working through this module. 
 
@@ -98,7 +98,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
-1. Now you are redirect you to the codeql.yml file in github/ workflows, and we need to copy from the **codeql.yml** file **# queries: security-extended (1)** and append this to a new line , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
+1. Now you are redirect to the codeql.yml file in github/ workflows, and we need to copy from the **codeql.yml** file **# queries: security-extended (1)** and append this to a new line , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
    ![github-advisory-database](images/gi.png)
   
