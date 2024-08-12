@@ -84,13 +84,15 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 
    <validation step="18b96a1a-7f72-4440-8d0b-ce63614a0abb" />
 
-## Task 2: Review GitHub Security Recommendations in Microsoft Defender for Cloud
+## Task 2: Review GitHub Security Recommendations in Microsoft Defender for Cloud (Read-Only)
+
+This task has been set to Read-Only because addressing the security findings in Microsoft Defender for Cloud will take approximately 8 hours.
 
 1. In Microsoft Defender for Cloud, navigate to the **Recommendations** section. Here, you will find the recommendations related to GitHub. These recommendations will provide insights and best practices to enhance the security and compliance of your GitHub repositories integrated with Azure services.
 
    ![](./images/recomendations.png)
 
-    >**Note**: It may take up to 24 hours for the changes to be reflected, and there is a possibility that you may receive different recommendations.
+    >**Note**: It may take up to 8 hours for the changes to be reflected, and there is a possibility that you may receive different recommendations.
 
 1. Navigate to each recommendation for detailed insights and actionable steps provided by Microsoft Defender for Cloud. Review the remediation section to explore potential vulnerabilities and their resolutions.
 
@@ -131,6 +133,7 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
    ![](./images/lab6recommendationat8.png)
 
 Please feel free to go through the below links for further understanding:
+
 1. [Public Roadmap](https://github.com/orgs/github/projects/4247/views/6)
 2. [Application Security](https://info.microsoft.com/US-DevOps-VDEO-FY24-02Feb-12-GitHub-and-AI-A-Powerful-Duo-for-Application-Security-Testing-SRGCM11732_LP01-Registration---Form-in-Body.html)
 3. [Application Security Testing](https://www.microsoft.com/en-us/industry?rtc=1)
