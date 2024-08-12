@@ -72,6 +72,10 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    ![github-advisory-database](images/g13.png)
 
+1. Now on the **GitHub Advanced Security**, click on **Enable**.
+
+   ![Picture1](./images/ghadvanceenablae.png)
+
 1. Scroll down to **Secret Scanning**, click on **enable**.
 
    ![Picture1](./images/mod2ss1.png)
