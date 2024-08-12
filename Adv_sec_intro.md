@@ -1,4 +1,4 @@
-# Module 01: GitHub Advanced Security Overview [Read-Only]
+# Module 01: GitHub Advanced Security Overview
 
 ## Lab Scenario
 
@@ -71,6 +71,10 @@ Here are some of the components of GitHub Advanced Security:
    ![Picture1](./images/ghasr1.png)
 
 1. In the left sidebar, click on **Code security and analysis**.
+
+1. Now on the **GitHub Advanced Security**, click on **Enable**.
+
+   ![Picture1](./images/ghadvanceenablae.png)
 
 1. Make sure to enable **Dependabot**, **Code Scanning** and **Secret Scanning**, for repository if not enabled. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
 
