@@ -8,6 +8,7 @@ In this lab, you connected your GitHub account to Microsoft Defender for Cloud (
 In this lab, you will perform:
 
 - Task 1: Connect your GitHub account to Microsoft Defender for Cloud
+- Task 2: Review GitHub Security Recommendations in Microsoft Defender for Cloud
 
 ## Estimated Timing: 20 minutes
 
@@ -75,6 +76,16 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
    
    >**Note:** It takes around 15 minutes to arrive.
 
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="18b96a1a-7f72-4440-8d0b-ce63614a0abb" />
+
+## Task 2: Review GitHub Security Recommendations in Microsoft Defender for Cloud
+
 1. In Microsoft Defender for Cloud, navigate to the **Recommendations** section. Here, you will find the recommendations related to GitHub. These recommendations will provide insights and best practices to enhance the security and compliance of your GitHub repositories integrated with Azure services.
 
    ![](./images/recomendations.png)
@@ -118,14 +129,6 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 1. Now, navigate back to your GitHub account and go to the **ghas-bootcamp-webgoat** repository. Click on the **Security** tab (1) and then go to the **Code scanning** alerts (2). Here, you will find all the alerts related to secret scanning. These results should match the security alerts reflected in your Defender for Cloud.
 
    ![](./images/lab6recommendationat8.png)
-
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="18b96a1a-7f72-4440-8d0b-ce63614a0abb" />
 
 Please feel free to go through the below links for further understanding:
 1. [Public Roadmap](https://github.com/orgs/github/projects/4247/views/6)
