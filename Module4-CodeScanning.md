@@ -98,7 +98,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
-1. Now you are redirect to the codeql.yml file in github/ workflows, and we need to copy from the **codeql.yml** file **# queries: security-extended (1)** and append this to a new line , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
+1. Now you are redirect to the codeql.yml file in github/ workflows directory, and we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 67 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
    ![github-advisory-database](images/gi.png)
   
@@ -137,7 +137,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
    ![github-advisory-database](images/gl.png)
 
-1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section by copying from the workflow file `# queries: security-extended` (1) and append this to a new line  which will read `queries: security-extended` (2) as shown in the below screenshot. Commit these changes to your main branch (3).
+1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section, we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 67 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
    ![github-advisory-database](images/git1.png)
 
@@ -206,7 +206,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![Picture1](./images/clonerepo2.png)
 
-1. Go to **Account** icon from bottom and click on **Sign in with GitHub to use CodeQL**.
+1. Go to **Account** icon from bottom and click on **Sign in with GitHub to use CodeQL**. Please note it might take some time to get the extension updated with code, If you get any pop-up select yes. 
 
     ![Picture1](./images/clonerepo3.png)
 
@@ -240,7 +240,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![Picture1](./images/clonerepo9.png)
 
-1. It will generate the simple query, click on the **Run** (1) and analyze the result.
+1. It will generate the simple query, click on the **Run**  from right corner (1) and analyze the result.
 
     ![Picture1](./images/clonerepo10.png)
 
