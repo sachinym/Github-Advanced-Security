@@ -7,7 +7,7 @@ This lab guides users through enabling GitHub secret scanning for an organizatio
 ## Lab Objectives
 In this lab, you will perform:
 
-- Task 1: Turn on secret scanning for the entire organization aand review results
+- Task 1: Turn on secret scanning for the entire organization and review results
 - Task 2: Turn on push protection and try pushing a new secret (a GitHub token) into a repository
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understand the results 
@@ -132,7 +132,7 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
    >**Note**: If it's already enabled, then there is no need to change it.
 
-1. After this is enabled, we are going to go back through the process of creating a secret and pasting it into the codebase. Once again, go to your profile and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)**. Click on **Generate new token** at the top and select **Generate new token (classic)**.
+1. After this is enabled, we are going to go back through the process of creating a secret and pasting it into the codebase.
 
 1. Once again, go to your profile, which is at the top of your right hand, and then select **Settings**.
 
