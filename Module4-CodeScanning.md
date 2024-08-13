@@ -42,7 +42,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Default Setup
 
-1. In the **github-bootcamp-#####-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
+1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
 
    ![github-advisory-database](images/getrepo.png)
 
@@ -78,7 +78,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
  Now, let us enable  Advanced set-up in a different repository.
 
-1. In the **github-bootcamp-#####-cloudlabsaiuser-####** organization, click on repositories from the top navigation pane.
+1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
 
    ![github-advisory-database](images/getrepo.png)
 
@@ -114,9 +114,9 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **github-bootcamp-cloudlabsuser-xxx**.
+    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
     
-    >**Note:** Make sure to update the name of your organization, **github-bootcamp-cloudlabsuser-xxx**.
+    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
     
   	 ![github-advanced-security](images/ghas-exercise1-8.png)
    
@@ -190,10 +190,10 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
     
 1. Clone the repository by running the following command:
 
-      >**Note**: Make sure to update the name of your organization, **github-bootcamp-xxxx-cloudlabsuserxxx**.
+      >**Note**: Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
 
       ```
-      git clone --recursive https://github.com/github-bootcamp-xxxx-cloudlabsuserxxx/ghas-bootcamp-python.git
+      git clone --recursive https://github.com/ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx/ghas-bootcamp-python.git
       ```
 
     ![Picture1](./images/clonerepo.png)
@@ -224,7 +224,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 1. Add the Database by the following command and press enter.
 
-    >**Note**: Make sure to update the name of your organization, **github-bootcamp-xxxx-cloudlabsuserxxx**.
+    >**Note**: Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
 
     ```
     https://github.com/github-bootcamp-xxxx-cloudlabsuserxxx/ghas-bootcamp-python
