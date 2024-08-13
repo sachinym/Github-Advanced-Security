@@ -198,6 +198,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
     ![Picture1](./images/clonerepo.png)
 
+    >**Note**: If a pop up appears to login, click on Login from borwser and Sign in with GitHub Credentials and on the Authorize GitHub for VS Code page click on the Authorize Visual-Studio-Code.
+
 1. Go to the **Explorer** in the upper left corner, select **Open Folder**, select the folder you cloned from the **Desktop**, and then click **Select Folder**.
 
     ![Picture1](./images/clonerepo1.png)
