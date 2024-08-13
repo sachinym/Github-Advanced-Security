@@ -100,7 +100,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Click on **+ Create**.
 
-1. From the Create Function App tab, select **Consumption** and select **Next**.
+1. From the Create Function App tab, select **Consumption** and select **Select**.
 
    ![Picture1](./images/ghas-exercise1-9.png)
 
