@@ -117,6 +117,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
     >**Note:** If you get an error while commiting changes as file could not be edited. to fix that, rename the file **dependency-review.yml** to **dependency-review1.yml** and then try again to commit the changes in new action file.
 
+    >**Note:** If the error persists, indicating that a file with the name already exists, delete the conflicting file and create file named **dependency-review.yml** before attempting the commit once more.
+
 1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
    ![github-advisory-database](images/g9.png)
