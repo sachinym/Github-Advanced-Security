@@ -155,9 +155,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
   
 1. Notice that this part of the code is related to the vulnerabilities that have to do with SQL.
 
-1. Uncomment the Python code starting from **line 38** until the end of the code. 
+1. Add the some spaces at the bottom of the file and make sure to **commit the changes**.
 
-   ![github-advisory-database](images/gn.png)
+   ![github-advisory-database](images/gnat.png)
 
 1. Click on commit to commit these changes to a new branch,  click on **Create pull request**, open a **Pull request** into the **main** branch, and click on **Create pull request** again.
  
@@ -166,13 +166,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
    ![github-advisory-database](images/gp.png)
      
 1. Because our main branch isn't a `Protected Branch`, it may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
- - CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding. But why?
+ - CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding.
 
-1. Go to the **Files changed** tab and review the code we added.
-  - What we find on **Line 54** is a **`val`** assignment calling **`login.objects.raw`**, which does not exist as a function in this project.
-  - While other static analysis tools would likely have marked **Line 50** as a SQL injection, the CodeQL analysis performed as part of code scanning correctly marks this as a **`Clear-text logging of sensitive information`**. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
-
-    ![clear-text-logging-finding](images/prfail.png)
+    ![clear-text-logging-finding](images/prfailat.png)
 
 ## Task 4: CodeQL Query Operations in Visual Studio
 
