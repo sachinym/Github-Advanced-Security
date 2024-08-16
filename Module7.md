@@ -1,3 +1,8 @@
+    >**Note:** If you get an error while commiting changes as file could not be edited. to fix that, rename the file **dependency-review.yml** to **dependency-review1.yml** and then try again to commit the changes in new action file.
+
+    >**Note:** If the error persists, indicating that a file with the name already exists, delete the conflicting file and create file named **dependency-review.yml** before attempting the commit once more.
+
+
 ## Why are we using PAT Tokens
 
 In this lab, Personal Access Tokens (PATs) are used as example secrets to demonstrate how GitHub’s secret scanning and push protection features work. Here’s why PATs are chosen for this exercise:
