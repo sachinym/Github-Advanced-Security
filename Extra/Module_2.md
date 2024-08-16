@@ -31,3 +31,8 @@ Overall, PATs serve as an illustrative example of secrets that GitHub’s securi
 1. Now, in this repository, scroll down to the **Configuration options**. We can copy the example that includes the **`fail-on-severity`** possible values.
 
    ![github-advisory-database](images/g6.png)
+
+1. Go to the **Files changed** tab and review the code we added.
+  - What we find on **Line 54** is a **`val`** assignment calling **`login.objects.raw`**, which does not exist as a function in this project.
+  - While other static analysis tools would likely have marked **Line 50** as a SQL injection, the CodeQL analysis performed as part of code scanning correctly marks this as a **`Clear-text logging of sensitive information`**. This is the power of CodeQL in action - accurately tracing dataflows and identifying security vulnerabilities in your code without all of the noise.
+
