@@ -138,8 +138,15 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
+<<<<<<< HEAD
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
+   >**Note:** Reusing the same secret from Task 1 may not trigger push protection if it was already committed; consider demonstrating with a new, slightly altered secret.
+
+=======
+In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
+
+>>>>>>> 16a3d156fb74a1bf90cf786b15b45de1899b2f99
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code security and analysis** -> scroll down to **Push protection** and click **Enable**.
 
    ![Picture1](./images/pushprotection.png)
@@ -180,13 +187,15 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     ![push-protection1](./images/commitchanges.png)
 
-11. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back through the process of creating a new personal access token. Once again, go to your profile, and then **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)**, and then click on **Generate new token** at the top and select **Generate new token (classic)**.
+11. Navigate to the **Security** -> **Secret Scanning** -> **High confidence**. Change the finding option to the **Closed** section to demonstrate that this is a secret.
 
-12. Once again, give your secret a name, **secret3**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click **Generate token**.
+    ![push-protection1](./images/lab2task2githubsecret.png)
 
-13. Once you've generated the token, click the **Copy** icon to the right of the secret value, and return to the **`ghas-bootcamp-javascript`** repository. Open up **_index.js_**, click the pencil icon on the top-right of the code block, and add **`var secret3 = "Your-Secret-Value"`** to the code. **BEFORE YOU COMMIT YOUR CODE**, go ahead and add some random letters and numbers to the end of the GitHub Personal Access Token you've added.
+    >**Note:** If you bypass push protection by selecting options such as "It's used in tests" and still commit the secret, it will not prevent the commit entirely. However, GitHub will generate a security finding under the "Closed" section in the Security tab. This finding is crucial because it allows you to track and review secrets that were committed despite push protection. Even though the commit was allowed, the security finding helps identify and address potential issues, ensuring that any committed secrets are still reviewed and remediated.    
 
-    ![push-protection1](./images/allsecrets.png)
+11. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back to our **index.js** file.
+
+13. Modified your secret by adding some random letters and numbers to the end of the GitHub Personal Access Token you've added.
 
 14. In the end, this will _NOT_ cause a **Secret scanning** pop-up to appear. It's important to once again reiterate that we focus on push protecting against secrets that we are highly confident about and that are real. They should also match the patterns expected from the algorithms partners use to generate their credential material.
 
