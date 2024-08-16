@@ -48,6 +48,8 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 4. **Educational Purpose**: PATs are widely understood by developers, making it easier for them to grasp the concept and importance of secret scanning. The exercise involves generating PATs, which helps users learn how to manage and secure their own tokens and other secrets.
 
+  >**Note:** Make it clear that generating a PAT is a prerequisite for testing secret detection, but it's not required for setting up secret scanning itself.
+
   >**Note:** If you haven't already **signed in** to GitHub, proceed to the Getting Started page and complete steps **1** through **4** of the **Login to Github** form.
 
 1. To create a GitHub PAT token, go to your profile on top of the right hand, and then select **Settings**.
