@@ -46,6 +46,16 @@ Like the above phase, organizations tend to rush into the implementation phase, 
 
 GHAS is an ecosystem of multiple solutions. It's essential to start somewhere focused, not just with the rollout of GHAS. Typically, teams focus on code scanning to begin with. Leverage the APIs available and rollout code scanning by the team and by language across your organization automatically. This allows you to scale in an automated fashion and removes a lot of manual repeatable groundwork for developers and consumers of code scanning. Doing this will increase adoption.
 
+### Mean Time to Resolution
+
+MTTR, or **Mean Time to Resolution**, is a metric used to measure the average time it takes to resolve issues, bugs, or incidents in a software project. In the context of GitHub, MTTR can be applied to various scenarios, such as:
+
+Issue Resolution: MTTR can track the average time from when an issue is reported to when it is closed. This helps teams gauge their efficiency in addressing and fixing problems reported by users or detected during development.
+
+   - **Pull Requests:** MTTR can measure the average time taken to review, approve, and merge pull requests. This helps teams understand how quickly they are integrating new code changes and handling contributions.
+
+   - **Incident Response:** For repositories using GitHub Actions or other integrations, MTTR can track how long it takes to resolve incidents or failures reported by these tools.
+
 ### Task 2: View the security overview dashboard and reports 
 
 In this task, you will explore the GHAS security overview dashboard and reports to gain insights into your repository's security posture.
@@ -70,12 +80,15 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
    ![Picture1](./images/dashboard2.png)
 
-1. Click on the **Risk** option to get all the details risk accross all repositories.
+1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
    ![Picture1](./images/mod1org8.png)
+
+1. Click on the **Coverage** option to access detailed information about the security coverage for your repositories. This section provides insights into the extent to which your code is being analyzed for vulnerabilities, including the number of lines of code covered by security scans and the effectiveness of your security measures. By reviewing the coverage data, you can ensure that your security scanning is comprehensive and identify areas where additional coverage may be needed.
+
+   ![Picture1](./images/mod1org9.png)
    
 1. Analyze the metrics and data provided in the reports to identify areas for improvement and prioritize security efforts.
-
 
 ### Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
 
