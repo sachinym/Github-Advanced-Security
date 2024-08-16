@@ -108,6 +108,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 	>**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: low, moderate, high, critical** is directly below the **comment-summary-in-pr: always** line, as shown below:
 
+   >**Note:** The default value of **fail-on-severity** will work as well, but here we demonstrate how to modify your severity level.
+
     ![github-advisory-database](images/g7.png)
    ![github-advisory-database](images/uncmt.png)
 
