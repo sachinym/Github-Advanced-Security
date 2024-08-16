@@ -69,6 +69,10 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 1. For the alert trends graph at the top of the page, you can click **Open alerts or  Closed alerts** to toggle between showing the trends for Open or Closed alerts. The toggle will only affect the alert trends graph.
 
    ![Picture1](./images/dashboard2.png)
+
+1. Click on the **Risk** option to get all the details risk accross all repositories.
+
+   ![Picture1](./images/mod1org8.png)
    
 1. Analyze the metrics and data provided in the reports to identify areas for improvement and prioritize security efforts.
 
