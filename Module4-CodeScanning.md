@@ -42,6 +42,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Default Setup
 
+In this task, you will learn how to activate the default CodeQL setup for a Python repository. This will include enabling CodeQL scanning with the default query suite, which focuses on providing highly accurate and actionable security findings.
+
 1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
 
    ![github-advisory-database](images/getrepo.png)
@@ -73,6 +75,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
    ![github-advisory-database](images/gf.png)
 
 ## Task 2: Turn on advanced setup on a Java repository
+
+In this task, you will learn how to enable and configure the advanced CodeQL setup for a repository. You will gain skills in modifying the codeql.yml file to use the security-extended query suite and understand the benefits of advanced configurations for detecting a broader range of security vulnerabilities. You will also become familiar with the process of validating and reviewing CodeQL actions and results.
 
 ## Advanced Setup
 
