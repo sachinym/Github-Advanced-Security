@@ -149,6 +149,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/prfail.png)
 
+   >**Note:** "The pull request fails because the dependency review action detects the introduction of a vulnerable version of `Log4j`. This action checks for known vulnerabilities in dependencies, and if it finds any, it prevents the pull request from being merged until the issues are resolved."
+
 1. You can also see the error details on **Actions** section, navigate to action section and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
     ![github-advisory-database](images/gx1.png)
