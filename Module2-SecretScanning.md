@@ -138,6 +138,8 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
+In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
+
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code security and analysis** -> scroll down to **Push protection** and click **Enable**.
 
    ![Picture1](./images/pushprotection.png)
@@ -189,6 +191,8 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 14. In the end, this will _NOT_ cause a **Secret scanning** pop-up to appear. It's important to once again reiterate that we focus on push protecting against secrets that we are highly confident about and that are real. They should also match the patterns expected from the algorithms partners use to generate their credential material.
 
 ## Task 3: Create a custom secret pattern and view the results 
+
+In this task, you will create and apply a custom secret pattern to detect specific types of sensitive information. Access the secret scanning settings in the repository and define a new secret pattern, including a name and regular expression, to identify specific secrets. Test the pattern using a known secret and a modified PAT to evaluate its effectiveness. Save and publish the custom pattern, then review the results to see how it identifies secrets based on the pattern.
 
 1. Within the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed on line 27 of the file **`index.js`**. To discover secrets like this, we will go into this repository's **Settings** -> **Code security and analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
 
