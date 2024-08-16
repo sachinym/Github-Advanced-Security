@@ -48,6 +48,28 @@ Here are some of the components of GitHub Advanced Security:
 
    Refer to the link for more information. [Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
 
+### Security Updates
+
+**Purpose**:
+   - Security updates are specifically designed to address vulnerabilities and security flaws in code. They focus on fixing issues that could potentially be exploited by attackers to compromise the system or data.
+   -  It focused on fixing vulnerabilities to protect against security threats. They address specific security issues and are critical for maintaining the security of the system.
+
+**Key Aspects**:
+   - **Security Patches**: These updates often involve applying patches to fix known vulnerabilities. For example, if a library you use has a security flaw, a security update will address this vulnerability.
+   - **Automatic Alerts**: GitHub can automatically notify repository maintainers about security vulnerabilities in dependencies using tools like Dependabot. These alerts provide details about the vulnerability and suggest updates.
+   - **Security Advisories**: GitHub allows maintainers to publish security advisories that disclose vulnerabilities and offer guidance on mitigating them. These advisories are often accompanied by a patch or update recommendation.
+
+### Version Updates
+
+**Purpose**:
+   - Version updates refer to changes or upgrades to the software or dependencies in the repository. They are about improving functionality, adding new features, or fixing bugs not necessarily related to security.
+   - Concerned with improving functionality, adding new features, or fixing non-security-related bugs. They enhance the overall capability and performance of the software.
+
+**Key Aspects**:
+   - **Feature Enhancements**: Version updates often include new features or enhancements to existing ones. For example, upgrading a library might include new functionalities or performance improvements.
+   - **Bug Fixes**: These updates address bugs and issues that may not be security-related but improve the overall stability and usability of the software.
+   - **Release Versions**: Version updates typically follow semantic versioning (e.g., major, minor, patch) to indicate the nature of changes (e.g., breaking changes, new features, or bug fixes).
+
 ### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
 1. On the **Home** page, click on your **profile** on top of the right hand.
