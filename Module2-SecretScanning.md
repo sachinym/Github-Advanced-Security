@@ -122,6 +122,8 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/possibleactivesecret.png)
 
+   > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
+
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
@@ -138,15 +140,12 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 ## Task 2: Turn on push protection and try pushing a new secret (GitHub token) in a repository
 
-<<<<<<< HEAD
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
    >**Note:** Reusing the same secret from Task 1 may not trigger push protection if it was already committed; consider demonstrating with a new, slightly altered secret.
 
-=======
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
->>>>>>> 16a3d156fb74a1bf90cf786b15b45de1899b2f99
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code security and analysis** -> scroll down to **Push protection** and click **Enable**.
 
    ![Picture1](./images/pushprotection.png)
