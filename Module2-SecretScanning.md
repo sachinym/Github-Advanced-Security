@@ -112,7 +112,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/allowsecrett1.png)    
 
-   ![Picture1](./images/secretscanning.png)
+   ![Picture1](./images/secretscanningupdate1.png)
 
    >**Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security and analysis** option from the left navigation pane to view the option.
    
