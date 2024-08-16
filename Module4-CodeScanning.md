@@ -129,6 +129,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ### Task 3.1: Pull Request scans and Accurate Findings
 
+In this task, you will learn how to enhance CodeQL's security analysis by enabling advanced query configurations and integrating extended security queries. You will gain experience in modifying CodeQL workflows, committing changes related to security vulnerabilities in code, and understanding how CodeQL will accurately identify specific issues, such as clear-text logging of sensitive information, while filtering out less relevant findings. This will deepen your understanding of leveraging CodeQL for more precise and effective security scanning in your codebase.
+
 1. Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository. Follow the instructions from the **Getting Started** section to go to the `ghas-bootcamp-python` repository.
 
 1. Now, head over to **Settings** -> **Code security and analysis** -> scroll down to **Code scanning** and click the `...` and then click _Switched to advanced_. This will prompt us to turn off the existing CodeQL workflow to avoid duplicating Action runs.Click on **Disable CodeQL**
@@ -169,6 +171,8 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
     ![clear-text-logging-finding](images/prfail.png)
 
 ## Task 4: CodeQL Query Operations in Visual Studio
+
+In this task, you will set up and use CodeQL in Visual Studio Code to analyze a Python codebase. The steps involve installing necessary extensions, cloning a repository, and running a CodeQL query to identify named entities within the code.
 
 1. Start **Visual Studio Code** from the desktop.
 
