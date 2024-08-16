@@ -125,7 +125,37 @@ Here are some of the components of GitHub Advanced Security:
 1. Here, you can review your alerts in the security overview.
 
    ![Picture1](./images/security-overview-paget1.png)
-   
+
+### Task 4: Turn on GitHub Advanced Security for Organization.
+
+1. On the **Home** page, click on your profile icon in the top right corner.
+
+   ![Profile Menu](./images/orgprofile.png)
+
+2. Select **Your organizations** from the dropdown menu.
+
+   ![Your Organizations](./images/org.png)
+
+3. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
+
+   ![Select Organization](./images/ghas-exercise1-4.png)
+
+4. Navigate to the repository and click on the **Settings**tab.
+
+   ![Repository Settings](./images/mod1org.png)
+
+5. In the Settings menu, find **Configurations** under Code Security.
+
+   ![Code Security Configurations](./images/mod1org1.png)
+
+6. Click on **Apply to** and select **All repositories** to apply the configuration.
+
+   ![Apply to All Repositories](./images/mod1org2.png)
+
+7. When prompted, click on **Apply** to confirm the configuration changes.
+
+   ![Apply Configuration](./images/mod1org2.png)
+
 Please feel free to go through the links for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) and [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
 
 ## Review
