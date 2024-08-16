@@ -65,7 +65,7 @@ has a context menu.
 
     ![Picture1](./images/2nd1.png)
 
-1. Next, to get the authentication code, sign in to Outlook in the Lab VM through opening a new tab in **PrivateMode** (control+shift+n) (https://outlook.office365.com/mail/) with the **GitHub** credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
+1. Next, to get the authentication code, sign in to Outlook in the Lab VM through opening a new tab (https://outlook.office365.com/mail/) with the **GitHub** credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
 
    >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
    
