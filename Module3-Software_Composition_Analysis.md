@@ -110,8 +110,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    >**Note:** The default value of **fail-on-severity** will work as well, but here we demonstrate how to modify your severity level.
 
-    ![github-advisory-database](images/g7.png)
-   ![github-advisory-database](images/uncmt.png)
+    ![github-advisory-database](images/g7at.png)
+   ![github-advisory-database](images/uncmtat.png)
 
 1. Click on **Commit Changes** once again in the pop-up that appears.
 
