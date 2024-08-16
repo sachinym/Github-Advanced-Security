@@ -124,7 +124,12 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    ![github-advisory-database](images/g9.png)
    
 1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot and delete the existing lines as mentioned.
- 
+
+  - **Security Vulnerabilities:** Log4j has been known to have critical security vulnerabilities. This vulnerability allowed attackers to execute arbitrary code on a server or other computer running Log4j, leading to severe security risks such as remote code execution.
+
+  - **Impact:** If a project uses a vulnerable version of Log4j, it can be exploited by attackers to compromise the application or the server it runs on. This can lead to unauthorized access, data breaches, and other security issues. 
+
+
       ```xml
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
