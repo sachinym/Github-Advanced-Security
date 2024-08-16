@@ -203,7 +203,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will create and apply a custom secret pattern to detect specific types of sensitive information. Access the secret scanning settings in the repository and define a new secret pattern, including a name and regular expression, to identify specific secrets. Test the pattern using a known secret and a modified PAT to evaluate its effectiveness. Save and publish the custom pattern, then review the results to see how it identifies secrets based on the pattern.
 
-1. Within the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed on line 27 of the file **`index.js`**. To discover secrets like this, we will go into this repository's **Settings** -> **Code security and analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
+1. Within the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, we will go into this repository's **Settings** -> **Code security and analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
 
     ![new-pattern-repository](./images/custom11.png)
 
