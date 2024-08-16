@@ -22,3 +22,12 @@ Overall, PATs serve as an illustrative example of secrets that GitHub’s securi
     ![push-protection1](./images/allsecrets.png)
 
 14. In the end, this will _NOT_ cause a **Secret scanning** pop-up to appear. It's important to once again reiterate that we focus on push protecting against secrets that we are highly confident about and that are real. They should also match the patterns expected from the algorithms partners use to generate their credential material.
+
+
+1. In the Action workflow configuration there is a [link to the Action's repository](https://github.com/actions/dependency-review-action) as shown in the below screenshot. Copy this link and open it in a new tab.
+
+   ![github-advisory-database](images/g5.png)
+
+1. Now, in this repository, scroll down to the **Configuration options**. We can copy the example that includes the **`fail-on-severity`** possible values.
+
+   ![github-advisory-database](images/g6.png)
