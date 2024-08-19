@@ -46,7 +46,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Repository Settings](./images/mod1org.png)
 
-5. In the Settings menu, find **Configurations** under Code Security.
+5. In the Settings menu, click-on **Configurations** under Code Security under Security section.
 
    ![Code Security Configurations](./images/mod1org1.png)
 
@@ -78,13 +78,13 @@ Refer to the link for more information. [Personal Access Tokens](https://docs.gi
 
 In this lab, Personal Access Tokens (PATs) are used as example secrets to demonstrate how GitHub’s secret scanning and push protection features work. Here’s why PATs are chosen for this exercise:
 
-1. **Common Sensitive Data**: PATs are a common type of sensitive data that developers often accidentally commit to repositories. They provide a clear example of the kind of secrets that secret scanning is designed to detect and protect against.
+- **Common Sensitive Data**: PATs are a common type of sensitive data that developers often accidentally commit to repositories. They provide a clear example of the kind of secrets that secret scanning is designed to detect and protect against.
 
-2. **Realistic Scenario**: Using PATs creates a realistic scenario. PATs are real credentials that can be used to access GitHub’s API and perform actions on behalf of the user. This makes them a tangible example of how secret scanning prevents unauthorized access.
+- **Realistic Scenario**: Using PATs creates a realistic scenario. PATs are real credentials that can be used to access GitHub’s API and perform actions on behalf of the user. This makes them a tangible example of how secret scanning prevents unauthorized access.
 
-3. **Demonstration of Detection**: By using PATs, you can easily show how secret scanning identifies sensitive information in the codebase. This demonstrates the effectiveness of GitHub's security features in detecting and alerting on potential security risks.
+- **Demonstration of Detection**: By using PATs, you can easily show how secret scanning identifies sensitive information in the codebase. This demonstrates the effectiveness of GitHub's security features in detecting and alerting on potential security risks.
 
-4. **Educational Purpose**: PATs are widely understood by developers, making it easier for them to grasp the concept and importance of secret scanning. The exercise involves generating PATs, which helps users learn how to manage and secure their own tokens and other secrets.
+- **Educational Purpose**: PATs are widely understood by developers, making it easier for them to grasp the concept and importance of secret scanning. The exercise involves generating PATs, which helps users learn how to manage and secure their own tokens and other secrets.
 
   >**Note:** Make it clear that generating a PAT is a prerequisite for testing secret detection, but it's not required for setting up secret scanning itself.
 
@@ -106,11 +106,11 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 1. Go to your profile on top of the right hand, and then select **Your organizations**.
 
-   ![Picture1](./images/ghas-exercise1-4.png) 
+   ![Picture1](./images/profilesetting.png) 
 
 1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
 
-   ![Picture1](./images/org-new1.png) 
+   ![Picture1](./images/ghas-exercise1-4.png) 
 
 1. Click on **Repositories** and select **ghas-bootcamp-javascript**.
 
@@ -124,9 +124,13 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![github-advisory-database](images/g13.png)
 
-1. Now on the **GitHub Advanced Security**, click on **Enable**.
+1. Now on the **GitHub Advanced Security** **(1)**, click on **Enable** **(2)**.
 
-   ![Picture1](./images/ghadvanceenablae.png)
+   ![Picture1](./images/advance-scanning1.png)
+
+1. Click the **Enable GitHub Advanced Security for this repository** button when the prompt appears.
+
+   ![Picture1](./images/advance-scanning2.png)
 
 1. Scroll down to **Secret Scanning**, click on **enable**.
 
@@ -144,17 +148,21 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
 
-1. Once you get a tab to allow secret then Click on the **Allow Secret** button.
+1. When pop-up is prompted select **It's user in tests** **(1)** and click on **Allow Secret** **(2)**.
 
-1. Click on Commit changes again and commit directly to default branch, and then **navigate to the Security -> Secret Scanning** section to show how this is an active secret.
+   ![](./images/secret-scanning1.png)
+
+1. Click on **Commit changes** again and commit directly to default branch.
 
    ![Picture1](./images/allowsecrett1.png)    
 
-   ![Picture1](./images/secretscanningupdate1.png)
+1. Then navigate to the **Security**, expend **Secret Scanning** section and select **High confidence** to show how this is an active secret.
 
-   >**Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security and analysis** option from the left navigation pane to view the option.
+   ![Picture1](./images/secret-scanning2.png)
+
+   > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security and analysis** option from the left navigation pane to view the option.
    
-    >**Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
+   > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
 1. Review the secret is identified as  _"Possibly active secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
 
@@ -162,12 +170,13 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
 
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+
+    > **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
-    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+    > **Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
   	 ![github-advanced-security](images/ghas-exercise1-8.png)
    
@@ -184,25 +193,29 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
-1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Go to **Settings** -> **Code security and analysis** -> scroll down to **Push protection** and click **Enable**.
-
+1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Code security and analysis** under Securilty. 
+   
    ![Picture1](./images/pushprotection.png)
 
-   ![Picture1](./images/mod2ss2.png)
+1. scroll down to **Push protection** under Secret scanning and click **Enable**.
+
+   ![Picture1](./images/advance-scanning5.png)
 
    >**Note**: If it's already enabled, then there is no need to change it.
 
 1. After this is enabled, we are going to go back through the process of creating a secret and pasting it into the codebase.
 
-1. Once again, go to your profile, which is at the top of your right hand, and then select **Settings**.
+1. Navigate back to your profile, which is at the top of your right hand, and then select **Settings**.
 
    ![Picture1](./images/profilesetting.png)
 
-1. Go to **Developer settings** -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** at the top. Now select **Generate new token (classic) (4)**.
+1. Scroll down and select **Developer settings**.
+
+1. In the Developer Settings page expend **Personal access tokens** **(1)**, click-on **Tokens (classic) (2)**, then click on **Generate new token** **(3)** at the top, and click-on **Generate new token (classic) (4)**.
 
    ![Picture1](./images/developersetting.png)
 
-1. From here, give your secret a name, **secret2**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
+1. In the New personal access token, provide secret a name, **secret2**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
    ![Picture1](./images/developersetting2.png)
 
@@ -210,9 +223,9 @@ In this task, you will enable push protection to prevent secrets from being comm
 
    ![Picture1](./images/token.png)  
 
-1. Return to the **`ghas-bootcamp-javascript`** repository.
+1. Navigate to the **`ghas-bootcamp-javascript`** repository.
   
-1.  Open up **_index.js_**, click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
+1. Click on **_index.js_**, click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
 
     ![Picture1](./images/index.png)
 
@@ -230,7 +243,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     >**Note:** If you bypass push protection by selecting options such as "It's used in tests" and still commit the secret, it will not prevent the commit entirely. However, GitHub will generate a security finding under the "Closed" section in the Security tab. This finding is crucial because it allows you to track and review secrets that were committed despite push protection. Even though the commit was allowed, the security finding helps identify and address potential issues, ensuring that any committed secrets are still reviewed and remediated.    
 
-11. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back to our **index.js** file.
+12. Finally, to show off how much importance we place on catching real secrets over modified / false positive secrets, we will go back to our **index.js** file.
 
 13. Modified your secret by adding some random letters and numbers to the end of the GitHub Personal Access Token you've added.
 
@@ -240,31 +253,30 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will create and apply a custom secret pattern to detect specific types of sensitive information. Access the secret scanning settings in the repository and define a new secret pattern, including a name and regular expression, to identify specific secrets. Test the pattern using a known secret and a modified PAT to evaluate its effectiveness. Save and publish the custom pattern, then review the results to see how it identifies secrets based on the pattern.
 
-1. Within the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, we will go into this repository's **Settings** -> **Code security and analysis** -> **Secret Scanning** section and then click on the button **New pattern**.
+1. In the **`ghas-bootcamp-javascript`** repo, there is a secret disclosed in the file **`index.js`**. To discover secrets like this, navigate to the **Settings** tab of the repo, click on **Code security and analysis**.
 
-    ![new-pattern-repository](./images/custom11.png)
+   ![](./images/secret-scanning3.png)
 
-1. When creating a new pattern, first include the name **Test-Pattern  (1)** and enter a test string for the pattern **api-password: "gH4$kP!2w_  "(5)**. Because writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
+1. Scroll down to **Secret Scanning** section and then click on the **New pattern** button.
 
-   >**Note:** You can also refer to the Field Security team's open-source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository, which contains several useful examples.
+    ![new-pattern-repository](./images/secret-scanning4.png)
 
-1. Using the [Generic Secrets / Passwords](https://github.com/advanced-security/secret-scanning-custom-patterns/tree/main/generic) from the field security team's repository, we grab the following pattern format:
+1. In New custom pattern, proivde fallowing details and click **Save and dry run** **(7)** to discover two values of concern - the first being the GitHub Personal Access Token we corrupted earlier, and the second being the `Password123!` value mentioned earlier. 
 
-    - ``[a-zA-Z0-9!.,$%&*+?^_`{|}()[\]\\/~-][a-zA-Z0-9\t !.,$%&*+?^_`{|}()[\]\\/~-]*``
+   - **Pattern name**: **Test-Pattern** **(1)**. 
+   - **Secret format** (specified as a regular expression): provide regular expression patterns as ``[a-zA-Z0-9!.,$%&*+?^_`{|}()[\]\\/~-][a-zA-Z0-9\t !.,$%&*+?^_`{|}()[\]\\/~-]*`` **(2)**.
+   - Expend the **More options** **(3)**, as you need to values for the **Before secret** and **After secret** values. 
+   - **Before Secret**:  provide regular expression patterns as `(?:\A|[^a-zA-Z0-9])(?i)(?:api|jwt|mysql)?[_.-]?(?:[Pp]ass?(?:wo?r?d|code|phrase)|[Pp]wd|secret)[\t ]*(={1,3}|:)[\t ]*(?:["']|b["'])?` **(4)**.
+   - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
+   - **Test string**:  `gH4$kP!2w_ ` **(6)**
 
-    - Click on the **More options**, You will also want to add a couple of values to the **Before secret** and **After secret** values. The following can be used for the **Before Secret(3)**:
-
-    - `(?:\A|[^a-zA-Z0-9])(?i)(?:api|jwt|mysql)?[_.-]?(?:[Pp]ass?(?:wo?r?d|code|phrase)|[Pp]wd|secret)[\t ]*(={1,3}|:)[\t ]*(?:["']|b["'])?`
-
-    - The **After secret(4)** that works in our example is as follows:
-
-    - `(\z|[\r\n'"])`
-
-     ![push-protection1](./images/custom3.png)
-
-1. Click **Save and dry run** to discover two values of concern - the first being the GitHub Personal Access Token we corrupted earlier, and the second being the `Password123!` value mentioned earlier.
-
-    ![push-protection1](./images/custom4.png)
+     ![push-protection1](./images/secret-scanning5.png)
+      
+      > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
+      
+      > **Note:** Using the [Generic Secrets / Passwords](https://github.com/advanced-security/secret-scanning-custom-patterns/tree/main/generic) from the field security team's repository, we grab the following pattern format: 
+      
+      > **Note:** You can also refer to the Field Security team's open-source [custom-pattern-secrets](https://github.com/advanced-security/secret-scanning-custom-patterns) repository, which contains several useful examples.
 
 1. Click on **Pubish pattern**.
 
