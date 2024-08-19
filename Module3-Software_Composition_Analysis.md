@@ -138,7 +138,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/proposechanges.png)
 
-1. Now, click on raise **Pull requests**. No need to merge the PR.
+1. On the **Open a pull request** tab, click on **Create pull request**. No need to merge the PR.
 
    ![github-advisory-database](images/createpr.png)
 
