@@ -84,9 +84,9 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/ghas-exercise1-4.png) 
 
-1. Click on the **Repositories** and select any repository.
+1. Click on the **Repositories** **(1)** and select **.github** **(2)**.
 
-   ![Picture1](./images/anyrepo.png) 
+   ![Picture1](./images/advance-scanning8.png) 
 
 1. In your repository, and click on **Settings**.
 
@@ -94,19 +94,25 @@ Here are some of the components of GitHub Advanced Security:
 
 1. In the left sidebar, click on **Code security and analysis**.
 
-1. Now on the **GitHub Advanced Security**, click on **Enable**.
+1. Now on the **GitHub Advanced Security** **(1)**, click on **Enable** **(2)**.
 
-   ![Picture1](./images/ghadvanceenablae.png)
+   ![Picture1](./images/advance-scanning1.png)
 
-1. Make sure to enable **Dependabot**, **Code Scanning** and **Secret Scanning**, for repository if not enabled. Under **Dependabot**, enable **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, **Grouped security updates**, and **Dependabot on Actions runners**.
+1. Click the **Enable GitHub Advanced Security for this repository** button when the prompt appears.
 
-   ![github-advisory-database](images/g14.png)
+   ![Picture1](./images/advance-scanning2.png)
+
+1. Make sure the fallowing **Dependabot**, **Code Scanning** and **Secret Scanning**, for repository if not enabled. 
+
+1. Click on **enable** button next to the **Dependency graph** **(1)**, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
+
+   ![github-advisory-database](images/advance-scanning3.png)
    
-1. Under **Code Scanning** option. Click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
+1. Under **Code Scanning** option. Click on the **Setup** **(1)** button next to the CodeQL analysis from the drop down select **Default** **(2)** option.
 
-   ![github-advisory-database](images/gb.png)
+   ![github-advisory-database](images/advance-scanning4.png)
 
-1. Leave the query suite on Default and click the **Enable CodeQL** button.
+1. In the **CodeQL default configuration** pop-up, click on **Enable CodeQL** button.
 
    ![github-advisory-database](images/ghas-exercise1-5.png)
 
@@ -114,21 +120,21 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/mod2ss1.png)
 
-1. Select **enable** to activate Push Protection.
+1. Select **Enable** butoon next to the activate Push Protection.
 
-   ![Picture1](./images/mod2ss2.png)
+   ![Picture1](./images/advance-scanning5.png)
 
-1. To review, navigate to your repository’s Security tab.
+1. To review, navigate to your repository’s **Security** tab.
 
    ![Picture1](./images/security-tab.png)
 
 1. Here, you can review your alerts in the security overview.
 
-   ![Picture1](./images/security-overview-paget1.png)
+   ![Picture1](./images/advance-scanning6.png)
 
 ### Task 4: Turn on GitHub Advanced Security for Organization.
 
-1. On the **Home** page, click on your profile icon in the top right corner.
+1. On the **Home** page, click on your **profile** icon in the top right corner.
 
    ![Profile Menu](./images/orgprofile.png)
 
@@ -140,11 +146,11 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Select Organization](./images/ghas-exercise1-4.png)
 
-4. Navigate to the repository and click on the **Settings**tab.
+4. Navigate to the repository and click on the **Settings** tab.
 
    ![Repository Settings](./images/mod1org.png)
 
-5. In the Settings menu, find **Configurations** under Code Security.
+5. In the Settings menu, click-on **Configurations** under Code Security under Security section.
 
    ![Code Security Configurations](./images/mod1org1.png)
 
@@ -152,9 +158,9 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Apply to All Repositories](./images/mod1org2.png)
 
-7. When prompted, click on **Apply** to confirm the configuration changes.
+7. Click on **Apply** to confirm the configuration changes, when the prompt appears.
 
-   ![Apply Configuration](./images/mod1org2.png)
+   ![Apply Configuration](./images/advance-scanning7.png)
 
 Please feel free to go through the links for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) and [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
 
