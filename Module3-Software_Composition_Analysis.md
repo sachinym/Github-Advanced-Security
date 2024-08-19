@@ -65,7 +65,7 @@ The process involves adding all dependencies from a repository to the dependency
 
     ![github-advisory-database](images/g17.png)
 
- 	 > **Note:** If you don't see the **Dependency Graph Upload** action under workflows, then edit the **`.github/workflows/DepGraph.yml`** file and just change the extenion with **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file or just add any empty space in the yaml file and commit the changes. Also you might see that the action already completed, this happened because we have edited the file and it got triggered automatically. You can rerun it to get the more details. 
+ 	 > **Note:** If you don't find the **Dependency Graph Upload** action under workflows, then rename the **`.github/workflows/DepGraph.yml`** file to **DepGraph.txt** (edit the file extension to **txt**) and then revert it back to save as **DepGraph.yml** file or just add an empty space anywhere in the yaml file and commit the changes. This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**, this happened because we edited the file which got triggered automatically. You can rerun workflow to fetch more details. 
  
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
