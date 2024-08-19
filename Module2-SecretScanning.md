@@ -174,14 +174,14 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 	
    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 
-    > **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+   > **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
-    > **Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+   > **Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
-  	 ![github-advanced-security](images/ghas-exercise1-8.png)
+   ![github-advanced-security](images/ghas-exercise1-8.png)
    
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
 <validation step="48341224-6086-4ce1-a337-9ec19e1e9582" />
 
