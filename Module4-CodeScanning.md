@@ -56,7 +56,7 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
    ![github-advisory-database](images/ga.png)
 
-   >**Note**: Zoom out of the page if you are unable to see the **Setting**.
+   >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
 
 1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
 
@@ -104,7 +104,7 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
 1. Now you are redirect to the codeql.yml file in github/ workflows directory, and we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 67 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
-   ![github-advisory-database](images/gi.png)
+   ![github-advisory-database](images/java-codeql-yml.png)
   
 1. Now,  go to the **Actions** tab to confirm the CodeQL action is running.
 
@@ -115,17 +115,17 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
    ![github-advisory-database](images/runactions.png)
 
    
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+     >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
     
-    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
+     >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
     
-  	 ![github-advanced-security](images/ghas-exercise1-8.png)
+     ![github-advanced-security](images/ghas-exercise1-8.png)
    
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="fdc513c6-e817-48a5-aec1-8875b2e7b0a4" />
 
@@ -145,7 +145,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section, we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 67 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
-   ![github-advisory-database](images/git1.png)
+   ![github-advisory-database](images/python-codeql-yml.png)
 
 
 1. In the Code tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
@@ -166,9 +166,10 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
    ![github-advisory-database](images/gp.png)
      
 1. Because our main branch isn't a `Protected Branch`, it may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
- - CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding.
+   
+   - CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding.
 
-    ![clear-text-logging-finding](images/prfailat.png)
+   ![clear-text-logging-finding](images/prfailat.png)
 
 ## Task 4: CodeQL Query Operations in Visual Studio
 
@@ -233,7 +234,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
     >**Note**: Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
 
     ```
-    https://github.com/github-bootcamp-xxxx-cloudlabsuserxxx/ghas-bootcamp-python
+    https://github.com/ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx/ghas-bootcamp-python
     ```
 
     ![Picture1](./images/clonerepo7.png)
@@ -252,27 +253,27 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
 1. Now, replace the existing code with the provided code snippet. Then, click on the **Run** button to execute it.
 
-  - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
+   - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
 
 	  ```
 	  import python
-	import semmle.python.types.Builtins
+	  import semmle.python.types.Builtins
 	
-	predicate named_entity(string name, string kind) {
-	  exists(Builtin::special(name)) and kind = "special"
-	  or
-	  exists(Builtin::builtin(name)) and kind = "builtin"
-	  or
-	  exists(Module m | m.getName() = name) and kind = "module"
-	  or
-	  exists(File f | f.getShortName() = name + ".py") and kind = "file"
-	}
+	  predicate named_entity(string name, string kind) {
+	   exists(Builtin::special(name)) and kind = "special"
+	    or
+	    exists(Builtin::builtin(name)) and kind = "builtin"
+	    or
+	    exists(Module m | m.getName() = name) and kind = "module"
+	    or
+	    exists(File f | f.getShortName() = name + ".py") and kind = "file"
+	  }
 	
-	from string name, string kind
-	where
-	  name in ["foo", "baz", "main", "os", "sys", "re"] and
-	  named_entity(name, kind)
-	select name, kind order by name, kind
+	  from string name, string kind
+	  where
+	    name in ["foo", "baz", "main", "os", "sys", "re"] and
+	    named_entity(name, kind)
+	  select name, kind order by name, kind
 	  ```
 
     ![Picture1](./images/module4task4code1.png)
