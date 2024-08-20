@@ -65,7 +65,7 @@ The process involves adding all dependencies from a repository to the dependency
 
     ![github-advisory-database](images/g17.png)
 
- 	 > **Note:** If you don't see the **Dependency Graph Upload** action under workflows, then edit the **`.github/workflows/DepGraph.yml`** file and just change the extenion with **DepGraph.txt** and then revert it back to save as **DepGraph.yml** file or just add any empty space in the yaml file and commit the changes. Also you might see that the action already completed, this happened because we have edited the file and it got triggered automatically. You can rerun it to get the more details. 
+ 	 > **Note:** If you don't find the **Dependency Graph Upload** action under workflows, then rename the **`.github/workflows/DepGraph.yml`** file to **DepGraph.txt** (edit the file extension to **txt**) and then revert it back to save as **DepGraph.yml** file or just add an empty space anywhere in the yaml file and commit the changes. This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**, this happened because we edited the file which got triggered automatically. You can rerun workflow to fetch more details. 
  
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
@@ -117,28 +117,28 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    
 1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot and delete the existing lines as mentioned.
 
-  - **Security Vulnerabilities:** Log4j has been known to have critical security vulnerabilities. This vulnerability allowed attackers to execute arbitrary code on a server or other computer running Log4j, leading to severe security risks such as remote code execution.
+   - **Security Vulnerabilities:** Log4j has been known to have critical security vulnerabilities. This vulnerability allowed attackers to execute arbitrary code on a server or other computer running Log4j, leading to severe security risks such as remote code execution.
 
-  - **Impact:** If a project uses a vulnerable version of Log4j, it can be exploited by attackers to compromise the application or the server it runs on. This can lead to unauthorized access, data breaches, and other security issues. 
+   - **Impact:** If a project uses a vulnerable version of Log4j, it can be exploited by attackers to compromise the application or the server it runs on. This can lead to unauthorized access, data breaches, and other security issues. 
 
 
-      ```xml
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.13.1</version>
-        </dependency>
-     ```
+   ```xml
+     <dependency>
+         <groupId>org.apache.logging.log4j</groupId>
+         <artifactId>log4j-core</artifactId>
+         <version>2.13.1</version>
+     </dependency>
+   ```
 
-    ![github-advisory-database](images/gx2at.png)
+   ![github-advisory-database](images/gx2at.png)
 
-    ![github-advisory-database](images/gx2.png)
+   ![github-advisory-database](images/gx2.png)
 
 1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
 
    ![github-advisory-database](images/proposechanges.png)
 
-1. Now, click on raise **Pull requests**. No need to merge the PR.
+1. On the **Open a pull request** tab, click on **Create pull request**. No need to merge the PR.
 
    ![github-advisory-database](images/createpr.png)
 
@@ -148,23 +148,23 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    - **Failure of Pull Requests:** If the Dependency Review action detects that a pull request introduces a version of `Log4j` (or any other dependency) that has known vulnerabilities, it will mark the pull request as failed. This is done to prevent merging code that could introduce security risks into the main codebase.
 
-     ![github-advisory-database](images/prfail.png)
+   ![github-advisory-database](images/prfail.png)
 
 1. You can also see the error details on **Actions** section, navigate to action section and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
-    ![github-advisory-database](images/gx1.png)
+   ![github-advisory-database](images/gx1.png)
 
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+     >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
-    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
+     >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
     
-  	 ![github-advanced-security](images/ghas-exercise1-8.png)
+     ![github-advanced-security](images/ghas-exercise1-8.png)
    
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="401a8107-d558-4bed-a5b6-4b1e5ca50132" />
 

@@ -137,7 +137,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
  
 1. Once the deployment is completed, click on **Go to resource**.
 
-1. On the **Overview (1)** page of the **Function app**, under the  **Function** tab, click on **Create function (2)**. It will open a  page for **Create function**. Search for and select **HTTP trigger (3)**. Click on **Next (4)**.
+1. On the **Overview (1)** page of the **Function app**, under the  **Functions** tab, click on **Create function (2)**. It will open a  page for **Create function**. Search for and select **HTTP trigger (3)**. Click on **Next (4)**.
 
    ![Picture1](./images/functionapp3.png)
 
@@ -210,7 +210,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/lab7testwebhook4.png)
 
-17. On the **Get Started with GitHub Actions** page, click on the **Configure** button to begin setting up a workflow.
+17. On the **Get Started with GitHub Actions** page, click on the **Configure** button for **Simple workflow** to begin setting up a workflow.
 
      ![Picture1](./images/lab7testwebhook5.png)
 
@@ -280,7 +280,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 14. Click on **Webhook** and select the Webhook you have created.
 
-15. Scroll down to the bottom and you will find some **Recent Deliver	ies**.
+15. Scroll down to the bottom and you will find some **Recent Deliveries**.
 
     ![Picture1](./images/recentdelivery.png)
 
@@ -292,17 +292,17 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 17. Navigate back to your **Function app** in the Azure portal and select the HTTP trigger function you created. Click on **Invocations (1)**. This section provides the most recent invocation traces, allowing you to review and analyze the function's execution history.
 
-     ![Picture1](./images/ghas-exercise1-12.png)
+    ![Picture1](./images/ghas-exercise1-12.png)
    
-     >**Note:** It will take 5-7 minutes to show.
+    >**Note:** It will take 5-7 minutes to show.
 
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="c812660e-bf0e-4f9b-8621-fc3bf5af35a8" />
+<validation step="c812660e-bf0e-4f9b-8621-fc3bf5af35a8" />
 
 #### Task 4: Talk about repository rulesets and how they can be used at scale [Read Only]
 
