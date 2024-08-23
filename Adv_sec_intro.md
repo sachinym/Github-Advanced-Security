@@ -132,7 +132,7 @@ Here are some of the components of GitHub Advanced Security:
 
    ![Picture1](./images/advance-scanning6.png)
 
-### Task 4: Turn on GitHub Advanced Security for Organization.
+### Task 4: Turn on GitHub Advanced Security for Organization. [Read Only]
 
 1. On the **Home** page, click on your **profile** icon in the top right corner.
 
