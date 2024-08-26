@@ -34,9 +34,15 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/g13.png)
 
-1. Now enable all the dependecy requirments, **Dependency graph**, **Dependabot Alerts**, **Dependabot security updates**, and **Grouped security updates**, under **Dependabot** if not enabled.
+1. Check the **Dependency graph** **(1)**.
 
-   ![github-advisory-database](images/g14.png)
+   ![github-advisory-database](images/advance-scanning32.png)
+
+   > **Note:** By default, the **Dependency graph** is always enabled for public repositories.
+
+1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
+
+   ![github-advisory-database](images/advance-scanning30.png)
 
    >**Info:** Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
 
