@@ -94,9 +94,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![Picture1](./images/ghasr1.png)
 
-1. Click the **Enable GitHub Advanced Security for this repository** button when the prompt appears.
-
-   ![Picture1](./images/advance-scanning2.png)
+1. In the left sidebar, click on **Code security and analysis**.
 
 1. Make sure the fallowing **Dependabot**, **Code Scanning** and **Secret Scanning**, for repository if not enabled. 
 
