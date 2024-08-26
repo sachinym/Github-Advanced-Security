@@ -8,6 +8,10 @@
 
    ![Picture1](./images/advance-scanning1.png)
 
+1. Click the **Enable GitHub Advanced Security for this repository** button when the prompt appears.
+
+   ![Picture1](./images/advance-scanning2.png)
+
 
 ## Why are we using PAT Tokens
 
