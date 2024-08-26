@@ -72,6 +72,8 @@ Here are some of the components of GitHub Advanced Security:
 
 ### Task 3: Where to turn on the different components of GitHub Advanced Security?  
 
+In this task, we will learn how to enable GitHub Advanced Security features for a repository, including Dependabot, Code Scanning, and Secret Scanning. We will explore how to activate and configure essential security features such as the Dependency Graph, Dependabot Alerts, CodeQL analysis, and Push Protection, ensuring comprehensive security coverage for our repository. Additionally, we will review the alerts generated in the Security tab, gaining insights into potential vulnerabilities and securing our code.
+
 1. On the **Home** page, click on your **profile** on top of the right hand.
 
    ![Picture1](./images/orgprofile.png) 
@@ -134,6 +136,10 @@ Here are some of the components of GitHub Advanced Security:
 
 ### Task 4: Turn on GitHub Advanced Security for Organization. [Read Only]
 
+In this task, you will configure and apply security settings across all repositories within an organization. 
+
+**Note:** By performing this task, you will have already enabled the security configurations for your upcoming module in this lab. This allows you to skip the security settings enablement steps in upcomming module.
+ 
 1. On the **Home** page, click on your **profile** icon in the top right corner.
 
    ![Profile Menu](./images/orgprofile.png)
