@@ -59,13 +59,19 @@ The process involves adding all dependencies from a repository to the dependency
        
    ![github-advisory-database](images/mavendevices.png)
 
+1. Click the pencil icon at the top-right of the code block to edit it add an extra space. click on Commit changes.
+
+   ![github-advisory-database](images/mavendevicescomit.png)
+
+ 	 > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**, this happened because we edited the file which got triggered automatically.
+
 1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
 
 1.  Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
 
     ![github-advisory-database](images/g17.png)
 
- 	 > **Note:** If you don't find the **Dependency Graph Upload** action under workflows, then rename the **`.github/workflows/DepGraph.yml`** file to **DepGraph.txt** (edit the file extension to **txt**) and then revert it back to save as **DepGraph.yml** file or just add an empty space anywhere in the yaml file and commit the changes. This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**, this happened because we edited the file which got triggered automatically. You can rerun workflow to fetch more details. 
+ 	 > **Note:** If you don't find the **Dependency Graph Upload** action under workflows, then rename the **`.github/workflows/DepGraph.yml`** file to **DepGraph.txt** (edit the file extension to **txt**) and then revert it back to save as **DepGraph.yml** file or just add an empty space anywhere in the yaml file and commit the changes, if you haven't add an space.
  
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
