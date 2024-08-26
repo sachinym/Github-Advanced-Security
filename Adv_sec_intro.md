@@ -100,6 +100,10 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. Click on **enable** button next to the **Dependency graph** **(1)**, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
 
+   ![github-advisory-database](images/advance-scanning32.png)
+
+   > **Note:** By default, the **Dependency graph** is always enabled for public repositories.
+
    ![github-advisory-database](images/advance-scanning3.png)
    
 1. Under **Code Scanning** option. Click on the **Setup** **(1)** button next to the CodeQL analysis from the drop down select **Default** **(2)** option.
