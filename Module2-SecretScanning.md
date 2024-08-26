@@ -144,13 +144,15 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/index.png)
 
-   ![Picture1](./images/index1.png)    
+   ![Picture1](./images/index1.png)  
+
+   ![Picture1](./images/index2.png)      
 
    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
 
-1. When pop-up is prompted select **It's user in tests** **(1)** and click on **Allow Secret** **(2)**.
+1. When pop-up is prompted select **Allow Secret** **(1)**.
 
-   ![](./images/secret-scanning1.png)
+   ![Picture](./images/secret-scanning12.png)
 
 1. Click on **Commit changes** again and commit directly to default branch.
 
