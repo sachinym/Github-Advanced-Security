@@ -2,6 +2,12 @@
 
     >**Note:** If the error persists, indicating that a file with the name already exists, delete the conflicting file and create file named **dependency-review.yml** before attempting the commit once more.
 
+1. In the left sidebar, click on **Code security and analysis**.
+
+1. Now on the **GitHub Advanced Security** **(1)**, click on **Enable** **(2)**.
+
+   ![Picture1](./images/advance-scanning1.png)
+
 
 ## Why are we using PAT Tokens
 
