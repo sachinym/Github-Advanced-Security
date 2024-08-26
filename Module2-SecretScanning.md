@@ -128,9 +128,9 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/mod2ss1.png)
 
-  > **Note:** If you have already enabled GitHub Advanced Security for your organization, this option will appear as enabled.
+   > **Note:** If you have already enabled GitHub Advanced Security for your organization, this option will appear as enabled.
 
-  > **Note:** Ensure that **Push Protection** is disabled to properly perform and understand the task.
+   > **Note:** Ensure that **Push Protection** is disabled to properly perform and understand the task.
 
 1. Navigate to **Code** from the top navigation pane.
 
@@ -226,6 +226,8 @@ In this task, you will enable push protection to prevent secrets from being comm
 1. Click on **_index.js_**, click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
 
     ![Picture1](./images/index.png)
+
+   ![Picture1](./images/index2.png)    
 
     >**Note**: This will cause a **secret scanning** pop-up to appear, stopping you from committing your secret to the codebase.
 
