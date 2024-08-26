@@ -124,14 +124,6 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![github-advisory-database](images/g13.png)
 
-1. Now on the **GitHub Advanced Security** **(1)**, click on **Enable** **(2)**.
-
-   ![Picture1](./images/advance-scanning1.png)
-
-1. Click the **Enable GitHub Advanced Security for this repository** button when the prompt appears.
-
-   ![Picture1](./images/advance-scanning2.png)
-
 1. Scroll down to **Secret Scanning**, click on **enable**.
 
    ![Picture1](./images/mod2ss1.png)
