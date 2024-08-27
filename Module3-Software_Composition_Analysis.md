@@ -65,7 +65,7 @@ The process involves adding all dependencies from a repository to the dependency
        
    ![github-advisory-database](images/mavendevices.png)
 
-1. Click the pencil icon at the top-right of the code block to edit it add an extra space. click on Commit changes.
+1. Click the pencil icon at the top-right of the code block to edit it **add an extra space in last**. click on Commit changes.
 
    ![github-advisory-database](images/mavendevicescomit.png)
 
@@ -76,8 +76,6 @@ The process involves adding all dependencies from a repository to the dependency
 1.  Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
 
     ![github-advisory-database](images/g17.png)
-
- 	 > **Note:** If you don't find the **Dependency Graph Upload** action under workflows, then rename the **`.github/workflows/DepGraph.yml`** file to **DepGraph.txt** (edit the file extension to **txt**) and then revert it back to save as **DepGraph.yml** file or just add an empty space anywhere in the yaml file and commit the changes, if you haven't add an space.
  
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
@@ -96,6 +94,16 @@ The process involves adding all dependencies from a repository to the dependency
 ## Dependency Review Action
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
+
+1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/dependency-review.yml`** file. Click on the **...** (ellipsis) icon and select **Delete File**.
+
+    ![github-advisory-database](images/g2.1new.png)
+
+   > **Note:** We are deleting the existing file to avoid conflicts when creating a new file with the same name. Deleting the existing file first ensures a smooth process.
+
+1. Click on **Commit Changes** (1), and then click **Commit Changes** (2) once again in the pop-up that appears.
+
+    ![github-advisory-database](images/g2.1new1.png)
 
 1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
 
@@ -120,8 +128,6 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 1. Click on **Commit Changes** once again in the pop-up that appears.
 
    ![github-advisory-database](images/g8.png)
-
-    >**Note:** To update the dependency-review.yml file, use a two-tab approach. In your first tab, navigate to the dependency-review.yml file. Then, in your second tab, find the updated code for this file. Copy the entire updated code from the second tab, return to the first tab, and paste it to replace all existing content in the dependency-review.yml file. Finally, click on "Commit changes" to save your updates. We're using this method because direct file updates are sometimes not allowed and may result in an error message stating that the file already exists. This approach helps bypass that issue and ensures your changes are successfully applied.
 
 1. Now back in the **ghas-bootcamp-webgoat** repository, go to the **pom.xml** file.
 
