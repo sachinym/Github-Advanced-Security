@@ -12,6 +12,7 @@ In this lab, you will learn and perform:
 - Task 2: Turn on advanced setup on a Java repository
 - Task 3: Add some vulnerable code via a pull request and view the scan results in the PR
 - Task 4: CodeQL Query Operations in Visual Studio  
+- Task 5: Turn on GitHub Advanced Security for Organization
 
 ## Estimated timing: 40 minutes
 
@@ -284,6 +285,38 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
+### Task 5: Turn on GitHub Advanced Security for Organization. [Read Only]
+
+In this task, you will configure and apply security settings across all repositories within an organization. 
+ 
+1. On the **Home** page, click on your **profile** icon in the top right corner.
+
+   ![Profile Menu](./images/orgprofile.png)
+
+2. Select **Your organizations** from the dropdown menu.
+
+   ![Your Organizations](./images/org.png)
+
+3. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
+
+   ![Select Organization](./images/ghas-exercise1-4.png)
+
+4. Navigate to the repository and click on the **Settings** tab.
+
+   ![Repository Settings](./images/mod1org.png)
+
+5. In the Settings menu, click-on **Configurations** under Code Security under Security section.
+
+   ![Code Security Configurations](./images/mod1org1.png)
+
+6. Click on **Apply to** and select **All repositories** to apply the configuration.
+
+   ![Apply to All Repositories](./images/mod1org2.png)
+
+7. Click on **Apply** to confirm the configuration changes, when the prompt appears.
+
+   ![Apply Configuration](./images/advance-scanning7.png)
+
 ## Review
 
 In this lab you have completed the following:
@@ -291,4 +324,6 @@ In this lab you have completed the following:
 - Learnt how CodeQL is different from other static analysis tools
 - Turned on the default setup on a Python repository 
 - Turned on the advanced setup on a Java repository
-- Added some vulnerable code via a pull request and viewed the scan results in the PR.  
+- Added some vulnerable code via a pull request and viewed the scan results in the PR. 
+- CodeQL Query Operations in Visual Studio
+- Turn on GitHub Advanced Security for Organization 
