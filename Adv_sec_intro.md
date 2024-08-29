@@ -9,7 +9,7 @@ In this lab, you will perform:
 
 - Task 1: What is GitHub Advanced Security? 
 - Task 2: What are the components of GitHub Advanced Security?  
-- Task 3: Where to turn on the different components of GitHub Advanced Security?  
+- Task 3: Where to turn on the different components of GitHub Advanced Security at the repository level?  
 
 ## Estimated Timing: 20 minutes
 
@@ -70,7 +70,7 @@ Here are some of the components of GitHub Advanced Security:
    - **Bug Fixes**: These updates address bugs and issues that may not be security-related but improve the overall stability and usability of the software.
    - **Release Versions**: Version updates typically follow semantic versioning (e.g., major, minor, patch) to indicate the nature of changes (e.g., breaking changes, new features, or bug fixes).
 
-### Task 3: Where to turn on the different components of GitHub Advanced Security?  
+### Task 3: Where to turn on the different components of GitHub Advanced Security at the repository level?  
 
 In this task, we will learn how to enable GitHub Advanced Security features for a repository, including Dependabot, Code Scanning, and Secret Scanning. We will explore how to activate and configure essential security features such as the Dependency Graph, Dependabot Alerts, CodeQL analysis, and Push Protection, ensuring comprehensive security coverage for our repository. Additionally, we will review the alerts generated in the Security tab, gaining insights into potential vulnerabilities and securing our code.
 
@@ -96,13 +96,15 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. In the left sidebar, click on **Code security and analysis**.
 
-1. Make sure the following **Dependabot**, **Code Scanning** and **Secret Scanning**, for repository if not enabled. 
+1. Here you can enable the features of following **Dependabot**, **Code Scanning**, and **Secret Scanning** for repository.
 
-1. Check the **Dependency graph** **(1)**.
+1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
+
+   ![github-advisory-database](images/advance-scanning32a.png)      
 
    ![github-advisory-database](images/advance-scanning32.png)
 
-   > **Note:** By default, the **Dependency graph** is always enabled for public repositories.
+   > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment, it might not appear enabled initially. If this is the case, simply click **Enable** to activate it.
 
 1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
 
