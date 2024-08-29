@@ -128,8 +128,6 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/mod2ss1.png)
 
-   > **Note:** If you have already enabled GitHub Advanced Security for your organization, this option will appear as enabled.
-
    > **Note:** Ensure that **Push Protection** is disabled to properly perform and understand the task.
 
 1. Navigate to **Code** from the top navigation pane.
