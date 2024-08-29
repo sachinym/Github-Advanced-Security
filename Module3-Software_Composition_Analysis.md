@@ -65,7 +65,7 @@ The process involves adding all dependencies from a repository to the dependency
        
    ![github-advisory-database](images/mavendevices.png)
 
-1. Click the pencil icon at the top-right of the code block to edit it **add an extra space in last**. click on Commit changes.
+1. Click the pencil icon at the top-right of the code block to edit it **Add a space to the end of the file.**. click on Commit changes.
 
    ![github-advisory-database](images/mavendevicescomit.png)
 
@@ -97,11 +97,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/dependency-review.yml`** file. Click on the **...** (ellipsis) icon and select **Delete File**.
 
-    ![github-advisory-database](images/g2.1new.png)
+   ![github-advisory-database](images/g2.1new.png)
 
    > **Note:** We are deleting the existing file to avoid conflicts when creating a new file with the same name. Deleting the existing file first ensures a smooth process.
 
-1. Click on **Commit Changes** (1), and then click **Commit Changes** (2) once again in the pop-up that appears.
+1. Click on **Commit Changes (1)**, and then click **Commit Changes (2)** once again in the pop-up that appears.
 
     ![github-advisory-database](images/g2.1new1.png)
 

@@ -58,7 +58,13 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Code Security Configurations](./images/mod1org5.png)
 
-8. Scroll down to the **Secret Scanning** section and enable the **Alerts** option. You may also adjust other settings according to your requirements. Finally, click** `**Save Configurations** to apply your changes.
+8. Scroll down to the **Secret Scanning** section. You'll find that all options are enabled by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
+
+   ![Code Security Configurations](./images/mod1org6a.png)
+
+   ![Code Security Configurations](./images/mod1org6b.png)   
+
+9. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**. Finally, click **Save Configurations** to apply your changes.
 
    ![Code Security Configurations](./images/mod1org6.png)
 
@@ -98,7 +104,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/developersetting.png)
 
-1. Give your secret a name **Secret scanning**, and set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. Once you've generated the token, click the **"Copy"** icon to the right of the secret value.
+1. Give your secret a name **Secret01**, and set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. Once you've generated the token, click the **"Copy"** icon to the right of the secret value.
 
    ![new personal acess token](images/PATtoken.png)
 
@@ -286,13 +292,13 @@ In this task, you will create and apply a custom secret pattern to detect specif
    
 ## Task 4: Understanding the results 
 
-In this task, we delve into comprehending the outcomes of secret scanning.
+In this task, we delved into comprehending the outcomes of secret scanning.
 
 1. We navigated through the repository's findings and demonstrated how secret scanning identifies potential vulnerabilities, followed by a practical demonstration of adding a GitHub Personal Access Token (PAT) to the codebase to exemplify active secret detection.
 
-1. After identifying active secrets, we discuss the significance of validity checks in prioritizing remediation efforts.
+1. After identifying active secrets, we discussed the significance of validity checks in prioritizing remediation efforts.
 
-1. Next, we enable push protection in the **ghas-bootcamp-javascript** repository and simulate attempting to push a new secret.
+1. Next, we enabled push protection in the **ghas-bootcamp-javascript** repository and simulated attempting to push a new secret.
 
 1. We created custom secret patterns to uncover specific types of sensitive information.
 
