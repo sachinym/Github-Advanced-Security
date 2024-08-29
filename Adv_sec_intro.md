@@ -104,7 +104,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![github-advisory-database](images/advance-scanning32.png)
 
-   > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment, it might not appear enabled initially. If this is the case, simply click **Enable** to activate it.
+   > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
 
 1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
 
