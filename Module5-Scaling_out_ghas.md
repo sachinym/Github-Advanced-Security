@@ -351,6 +351,6 @@ For more details, refer to the [GitHub documentation on rulesets](https://docs.g
 In this lab, you have completed the following:
 
 + How to grow adoption? How to communicate about GHAS internally?  
-+ View the security overview dashboard and reports 
-+ Review Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
-+ Talk about repository rulesets and how they can be used at scale 
++ Viewed the security overview dashboard and reports 
++ Reviewed Webhooks and how they can be used to push events to an outside reporting tool, like a SIEM 
++ Talked about repository rulesets and how they can be used at scale 
