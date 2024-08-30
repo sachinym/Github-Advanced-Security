@@ -61,23 +61,61 @@ In this lab, you will perform:
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
 
-1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/DepGraph.yml`** file.
+1. In the **`ghas-bootcamp-webgoat`** repository, navigate to the **`.github/workflows`** directory. Once there, click on **Add file (1)**, then select **+ Create new file (2)** to add a new file to the repository.
 
-   ![github-advisory-database](images/g16.png)
+   ![github-advisory-database](images/g16at.png)
 
-1. Click the pencil icon at the top-right of the code block to edit it **Add a space to the end of the file**. click on **Commit changes**.
+1. Create a file named **`DepGraph.yml (1)`**. Paste the provided code into the file and click on **Commit changes (2)** to save and commit the new file to the repository.
 
-   ![github-advisory-database](images/mavendevices.png)
+   ![github-advisory-database](images/g16at01.png)
 
-   ![github-advisory-database](images/mavendevicescomit.png)
+   ```
+   # For most projects, this workflow file will not need changing; you simply need
+   # to commit it to your repository.
+   #
+   # You may wish to alter this file to override the set of languages analyzed,
+   # or to provide custom queries or build logic.
+   #
+   # ******** NOTE ********
+   # We have attempted to detect the languages in your repository. Please check
+   # the `language` matrix defined below to confirm you have the correct set of
+   # supported CodeQL languages.
+   #
+   name: "Dependency Graph Upload"
 
- 	 > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**, this happened because we edited the file which got triggered automatically.
+   on:
+   push:
+      branches: [ "main" ]
+   workflow_dispatch:
+
+   jobs:
+   analyze:
+      name: Analyze
+      runs-on: ubuntu-latest
+      permissions:
+         actions: read
+         contents: write
+         security-events: write
+
+
+      steps:
+      - name: Checkout repository
+         uses: actions/checkout@v4
+      - name: Maven Dependency Tree Dependency Submission
+         uses: advanced-security/maven-dependency-submission-action@v4
+   ```
+
+1. Click on **Commit changes**.
+
+   ![github-advisory-database](images/g16at02.png)
+
+ 	 > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**.
 
 1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
 
 1.  Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
 
-    ![github-advisory-database](images/g17.png)
+    ![github-advisory-database](images/g17at.png)
  
 1.  Once this is completed, go to the **Dependency Graph** tab under the **Insights** section in the top navigation pane.
 
@@ -93,21 +131,11 @@ The process involves adding all dependencies from a repository to the dependency
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
 
-1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/dependency-review.yml`** file. Click on the **...** (ellipsis) icon and select **Delete File**.
-
-   ![github-advisory-database](images/g2.1new.png)
-
-   > **Note:** We are deleting the existing file to avoid conflicts when creating a new file with the same name. Deleting the existing file first ensures a smooth process.
-
-1. Click on **Commit Changes (1)**, and then click **Commit Changes (2)** once again in the pop-up that appears.
-
-    ![github-advisory-database](images/g2.1new1.png)
-
 1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
 
     ![github-advisory-database](images/g2.1.png)
 
-    ![github-advisory-database](images/g3.png)
+    ![github-advisory-database](images/g3at.png)
  
  
 1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
