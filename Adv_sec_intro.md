@@ -128,11 +128,17 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. To review, navigate to your repository’s **Security** tab.
 
-   ![Picture1](./images/security-tab.png)
+   ![Picture1](./images/security-tabat.png)
 
 1. Here, you can review your alerts in the security overview.
 
-   ![Picture1](./images/advance-scanning6.png)
+   ![Picture1](./images/advance-scanning6at.png)
+
+   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. However, we are including a screenshot to illustrate how the alerts will appear when they are triggered in a repository that has relevant files.
+
+   ![Picture1](./images/advance-scanning6at1.png)
+
+   ![Picture1](./images/advance-scanning6at2.png)
 
 Please feel free to go through the links for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) and [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
 
