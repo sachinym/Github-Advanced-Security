@@ -285,7 +285,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
-### Task 5: Turn on GitHub Advanced Security for Organization. [Read Only]
+### Task 5: Turned on GitHub Advanced Security for Organization. [Read Only]
 
 In this task, you will configure and apply security settings across all repositories within an organization. 
  
