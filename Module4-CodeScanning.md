@@ -227,9 +227,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
     ![Picture1](./images/clonerepo3.png)
 
-1. Sign in with GitHub Credentials and on the **Authorize GitHub for VS Code** page click on the **Authorize Visual-Studio-Code.**
-
-    ![Picture1](./images/clonerepo4.png)
+    >**Note:** If you encounter a pop-up requesting you to sign in with GitHub credentials or authorize GitHub for VS Code, click on **Authorize Visual Studio Code** to proceed.
 
 1. If you get the pop-up, The site is trying to open the Visual Studio Code then click on **Open**. It will navigate back to the Visual Studio.
 
