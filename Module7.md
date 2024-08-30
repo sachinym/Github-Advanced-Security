@@ -1,3 +1,7 @@
+1. Sign in with GitHub Credentials and on the **Authorize GitHub for VS Code** page click on the **Authorize Visual-Studio-Code.**
+
+    ![Picture1](./images/clonerepo4.png)
+
 1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/dependency-review.yml`** file. Click on the **...** (ellipsis) icon and select **Delete File**.
 
    ![github-advisory-database](images/g2.1new.png)
