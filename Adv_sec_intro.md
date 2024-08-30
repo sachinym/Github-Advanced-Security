@@ -149,4 +149,4 @@ Please feel free to go through the links for further understanding:[GitHub Advan
 In this lab, you have completed the following:
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
-+ Where to turn on the different components of GitHub Advanced Security? 
++ Where to turn on the different components of GitHub Advanced Security at the repository level? 
