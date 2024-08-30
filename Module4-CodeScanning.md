@@ -194,7 +194,9 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
     cd Desktop
     ```
     
-1. Clone the repository by running the following command:
+1. Clone the repository by running the following command, You can also obtain the URL of your repository by navigating to it, clicking on the **Code** tab, and copying the URL provided.
+
+    ![Picture1](./images/clonerepoat.png)
 
       >**Note**: Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
 
@@ -213,6 +215,10 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 1. Select **Yes, I trust the authors**.
 
     ![Picture1](./images/clonerepo2.png)
+
+1. If you receive a pop-up requesting permission to collect usage data, simply click **Yes** to proceed.
+
+    ![Picture1](./images/clonerepo3at.png)
 
 1. Go to **Account** icon from bottom and click on **Sign in with GitHub to use CodeQL**. Please note it might take some time to get the extension updated with code, If you get any pop-up select yes. 
 
@@ -252,6 +258,8 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
     ![Picture1](./images/clonerepo10.png)
 
+    >**Note**: If you receive a pop-up asking to run queries: example.ql , simply click **Yes** to proceed.
+
 1. Now, replace the existing code with the provided code snippet. Then, click on the **Run** button to execute it.
 
    - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
@@ -285,7 +293,13 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
-### Task 5: Turned on GitHub Advanced Security for Organization. [Read Only]
+### Task 5: Turn on GitHub Advanced Security for Organization. [Read Only]
+
+#### About the GitHub-recommended security configuration
+
+The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low- and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
+
+   Refer to the link for more information. [About the GitHub-recommended security configuration](https://docs.github.com/en/enterprise-cloud@latest/code-security/securing-your-organization/enabling-security-features-in-your-organization/applying-the-github-recommended-security-configuration-in-your-organization)
 
 In this task, you will configure and apply security settings across all repositories within an organization. 
  
@@ -321,9 +335,9 @@ In this task, you will configure and apply security settings across all reposito
 
 In this lab you have completed the following:
 
-- Learnt how CodeQL is different from other static analysis tools
+- Learned how CodeQL is different from other static analysis tools
 - Turned on the default setup on a Python repository 
 - Turned on the advanced setup on a Java repository
 - Added some vulnerable code via a pull request and viewed the scan results in the PR. 
-- CodeQL Query Operations in Visual Studio
-- Turn on GitHub Advanced Security for Organization 
+- Demonstrated CodeQL Query Operations in Visual Studio Code
+- Turned on GitHub Advanced Security for Organization 

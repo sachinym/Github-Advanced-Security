@@ -56,7 +56,7 @@ Issue Resolution: MTTR can track the average time from when an issue is reported
 
    - **Incident Response:** For repositories using GitHub Actions or other integrations, MTTR can track how long it takes to resolve incidents or failures reported by these tools.
 
-### Task 2: View the security overview dashboard and reports 
+### Task 2: View the security overview dashboard and reports [Read Only]
 
 In this task, you will explore the GHAS security overview dashboard and reports to gain insights into your repository's security posture.
 
@@ -129,6 +129,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Resource Group** | Lab-VM |
     | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/>** |
     | **Runtime stack** | **Node.js** |
+    | **Version** | **20 LTS** |
     | **Operating System** | **Windows** |
 
    ![Picture1](./images/ghas-exercise1-10.png)
