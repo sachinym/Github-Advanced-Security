@@ -159,7 +159,10 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
   
 1. Notice that this part of the code is related to the vulnerabilities that have to do with SQL.
 
-1. Add the some spaces at the bottom of the file and make sure to **commit the changes**.
+1. Add a **space** at the end of line 73:
+`data = subprocess.check_output(command, shell=True)`.This is necessary to trigger the CodeQL alert for the **user-controlled-sources vulnerability**. Click on **Commit changes**.
+
+   ![github-advisory-database](images/gnat01.png)
 
    ![github-advisory-database](images/gnat.png)
 
@@ -169,11 +172,13 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](images/gp.png)
      
-1. Because our main branch isn't a `Protected Branch`, it may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
+1. It may take a moment for the Action to trigger and the **Merge pull request** button will display green until the Action kicks off.
    
-   - CodeQL does not flag this pull request with a _Query built from user-controlled sources_ finding.
+   - CodeQL flag this pull request with a _Query built from user-controlled sources_ finding.
 
-   ![clear-text-logging-finding](images/prfailat.png)
+   ![clear-text-logging-finding](images/prfailat01.png)
+
+   ![clear-text-logging-finding](images/prfailat02.png)
 
 ## Task 4: CodeQL Query Operations in Visual Studio Code
 
