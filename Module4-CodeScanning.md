@@ -231,7 +231,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
     ![Picture1](./images/clonerepo4.png)
 
-1. If you get the pop-up, The site is trying to open the Visual Studio Code then click on **Open**. It will navigate back to the Visual Studio.
+1. The site is trying to open the Visual Studio Code then click on **Open**. It will navigate back to the Visual Studio.
 
     ![Picture1](./images/clonerepo5.png)
 
