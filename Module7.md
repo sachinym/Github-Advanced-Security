@@ -1,3 +1,17 @@
+1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/DepGraph.yml`** file.
+
+   ![github-advisory-database](images/g16.png)
+
+1. Click the pencil icon at the top-right of the code block to edit it **Add a space to the end of the file**. click on **Commit changes**.
+
+   ![github-advisory-database](images/mavendevices.png)
+
+   ![github-advisory-database](images/mavendevicescomit.png)
+
+ 	 > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**, this happened because we edited the file which got triggered automatically.
+
+
+
 1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
 
     ![github-advisory-database](images/g18.png)
