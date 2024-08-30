@@ -34,11 +34,13 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/g13.png)
 
-1. Check the **Dependency graph** **(1)**.
+1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
+
+   ![github-advisory-database](images/advance-scanning32a.png)      
 
    ![github-advisory-database](images/advance-scanning32.png)
 
-   > **Note:** By default, the **Dependency graph** is always enabled for public repositories.
+   > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
 
 1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
 
@@ -62,10 +64,10 @@ The process involves adding all dependencies from a repository to the dependency
 1. In the **`ghas-bootcamp-webgoat`** repository, go to the **`.github/workflows/DepGraph.yml`** file.
 
    ![github-advisory-database](images/g16.png)
-       
-   ![github-advisory-database](images/mavendevices.png)
 
-1. Click the pencil icon at the top-right of the code block to edit it **Add a space to the end of the file.**. click on Commit changes.
+1. Click the pencil icon at the top-right of the code block to edit it **Add a space to the end of the file**. click on **Commit changes**.
+
+   ![github-advisory-database](images/mavendevices.png)
 
    ![github-advisory-database](images/mavendevicescomit.png)
 
@@ -77,10 +79,6 @@ The process involves adding all dependencies from a repository to the dependency
 
     ![github-advisory-database](images/g17.png)
  
-1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
-
-    ![github-advisory-database](images/g18.png)
-
 1.  Once this is completed, go to the **Dependency Graph** tab under the **Insights** section in the top navigation pane.
 
     ![github-advisory-database](images/g19.png)

@@ -1,3 +1,7 @@
+1.  Click on the **Run workflow** -> **Run workflow**  button located in the middle of the screen.
+
+    ![github-advisory-database](images/g18.png)
+
 
 **Note:** By performing this task, you will have already enabled the security configurations for your upcoming module in this lab. This allows you to skip the security settings enablement steps in upcomming module.
 

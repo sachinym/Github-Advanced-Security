@@ -103,9 +103,9 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
-1. Now you are redirect to the codeql.yml file in github/ workflows directory, and we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 67 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
+1. Now you are redirect to the codeql.yml file in github/ workflows directory, and we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 66 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
-   ![github-advisory-database](images/java-codeql-yml.png)
+   ![github-advisory-database](images/java-codeql-ymlat.png)
   
 1. Now,  go to the **Actions** tab to confirm the CodeQL action is running.
 
@@ -144,9 +144,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](images/gl.png)
 
-1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section, we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 67 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
+1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section, we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 66 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**. Make sure you remove '#' to uncomment it (2).
 
-   ![github-advisory-database](images/python-codeql-yml.png)
+   ![github-advisory-database](images/python-codeql-ymlat.png)
 
 
 1. In the Code tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
@@ -172,7 +172,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![clear-text-logging-finding](images/prfailat.png)
 
-## Task 4: CodeQL Query Operations in Visual Studio
+## Task 4: CodeQL Query Operations in Visual Studio Code
 
 In this task, you will set up and use CodeQL in Visual Studio Code to analyze a Python codebase. The steps involve installing necessary extensions, cloning a repository, and running a CodeQL query to identify named entities within the code.
 
