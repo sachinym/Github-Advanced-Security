@@ -106,6 +106,8 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 1. Now you are redirect to the codeql.yml file in github/ workflows directory, and we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 66 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**.
 
    ![github-advisory-database](images/java-codeql-ymlat.png)
+
+   >**Note:** When updating the `codeql.yml` file, be aware that the line number for the **`Initialize CodeQL`** section may shift slightly, potentially changing from line 66 to one or two lines higher or lower. Ensure you append the string **`queries: security-extended`** to the correct location under this section based on the current line numbers in your file.
   
 1. Now,  go to the **Actions** tab to confirm the CodeQL action is running.
 
@@ -148,6 +150,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](images/python-codeql-ymlat.png)
 
+   >**Note:** When updating the `codeql.yml` file, be aware that the line number for the `Initialize CodeQL` section may shift slightly, potentially changing from line 66 to one or two lines higher or lower. Ensure you append the string `queries: security-extended` to the correct location under this section based on the current line numbers in your file.
 
 1. In the Code tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
 
