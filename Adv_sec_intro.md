@@ -96,7 +96,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. In the left sidebar, click on **Code security and analysis**.
 
-1. Here you can enable the features of following **Dependabot**, **Code Scanning**, and **Secret Scanning** for repository.
+1. Here, you can enable the features of **Dependabot**, **Code Scanning**, and **Secret Scanning** for the repository.
 
 1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
 
