@@ -134,8 +134,10 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![Picture1](./images/advance-scanning6at.png)
 
-   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. However, we are including a screenshot to illustrate how the alerts will appear when they are triggered in a repository that has relevant files.
+   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. Refer to the screenshot below to understand how the alerts will appear when they are triggered in a repository containing relevant files.
 
+   ![github-advisory-database](images/g15.1.png)
+   
    ![Picture1](./images/advance-scanning6at1.png)
 
    ![Picture1](./images/advance-scanning6at2.png)
