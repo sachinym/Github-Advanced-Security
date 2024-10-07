@@ -14,7 +14,7 @@ In this lab, you will learn and perform:
 - Task 4: CodeQL Query Operations in Visual Studio  
 - Task 5: Turn on GitHub Advanced Security for Organization
 
-## Estimated timing: 40 minutes
+## Estimated timing: 90 minutes
 
 ## Architecture Diagram
 
