@@ -126,7 +126,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![github-advisory-database](images/g12.png)
 
-1. From the left navigation pane, click on **Code Security and Analysis**.
+1. From the left navigation pane, click on **Code Security**.
 
    ![github-advisory-database](images/g13.png)
 
