@@ -118,11 +118,11 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![github-advisory-database](images/ghas-exercise1-5.png)
 
-1. Under **Secret Scanning**, click on **enable**.
+1.  click on **enable** for **Secret Scanning**,
 
    ![Picture1](./images/mod2ss1.png)
 
-1. Select **Enable** butoon next to the activate Push Protection.
+1. Select **Enable** button to activate Push Protection , under **Secret Scanning**.
 
    ![Picture1](./images/advance-scanning5.png)
 
@@ -134,7 +134,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![Picture1](./images/advance-scanning6at.png)
 
-   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. Refer to the screenshot below to understand how the alerts will appear when they are triggered in a repository containing relevant files.
+   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. Refer to the screenshots below to understand how the alerts will appear when they are triggered in a repository containing relevant files.
 
    ![github-advisory-database](images/g15.1.png)
    
