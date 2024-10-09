@@ -94,7 +94,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![Picture1](./images/ghasr1.png)
 
-1. In the left sidebar, click on **Code security and analysis**.
+1. In the left sidebar, click on **Code security**.
 
 1. Here, you can enable the features of **Dependabot**, **Code Scanning**, and **Secret Scanning** for the repository.
 
