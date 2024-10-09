@@ -112,7 +112,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 1. Go to your profile on top of the right hand, and then select **Your organizations**.
 
-   ![Picture1](./images/profilesetting.png) 
+   ![Picture1](./images/org.png) 
 
 1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
 
