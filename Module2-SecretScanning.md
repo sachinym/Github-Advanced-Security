@@ -241,9 +241,9 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     ![push-protection1](./images/commitchanges.png)
 
-11. Navigate to the **Security** -> **Secret Scanning** -> **High confidence**. Change the finding option to the **Closed** section to demonstrate that this is a secret.
+11. Navigate to the **Security** -> **Secret Scanning** -> **Default**. Change the finding option to the **Closed** section to demonstrate that this is a secret.
 
-    ![push-protection1](./images/lab2task2githubsecret.png)
+    ![push-protection1](./images/img5.png)
 
     >**Note:** If you bypass push protection by selecting options such as "It's used in tests" and still commit the secret, it will not prevent the commit entirely. However, GitHub will generate a security finding under the "Closed" section in the Security tab. This finding is crucial because it allows you to track and review secrets that were committed despite push protection. Even though the commit was allowed, the security finding helps identify and address potential issues, ensuring that any committed secrets are still reviewed and remediated.    
 
