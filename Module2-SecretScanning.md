@@ -158,11 +158,11 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/allowsecrett1.png)    
 
-1. Then navigate to the **Security**, expend **Secret Scanning** section and select **High confidence** to show how this is an active secret.
+1. Then navigate to the **Security**, expand **Secret Scanning** section and select **Default** to show how this is an active secret.
 
-   ![Picture1](./images/secret-scanning2.png)
+   ![Picture1](./images/image2.png)
 
-   > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security and analysis** option from the left navigation pane to view the option.
+   > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security** option from the left navigation pane to view the option.
    
    > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
@@ -195,7 +195,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
-1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Code security and analysis** under Securilty. 
+1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Code security** under Securilty. 
    
    ![Picture1](./images/pushprotection.png)
 
