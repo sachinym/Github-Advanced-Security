@@ -100,9 +100,9 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/profilesetting.png)
 
-1. Go to **Developer settings** -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** at the top and select **Generate new token (classic) (4)**.
+1. Go to **Developer settings** -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
 
-   ![Picture1](./images/developersetting.png)
+   ![Picture1](./images/img4.png)
 
 1. Give your secret a name **Secret01**, and set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. Once you've generated the token, click the **"Copy"** icon to the right of the secret value.
 
@@ -213,9 +213,9 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Scroll down and select **Developer settings**.
 
-1. In the Developer Settings page expend **Personal access tokens** **(1)**, click-on **Tokens (classic) (2)**, then click on **Generate new token** **(3)** at the top, and click-on **Generate new token (classic) (4)**.
+1. In the Developer Settings page expand **Personal access tokens** **(1)**, click-on **Tokens (classic) (2)**, then click on **Generate new token** **(3)** , and click-on **Generate new token (classic) (4)**.
 
-   ![Picture1](./images/developersetting.png)
+   ![Picture1](./images/img4.png)
 
 1. In the New personal access token, provide secret a name, **secret2**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
