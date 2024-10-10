@@ -197,7 +197,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Go to the **`ghas-bootcamp-javascript`** repository and enable push protection. Navigate to **Settings**, click on **Code security** under Securilty. 
    
-   ![Picture1](./images/pushprotection.png)
+   ![Picture1](./images/img3.png)
 
 1. scroll down to **Push protection** under Secret scanning and click **Enable**.
 
