@@ -160,7 +160,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 1. Then navigate to the **Security**, expand **Secret Scanning** section and select **Default** to show how this is an active secret.
 
-   ![Picture1](./images/image2.png)
+   ![Picture1](./images/img2.png)
 
    > **Note:** If secret scanning is not enabled in your repository, go to the **Settings** tab in the repository and click on **Code Security** option from the left navigation pane to view the option.
    
