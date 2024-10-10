@@ -275,7 +275,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/lab7testwebhook8.png)
 
-13. Navigate back to your organization, and click on **settings**.
+13. Navigate back to **your organization**, and click on **settings**.
 
      ![Picture1](./images/ghasr1.png)
 
