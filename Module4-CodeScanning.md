@@ -53,9 +53,9 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
    ![github-advisory-database](images/gd.png)
 
-1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security and Analysis** under Security.
+1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
 
-   ![github-advisory-database](images/ga.png)
+   ![github-advisory-database](images/image1.png)
 
    >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
 
@@ -93,9 +93,9 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
 1. Next, we're going to enable Advanced Setup for one of our compiled language repositories by going back to the `ghas-bootcamp-java` repository.
 
-1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security and Analysis** under Security.
+1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
 
-   ![github-advisory-database](images/ga.png)
+   ![github-advisory-database](images/image1.png)
 
 1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and click on **Advanced**
 
@@ -140,7 +140,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository. Follow the instructions from the **Getting Started** section to go to the `ghas-bootcamp-python` repository.
 
-1. Now, head over to **Settings** -> **Code security and analysis** -> scroll down to **Code scanning** and click the `...` and then click _Switched to advanced_. This will prompt us to turn off the existing CodeQL workflow to avoid duplicating Action runs.Click on **Disable CodeQL**
+1. Now, head over to **Settings** -> **Code security** -> scroll down to **Code scanning** and click the `...` and then click _Switch to advanced_. This will prompt us to turn off the existing CodeQL workflow to avoid duplicating Action runs.Click on **Disable CodeQL**
 
    ![github-advisory-database](images/gk.png)
 
