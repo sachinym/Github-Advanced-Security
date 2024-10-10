@@ -205,7 +205,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
    >**Note**: If it's already enabled, then there is no need to change it.
 
-1. After this is enabled, we are going to go back through the process of creating a secret and pasting it into the codebase.
+1. After this is enabled, we are going back through the process of creating a secret and pasting it into the codebase.
 
 1. Navigate back to your profile, which is at the top of your right hand, and then select **Settings**.
 
