@@ -5,7 +5,9 @@
 In this lab, you will be focusing on improving security within your GitHub repositories using Dependabot and Software Composition Analysis (SCA) features.
 
 ## Lab Objectives
+
 In this lab, you will perform:
+
 - Task 1: Turn on Dependabot and other SCA features and review results 
 - Task 2: Use the dependency submission action on a Java project and review results 
 - Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
@@ -67,49 +69,50 @@ The process involves adding all dependencies from a repository to the dependency
 
 1. Create a file named **`DepGraph.yml` (1)**. Paste the provided code into the file and click on **Commit changes (2)** to save and commit the new file to the repository.
 
-      ![github-advisory-database](images/g16at01.png)
+   ![github-advisory-database](images/g16at01.png)
 
-      ```
-     # For most projects, this workflow file will not need changing; you simply need
-     # to commit it to your repository.
-     #
-     # You may wish to alter this file to override the set of languages analyzed,
-     # or to provide custom queries or build logic.
-     #
-     # ******** NOTE ********
-     # We have attempted to detect the languages in your repository. Please check
-     # the `language` matrix defined below to confirm you have the correct set of
-     # supported CodeQL languages.
-     #
-     name: "Dependency Graph Upload"
-	
-     on:
-       push:
-         branches: [ "main" ]
-       workflow_dispatch:
+   ```
+   # For most projects, this workflow file will not need changing; you simply need
+   # to commit it to your repository.
+   #
+   # You may wish to alter this file to override the set of languages analyzed,
+   # or to provide custom queries or build logic.
+   #
+   # ******** NOTE ********
+   # We have attempted to detect the languages in your repository. Please check
+   # the `language` matrix defined below to confirm you have the correct set of
+   # supported CodeQL languages.
+   #
+   name: "Dependency Graph Upload"
 
-     jobs:
-       analyze:
-         name: Analyze
-         runs-on: ubuntu-latest
-         permissions:
-           actions: read
-           contents: write
-           security-events: write
+   on:
+     push:
+       branches: [ "main" ]
+     workflow_dispatch:
+
+   jobs:
+     analyze:
+       name: Analyze
+       runs-on: ubuntu-latest
+       permissions:
+         actions: read
+         contents: write
+         security-events: write
 
 
-         steps:
-         - name: Checkout repository
-           uses: actions/checkout@v4
-         - name: Maven Dependency Tree Dependency Submission
-           uses: advanced-security/maven-dependency-submission-action@v4
-      ```
+       steps:
+       - name: Checkout repository
+         uses: actions/checkout@v4
+       - name: Maven Dependency Tree Dependency Submission
+         uses: advanced-security/maven-dependency-submission-action@v4
+   ```
+
 
 1. Click on **Commit changes**.
 
    ![github-advisory-database](images/g16at02.png)
 
- 	 > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**.
+   > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**.
 
 1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
 
