@@ -107,7 +107,6 @@ The process involves adding all dependencies from a repository to the dependency
          uses: advanced-security/maven-dependency-submission-action@v4
    ```
 
-
 1. Click on **Commit changes**.
 
    ![github-advisory-database](images/g16at02.png)
