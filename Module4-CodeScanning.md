@@ -273,6 +273,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
    - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
 
 	  ```
+      # Import modules
 	  import python
 	  import semmle.python.types.Builtins
 	
