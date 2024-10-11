@@ -176,9 +176,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
    
    - CodeQL flag this pull request with a _Query built from user-controlled sources_ finding.
 
-   ![clear-text-logging-finding](images/prfailat01.png)
+     ![clear-text-logging-finding](images/prfailat01.png)
 
-   ![clear-text-logging-finding](images/prfailat02.png)
+     ![clear-text-logging-finding](images/prfailat02.png)
 
 ## Task 4: CodeQL Query Operations in Visual Studio Code
 
@@ -294,7 +294,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 	  select name, kind order by name, kind
 	  ```
 
-    ![Picture1](./images/module4task4code1.png)
+        ![Picture1](./images/module4task4code1.png)
 
 17. This results helps to understand the classification and usage of these entities in the code.
 
@@ -341,7 +341,8 @@ In this task, you will configure and apply security settings across all reposito
    ![Apply Configuration](./images/advance-scanning7.png)
 
    > **Note**: If the configuration fails for any of the repositories, it could be due to the existing advanced setup.
-   > **Note**: Follow the below steps for the repositories for which configuration is getting failed. 
+   
+   > **Note**: Follow the steps below for the repositories where the configuration is failed.
 
    ![](./images/i9.png)
 
