@@ -118,7 +118,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![github-advisory-database](images/ghas-exercise1-5.png)
 
-1.  click on **enable** for **Secret Scanning**,
+1. Click on **Enable** for **Secret Scanning**,
 
    ![Picture1](./images/mod2ss1.png)
 
