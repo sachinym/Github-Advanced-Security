@@ -24,7 +24,7 @@ In this lab, you will perform:
 
 1. From the list of repositories, click on **ghas-bootcamp-webgoat** to begin working through this module. 
 
-   ![github-advisory-database](images/gx3.png)
+   ![github-advisory-database](images/i5.png)
 
 1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
 
@@ -42,9 +42,9 @@ In this lab, you will perform:
 
    > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
 
-1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
+1. Click on **enable** button next to the, **Dependabot Alerts** **(1)**, **Dependabot security updates** **(2)**, **Grouped security updates** **(3)**, and **Dependabot on Actions runners** **(4)**.
 
-   ![github-advisory-database](images/advance-scanning30.png)
+   ![github-advisory-database](images/i4.png)
 
    >**Info:** Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
 
