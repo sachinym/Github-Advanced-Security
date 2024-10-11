@@ -51,7 +51,7 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
-   ![github-advisory-database](images/gd.png)
+   ![github-advisory-database](images/i6.png)
 
 1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
 
@@ -89,7 +89,7 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
 1. From the list of repositories click on **ghas-bootcamp-java** to begin working through this module. 
 
-   ![github-advisory-database](images/gg.png)
+   ![github-advisory-database](images/i7.png)
 
 1. Next, we're going to enable Advanced Setup for one of our compiled language repositories by going back to the `ghas-bootcamp-java` repository.
 
@@ -142,7 +142,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. Now, head over to **Settings** -> **Code security** -> scroll down to **Code scanning** and click the `...` and then click _Switch to advanced_. This will prompt us to turn off the existing CodeQL workflow to avoid duplicating Action runs.Click on **Disable CodeQL**
 
-   ![github-advisory-database](images/gk.png)
+   ![github-advisory-database](images/i8.png)
 
    ![github-advisory-database](images/gl.png)
 
