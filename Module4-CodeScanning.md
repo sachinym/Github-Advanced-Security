@@ -51,11 +51,11 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
 1. From the list of repositories click on **ghas-bootcamp-python** to begin working through this module. This repository should have at least 2 code scanning findings with the **Default** and the **Extended** setup in this repository.
 
-   ![github-advisory-database](images/gd.png)
+   ![github-advisory-database](images/i6.png)
 
-1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security and Analysis** under Security.
+1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
 
-   ![github-advisory-database](images/ga.png)
+   ![github-advisory-database](images/image1.png)
 
    >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
 
@@ -89,13 +89,13 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
 1. From the list of repositories click on **ghas-bootcamp-java** to begin working through this module. 
 
-   ![github-advisory-database](images/gg.png)
+   ![github-advisory-database](images/i7.png)
 
 1. Next, we're going to enable Advanced Setup for one of our compiled language repositories by going back to the `ghas-bootcamp-java` repository.
 
-1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security and Analysis** under Security.
+1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
 
-   ![github-advisory-database](images/ga.png)
+   ![github-advisory-database](images/image1.png)
 
 1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and click on **Advanced**
 
@@ -140,9 +140,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository. Follow the instructions from the **Getting Started** section to go to the `ghas-bootcamp-python` repository.
 
-1. Now, head over to **Settings** -> **Code security and analysis** -> scroll down to **Code scanning** and click the `...` and then click _Switched to advanced_. This will prompt us to turn off the existing CodeQL workflow to avoid duplicating Action runs.Click on **Disable CodeQL**
+1. Now, head over to **Settings** -> **Code security** -> scroll down to **Code scanning** and click the `...` and then click _Switch to advanced_. This will prompt us to turn off the existing CodeQL workflow to avoid duplicating Action runs.Click on **Disable CodeQL**
 
-   ![github-advisory-database](images/gk.png)
+   ![github-advisory-database](images/i8.png)
 
    ![github-advisory-database](images/gl.png)
 
@@ -176,9 +176,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
    
    - CodeQL flag this pull request with a _Query built from user-controlled sources_ finding.
 
-   ![clear-text-logging-finding](images/prfailat01.png)
+     ![clear-text-logging-finding](images/prfailat01.png)
 
-   ![clear-text-logging-finding](images/prfailat02.png)
+     ![clear-text-logging-finding](images/prfailat02.png)
 
 ## Task 4: CodeQL Query Operations in Visual Studio Code
 
@@ -273,6 +273,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
    - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
 
 	  ```
+      # Import modules
 	  import python
 	  import semmle.python.types.Builtins
 	
@@ -293,7 +294,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 	  select name, kind order by name, kind
 	  ```
 
-    ![Picture1](./images/module4task4code1.png)
+        ![Picture1](./images/module4task4code1.png)
 
 17. This results helps to understand the classification and usage of these entities in the code.
 
@@ -301,9 +302,9 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
-### Task 5: Turn on GitHub Advanced Security for Organization.
+## Task 5: Turn on GitHub Advanced Security for Organization.
 
-#### About the GitHub-recommended security configuration
+### About the GitHub-recommended security configuration
 
 The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low- and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
 
@@ -338,6 +339,26 @@ In this task, you will configure and apply security settings across all reposito
 7. Click on **Apply** to confirm the configuration changes, when the prompt appears.
 
    ![Apply Configuration](./images/advance-scanning7.png)
+
+   > **Note**: If the configuration fails for any of the repositories, it could be due to the existing advanced setup.
+   
+   > **Note**: Follow the steps below for the repositories where the configuration is failed.
+
+   ![](./images/i9.png)
+
+8. Now navigate to that repository for which the configuration is getting failed.
+
+   ![](./images/i10.png)
+
+9. From left pane select **Code security**, and under Code scanning , click on **setup** and select **Default**.
+
+   ![](./images/i11.png)
+
+10. On the CodeQL default configuration pop up , click on **Enable CodeQL**
+
+    ![](./images/i12.png)
+
+11. Again perform step 1 to 7 to apply configurations for all the repositories.
 
 ## Review
 

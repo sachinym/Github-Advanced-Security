@@ -24,15 +24,15 @@ In this lab, you will perform:
 
 1. From the list of repositories, click on **ghas-bootcamp-webgoat** to begin working through this module. 
 
-   ![github-advisory-database](images/gx3.png)
+   ![github-advisory-database](images/i5.png)
 
 1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
 
    ![github-advisory-database](images/g12.png)
 
-1. From the left navigation pane, click on **Code security and analysis**.
+1. From the left navigation pane, click on **Code security**.
 
-   ![github-advisory-database](images/g13.png)
+   ![github-advisory-database](images/image1.png)
 
 1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
 
@@ -42,9 +42,9 @@ In this lab, you will perform:
 
    > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
 
-1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
+1. Click on **enable** button next to the, **Dependabot Alerts** **(1)**, **Dependabot security updates** **(2)**, **Grouped security updates** **(3)**, and **Dependabot on Actions runners** **(4)**.
 
-   ![github-advisory-database](images/advance-scanning30.png)
+   ![github-advisory-database](images/i4.png)
 
    >**Info:** Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
 
@@ -65,34 +65,45 @@ The process involves adding all dependencies from a repository to the dependency
 
    ![github-advisory-database](images/g16at.png)
 
-1. Create a file named **`DepGraph.yml (1)`**. Paste the provided code into the file and click on **Commit changes (2)** to save and commit the new file to the repository.
+1. Create a file named **`DepGraph.yml` (1)**. Paste the provided code into the file and click on **Commit changes (2)** to save and commit the new file to the repository.
 
-   ![github-advisory-database](images/g16at01.png)
+      ![github-advisory-database](images/g16at01.png)
 
-   ```
-   name: "Dependency Graph Upload"
+      ```
+     # For most projects, this workflow file will not need changing; you simply need
+     # to commit it to your repository.
+     #
+     # You may wish to alter this file to override the set of languages analyzed,
+     # or to provide custom queries or build logic.
+     #
+     # ******** NOTE ********
+     # We have attempted to detect the languages in your repository. Please check
+     # the `language` matrix defined below to confirm you have the correct set of
+     # supported CodeQL languages.
+     #
+     name: "Dependency Graph Upload"
+	
+     on:
+       push:
+         branches: [ "main" ]
+       workflow_dispatch:
 
-   on:
-   push:
-      branches: [ "main" ]
-   workflow_dispatch:
-
-   jobs:
-   analyze:
-      name: Analyze
-      runs-on: ubuntu-latest
-      permissions:
-         actions: read
-         contents: write
-         security-events: write
+     jobs:
+       analyze:
+         name: Analyze
+         runs-on: ubuntu-latest
+         permissions:
+           actions: read
+           contents: write
+           security-events: write
 
 
-      steps:
-      - name: Checkout repository
-         uses: actions/checkout@v4
-      - name: Maven Dependency Tree Dependency Submission
-         uses: advanced-security/maven-dependency-submission-action@v4
-   ```
+         steps:
+         - name: Checkout repository
+           uses: actions/checkout@v4
+         - name: Maven Dependency Tree Dependency Submission
+           uses: advanced-security/maven-dependency-submission-action@v4
+      ```
 
 1. Click on **Commit changes**.
 
@@ -155,17 +166,17 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    - **Impact:** If a project uses a vulnerable version of Log4j, it can be exploited by attackers to compromise the application or the server it runs on. This can lead to unauthorized access, data breaches, and other security issues. 
 
 
-   ```xml
+      ```xml
      <dependency>
          <groupId>org.apache.logging.log4j</groupId>
          <artifactId>log4j-core</artifactId>
          <version>2.13.1</version>
      </dependency>
-   ```
+      ```
 
-   ![github-advisory-database](images/gx2at.png)
+      ![github-advisory-database](images/gx2at.png)
 
-   ![github-advisory-database](images/gx2.png)
+      ![github-advisory-database](images/gx2.png)
 
 1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
 
@@ -181,7 +192,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    - **Failure of Pull Requests:** If the Dependency Review action detects that a pull request introduces a version of `Log4j` (or any other dependency) that has known vulnerabilities, it will mark the pull request as failed. This is done to prevent merging code that could introduce security risks into the main codebase.
 
-   ![github-advisory-database](images/prfail.png)
+      ![github-advisory-database](images/prfail.png)
 
 1. You can also see the error details on **Actions** section, navigate to action section and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 

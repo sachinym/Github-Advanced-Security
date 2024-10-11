@@ -56,7 +56,7 @@ Issue Resolution: MTTR can track the average time from when an issue is reported
 
    - **Incident Response:** For repositories using GitHub Actions or other integrations, MTTR can track how long it takes to resolve incidents or failures reported by these tools.
 
-### Task 2: View the security overview dashboard and reports [Read Only]
+## Task 2: View the security overview dashboard and reports [Read Only]
 
 In this task, you will explore the GHAS security overview dashboard and reports to gain insights into your repository's security posture.
 
@@ -90,7 +90,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
    
 1. Analyze the metrics and data provided in the reports to identify areas for improvement and prioritize security efforts.
 
-### Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
+## Task 3: Review Webhooks and how they can be used to push events to an outside reporting tool, like an SIEM 
 
 GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms. Thus enabling automated workflows and real-time notifications based on repository activities.
 
@@ -103,13 +103,13 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-    ![Enter Your Username](./images/login1.png)
+       ![Enter Your Username](./images/login1.png)
  
 3. Next, provide your password to login:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-   ![Enter Your Password](./images/login2.png)
+      ![Enter Your Password](./images/login2.png)
 
 1. In the search bar of the Azure portal, type **Function app (1)**. From the search results, select **Function App (2)**.
 
@@ -169,9 +169,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
-   ![Picture1](./images/payload1.png)
+      ![Picture1](./images/payload1.png)
 
-   >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
+      >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
 
 11. Now go to the **Repositories** section and click on **New Respsitories**.
 
@@ -275,7 +275,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/lab7testwebhook8.png)
 
-13. Navigate back to your organization, and click on **settings**.
+13. Navigate back to **your organization**, and click on **settings**.
 
      ![Picture1](./images/ghasr1.png)
 
@@ -305,7 +305,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 <validation step="c812660e-bf0e-4f9b-8621-fc3bf5af35a8" />
 
-#### Task 4: Talk about repository rulesets and how they can be used at scale [Read Only]
+## Task 4: Talk about repository rulesets and how they can be used at scale [Read Only]
 
 1. A ruleset is a named list of rules that applies to a repository. You can create rulesets to control how people interact with selected branches and tags in a repository. You can also control things like who can push commits to a certain branch or who can delete or rename a tag. For example, you could set up a ruleset for your repository's feature branch that requires signed commits and blocks force pushes for all users except repository administrators.
 
@@ -315,7 +315,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. There is a limit of 75 rulesets per repository.
 
-#### Creating rulesets for a repository
+### Creating rulesets for a repository
 
 You can create rulesets to control how users interact with selected branches and tags in a repository. When you create a ruleset, you can allow certain users to bypass the rules. This can be users with certain permissions, specific teams, or GitHub apps.
 
@@ -336,7 +336,7 @@ You can create rulesets to control how users interact with selected branches and
    - To create a ruleset targeting branches, click on **New branch ruleset**.
    - To create a ruleset targeting tags, select **New tag ruleset**.
 
-   ![Picture1](./images/rulesetbranch.png)  
+      ![Picture1](./images/rulesetbranch.png)  
   
 1. In the **"General"** section, type a name for the ruleset, then select **Disabled**  and click one of the following enforcement statuses:
 

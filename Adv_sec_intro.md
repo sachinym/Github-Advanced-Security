@@ -17,11 +17,11 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar01.png)
 
-### Task 1: What is GitHub Advanced Security?
+## Task 1: What is GitHub Advanced Security?
 
 GitHub Advanced Security is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities, and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
 
-### Task 2: What are the components of GitHub Advanced Security?  
+## Task 2: What are the components of GitHub Advanced Security?  
 Here are some of the components of GitHub Advanced Security:
 
 1. **Secret Scanning:** The secret scanning is a critical security mechanism present in the GitHub Advanced Security that helps automate the detection and mitigation of inadvertent exposure of sensitive information like API keys, tokens in the source code.
@@ -70,7 +70,7 @@ Here are some of the components of GitHub Advanced Security:
    - **Bug Fixes**: These updates address bugs and issues that may not be security-related but improve the overall stability and usability of the software.
    - **Release Versions**: Version updates typically follow semantic versioning (e.g., major, minor, patch) to indicate the nature of changes (e.g., breaking changes, new features, or bug fixes).
 
-### Task 3: Where to turn on the different components of GitHub Advanced Security at the repository level?  
+## Task 3: Where to turn on the different components of GitHub Advanced Security at the repository level?  
 
 In this task, we will learn how to enable GitHub Advanced Security features for a repository, including Dependabot, Code Scanning, and Secret Scanning. We will explore how to activate and configure essential security features such as the Dependency Graph, Dependabot Alerts, CodeQL analysis, and Push Protection, ensuring comprehensive security coverage for our repository. Additionally, we will review the alerts generated in the Security tab, gaining insights into potential vulnerabilities and securing our code.
 
@@ -94,7 +94,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![Picture1](./images/ghasr1.png)
 
-1. In the left sidebar, click on **Code security and analysis**.
+1. In the left sidebar, click on **Code security**.
 
 1. Here, you can enable the features of **Dependabot**, **Code Scanning**, and **Secret Scanning** for the repository.
 
@@ -106,9 +106,9 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
 
-1. Click on **enable** button next to the, **Dependabot Alerts** **(2)**, **Dependabot security updates** **(3)**, **Grouped security updates** **(4)**, and **Dependabot on Actions runners** **(5)**.
+1. Click on **enable** button next to the, **Dependabot Alerts** **(1)**, **Dependabot security updates** **(2)**, **Grouped security updates** **(3)**, and **Dependabot on Actions runners** **(4)**.
 
-   ![github-advisory-database](images/advance-scanning30.png)
+   ![github-advisory-database](images/i4.png)
    
 1. Under **Code Scanning** option. Click on the **Setup** **(1)** button next to the CodeQL analysis from the drop down select **Default** **(2)** option.
 
@@ -118,11 +118,11 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![github-advisory-database](images/ghas-exercise1-5.png)
 
-1. Under **Secret Scanning**, click on **enable**.
+1. Click on **Enable** for **Secret Scanning**,
 
    ![Picture1](./images/mod2ss1.png)
 
-1. Select **Enable** butoon next to the activate Push Protection.
+1. Select **Enable** button to activate Push Protection , under **Secret Scanning**.
 
    ![Picture1](./images/advance-scanning5.png)
 
@@ -134,7 +134,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
    ![Picture1](./images/advance-scanning6at.png)
 
-   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. Refer to the screenshot below to understand how the alerts will appear when they are triggered in a repository containing relevant files.
+   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. Refer to the screenshots below to understand how the alerts will appear when they are triggered in a repository containing relevant files.
 
    ![github-advisory-database](images/g15.1.png)
    
