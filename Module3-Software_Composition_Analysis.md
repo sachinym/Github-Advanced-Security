@@ -113,19 +113,19 @@ The process involves adding all dependencies from a repository to the dependency
 
    > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**.
 
-1.  This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
+1. This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
 
-1.  Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
+1. Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
 
-    ![github-advisory-database](images/g17at.png)
+   ![github-advisory-database](images/g17at.png)
  
-1.  Once this is completed, go to the **Dependency Graph** tab under the **Insights** section in the top navigation pane.
+1. Once this is completed, go to the **Dependency Graph** tab under the **Insights** section in the top navigation pane.
 
-    ![github-advisory-database](images/g19.png)
+   ![github-advisory-database](images/g19.png)
 
-1.  This will show the new critical vulnerabilities that have been identified in transitive dependencies.
+1. This will show the new critical vulnerabilities that have been identified in transitive dependencies.
 
-    ![github-advisory-database](images/g20.png)
+   ![github-advisory-database](images/g20.png)
 
 ## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability
 
@@ -135,22 +135,21 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. In the **ghas-bootcamp-webgoat** repo navigate to **Actions**, and in the **Actions**, click on **New workflow** from the left navigation pane.
 
-    ![github-advisory-database](images/g2.1.png)
+   ![github-advisory-database](images/g2.1.png)
 
-    ![github-advisory-database](images/g3at.png)
- 
+   ![github-advisory-database](images/g3at.png)
  
 1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
    
-    ![github-advisory-database](images/g4.png)
+   ![github-advisory-database](images/g4.png)
 
 1. In the  `fail-on-severity` in the workflow file and make sure you uncomment the line removing **#** as shown in the below screenshot and click on **Commit Changes** in the top right corner.
 
-	>**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: low, moderate, high, critical** is directly below the **comment-summary-in-pr: always** line, as shown below:
+   >**Note**: Please ensure that the indentation is correct according to the provided screenshots. Make sure that the **fail-on-severity: low, moderate, high, critical** is directly below the **comment-summary-in-pr: always** line, as shown below:
 
    >**Note:** The default value of **fail-on-severity** will work as well, but here we demonstrate how to modify your severity level.
 
-    ![github-advisory-database](images/g7at.png)
+   ![github-advisory-database](images/g7at.png)
    ![github-advisory-database](images/uncmtat.png)
 
 1. Click on **Commit Changes** once again in the pop-up that appears.
