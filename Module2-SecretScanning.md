@@ -311,3 +311,4 @@ In this lab, we have completed the following:
  - Turned on push protection and tried pushing a new secret (a GitHub token) into a repository
  - Created a custom secret pattern
  - Understanding the results 
+ 
