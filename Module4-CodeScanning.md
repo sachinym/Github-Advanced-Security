@@ -301,9 +301,9 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
 Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
 
-### Task 5: Turn on GitHub Advanced Security for Organization.
+## Task 5: Turn on GitHub Advanced Security for Organization.
 
-#### About the GitHub-recommended security configuration
+### About the GitHub-recommended security configuration
 
 The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low- and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
 
