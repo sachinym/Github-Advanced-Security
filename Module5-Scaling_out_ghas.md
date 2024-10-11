@@ -103,13 +103,13 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-    ![Enter Your Username](./images/login1.png)
+       ![Enter Your Username](./images/login1.png)
  
 3. Next, provide your password to login:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-   ![Enter Your Password](./images/login2.png)
+      ![Enter Your Password](./images/login2.png)
 
 1. In the search bar of the Azure portal, type **Function app (1)**. From the search results, select **Function App (2)**.
 
@@ -169,9 +169,9 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
-   ![Picture1](./images/payload1.png)
+      ![Picture1](./images/payload1.png)
 
-   >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
+      >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
 
 11. Now go to the **Repositories** section and click on **New Respsitories**.
 
@@ -336,7 +336,7 @@ You can create rulesets to control how users interact with selected branches and
    - To create a ruleset targeting branches, click on **New branch ruleset**.
    - To create a ruleset targeting tags, select **New tag ruleset**.
 
-   ![Picture1](./images/rulesetbranch.png)  
+      ![Picture1](./images/rulesetbranch.png)  
   
 1. In the **"General"** section, type a name for the ruleset, then select **Disabled**  and click one of the following enforcement statuses:
 
