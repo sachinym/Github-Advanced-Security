@@ -339,6 +339,25 @@ In this task, you will configure and apply security settings across all reposito
 
    ![Apply Configuration](./images/advance-scanning7.png)
 
+   > **Note**: If the configuration fails for any of the repositories, it could be due to the existing advanced setup.
+   > **Note**: Follow the below steps for the repositories for which configuration is getting failed. 
+
+   ![](./images/i9.png)
+
+8. Now navigate to that repository for which the configuration is getting failed.
+
+   ![](./images/i10.png)
+
+9. From left pane select **Code security**, and under Code scanning , click on **setup** and select **Default**.
+
+   ![](./images/i11.png)
+
+10. On the CodeQL default configuration pop up , click on **Enable CodeQL**
+
+    ![](./images/i12.png)
+
+11. Again perform step 1 to 7 to apply configurations for all the repositories.
+
 ## Review
 
 In this lab you have completed the following:
