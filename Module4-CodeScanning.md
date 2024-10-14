@@ -25,7 +25,7 @@ In this lab, you will learn and perform:
 Code scanning in GitHub is a powerful feature designed to enhance the security of your software projects by automatically identifying and alerting you to potential security vulnerabilities in your codebase. Leveraging advanced static analysis techniques, and code scanning helps detect security flaws, bugs, and other issues early in the development process, enabling developers to address them proactively before they escalate into larger problems. 
 
 
-## What is CodeQL and how is it different from other static analysis tools?
+### What is CodeQL and how is it different from other static analysis tools?
 
 1. Code Scanning, powered by the CodeQL engine, performs thorough static analysis by accessing source code and integrating with the build process for compiled languages (or simulating compilation for interpreted languages). This approach ensures precise mapping of data flow and the ability to differentiate between remote and local sources. 
 
@@ -41,7 +41,7 @@ Code scanning in GitHub is a powerful feature designed to enhance the security o
 
 ## Task 1: Turn on the default setup on a Python repository
 
-## Default Setup
+### Default Setup
 
 In this task, you will learn how to activate the default CodeQL setup for a Python repository. This will include enabling CodeQL scanning with the default query suite, which focuses on providing highly accurate and actionable security findings.
 
@@ -79,7 +79,7 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
 In this task, you will learn how to enable and configure the advanced CodeQL setup for a repository. You will gain skills in modifying the codeql.yml file to use the security-extended query suite and understand the benefits of advanced configurations for detecting a broader range of security vulnerabilities. You will also become familiar with the process of validating and reviewing CodeQL actions and results.
 
-## Advanced Setup
+### Advanced Setup
 
  Now, let us enable  Advanced set-up in a different repository.
 
