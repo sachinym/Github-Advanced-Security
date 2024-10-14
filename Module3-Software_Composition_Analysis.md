@@ -169,13 +169,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 
       ```xml
-      
        <dependency>
            <groupId>org.apache.logging.log4j</groupId>
            <artifactId>log4j-core</artifactId>
            <version>2.13.1</version>
        </dependency>
-      
       ```
 
        ![github-advisory-database](images/gx2at.png)
