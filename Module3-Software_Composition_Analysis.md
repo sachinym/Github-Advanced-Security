@@ -208,7 +208,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
      ![github-advanced-security](images/ghas-exercise1-8.png)
    
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="401a8107-d558-4bed-a5b6-4b1e5ca50132" />
 
