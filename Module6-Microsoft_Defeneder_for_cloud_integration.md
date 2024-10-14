@@ -103,7 +103,7 @@ This task has been set to Read-Only because addressing the security findings in 
 	- **Description**: An explanation of the issue and how it was detected.
 	- **Severity**: The level of threat posed by the vulnerability, helping you prioritize your response.
 	- **Additional Information**: Further details, to help you understand and address the issue effectively.
-	       ![](./images/lab6recommendationat2.png)
+         ![](./images/lab6recommendationat2.png)
 
 1. Now, navigate back to your Defender for Cloud dashboard. Under the **Cloud Security** section (1), click on **DevOps security** (2). Here, you will find all your GitHub repositories. Click on **ghas-bootcamp-webgoat** (3) to view the recommendations and alerts associated with this repository.
 
