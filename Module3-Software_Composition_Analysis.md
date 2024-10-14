@@ -129,7 +129,7 @@ The process involves adding all dependencies from a repository to the dependency
 
 ## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability
 
-## Dependency Review Action
+### Dependency Review Action
 
 The dependency review action is a GitHub Action designed for this purpose, preventing vulnerable dependencies from being merged into a repository. This action serves as a proactive measure to maintain the integrity and security of the repository by identifying and mitigating potential risks associated with third-party dependencies.
 
