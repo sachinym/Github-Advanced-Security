@@ -369,4 +369,5 @@ In this lab you have completed the following:
 - Turned on the advanced setup on a Java repository
 - Added some vulnerable code via a pull request and viewed the scan results in the PR. 
 - Demonstrated CodeQL Query Operations in Visual Studio Code
-- Turned on GitHub Advanced Security for Organization 
+- Turned on GitHub Advanced Security for Organization
+    
