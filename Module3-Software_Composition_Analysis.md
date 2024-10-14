@@ -170,17 +170,17 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
       ```xml
       
-      <dependency>
+       <dependency>
            <groupId>org.apache.logging.log4j</groupId>
            <artifactId>log4j-core</artifactId>
            <version>2.13.1</version>
-      </dependency>
+       </dependency>
       
       ```
 
-      ![github-advisory-database](images/gx2at.png)
+       ![github-advisory-database](images/gx2at.png)
 
-      ![github-advisory-database](images/gx2.png)
+       ![github-advisory-database](images/gx2.png)
 
 1. Click on **Commit Changes** and make sure you select **create a new branch** option and click on **Propose Changes** .
 
