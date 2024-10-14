@@ -168,11 +168,11 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    - **Impact:** If a project uses a vulnerable version of Log4j, it can be exploited by attackers to compromise the application or the server it runs on. This can lead to unauthorized access, data breaches, and other security issues. 
 
         ```xml
-          <dependency>
-               <groupId>org.apache.logging.log4j</groupId>
-               <artifactId>log4j-core</artifactId>
-               <version>2.13.1</version>
-       	  </dependency>
+        <dependency>
+             <groupId>org.apache.logging.log4j</groupId>
+             <artifactId>log4j-core</artifactId>
+             <version>2.13.1</version>
+       	</dependency>
      	```
 
        ![github-advisory-database](images/gx2at.png)
