@@ -6,7 +6,7 @@ Welcome to our GitHub Advanced Security workshop!, you'll learn about key featur
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser. To complete the lab, utilize this virtual machine during the session.
  
-   ![Access Your VM and Lab Guide](./images/gt1.1.png)
+   ![Access Your VM and Lab Guide](./images/i13.png)
 
 ## Virtual Machine & Lab Guide
  
