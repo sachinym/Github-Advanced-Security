@@ -128,7 +128,7 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
      ![github-advanced-security](images/ghas-exercise1-8.png)
    
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="fdc513c6-e817-48a5-aec1-8875b2e7b0a4" />
 
