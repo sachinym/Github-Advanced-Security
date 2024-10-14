@@ -95,7 +95,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 GitHub webhooks are a mechanism for automatically triggering actions or notifications in external systems when events occur within a GitHub repository. Users can configure webhooks to listen for specific events, such as pushes to a repository, pull request creation or closure, issue creation or comment, etc. When the specified event occurs, GitHub sends an HTTP POST payload to a designated URL, known as the payload URL, containing information about the event. This allows users to integrate GitHub with external services, such as CI/CD pipelines, issue trackers, or chat platforms. Thus enabling automated workflows and real-time notifications based on repository activities.
 
 
-#### Push events to an outside reporting function in the App.
+### Push events to an outside reporting function in the App.
 
 1. Open a new tab in your browser and navigate to the Azure Portal at `https://portal.azure.com`.
 
