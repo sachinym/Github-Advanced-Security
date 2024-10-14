@@ -72,7 +72,6 @@ The process involves adding all dependencies from a repository to the dependency
 	  ![github-advisory-database](images/g16at01.png)
 	
 	  ```
-	   
 	   # For most projects, this workflow file will not need changing; you simply need
 	   # to commit it to your repository.
 	   #
