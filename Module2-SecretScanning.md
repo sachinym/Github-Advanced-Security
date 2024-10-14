@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 ## Task 1: Turn on secret scanning for the entire organization and review results
 
-## What is secret scanning?
+### What is secret scanning?
 
 In GitHub, secrets are any authentication credentials—like tokens or private keys—you might be using in a project to connect to an external service. If you commit a secret to a repository, anyone with read access to the repository can use it to access an external service with your privileges. That's where secret scanning comes into play.
 
@@ -72,7 +72,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Code Security Configurations](./images/mod1org7.png)
 
-## What is Personal Access Tokens?
+### What is Personal Access Tokens?
 
 Personal access tokens or (PAT) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.
 
@@ -80,7 +80,7 @@ Personal access tokens are intended to access GitHub resources on behalf of your
  
 Refer to the link for more information. [Personal Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
-## Why are we using PAT Tokens?
+### Why are we using PAT Tokens?
 
 In this lab, Personal Access Tokens (PATs) are used as example secrets to demonstrate how GitHub’s secret scanning and push protection features work. Here’s why PATs are chosen for this exercise:
 
