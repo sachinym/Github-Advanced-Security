@@ -24,11 +24,11 @@ In this lab, you’ll explore GitHub Autofix, a feature that provides automatic 
 
 1. Click on configure scanning tool, click Set up code scanning, and then select Set up this workflow under CodeQL Analysis.
 
-![](/images/setup.png)
+   ![](/images/setup.png)
 
 3. Click on Default and proceed
 
-![](images/advance.png) 
+   ![](images/advance.png) 
 
 4. Review the workflow configuration in the .github/workflows/codeql.yml file, and then click on Start commit.
 
@@ -96,7 +96,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 1. Navigate to the repository page and click on the yellow dot • and click on details which will navigate you to the workflow
 
-![](images/newdeet.png) 
+   ![](images/newdeet.png) 
 
 2. Check the CodeQL workflow:
 - Look for the CodeQL workflow in the list of workflows.
@@ -107,7 +107,7 @@ the changes.
 - Click on the latest run of the CodeQL workflow to view the details.
 - Check the results to see if any vulnerabilities were identified.
 
-![](images/result.png) 
+  ![](images/result.png) 
 
 > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
@@ -117,23 +117,23 @@ the changes.
 
 1. Review the list of vulnerabilities and click on an alert to view details.
 
-![](images/scan.png) 
+   ![](images/scan.png) 
 
 3. If an autofix is available, click on Apply fix to automatically apply the suggested fix.
 
-![](images/fix.png) 
+   ![](images/fix.png) 
 
 4. Commit the changes to your repository.
 
-![](images/newchange.png) 
+   ![](images/newchange.png) 
 
 5. Make sure to merge and pull the request.
 
-![](images/Merge.png) 
+   ![](images/Merge.png) 
 
 6. Autofix generates an updated text, just click confirm merge
 
-![](images/confirmmerge.png) 
+   ![](images/confirmmerge.png) 
 
 
 > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
@@ -145,7 +145,7 @@ the changes.
 1. Define the steps for your workflow, such as building, testing, and deploying your application.
 1. Commit the workflow file to your repository.
 
-> Mote: Ensure that the workflow runs successfully and automates the desired tasks.
+> Note: Ensure that the workflow runs successfully and automates the desired tasks.
 
 ## Task 6: Leverage GitHub Enterprise security features
 
