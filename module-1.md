@@ -141,17 +141,73 @@ the changes.
 ## Task 5: Automate workflows using GitHub Actions
 
 1. Navigate to the Actions tab in your repository, and then click on New workflow.
+
+   ![](images/workflow.png) 
 1. Select a template or create a new workflow file.
 1. Define the steps for your workflow, such as building, testing, and deploying your application.
-1. Commit the workflow file to your repository.
+> Here is an example for a workflow to run a Node.js application.
+```
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./path/to/your/project
+
+      - name: Run tests
+        run: npm test
+        working-directory: ./path/to/your/project
+
+  deploy:
+    runs-on: windows-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to server
+        run: |
+          echo "Deploying to server..."
+          # Add your deployment commands here
+        working-directory: ./path/to/your/project
+
+```
+4. Commit the workflow file to your repository.
 
 > Note: Ensure that the workflow runs successfully and automates the desired tasks.
 
 ## Task 6: Leverage GitHub Enterprise security features
 
 1. Navigate to the Security tab in your repository, and then click on Dependabot alerts.
-1. Review the list of dependencies with known vulnerabilities.
-1. Click on an alert to view details and follow the instructions to update the dependency.
+> Note: If the alerts are disable for Dependabot, please follow these steps 
+   - Click on Settings.
+   - Click on Code security.
+   - Enable Dependabot alerts.
+   ![](images/databot.png) 
+   
+2. Review the list of dependencies with known vulnerabilities.
+3. Click on an alert to view details and follow the instructions to update the dependency.
 
 >Note: Ensure that dependencies are updated and vulnerabilities are resolved.
 
