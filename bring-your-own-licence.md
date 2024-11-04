@@ -1,5 +1,9 @@
 # Bring your own GitHub Licence
-
+ 
+## Introduction
+ 
+In the current digital environment, safeguarding our code and development practices is crucial. In this scenario, we’ll focus on our GitHub organization as we implement advanced security practices to protect our projects and sensitive data. To fully utilize these security features, a GitHub Enterprise license is necessary. This lab will provide you with the steps needed to strengthen our organization’s security and maximize the benefits of GitHub's advanced capabilities.
+ 
 ## Forking the GitHub repositories
 
 In this step you will fork the github repositories that will used in this lab.
