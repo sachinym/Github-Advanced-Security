@@ -8,6 +8,6 @@ In this step you will fork the github repositories that will used in this lab.
 1. Copy and paste https://github.com/orgs/ghas-bootcamp-resources/repositories URL in the browser to visit the list of repositories that will be used in this lab.
 1. Click on **java-app** repository and then click on **Fork**.
 1. Under owner select your organisation and then unselect the checkbox against **Copy the main branch only** and click on Fork.
-    >**Note:** Repeat step 4 and 5 for all remaining repositories
+    >**Note:** Repeat step 4 and 5 for all remaining repositories.
 
 Now you can use your own GitHub licence and your own production environment to practice these security measures.
