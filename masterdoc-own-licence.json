@@ -5,36 +5,32 @@
     "BaseURL": "https://github.com/CloudLabs-MOC/Github-Advanced-Security",
     "Files": [
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Getting-Started.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/bring-your-own-licence.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/bring-your-own-licence.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Adv_sec_intro.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Adv_sec_intro.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module2-SecretScanning.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module2-SecretScanning.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module3-Software_Composition_Analysis.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module3-Software_Composition_Analysis.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module4-CodeScanning.md",
         "Order": 5
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module4-CodeScanning.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module5-Scaling_out_ghas.md",
         "Order": 6
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module5-Scaling_out_ghas.md",
-        "Order": 7
-      },
-      {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module6-Microsoft_Defeneder_for_cloud_integration.md",
-        "Order": 8
+        "Order": 7
       }
     ]
   }
