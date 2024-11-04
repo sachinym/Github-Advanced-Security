@@ -10,4 +10,6 @@ In this step you will fork the github repositories that will used in this lab.
 1. Under owner select your organisation and then unselect the checkbox against **Copy the main branch only** and click on Fork.
     >**Note:** Repeat step 4 and 5 for all remaining repositories.
 
+>Important: Wherever you encounter the "githubxxx" organization in the instructions, substitute it with your enterprise organization and perform the lab.
+
 Now you can use your own GitHub licence and your own production environment to practice these security measures.
