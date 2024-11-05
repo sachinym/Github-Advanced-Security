@@ -100,11 +100,11 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![Picture1](./images/profilesetting.png)
 
-1. Go to **Developer settings** -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
+1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
 
    ![Picture1](./images/img4.png)
 
-1. Give your secret a name **Secret01**, and set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. Once you've generated the token, click the **"Copy"** icon to the right of the secret value.
+1. Give your secret a name **Secret01** under *Note* field and set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. Once you've generated the token, click the **"Copy"** icon to the right of the secret value.
 
    ![new personal acess token](images/PATtoken.png)
 
@@ -142,23 +142,25 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
    
 1. Open the **_index.js_** file and click the pencil icon at the top-right of the code block to edit it. Add **` var secret = "Your-Secret-Value"`** to the code, and click on **Commit changes**.
 
+   >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
+
    ![Picture1](./images/index.png)
 
-   ![Picture1](./images/index1.png)  
+   ![Picture1](./images/index1.png)
+
+1. Again click on **Commit changes**.    
 
    ![Picture1](./images/index2.png)      
-
-   >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 3.  
 
 1. When pop-up is prompted select **Allow Secret** **(1)**.
 
    ![Picture](./images/secret-scanning12.png)
 
-1. Click on **Commit changes** again and commit directly to default branch.
+1. Click on **Commit changes** and then click on **Commit changes** again to commit directly to default branch.
 
    ![Picture1](./images/allowsecrett1.png)    
 
-1. Then navigate to the **Security**, expand **Secret Scanning** section and select **Default** to show how this is an active secret.
+1. Then navigate to the **Security** from the top, expand **Secret Scanning (1)** section and select **Default (2)** to show how this is an active secret. **(3)**
 
    ![Picture1](./images/img2.png)
 
@@ -199,7 +201,7 @@ In this task, you will enable push protection to prevent secrets from being comm
    
    ![Picture1](./images/img3.png)
 
-1. scroll down to **Push protection** under Secret scanning and click **Enable**.
+1. Scroll down to **Push protection** under Secret scanning and click **Enable**.
 
    ![Picture1](./images/advance-scanning5.png)
 
@@ -211,7 +213,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
    ![Picture1](./images/profilesetting.png)
 
-1. Scroll down and select **Developer settings**.
+1. Scroll down through the left Navigation pane and select **Developer settings**.
 
 1. In the Developer Settings page expand **Personal access tokens** **(1)**, click-on **Tokens (classic) (2)**, then click on **Generate new token** **(3)** , and click-on **Generate new token (classic) (4)**.
 
@@ -227,7 +229,9 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Navigate to the **`ghas-bootcamp-javascript`** repository.
   
-1. Click on **_index.js_**, click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes with the default options to the attempt to push the code. 
+1. Click on **_index.js_**, click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes by clicking on **Commit changes** with the default options to the attempt to push the code.
+
+    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 8.  
 
     ![Picture1](./images/index.png)
 
@@ -237,7 +241,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
     ![push-protection](./images/sscanningpop.png)
 
-10. Select the **It's used in tests** check box, click on **Allow secret**, and commit the changes once again to push the code.
+10. Select the **It's used in tests (1)** check box, click on **Allow secret (2)**, and commit the changes once again to push the code.
 
     ![push-protection1](./images/commitchanges.png)
 
