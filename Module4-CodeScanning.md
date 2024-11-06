@@ -59,7 +59,7 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
    >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
 
-1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
+1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
 
    ![github-advisory-database](images/gb.png)
 
@@ -71,7 +71,7 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 	  - The Default query suite (also known as the `code-scanning` query suite in the _Advanced_ setup) has a less than 10% False Positive rate from findings within the Open Source ecosystem. We focus very heavily on providing true positive findings that are remotely exploitable, and this suite is the most "dialed in" in terms of findings.
 	  - The Extended query suite (also known as the `security-extended` query suite in the _Advanced_ setup) has a less than 30% False Positive rate from findings within the Open Source ecosystem. You will find several interesting queries pulled into this suite, including _Memory Exploitation_ findings for C/C++ and other slightly more niche security vulnerabilities in other languages.
 
-1. After you've clicked the **Enable CodeQL** button, go to the _Actions_ tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes. You can also check more configuration and details inside the the github action run.
+1. After you've clicked the **Enable CodeQL** button, go to the **_Actions_** tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes. You can also check more configuration and details inside the the github action run.
 
    ![github-advisory-database](images/gf.png)
 
@@ -97,7 +97,7 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
    ![github-advisory-database](images/image1.png)
 
-1. Scroll down and you will find the **Code Scanning** option. Click on the **Setup** button and click on **Advanced**
+1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup** button and then click on **Advanced**
 
    ![github-advisory-database](images/gh.png)
 
@@ -146,13 +146,13 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](images/gl.png)
 
-1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section, we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 66 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**.
+1. We are going to make similar updates to the `codeql.yml` file as we did in the `Advanced Setup` section, we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 66 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)** by clickin on **Commit changes.**
 
    ![github-advisory-database](images/python-codeql-ymlat.png)
 
    >**Note:** When updating the `codeql.yml` file, be aware that the line number for the `Initialize CodeQL` section may shift slightly, potentially changing from line 66 to one or two lines higher or lower. Ensure you append the string `queries: security-extended` to the correct location under this section based on the current line numbers in your file.
 
-1. In the Code tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
+1. In the **Code** tab of the Python repository, navigate to the server folder to open the `routes.py` file and scroll down to **Line 40**.
 
    ![github-advisory-database](images/gm.png)
  
@@ -166,9 +166,13 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](images/gnat.png)
 
-1. Click on commit to commit these changes to a new branch,  click on **Create pull request**, open a **Pull request** into the **main** branch, and click on **Create pull request** again.
+1. Click on commit to commit these changes to a **new branch** then click on **Propose changes.**  
  
    ![github-advisory-database](images/go.png)
+
+1. Open a *Pull request* into the **main** branch, click on **Create pull request.**
+
+1. Click on **Create pull request** again.   
 
    ![github-advisory-database](images/gp.png)
      
@@ -188,7 +192,7 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
     ![Picture1](./images/vscode1.jpg)
 
-1. In the Visual Studio Code, Click on **Extensions**, search and select the **CodeQL**, click on **install**.
+1. In the Visual Studio Code, Click on **Extensions (1)**, search for **CodeQL (2)** and select the **CodeQL (3)**, click on **install (4)**.
 
     ![Picture1](./images/vscodeql1.jpg)
 
@@ -295,6 +299,8 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 	  ```
 
         ![Picture1](./images/module4task4code1.png)
+
+    	>**Note**: If you receive any errors please remove **# Import modules** from the first line.      
 
 17. This results helps to understand the classification and usage of these entities in the code.
 
