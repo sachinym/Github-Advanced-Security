@@ -63,7 +63,7 @@ In this lab, you will perform:
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
 
-1. In the **`ghas-bootcamp-webgoat`** repository, navigate to the **`.github/workflows`** directory. Once there, click on **Add file (1)**, then select **+ Create new file (2)** to add a new file to the repository.
+1. In the **`ghas-bootcamp-webgoat`** repository, navigate to the **`.github/workflows` (1)** directory. Once there, click on **Add file (2)**, then select **+ Create new file (3)** to add a new file to the repository.
 
    ![github-advisory-database](images/g16at.png)
 
@@ -152,7 +152,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
    ![github-advisory-database](images/g7at.png)
    ![github-advisory-database](images/uncmtat.png)
 
-1. Click on **Commit Changes** once again in the pop-up that appears.
+1. If prompted, click on **Commit Changes** once again in the pop-up that appears.
 
    ![github-advisory-database](images/g8.png)
 
@@ -160,7 +160,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/g9.png)
    
-1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot and delete the existing lines as mentioned.
+1. Add the provided code to the **WebGoat/pom.xml** file as shown in the screenshot by clicking on the pencil icon and delete the existing lines as mentioned.
 
    - **Security Vulnerabilities:** Log4j has been known to have critical security vulnerabilities. This vulnerability allowed attackers to execute arbitrary code on a server or other computer running Log4j, leading to severe security risks such as remote code execution.
 
@@ -182,11 +182,15 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](images/proposechanges.png)
 
-1. On the **Open a pull request** tab, click on **Create pull request**. No need to merge the PR.
+1. Click on **Create pull request**. 
 
    ![github-advisory-database](images/createpr.png)
 
-1. You will see after few seconds that all the checks got failed due to the dependency review action.
+1. On the **Open a pull request** tab, click on **Create pull request**. No need to merge the PR.   
+
+   ![github-advisory-database](images/sec-3.png)
+
+1. Scroll down, You will see after few seconds that all the checks got failed due to the dependency review action.
 
    - **Dependency Review Action:** The Dependency Review action in GitHub Actions is designed to identify and mitigate risks associated with third-party dependencies, including libraries like `Log4j`. When a pull request introduces or updates a dependency, the action checks if the dependency has known vulnerabilities.
 
@@ -194,7 +198,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
       ![github-advisory-database](images/prfail.png)
 
-1. You can also see the error details on **Actions** section, navigate to action section and from the left navigation pane, click on **Dependency Review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
+1. You can also see the error details on *Actions* section, navigate to **Action** section and from the left navigation pane, click on **Dependency review**. Notice the failed **Dependency review** due to the dependency review finding the introduction of a vulnerable `Log4j` version.
 
    ![github-advisory-database](images/gx1.png)
 

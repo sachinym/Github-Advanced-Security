@@ -34,7 +34,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
 
-     ![Picture1](./images/gt4.png ) 
+     ![Picture1](./images/Sec1.png ) 
 
 1. Feel free to use Zoom in/Zoom out option in your respective browser to view the integrated environment clearly and to get the complete options in GitHub & VS Code.
 
@@ -87,4 +87,4 @@ has a context menu.
 
 1. Click "Next" from the bottom right corner to embark on your Lab journey!
 
-   ![Picture1](./images/next.png)
+   ![Picture1](./images/Sec1.png)
