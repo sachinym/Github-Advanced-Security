@@ -166,6 +166,8 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](images/gnat.png)
 
+   >**Note:** Uncomment the lines of code.   
+
 1. Click on commit to commit these changes to a **new branch** then click on **Propose changes.**  
  
    ![github-advisory-database](images/go.png)
@@ -224,9 +226,9 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
     >**Note**: If a pop up appears to login, click on Login from borwser and Sign in with GitHub Credentials and on the Authorize GitHub for VS Code page click on the Authorize Visual-Studio-Code.
 
-1. Go to the **Explorer** in the upper left corner, select **Open Folder**, select the folder you cloned from the **Desktop**, and then click **Select Folder**.
+1. Go to the **Explorer (1)** in the upper left corner, select **Open Folder (2)**, select the folder you cloned from the **Desktop** **(3)**, and then click **Select Folder (4)**.
 
-    ![Picture1](./images/clonerepo1.png)
+    ![Picture1](./images/sec18.png)
 
 1. Select **Yes, I trust the authors**.
 
