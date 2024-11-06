@@ -24,7 +24,7 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 
    ![Picture1](./images/image1.png)
 
-1. The **Getting Started** page will open by default. Select **Skip** to proceed directly to the main Microsoft Defender for Cloud dashboard.
+1. Navigate to the **Getting Started** page. Select **Skip** to proceed directly to the main Microsoft Defender for Cloud dashboard.
 
    ![Picture1](./images/image12.jpg)
 
@@ -48,7 +48,7 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
        
    ![Picture1](./images/image4.png)
 
-1. Click on **Authorize Microsoft Security DevOps** to grant authorization.
+1. If prompted, click on **Authorize Microsoft Security DevOps** to grant authorization.
    
    ![Picture1](./images/image5.png)
 
