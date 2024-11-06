@@ -117,7 +117,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Click on **+ Create**.
 
-1. From the Create Function App tab, select **Consumption** and select **Select**.
+1. From the Create Function App tab, select **Consumption (1)** and click on **Select (2)**.
 
    ![Picture1](./images/ghas-exercise1-9.png)
 
@@ -146,6 +146,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/mod5functionapp3.png)
 
+1. Under the **Function** tab, you can see the created Function. Click on it.   
+
 1. Go to the **Developer** section of your **HttpTrigger** function, click on **Code + Test (1)**, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
    
     ![Picture1](./images/trigger1.png)
@@ -154,7 +156,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/ghasr1.png)
 
-1. Click on **Webhook**.
+1. Click on **Webhooks** from the left Navigation pane.
 
    ![Picture1](./images/webhook1.png)
 
@@ -165,7 +167,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    - **Content type**: Select **application/JSON (2)** so that you can receive the payload as a JSON object.
    - **Secret**: You can leave this blank.
    - **SSL verification**: Leave this as the default option of **Enable SSL verification (3)**.
-   - **Which events would you like to trigger this webhook?** Select the **Just the push event option (4)**.
+   - **Which events would you like to trigger this webhook?** Select the **Just the push event** option **(4)**.
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
@@ -177,17 +179,17 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/newrepo.png)
 
-12. To create the repositories, name them **Test-webhook** (1), select **Public** (2), and ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
+12. To create the repositories, name them **Test-webhook (1)** then select **Public** (2) then also ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
 
     ![Picture1](./images/newrepo1.png)
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
-13. Click on **Add file** (1) and then click on **Create new file** (2).
+13. Click on **Add file** (1) (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** (2).
 
      ![Picture1](./images/lab7testwebhook1.png)
 
-14. Create a file named **issue-template.md** (1), add the provided code into the file, and then click on **Commit changes** (3) to save.
+14. Create a file named **issue-template.md** (1), add the provided code into the file **(2)**, and then click on **Commit changes** (3) to save.
 
     ```
     ## Build Failure
@@ -279,7 +281,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/ghasr1.png)
 
-14. Click on **Webhook** and select the Webhook you have created.
+14. Click on **Webhooks** from the left Navigation pane and select the Webhook you have created.
 
 15. Scroll down to the bottom and you will find some **Recent Deliveries**.
 
@@ -327,7 +329,7 @@ You can create rulesets to control how users interact with selected branches and
 
    ![Picture1](./images/ghasr1.png)  
 
-1. In the left sidebar, under **"Code and automation,"** click **Repository**, then click on **Rulesets**.
+1. In the left sidebar, under **Code and automation (1)** click **Rules (2)** and then click on **Rulesets (3)**.
 
    ![Picture1](./images/rulesets.png)    
 
