@@ -59,9 +59,9 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
    >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
 
-1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default**
+1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup (1)** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default (2)**
 
-   ![github-advisory-database](images/gb.png)
+   ![github-advisory-database](images/sec15.png)
 
 1. Leave the query suite on Default and click the **Enable CodeQL** button.
 
@@ -97,9 +97,9 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
    ![github-advisory-database](images/image1.png)
 
-1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup** button and then click on **Advanced**
+1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup (1)** button and then click on **Advanced (2)**
 
-   ![github-advisory-database](images/gh.png)
+   ![github-advisory-database](images/sec16.png)
 
    >**Note:** If it is already enabled, click on **Switch to Advanced**
 
@@ -172,6 +172,8 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 1. Open a *Pull request* into the **main** branch, click on **Create pull request.**
 
+   ![github-advisory-database](images/sec4.png)
+
 1. Click on **Create pull request** again.   
 
    ![github-advisory-database](images/gp.png)
@@ -196,15 +198,17 @@ In this task, you will set up and use CodeQL in Visual Studio Code to analyze a 
 
     ![Picture1](./images/vscodeql1.jpg)
 
-1. In the Visual Studio Code terminal, click on **(...)** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
+1. In the Visual Studio Code terminal, click on **three horizontal line** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
 
-    ![Picture1](./images/terminal.png)
+    ![Picture1](./images/sec5.png)
 
 1. Change the location to **Desktop** for easy navigation.
 
     ```
     cd Desktop
     ```
+
+    ![Picture1](./images/sec6.png)    
     
 1. Clone the repository by running the following command, You can also obtain the URL of your repository by navigating to it, clicking on the **Code** tab, and copying the URL provided.
 

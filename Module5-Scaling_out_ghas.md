@@ -75,10 +75,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
    ![Picture1](./images/dashboard1.png)
-   
-1. For the alert trends graph at the top of the page, you can click **Open alerts or  Closed alerts** to toggle between showing the trends for Open or Closed alerts. The toggle will only affect the alert trends graph.
-
-   ![Picture1](./images/dashboard2.png)
+  
 
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
@@ -121,18 +118,18 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/ghas-exercise1-9.png)
 
-1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (7)** at the bottom of the page and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
-    | **Subscription** | Keep it as default |
-    | **Resource Group** | Lab-VM |
-    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/>** |
-    | **Runtime stack** | **Node.js** |
-    | **Version** | **20 LTS** |
-    | **Operating System** | **Windows** |
+    | **Subscription** | Keep it as default **(1)** |
+    | **Resource Group** | Lab-VM **(2)** |
+    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |
+    | **Runtime stack** | **Node.js (4)** |
+    | **Version** | **20 LTS (5)** |
+    | **Operating System** | **Windows (6)** |
 
-   ![Picture1](./images/ghas-exercise1-10.png)
+   ![Picture1](./images/sec17.png)
 
      >**Note:** Keep rest of the options as default.
  
@@ -331,7 +328,7 @@ You can create rulesets to control how users interact with selected branches and
 
 1. In the left sidebar, under **Code and automation (1)** click **Rules (2)** and then click on **Rulesets (3)**.
 
-   ![Picture1](./images/rulesets.png)    
+   ![Picture1](./images/sec7.png)    
 
 1. You can create a ruleset targeting branches, or a ruleset targeting tags.
 

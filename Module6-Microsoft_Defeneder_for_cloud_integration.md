@@ -20,11 +20,11 @@ In this lab, you will perform:
 
 Microsoft Defender for Cloud integrates with GitHub to provide enhanced security for your repositories. It offers continuous monitoring, identifies vulnerabilities, and provides actionable recommendations to help you remediate issues, ensuring your codebase remains secure and compliant.
 
-1. In the search bar of the Azure portal, type **Defender**. From the search results, select **Microsoft Defender for Cloud**. This will navigate you to the Microsoft Defender for Cloud dashboard.
+1. In the search bar of the Azure portal, type **Defender (1)**. From the search results, select **Microsoft Defender for Cloud (2)**. This will navigate you to the Microsoft Defender for Cloud dashboard.
 
-   ![Picture1](./images/image1.png)
+   ![Picture1](./images/sec8.png)
 
-1. Navigate to the **Getting Started** page. Select **Skip** to proceed directly to the main Microsoft Defender for Cloud dashboard.
+1. Navigate to the **Getting Started** page. If prompted, select **Skip** to proceed directly to the main Microsoft Defender for Cloud dashboard.
 
    ![Picture1](./images/image12.jpg)
 
@@ -36,9 +36,9 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 
    | Setting  | Value |
    -----------|---------
-   | Connector name | ghas-github |
-   | Resource group | Lab-VM |
-   | Location | East US |
+   | Connector name | ghas-github **(1)** |
+   | Resource group | Lab-VM **(2)** |
+   | Location | East US **(3)** |
    
    ![Picture1](./images/image3.png)
 

@@ -188,6 +188,8 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
 1. On the **Open a pull request** tab, click on **Create pull request**. No need to merge the PR.   
 
+   ![github-advisory-database](images/sec-3.png)
+
 1. Scroll down, You will see after few seconds that all the checks got failed due to the dependency review action.
 
    - **Dependency Review Action:** The Dependency Review action in GitHub Actions is designed to identify and mitigate risks associated with third-party dependencies, including libraries like `Log4j`. When a pull request introduces or updates a dependency, the action checks if the dependency has known vulnerabilities.
