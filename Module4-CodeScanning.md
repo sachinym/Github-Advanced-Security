@@ -384,7 +384,7 @@ In this task, you will configure and apply security settings across all reposito
 5. Locate the Copilot Autofix option.
 6. Ensure that the toggle is set to Enabled. If it’s not, click to enable it.
 
-![](./images/autofix)
+![](./images/autofix.png)
 
 ## Task 6: Create a code with potencial security vulnerabilities
 
