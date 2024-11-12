@@ -375,6 +375,17 @@ In this task, you will configure and apply security settings across all reposito
 
 11. Again perform step 1 to 7 to apply configurations for all the repositories.
 
+## Task 6: Verify Github Autofix is enabled.
+
+1. Navigate to your project or repository.
+2. Click on the Settings icon
+3. In the left sidebar, find and click on Code security.
+4. Under this section, look for Code scanning.
+5. Locate the Copilot Autofix option.
+6. Ensure that the toggle is set to Enabled. If it’s not, click to enable it.
+
+![](./images/autofix)
+
 ## Task 6: Create a code with potencial security vulnerabilities
 
 1. Create a new file in the repository:
