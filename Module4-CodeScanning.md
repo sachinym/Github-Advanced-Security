@@ -386,7 +386,7 @@ In this task, you will configure and apply security settings across all reposito
 
 ![](./images/autofix.png)
 
-## Task 6: Create a code with potencial security vulnerabilities
+## Task 7: Create a code with potencial security vulnerabilities
 
 1. Create a new file in the repository:
 1. Navigate to your GitHub repository.
@@ -441,7 +441,7 @@ if __name__ == '__main__':
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
 
-## Task 7: Run a code scan
+## Task 8: Run a code scan
 
 1. Navigate to the repository page and click on the yellow dot • and click on details which will navigate you to the workflow
 
