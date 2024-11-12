@@ -75,10 +75,7 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
    ![Picture1](./images/dashboard1.png)
-   
-1. For the alert trends graph at the top of the page, you can click **Open alerts or  Closed alerts** to toggle between showing the trends for Open or Closed alerts. The toggle will only affect the alert trends graph.
-
-   ![Picture1](./images/dashboard2.png)
+  
 
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
@@ -117,22 +114,22 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. Click on **+ Create**.
 
-1. From the Create Function App tab, select **Consumption** and select **Select**.
+1. From the Create Function App tab, select **Consumption (1)** and click on **Select (2)**.
 
    ![Picture1](./images/ghas-exercise1-9.png)
 
-1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create** at the bottom of the page and subsequently click on **Create**.
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (7)** at the bottom of the page and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
-    | **Subscription** | Keep it as default |
-    | **Resource Group** | Lab-VM |
-    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/>** |
-    | **Runtime stack** | **Node.js** |
-    | **Version** | **20 LTS** |
-    | **Operating System** | **Windows** |
+    | **Subscription** | Keep it as default **(1)** |
+    | **Resource Group** | Lab-VM **(2)** |
+    | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |
+    | **Runtime stack** | **Node.js (4)** |
+    | **Version** | **20 LTS (5)** |
+    | **Operating System** | **Windows (6)** |
 
-   ![Picture1](./images/ghas-exercise1-10.png)
+   ![Picture1](./images/sec17.png)
 
      >**Note:** Keep rest of the options as default.
  
@@ -146,6 +143,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/mod5functionapp3.png)
 
+1. Under the **Function** tab, you can see the created Function. Click on it.   
+
 1. Go to the **Developer** section of your **HttpTrigger** function, click on **Code + Test (1)**, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
    
     ![Picture1](./images/trigger1.png)
@@ -154,7 +153,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](./images/ghasr1.png)
 
-1. Click on **Webhook**.
+1. Click on **Webhooks** from the left Navigation pane.
 
    ![Picture1](./images/webhook1.png)
 
@@ -165,7 +164,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    - **Content type**: Select **application/JSON (2)** so that you can receive the payload as a JSON object.
    - **Secret**: You can leave this blank.
    - **SSL verification**: Leave this as the default option of **Enable SSL verification (3)**.
-   - **Which events would you like to trigger this webhook?** Select the **Just the push event option (4)**.
+   - **Which events would you like to trigger this webhook?** Select the **Just the push event** option **(4)**.
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
@@ -177,17 +176,17 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
     ![Picture1](./images/newrepo.png)
 
-12. To create the repositories, name them **Test-webhook** (1), select **Public** (2), and ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
+12. To create the repositories, name them **Test-webhook (1)** then select **Public** (2) then also ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
 
     ![Picture1](./images/newrepo1.png)
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
-13. Click on **Add file** (1) and then click on **Create new file** (2).
+13. Click on **Add file** (1) (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** (2).
 
      ![Picture1](./images/lab7testwebhook1.png)
 
-14. Create a file named **issue-template.md** (1), add the provided code into the file, and then click on **Commit changes** (3) to save.
+14. Create a file named **issue-template.md** (1), add the provided code into the file **(2)**, and then click on **Commit changes** (3) to save.
 
     ```
     ## Build Failure
@@ -279,7 +278,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
      ![Picture1](./images/ghasr1.png)
 
-14. Click on **Webhook** and select the Webhook you have created.
+14. Click on **Webhooks** from the left Navigation pane and select the Webhook you have created.
 
 15. Scroll down to the bottom and you will find some **Recent Deliveries**.
 
@@ -327,9 +326,9 @@ You can create rulesets to control how users interact with selected branches and
 
    ![Picture1](./images/ghasr1.png)  
 
-1. In the left sidebar, under **"Code and automation,"** click **Repository**, then click on **Rulesets**.
+1. In the left sidebar, under **Code and automation (1)** click **Rules (2)** and then click on **Rulesets (3)**.
 
-   ![Picture1](./images/rulesets.png)    
+   ![Picture1](./images/sec7.png)    
 
 1. You can create a ruleset targeting branches, or a ruleset targeting tags.
 
