@@ -22,7 +22,7 @@
 1. On GitHub, navigate to the main page of the organization.
 1. Under your organization name, click Security.
 
-   ![](./images/securityoption.png)
+   ![](../images/securityoption.png)
 
 1. In the left sidebar, next to "Campaigns", click the icon to start creating a campaign.
 
@@ -30,7 +30,7 @@
 
 1. Select a template for the campaign which suits best.
 
-    ![](./images/template.png)
+    ![](../images/template.png)
 
 1. Edit the "Campaign name" and "Short description" to match your campaign needs and to link
 to any resources that support the campaign.
@@ -53,7 +53,7 @@ take longer.
 1. Click on the specific campaign you want to check. This will take you to the campaign overview page.
 1. On the campaign page, you can view the security alerts associated with that campaign. This includes details about the alerts, their status, and any actions taken
 
-  ![](./images/repoalert.png)
+  ![](../images/repoalert.png)
 
 ### Task 4: Editing and Closing/deleting Security Campigns
 
@@ -64,7 +64,7 @@ tracking view.
 1. In the "Edit campaign" dialog make your changes and then click Save changes.
 1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
 
-   ![](./images/deletecamp.png)
+   ![](../images/deletecamp.png)
 
 ## Review
 
