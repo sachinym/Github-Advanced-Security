@@ -5,6 +5,9 @@
  In this lab, we'll cover a series of tasks designed to provide a comprehensive understanding of code scanning in GitHub. 
 
 ## Lab Objectives
+
+### Implementing GitHub Advanced Security for Your Organization
+
 In this lab, you will learn and perform:
 - Introduction to Code Scanning
 - What is CodeQL and how is it different from other static analysis tools? 
@@ -372,6 +375,118 @@ In this task, you will configure and apply security settings across all reposito
 
 11. Again perform step 1 to 7 to apply configurations for all the repositories.
 
+## Task 6: Verify Github Autofix is enabled.
+
+1. Navigate to your project or repository.
+2. Click on the Settings icon
+3. In the left sidebar, find and click on Code security.
+4. Under this section, look for Code scanning.
+5. Locate the Copilot Autofix option.
+6. Ensure that the toggle is set to Enabled. If it’s not, click to enable it.
+
+![](./images/autofix.png)
+
+## Task 6: Create a code with potencial security vulnerabilities
+
+1. Create a new file in the repository:
+1. Navigate to your GitHub repository.
+1. Click on the Add file button and select Create new file.
+1. Name your file (e.g., app.py).
+1. Write the code:
+
+In the new file, write the code that includes potential security vulnerabilities. For example, you can use the following code snippet:
+Python
+ ```
+from flask import Flask, request
+import sqlite3
+import os
+
+app = Flask(__name__)
+
+def init_db():
+    conn = sqlite3.connect(':memory:')
+    cursor = conn.cursor()
+    cursor.execute("CREATE TABLE user (id INTEGER PRIMARY KEY, name TEXT)")
+    cursor.execute("INSERT INTO user (name) VALUES ('Alice')")
+    cursor.execute("INSERT INTO user (name) VALUES ('Bob')")
+    conn.commit()
+    return conn
+
+conn = init_db()
+
+@app.route('/user')
+def get_user():
+    user_id = request.args.get('id')
+    cursor = conn.cursor()
+    # Introducing SQL Injection vulnerability
+    cursor.execute(f"SELECT name FROM user WHERE id = {user_id}")
+    user = cursor.fetchone()
+    if user:
+        return f"User: {user[0]}"
+    else:
+        return "User not found", 404
+
+if __name__ == '__main__':
+    debug_mode = os.getenv('FLASK_DEBUG', 'False').lower() in ['true', '1', 't']
+    app.run(debug=debug_mode)
+
+```
+
+6. Commit the changes:
+- Scroll down to the Commit new file section. 
+- Add a commit message describing the changes (e.g., “Add app.py with potential SQL Injection vulnerability”).
+- Choose whether to commit directly to the main branch or create a new branch for this commit.
+- Click on Commit new file to save your changes.
+
+7. Verify the file:
+Ensure that the file is created and the code is correctly saved in your repository.
+
+## Task 7: Run a code scan
+
+1. Navigate to the repository page and click on the yellow dot • and click on details which will navigate you to the workflow
+
+   ![](images/newdeet.png) 
+
+2. Check the CodeQL workflow:
+- Look for the CodeQL workflow in the list of workflows.
+- Ensure that the workflow has run automatically after committing 
+the changes.
+
+3. Review the scan results:
+- Click on the latest run of the CodeQL workflow to view the details.
+- Check the results to see if any vulnerabilities were identified.
+
+  ![](images/result.png) 
+
+> Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
+
+## Task 8: Apply autofixes to vulnerabilities
+
+1. Navigate to the Security tab in your repository, and then click on Code scanning.
+
+1. Review the list of vulnerabilities and click on an alert to view details.
+
+   ![](images/scan.png) 
+
+3. If an autofix is available, click on Apply fix to automatically apply the suggested fix.
+
+   ![](images/fix.png) 
+
+4. Commit the changes to your repository.
+
+   ![](images/newchange.png) 
+
+5. Make sure to merge and pull the request.
+
+   ![](images/Merge.png) 
+
+6. Autofix generates an updated text, just click confirm merge
+
+   ![](images/confirmmerge.png) 
+
+
+> Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
+
 ## Review
 
 In this lab you have completed the following:
@@ -382,4 +497,7 @@ In this lab you have completed the following:
 - Added some vulnerable code via a pull request and viewed the scan results in the PR. 
 - Demonstrated CodeQL Query Operations in Visual Studio Code
 - Turned on GitHub Advanced Security for Organization
+- Create a code with potencial security vulnerabilities
+- Apply autofixes to vulnerabilities
+
     
