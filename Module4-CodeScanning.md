@@ -16,6 +16,10 @@ In this lab, you will learn and perform:
 - Task 3: Add some vulnerable code via a pull request and view the scan results in the PR
 - Task 4: CodeQL Query Operations in Visual Studio  
 - Task 5: Turn on GitHub Advanced Security for Organization
+- Task 6: Verify Github Autofix is enabled
+- Task 7: Create a code with potencial security vulnerabilities
+- Task 8: Run a code scan
+- Task 9: Apply autofixes to vulnerabilities
 
 ## Estimated timing: 90 minutes
 
@@ -375,7 +379,7 @@ In this task, you will configure and apply security settings across all reposito
 
 11. Again perform step 1 to 7 to apply configurations for all the repositories.
 
-## Task 6: Verify Github Autofix is enabled.
+## Task 6: Verify Github Autofix is enabled
 
 1. Navigate to your project or repository.
 2. Click on the Settings icon
@@ -460,7 +464,7 @@ the changes.
 
 > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
-## Task 8: Apply autofixes to vulnerabilities
+## Task 9: Apply autofixes to vulnerabilities
 
 1. Navigate to the Security tab in your repository, and then click on Code scanning.
 
