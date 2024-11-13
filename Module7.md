@@ -1,3 +1,95 @@
+### Task4 page 5 code scanning step 6 to last 
+
+1. Go to the **Explorer (1)** in the upper left corner, select **Open Folder (2)**, select the folder you cloned from the **Desktop** **(3)**, and then click **Select Folder (4)**.
+
+    ![Picture1](./images/sec18.png)
+
+1. Select **Yes, I trust the authors**.
+
+    ![Picture1](./images/clonerepo2.png)
+
+1. If you receive a pop-up requesting permission to collect usage data, simply click **Yes** to proceed.
+
+    ![Picture1](./images/clonerepo3at.png)
+
+1. Go to **Account** icon from bottom and click on **Sign in with GitHub to use CodeQL**. Please note it might take some time to get the extension updated with code, If you get any pop-up select yes. 
+
+    ![Picture1](./images/clonerepo3.png)
+
+    >**Note:** If you encounter a page requesting you to sign in with GitHub credentials or authorize GitHub for VS Code, click on **Authorize Visual Studio Code** to proceed.
+
+    ![Picture1](./images/clonerepo4.png)
+
+1. The site is trying to open the Visual Studio Code then click on **Open**. It will navigate back to the Visual Studio.
+
+    ![Picture1](./images/clonerepo5.png)
+
+1. Go to the **CodeQL** extension and move the cursor over the **Database**, click on the **GitHub** icon.
+
+    ![Picture1](./images/clonerepo6.png)  
+
+1. Add the Database by the following command and press enter.
+
+    >**Note**: Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
+
+    ```
+    https://github.com/ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx/ghas-bootcamp-python
+    ```
+
+    ![Picture1](./images/clonerepo7.png)
+
+1. Go to the **Queries** section, click on **Create query** option and select **Python** as your target query language.
+
+    ![Picture1](./images/clonerepo8.png)
+
+1. It will show up the location for query, press **enter**.
+
+    ![Picture1](./images/clonerepo9.png)
+
+1. It will generate the simple query, click on the **Run**  from right corner (1) and analyze the result.
+
+    ![Picture1](./images/clonerepo10.png)
+
+    >**Note**: If you receive a pop-up asking to run queries: example.ql , simply click **Yes** to proceed.
+
+1. Now, replace the existing code with the provided code snippet. Then, click on the **Run** button to execute it.
+
+   - This CodeQL query identifies named entities (special functions, built-in functions, modules, and files) in a Python codebase from a specified list of names ("foo", "baz", "main", "os", "sys", "re"). It checks if each name matches a specific type ("special", "builtin", "module", "file") and selects them, ordering the results by name and kind. 
+
+	  ```
+      # Import modules
+	  import python
+	  import semmle.python.types.Builtins
+	
+	  predicate named_entity(string name, string kind) {
+	   exists(Builtin::special(name)) and kind = "special"
+	    or
+	    exists(Builtin::builtin(name)) and kind = "builtin"
+	    or
+	    exists(Module m | m.getName() = name) and kind = "module"
+	    or
+	    exists(File f | f.getShortName() = name + ".py") and kind = "file"
+	  }
+	
+	  from string name, string kind
+	  where
+	    name in ["foo", "baz", "main", "os", "sys", "re"] and
+	    named_entity(name, kind)
+	  select name, kind order by name, kind
+	  ```
+
+        ![Picture1](./images/module4task4code1.png)
+
+    	>**Note**: If you receive any errors please remove **# Import modules** from the first line.      
+
+17. This results helps to understand the classification and usage of these entities in the code.
+
+    ![Picture1](./images/module4task4code2.png)
+
+Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
+
+
+### Code
 1. Sign in with GitHub Credentials and on the **Authorize GitHub for VS Code** page click on the **Authorize Visual-Studio-Code.**
 
     ![Picture1](./images/clonerepo4.png)
