@@ -297,9 +297,11 @@ In this task, you will configure and apply security settings across all reposito
 
 11. Again perform step 1 to 7 to apply configurations for all the repositories.
 
-## Task 6: Verify Github Autofix is enabled
+# Fix code vulnerabilities using Github Copilot Autofix
 
-1. Navigate to your project or repository.
+## Task 6:  Verify Github Autofix is enabled
+
+1. Navigate to your repository.
 2. Click on the Settings icon
 3. In the left sidebar, find and click on Code security.
 4. Under this section, look for Code scanning.
@@ -310,11 +312,10 @@ In this task, you will configure and apply security settings across all reposito
 
 ## Task 7: Create a code with potencial security vulnerabilities
 
-1. Create a new file in the repository:
-1. Navigate to your GitHub repository.
+1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the Add file button and select Create new file.
 1. Name your file (e.g., app.py).
-1. Write the code:
+1. Copy and paste the below code:
 
 In the new file, write the code that includes potential security vulnerabilities. For example, you can use the following code snippet:
 Python
