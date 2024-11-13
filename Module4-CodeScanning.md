@@ -356,10 +356,10 @@ if __name__ == '__main__':
 ```
 
 6. Commit the changes:
-- Scroll down to the Commit new file section. 
-- Add a commit message describing the changes (e.g., “Add app.py with potential SQL Injection vulnerability”).
-- Choose whether to commit directly to the main branch or create a new branch for this commit.
-- Click on Commit new file to save your changes.
+    - Scroll down to the Commit new file section. 
+    - Add a commit message describing the changes (e.g., “Add app.py with potential SQL Injection vulnerability”).
+    - Choose whether to commit directly to the main branch or create a new branch for this commit.
+    - Click on Commit new file to save your changes.
 
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
@@ -371,13 +371,13 @@ Ensure that the file is created and the code is correctly saved in your reposito
    ![](images/newdeet.png) 
 
 2. Check the CodeQL workflow:
-- Look for the CodeQL workflow in the list of workflows.
-- Ensure that the workflow has run automatically after committing 
+   - Look for the CodeQL workflow in the list of workflows.
+   - Ensure that the workflow has run automatically after committing 
 the changes.
 
 3. Review the scan results:
-- Click on the latest run of the CodeQL workflow to view the details.
-- Check the results to see if any vulnerabilities were identified.
+   - Click on the latest run of the CodeQL workflow to view the details.
+   - Check the results to see if any vulnerabilities were identified.
 
   ![](images/result.png) 
 
@@ -408,7 +408,7 @@ the changes.
    ![](images/confirmmerge.png) 
 
 
-> Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
+  > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
 
 ## Review
 
@@ -421,6 +421,6 @@ In this lab you have completed the following:
 - Demonstrated CodeQL Query Operations in Visual Studio Code
 - Turned on GitHub Advanced Security for Organization
 - Create a code with potencial security vulnerabilities
-- Apply autofixes to vulnerabilities
+- Apply autofixes to fix code vulnerabilities
 
     
