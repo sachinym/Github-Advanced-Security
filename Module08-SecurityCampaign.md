@@ -89,6 +89,15 @@ take longer.
 
 ### Task 3: Tracking Security Campaign
 
+When you create a campaign, the campaign tracking view is displayed and the campaign is listed in the sidebar of the **Security** tab for the organization. You can redisplay the campaign tracking view at any time by selecting it in the sidebar under "Campaigns".
+
+1. Here, you can view the details of the **Campaign's progress** and **Status**, along with the alerts supported by **Copilot Autofix**.
+
+- **In progress:** when at least one branch or pull request is created to fix the alert through the campaign view or the alert page.
+- **Closed:** when the alert is fixed or dismissed, even if the development work was done outside the campaign framework.
+
+    ![](./images/seccamp8.png)
+
 1. Click on *Security* in the left sidebar.
 
 1. In the sidebar, look for the Campaigns section. Here, you’ll see a list of active security campaigns.
@@ -101,17 +110,30 @@ take longer.
 
 ### Task 4: Editing and Closing/deleting Security Campigns
 
-1. Click on *Security* in the left sidebar.
+There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security tab of the organization.
+
+1. On GitHub, navigate to the main page of the organization.
+
+1. Under your organization name, click **Security**.
+
+   ![Picture1](./images/security-tabat.png)
 
 1. In the sidebar, under "Campaigns" click the name of the campaign to display the campaign tracking view.
 
-1. In the campaign title row, click and select Edit campaign.
+1. In the campaign title row, click and select **Edit campaign**.
 
-1. In the "Edit campaign" dialog make your changes and then click Save changes.
+   ![](./images/seccamp9.png)
+
+1. In the **Edit Campaign** section, you can update the **Campaign name**, **Short description**, **Campaign due date**, and **Campaign manager**. Once done, click on **Save changes** to apply the updates.
+
+   ![](./images/seccamp10.png)
 
 1. For deleting or closing the campaign select the required option **close campaign** or **delete campaign** by selecting the campaign.
 
-   ![](./images/deletecamp.png)
+- **Close campaign** to remove it from the active campaigns list and display it on the Closed campaigns view.
+- **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
+
+   ![](./images/seccamp11.png)
 
 ## Review
 
