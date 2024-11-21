@@ -96,7 +96,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 - **In progress:** when at least one branch or pull request is created to fix the alert through the campaign view or the alert page.
 - **Closed:** when the alert is fixed or dismissed, even if the development work was done outside the campaign framework.
 
-    ![](./images/seccamp8.png)
+ ![](./images/seccamp8.png)
 
 1. Click on *Security* in the left sidebar.
 
