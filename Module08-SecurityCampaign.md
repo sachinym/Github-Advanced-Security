@@ -1,4 +1,4 @@
-# Module 08: Security Campaign
+# Module 05: Security Campaign
 
 ## Lab Scenario
 
@@ -15,6 +15,8 @@ In this lab, you will perform:
 ## Estimated Timing: 30 minutes
 
 ## Architecture Diagram
+
+   ![](images/seccamp16.png)
 
 ### Task 1: Turn on the default setup on a juice-shop repository
 
