@@ -25,7 +25,7 @@ In this lab, you will learn and perform:
 
 ## Architecture Diagram
 
-   ![Picture1](./images/ar04.png)
+   ![](images/seccamp18.png)
    
 ## Introduction to Code Scanning 
 
@@ -308,7 +308,7 @@ In this task, you will configure and apply security settings across all reposito
 5. Locate the Copilot Autofix option.
 6. Ensure that the toggle is set to Enabled. If it’s not, click to enable it.
 
-![](./images/autofix.png)
+    ![](./images/autofix.png)
 
 ## Task 7: Create a code with potencial security vulnerabilities
 
@@ -319,6 +319,7 @@ In this task, you will configure and apply security settings across all reposito
 
 In the new file, write the code that includes potential security vulnerabilities. For example, you can use the following code snippet:
 Python
+
  ```
 from flask import Flask, request
 import sqlite3
@@ -372,16 +373,15 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 2. Check the CodeQL workflow:
    - Look for the CodeQL workflow in the list of workflows.
-   - Ensure that the workflow has run automatically after committing 
-the changes.
+   - Ensure that the workflow has run automatically after committing the changes.
 
 3. Review the scan results:
    - Click on the latest run of the CodeQL workflow to view the details.
    - Check the results to see if any vulnerabilities were identified.
 
-  ![](images/result.png) 
+    ![](images/result.png) 
 
-> Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
+    > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
 ## Task 9: Apply autofixes to vulnerabilities
 
@@ -407,8 +407,7 @@ the changes.
 
    ![](images/confirmmerge.png) 
 
-
-  > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
+   > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
 
 ## Review
 
@@ -422,5 +421,3 @@ In this lab you have completed the following:
 - Turned on GitHub Advanced Security for Organization
 - Create a code with potencial security vulnerabilities
 - Apply autofixes to fix code vulnerabilities
-
-    
