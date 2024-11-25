@@ -10,7 +10,7 @@ In this lab, you will perform:
 - Task 1: Turn on the default setup on a juice-shop repository
 - Task 2: Creating security camapaign
 - Task 3: Tracking Security Campaign
-- Task 4: Editing and Closing/deleting Security Campigns
+- Task 4: Editing and Managing Security Campigns
 
 ## Estimated Timing: 30 minutes
 
@@ -120,7 +120,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-### Task 4: Editing and Closing/deleting Security Campigns
+### Task 4: Editing and Managing Security Campigns
 
 There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security tab of the organization.
 
@@ -151,7 +151,7 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
 In this lab you have completed the following:
 
-- Turn on the default setup on a juice-shop repository
-- Create a campaign from a template
-- Track Security Campaigns
-- Edit and Close/delete Security Campigns
+- Turned on the default setup on a juice-shop repository
+- Created a campaign from a template
+- Tracked Security Campaigns
+- Edited and Managed Security Campigns
