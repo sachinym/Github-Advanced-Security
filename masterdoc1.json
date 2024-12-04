@@ -25,12 +25,16 @@
         "Order": 5
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module5-Scaling_out_ghas.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module08-SecurityCampaign.md",
         "Order": 6
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module6-Microsoft_Defeneder_for_cloud_integration.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module5-Scaling_out_ghas.md",
         "Order": 7
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/main/Module6-Microsoft_Defeneder_for_cloud_integration.md",
+        "Order": 8
       }
     ]
   }
