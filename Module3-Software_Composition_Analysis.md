@@ -24,9 +24,9 @@ In this lab, you will perform:
 
    ![github-advisory-database](images/new-repo.png)
 
-1. From the list of repositories, click on **ghas-bootcamp-webgoat** to begin working through this module. 
+1. From the list of repositories, click on **ghas-bootcamp-WebGoat** to begin working through this module. 
 
-   ![github-advisory-database](images/i5.png)
+   ![github-advisory-database](images/.png)
 
 1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
 
@@ -50,7 +50,7 @@ In this lab, you will perform:
 
    >**Info:** Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
 
-1. Now you can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
+1. Now you can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities alerts** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
 
    >**Note:** The number of dependency alerts can be differ for you as it takes some time to scan the whole repositry. 
 
