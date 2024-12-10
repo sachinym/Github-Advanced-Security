@@ -283,7 +283,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
    - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
    - **Test string**:  `gH4$kP!2w_ ` **(6)**
 
-     ![push-protection1](./images/secret-scanning5.png)
+     ![push-protection1](./images/mod1.5.png)
       
       > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
       
