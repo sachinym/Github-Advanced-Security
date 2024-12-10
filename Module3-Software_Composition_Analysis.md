@@ -26,7 +26,7 @@ In this lab, you will perform:
 
 1. From the list of repositories, click on **ghas-bootcamp-WebGoat** to begin working through this module. 
 
-   ![github-advisory-database](images/.png)
+   ![github-advisory-database](images/mod3.1.png)
 
 1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
 
