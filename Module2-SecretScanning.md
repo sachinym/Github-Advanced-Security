@@ -170,9 +170,9 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
    
    > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-1. Review the secret is identified as  _"Possibly active secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
+1. Review the secret is identified as  _"Publicly leaked secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
 
-   ![Picture1](./images/possibleactivesecret.png)
+   ![Picture1](./images/mod1.4.png)
 
    > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
 
