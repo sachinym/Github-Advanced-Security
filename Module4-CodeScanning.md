@@ -367,9 +367,9 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 ## Task 8: Run a code scan
 
-1. Navigate to the repository page and click on the yellow dot • and click on details which will navigate you to the workflow
+1. In the repository page, navigate to **Action** tab to view the workflow
 
-   ![](images/newdeet.png) 
+   ![](images/mod4.1.png) 
 
 2. Check the CodeQL workflow:
    - Look for the CodeQL workflow in the list of workflows.
