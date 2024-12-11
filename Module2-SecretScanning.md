@@ -28,7 +28,9 @@ Secret scanning is a GitHub Advanced Security feature that scans repositories fo
 
 Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed to a private or public repository in your project, secret scanning notifies all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the **Security** tab of the repository.
 
-### Turn on Secret scanning for the entire organization. [Read Only]
+### Turn on Secret scanning for the entire organization. [Read Only] 
+
+  >**Note:** Please note that the steps from 1 to 10 below are Read Only
 
 1. On the **Home** page, click on your profile icon in the top right corner.
 
@@ -72,7 +74,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Code Security Configurations](./images/sec9.png)
 
-   >**Note:** Please note that the above mentioned steps are for informational purposes only and do not need to be performed.
+   >**Note:** Please note that the above mentioned steps are for informational purposes only and do not need to be performed .You can now proceed with generating and using the Personal Access Tokens (PAT) for testing secret scanning feature.
 
 ### What is Personal Access Tokens?
 
