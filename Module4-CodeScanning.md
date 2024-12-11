@@ -70,8 +70,6 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
    ![github-advisory-database](images/sec15.png)
 
-   >**Note:** The default CodeQL setup may already be enabled for this repository. If it is not, please ensure to follow the steps outlined to activate it
-
 1. Leave the query suite on Default and click the **Enable CodeQL** button.
 
    ![github-advisory-database](images/ge.png)
