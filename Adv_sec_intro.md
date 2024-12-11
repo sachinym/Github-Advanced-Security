@@ -96,6 +96,8 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. In the left sidebar, click on **Code security**.
 
+   ![Picture1](./images/mod1.1.png)
+
 1. Here, you can enable the features of **Dependabot**, **Code Scanning**, and **Secret Scanning** for the repository.
 
 1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
@@ -116,7 +118,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. In the **CodeQL default configuration** pop-up, click on **Enable CodeQL** button.
 
-   ![github-advisory-database](images/ghas-exercise1-5.png)
+   ![github-advisory-database](images/mod1.2.png)
 
 1. Click on **Enable** for **Secret Scanning**,
 
@@ -124,7 +126,7 @@ In this task, we will learn how to enable GitHub Advanced Security features for 
 
 1. Select **Enable** button to activate Push Protection , under **Secret Scanning**.
 
-   ![Picture1](./images/advance-scanning5.png)
+   ![Picture1](./images/mod1.3.png)
 
 1. To review, navigate to your repository’s **Security** tab.
 

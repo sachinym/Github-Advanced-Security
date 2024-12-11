@@ -28,7 +28,9 @@ Secret scanning is a GitHub Advanced Security feature that scans repositories fo
 
 Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed to a private or public repository in your project, secret scanning notifies all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the **Security** tab of the repository.
 
-### Turn on Secret scanning for the entire organization. [Read Only]
+### Turn on Secret scanning for the entire organization. [Read Only] 
+
+  >**Note:** Please note that the steps from 1 to 10 below are Read Only
 
 1. On the **Home** page, click on your profile icon in the top right corner.
 
@@ -71,6 +73,8 @@ Secret scanning automatically scans your entire Git history on all branches pres
 9. On the **Apply Configuration** page, Click on **Apply Configuration (1),** select **All repositories (2)** to ensure the configuration applies universally. Next, click on the **Secret_Scanning_Enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
 
    ![Code Security Configurations](./images/sec9.png)
+
+   >**Note:** The above mentioned steps are for informational purposes only and do not need to be performed .You can now proceed with generating and using the Personal Access Tokens (PAT) for testing secret scanning feature.
 
 ### What is Personal Access Tokens?
 
@@ -170,9 +174,9 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
    
    > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-1. Review the secret is identified as  _"Possibly active secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
+1. Review the secret is identified as  _"Publicly leaked secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
 
-   ![Picture1](./images/possibleactivesecret.png)
+   ![Picture1](./images/mod1.4.png)
 
    > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
 
@@ -283,7 +287,7 @@ In this task, you will create and apply a custom secret pattern to detect specif
    - **After secret**:  provide regular expression patterns as `(\z|[\r\n'"])` **(5)**.
    - **Test string**:  `gH4$kP!2w_ ` **(6)**
 
-     ![push-protection1](./images/secret-scanning5.png)
+     ![push-protection1](./images/mod1.5.png)
       
       > **Note:** Writing regular expression patterns can be challenging, we recommend using something like _GitHub Copilot_ or [Regex101.com](https://regex101.com/) to help with this process.
       
