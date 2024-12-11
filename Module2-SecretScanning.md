@@ -74,7 +74,7 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Code Security Configurations](./images/sec9.png)
 
-   >**Note:** Please note that the above mentioned steps are for informational purposes only and do not need to be performed .You can now proceed with generating and using the Personal Access Tokens (PAT) for testing secret scanning feature.
+   >**Note:** The above mentioned steps are for informational purposes only and do not need to be performed .You can now proceed with generating and using the Personal Access Tokens (PAT) for testing secret scanning feature.
 
 ### What is Personal Access Tokens?
 
