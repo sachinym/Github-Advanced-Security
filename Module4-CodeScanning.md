@@ -367,7 +367,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 ## Task 8: Run a code scan
 
-1. In the repository page, navigate to **Action** tab to view the workflow
+1. In the repository page, navigate to **Actions** tab to view the workflow.
 
    ![](images/mod4.1.png) 
 
