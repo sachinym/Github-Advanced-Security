@@ -63,13 +63,35 @@ In this lab, you will perform:
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
 
-1. In the **`ghas-bootcamp-webgoat`** repository, navigate to the **`.github/workflows` (1)** directory. Once there, click on **Add file (2)**, then select **+ Create new file (3)** to add a new file to the repository.
+### Enable Actions
 
-   ![github-advisory-database](images/g16at.png)
+GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that run tests whenever you push a change to your repository, or that deploy merged pull requests to production. You will learn how to enable GitHub Actions for repositories to ensure workflows run seamlessly. This includes configuring the settings to allow all actions and reusable workflows.
 
-1. Create a file named **`DepGraph.yml` (1)**. Paste the provided code into the file and click on **Commit changes (2)** to save and commit the new file to the repository.
+1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
 
-	  ![github-advisory-database](images/g16at01.png)
+   ![github-advisory-database](images/getrepo.png)
+
+1. From the list of repositories click on **ghas-bootcamp-webgoat** to begin working through this module.
+
+   ![github-advisory-database](images/i6a.png)
+
+1. In the GitHub repository, go to **Settings (1)** from the top navigation bar, click on **General (3)** under **Actions (2)**, select **Allow all actions and reusable workflows (4)**, and then click **Save (5)** to apply the changes.
+
+   ![github-advisory-database](images/actions.png)
+
+1. Repeat the same process for the all repositories.
+
+### Create Workflow
+
+1. In the **`ghas-bootcamp-webgoat`** repository, navigate to the **`.github` (1)** directory. Once there, click on **Add file (2)**, then select **+ Create new file (3)** to add a new file to the repository.
+
+   ![github-advisory-database](images/g16at1.png)
+
+   >**Reminders:** Ensure that Actions are enabled before creating workflows.
+
+1. Create a file named **workflows/`DepGraph.yml` (1)**. Paste the provided code into the file and click on **Commit changes (2)** to save and commit the new file to the repository.
+
+	![github-advisory-database](images/g16at01a.png)
 	
 	  ```
 	   # For most projects, this workflow file will not need changing; you simply need
