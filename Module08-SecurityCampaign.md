@@ -84,24 +84,24 @@ In this lab, you will perform:
 
 8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **juice-shop** to view its alerts.
 
-    ![](./images/seccamp2.png)
+    ![](./images/seccamp2a.png)
 
 9. Open **juice-shop**, select all its alerts, and from the right-hand panel, click **Commit autofix** and choose **Commit to new branch**.
 
-    ![](./images/seccamp3.png)
+    ![](./images/seccamp3a.png)
 
 10. Select the option to open a pull request, then click **Commit changes**.
 
-    ![](./images/seccamp4.png)
+    ![](./images/seccamp4a.png)
 
 11. Click on **Ready for review**.
 
-    ![](./images/seccamp5.png)
+    ![](./images/seccamp5a.png)
 
 12. Click on **Merge pull request** to finalize and integrate the changes into the main branch, then click on **Confirm merge**.
 
-    ![](./images/seccamp6.png)
-    ![](./images/seccamp7.png)
+    ![](./images/seccamp6a.png)
+    ![](./images/seccamp7a.png)
 
 ### Task 3: Tracking Security Campaign
 

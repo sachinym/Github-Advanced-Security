@@ -1,0 +1,41 @@
+[
+  {
+    "Name": "Securing Repositories with GitHub Advanced Security",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/Github-Advanced-Security",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Getting-Started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Adv_sec_intro.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Module2-SecretScanning.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Module3-Software_Composition_Analysis.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Module4-CodeScanning.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Module08-SecurityCampaign.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Module5-Scaling_out_ghas.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/AnandTiwari83/Github-Advanced-Security/refs/heads/main/Module6-Microsoft_Defeneder_for_cloud_integration.md",
+        "Order": 8
+      }
+    ]
+  }
+]
