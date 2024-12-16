@@ -13,13 +13,12 @@ In this lab, you will learn and perform:
 - What is CodeQL and how is it different from other static analysis tools? 
 - Task 1: Turn on the default setup on a Python repository
 - Task 2: Turn on advanced setup on a Java repository
-- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR
-- Task 4: CodeQL Query Operations in Visual Studio  
-- Task 5: Turn on GitHub Advanced Security for Organization
-- Task 6: Verify Github Autofix is enabled
-- Task 7: Create a code with potencial security vulnerabilities
-- Task 8: Run a code scan
-- Task 9: Apply autofixes to vulnerabilities
+- Task 3: Add some vulnerable code via a pull request and view the scan results in the PR 
+- Task 4: Turn on GitHub Advanced Security for Organization
+- Task 5: Verify Github Autofix is enabled
+- Task 6: Create a code with potencial security vulnerabilities
+- Task 7: Run a code scan
+- Task 8: Apply autofixes to vulnerabilities
 
 ## Estimated timing: 90 minutes
 
@@ -30,7 +29,6 @@ In this lab, you will learn and perform:
 ## Introduction to Code Scanning 
 
 Code scanning in GitHub is a powerful feature designed to enhance the security of your software projects by automatically identifying and alerting you to potential security vulnerabilities in your codebase. Leveraging advanced static analysis techniques, and code scanning helps detect security flaws, bugs, and other issues early in the development process, enabling developers to address them proactively before they escalate into larger problems. 
-
 
 ### What is CodeQL and how is it different from other static analysis tools?
 
@@ -195,51 +193,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
      ![clear-text-logging-finding](images/prfailat02.png)
 
-## Task 4: CodeQL Query Operations in Visual Studio Code
-
-In this task, you will set up and use CodeQL in Visual Studio Code to analyze a Python codebase. The steps involve installing necessary extensions, cloning a repository, and running a CodeQL query to identify named entities within the code.
-
-1. Start **Visual Studio Code** from the desktop.
-
-    ![Picture1](./images/vscode1.jpg)
-
-1. In the Visual Studio Code, Click on **Extensions (1)**, search for **CodeQL (2)** and select the **CodeQL (3)**, click on **install (4)**.
-
-    ![Picture1](./images/vscodeql1.jpg)
-
-1. In the Visual Studio Code terminal, click on **three horizontal line** (1) and select the **Terminal** (2) menu, select **New Terminal** (3). The terminal window usually opens in the lower half of your screen.
-
-    ![Picture1](./images/sec5.png)
-
-1. Change the location to **Desktop** for easy navigation.
-
-    ```
-    cd Desktop
-    ```
-
-    ![Picture1](./images/sec6.png)    
-    
-1. Clone the repository by running the following command, You can also obtain the URL of your repository by navigating to it, clicking on the **Code** tab, and copying the URL provided.
-
-    ![Picture1](./images/clonerepoat.png)
-
-      >**Note**: Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx**.
-
-      ```
-      git clone --recursive https://github.com/ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx/ghas-bootcamp-python.git
-      ```
-
-    ![Picture1](./images/clonerepo.png)
-
-    >**Note**: If a pop up appears to login, click on Login from borwser and Sign in with GitHub Credentials and on the Authorize GitHub for VS Code page click on the Authorize Visual-Studio-Code.
-
-17. This results helps to understand the classification and usage of these entities in the code.
-
-    ![Picture1](./images/module4task4code2.png)
-
-Please feel free to go through the document for further understanding:[Code Security](https://docs.github.com/en/code-security) and [CodeQL Documentation](https://codeql.github.com/docs/)
-
-## Task 5: Turn on GitHub Advanced Security for Organization.
+## Task 4: Turn on GitHub Advanced Security for Organization.
 
 ### About the GitHub-recommended security configuration
 
@@ -299,7 +253,7 @@ In this task, you will configure and apply security settings across all reposito
 
 # Fix code vulnerabilities using Github Copilot Autofix
 
-## Task 6:  Verify Github Autofix is enabled
+## Task 5:  Verify Github Autofix is enabled
 
 1. Navigate to your repository.
 2. Click on the Settings icon
@@ -310,7 +264,7 @@ In this task, you will configure and apply security settings across all reposito
 
     ![](./images/autofix.png)
 
-## Task 7: Create a code with potencial security vulnerabilities
+## Task 6: Create a code with potencial security vulnerabilities
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the Add file button and select Create new file.
@@ -365,7 +319,7 @@ if __name__ == '__main__':
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
 
-## Task 8: Run a code scan
+## Task 7: Run a code scan
 
 1. In the repository page, navigate to **Actions** tab to view the workflow.
 
@@ -383,7 +337,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
     > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
-## Task 9: Apply autofixes to vulnerabilities
+## Task 8: Apply autofixes to vulnerabilities
 
 1. Navigate to the Security tab in your repository, and then click on Code scanning.
 
@@ -416,8 +370,7 @@ In this lab you have completed the following:
 - Learned how CodeQL is different from other static analysis tools
 - Turned on the default setup on a Python repository 
 - Turned on the advanced setup on a Java repository
-- Added some vulnerable code via a pull request and viewed the scan results in the PR. 
-- Demonstrated CodeQL Query Operations in Visual Studio Code
+- Added some vulnerable code via a pull request and viewed the scan results in the PR.
 - Turned on GitHub Advanced Security for Organization
 - Create a code with potencial security vulnerabilities
 - Apply autofixes to fix code vulnerabilities
