@@ -102,6 +102,10 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
    ![github-advisory-database](images/image1.png)
 
+1. If code scanning is already enabled, select "Advanced Security" from the dropdown to switch to the advanced option.
+   
+   ![github-advisory-database](images/switch_advance.png)
+   
 1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup (1)** button and then click on **Advanced (2)**
 
    ![github-advisory-database](images/sec16.png)
