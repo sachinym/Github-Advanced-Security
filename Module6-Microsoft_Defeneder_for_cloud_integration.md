@@ -30,7 +30,7 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 
 1. In the Microsoft Defender for Cloud left menu, under **Management (1)**, select **Environment settings (2)**. Click **Add environment (3)** from the top, then choose **GitHub (4)** from the dropdown. Follow the prompts to connect your GitHub account and configure the environment settings.
 
-   ![Picture1](./images/image2.png)
+   ![Picture1](./images/ghas1.png)
 
 1. On the **GitHub Connection** page, under **Account details**, provide the required settings as specified.
 
@@ -58,7 +58,7 @@ Microsoft Defender for Cloud integrates with GitHub to provide enhanced security
 
 1. Select your GitHub organization for **All repositories** and click on **Install** to apply the integration.
    
-   ![Picture1](./images/image7.png)
+   ![Picture1](./images/ghas2.png)
    
    ![Picture1](./images/image8.png)
 
