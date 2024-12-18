@@ -28,54 +28,6 @@ Secret scanning is a GitHub Advanced Security feature that scans repositories fo
 
 Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed to a private or public repository in your project, secret scanning notifies all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the **Security** tab of the repository.
 
-### Turn on Secret scanning for the entire organization. [Read Only] 
-
-  >**Note:** Please note that the steps from 1 to 10 below are Read Only
-
-1. On the **Home** page, click on your profile icon in the top right corner.
-
-   ![Profile Menu](./images/orgprofile.png)
-
-2. Select **Your organizations** from the dropdown menu.
-
-   ![Your Organizations](./images/org.png)
-
-3. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
-
-   ![Select Organization](./images/ghas-exercise1-4.png)
-
-4. Navigate to the repository and click on the **Settings** tab.
-
-   ![Repository Settings](./images/mod1org.png)
-
-5. In the Settings menu, click-on **Configurations** under Code Security from the Security section.
-
-   ![Code Security Configurations](./images/mod1org1.png)
-
-6. Click on **New Configuration** to start creating a new security configuration for the repository.
-
-   ![Code Security Configurations](./images/mod1org4.png)
-
-7. The **Name** field should be filled with `Secret_Scanning_Enable`, which identifies the configuration's purpose. The **Description** should be `Secret Scanning Enable`, offering a brief overview of what the configuration will accomplish.
-
-   ![Code Security Configurations](./images/mod1org5.png)
-
-8. Scroll down to the **Secret Scanning** section. You'll find that all options are enabled by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
-
-   ![Code Security Configurations](./images/mod1org6a.png)
-
-   ![Code Security Configurations](./images/mod1org6b.png)   
-
-9. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**. Finally, click **Save Configurations** to apply your changes.
-
-   ![Code Security Configurations](./images/mod1org6.png)
-
-9. On the **Apply Configuration** page, Click on **Apply Configuration (1),** select **All repositories (2)** to ensure the configuration applies universally. Next, click on the **Secret_Scanning_Enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
-
-   ![Code Security Configurations](./images/sec9.png)
-
-   >**Note:** The above mentioned steps are for informational purposes only and do not need to be performed .You can now proceed with generating and using the Personal Access Tokens (PAT) for testing secret scanning feature.
-
 ### What is Personal Access Tokens?
 
 Personal access tokens or (PAT) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.
