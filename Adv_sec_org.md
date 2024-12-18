@@ -77,9 +77,9 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](./images/saveconf.png)
 
-1. On the **Apply Configuration** page, Click on **Apply Configuration (1),** select **All repositories (2)** to ensure the configuration applies universally. Next, click on the **Security_settings_enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
+1. On the **Apply Configuration** page, Click on **Select All (1)** , select **Apply Configuration (2)** to ensure the configuration applies universally. Next, click on the **Security_settings_enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
 
-   ![Code Security Configurations](./images/codesec1.png)
+    ![Code Security Configurations](./images/new-mod.png)
 
 1. You will find that the organization configurations for **Security_settings_enable** are enforced on 6 repositories.
 
