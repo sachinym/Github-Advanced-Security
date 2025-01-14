@@ -18,47 +18,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar03.png)
 
-## Task 1: Turn on Dependabot and other SCA features and review results 
-
-1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization, click on **Repositories** from the top navigation pane.
-
-   ![github-advisory-database](images/new-repo.png)
-
-1. From the list of repositories, click on **ghas-bootcamp-WebGoat** to begin working through this module. 
-
-   ![github-advisory-database](images/mod3.1.png)
-
-1. In the WebGoat repository navigate to **Settings** from the top navigation pane.
-
-   ![github-advisory-database](images/g12.png)
-
-1. From the left navigation pane, click on **Code security**.
-
-   ![github-advisory-database](images/image1.png)
-
-1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
-
-   ![github-advisory-database](images/advance-scanning32a.png)      
-
-   ![github-advisory-database](images/advance-scanning32.png)
-
-   > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
-
-1. Click on **enable** button next to the, **Dependabot Alerts** **(1)**, **Dependabot security updates** **(2)**, **Grouped security updates** **(3)**, and **Dependabot on Actions runners** **(4)**.
-
-   ![github-advisory-database](images/i4.png)
-
-   >**Info:** Dependabot raises Pull requests to update dependencies. Depending on how your repository is configured, Dependabot may raise Pull requests for version updates and/or security updates. You manage these Pull requests in the same way as any other pull request.
-
-1. Now you can check the Pull requests that are automatically getting triggered through the Depandabot by navigating to the **Security** tab from the top menu and under **Vulnerabilities alerts** click on **Dependabot**. Notice the pull requests that were triggered automatically in the repository.
-
-   >**Note:** The number of dependency alerts can be differ for you as it takes some time to scan the whole repositry. 
-
-   ![github-advisory-database](images/g15.1.png)
-   
-   ![github-advisory-database](images/dependPR.png)
-
-## Task 2: Use the dependency submission action on a Webgoat project and review results
+## Task 1: Use the dependency submission action on a Webgoat project and review results
 
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
@@ -118,10 +78,6 @@ The process involves adding all dependencies from a repository to the dependency
    > **Note:** This will trigger the DepGraph.yml file to run a new worflow named **Dependency Graph Upload**.
 
 1. This explains how this file will use the **Maven Dependency Tree Submission** action to identify the transitive dependencies. Transitive dependencies are pulled in as part of the build process for this project.
-
-1. Go to the **Actions** section from the top navigation pane and click on the **Dependency Graph Upload** action from the left navigation pane.
-
-   ![github-advisory-database](images/g17at.png)
  
 1. Once this is completed, go to the **Dependency Graph** tab under the **Insights** section in the top navigation pane.
 
