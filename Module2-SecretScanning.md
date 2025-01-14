@@ -88,9 +88,9 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![github-advisory-database](images/image1.png)
 
-1. Scroll down to **Secret Scanning**, click on **enable**.
+1. Scroll down to **Secret Scanning**, where you will see that **Secret Scanning** is already enabled, as it has been configured at the organization level.
 
-   ![Picture1](./images/mod2ss1.png)
+   ![Picture1](./images/mod2ss1n.png)
 
    > **Note:** Ensure that **Push Protection** is disabled to properly perform and understand the task.
 
@@ -118,9 +118,10 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
    
    > **Note:** It may take a moment for this secret to be discovered, and the commit author will receive an email once it has been found (as long as you are not ignoring the repository in your watch settings).
 
-1. Review the secret is identified as  _"Publicly leaked secret"_. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. 
+1. Review the secret. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. When you click on **Verify Secret** and it shows up as an **Active Secret**, it means that the secret (such as an API key or token) is still valid and can be used to access the associated service. This indicates that the secret is still exploitable and should be addressed immediately to prevent any potential security risks.
 
-   ![Picture1](./images/mod1.4.png)
+   ![Picture1](./images/mod1.4n.png)
+   ![Picture1](./images/mod1.4na.png)
 
    > **Note:** This indicates that the secret is currently in use or could be actively exploited. It is important to address these findings promptly. To Remove the Secret from the Codebase: Edit the repository to remove the secret from the codebase and commit the changes. For now there is no need of removing the secret in this task.
 
