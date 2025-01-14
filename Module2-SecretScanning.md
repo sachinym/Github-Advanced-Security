@@ -14,10 +14,6 @@ In this lab, you will perform:
 
 ## Estimated Timing: 60 minutes
 
-## Architecture Diagram
-
-   ![Picture1](./images/ar02.png)
-
 ## Task 1: Demonstrate Secret Scanning Functionality
 
 ### What is secret scanning?

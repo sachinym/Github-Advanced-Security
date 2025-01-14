@@ -13,10 +13,6 @@ In this lab, you will perform:
 
 ## Estimated Timing: 40 minutes
 
-## Architecture Diagram
-
-   ![Picture1](./images/ar03.png)
-
 ## Task 1: Use the dependency submission action on a Webgoat project and review results
 
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
