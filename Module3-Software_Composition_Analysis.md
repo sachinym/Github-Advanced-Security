@@ -7,10 +7,9 @@ In this lab, you will be focusing on improving security within your GitHub repos
 ## Lab Objectives
 
 In this lab, you will perform:
-
-- Task 1: Turn on Dependabot and other SCA features and review results 
-- Task 2: Use the dependency submission action on a Java project and review results 
-- Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability. 
+ 
+- Task 1: Use the dependency submission action on a Java project and review results 
+- Task 2: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
 ## Estimated Timing: 40 minutes
 
@@ -87,7 +86,7 @@ The process involves adding all dependencies from a repository to the dependency
 
    ![github-advisory-database](images/g20.png)
 
-## Task 3: Use the dependency review action to stop a pull request that contains the log vulnerability
+## Task 2: Use the dependency review action to stop a pull request that contains the log vulnerability
 
 ### Dependency Review Action
 
@@ -179,6 +178,5 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 ## Review
 
 In this module, we have completed the following:
- - Turned on Dependabot and other SCA features
 -  Used the dependency submission action on a Java project
 -  Used the dependency review action to stop a Pull Request that contains the log vulnerability
