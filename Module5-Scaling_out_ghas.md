@@ -295,7 +295,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     ![Picture1](./images/ghas-exercise1-12.png)
    
     >**Note:** It will take 5-7 minutes to show.
-
+<!--
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
     - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -303,6 +303,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="c812660e-bf0e-4f9b-8621-fc3bf5af35a8" />
+-->
 
 ## Task 4: Talk about repository rulesets and how they can be used at scale [Read Only]
 
