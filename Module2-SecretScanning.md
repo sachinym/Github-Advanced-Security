@@ -1,4 +1,4 @@
-# Module 02: Secret Scanning
+# Module 03: Secret Scanning
 
 ## Lab Scenario
 
@@ -7,7 +7,7 @@ This lab guides users through enabling GitHub secret scanning for an organizatio
 ## Lab Objectives
 In this lab, you will perform:
 
-- Task 1: Turn on secret scanning for the entire organization and review results
+- Task 1: Demonstrate Secret Scanning Functionality
 - Task 2: Turn on push protection and try pushing a new secret (a GitHub token) into a repository
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understand the results 
@@ -18,7 +18,7 @@ In this lab, you will perform:
 
    ![Picture1](./images/ar02.png)
 
-## Task 1: Turn on secret scanning for the entire organization and review results
+## Task 1: Demonstrate Secret Scanning Functionality
 
 ### What is secret scanning?
 
@@ -105,14 +105,6 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
    ![Picture1](./images/index.png)
 
    ![Picture1](./images/index1.png)
-
-1. Again click on **Commit changes**.    
-
-   ![Picture1](./images/index2.png)      
-
-1. When pop-up is prompted select **Allow Secret** **(1)**.
-
-   ![Picture](./images/secret-scanning12.png)
 
 1. Click on **Commit changes** and then click on **Commit changes** again to commit directly to default branch.
 
@@ -272,7 +264,8 @@ Please feel free to go through the documents for further understanding:[Security
 ## Review
 
 In this lab, we have completed the following:
- - Turned on secret scanning for the entire organization
+
+ - Demonstrate Secret Scanning Functionality
  - Turned on push protection and tried pushing a new secret (a GitHub token) into a repository
  - Created a custom secret pattern
  - Understanding the results 

@@ -1,4 +1,4 @@
-# Module 04: Code Scanning
+# Module 05: Code Scanning
 
 ## Lab Scenario
 
@@ -14,11 +14,10 @@ In this lab, you will learn and perform:
 - Task 1: Turn on the default setup on a Python repository
 - Task 2: Turn on advanced setup on a Java repository
 - Task 3: Add some vulnerable code via a pull request and view the scan results in the PR 
-- Task 4: Turn on GitHub Advanced Security for Organization
-- Task 5: Verify Github Autofix is enabled
-- Task 6: Create a code with potencial security vulnerabilities
-- Task 7: Run a code scan
-- Task 8: Apply autofixes to vulnerabilities
+- Task 4: Verify Github Autofix is enabled
+- Task 5: Create a code with potencial security vulnerabilities
+- Task 6: Run a code scan
+- Task 7: Apply autofixes to vulnerabilities
 
 ## Estimated timing: 90 minutes
 
@@ -84,51 +83,6 @@ In this task, you will learn how to activate the default CodeQL setup for a Pyth
 
 In this task, you will learn how to enable and configure the advanced CodeQL setup for a repository. You will gain skills in modifying the codeql.yml file to use the security-extended query suite and understand the benefits of advanced configurations for detecting a broader range of security vulnerabilities. You will also become familiar with the process of validating and reviewing CodeQL actions and results.
 
-### Advanced Setup
-
- Now, let us enable  Advanced set-up in a different repository.
-
-1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
-
-   ![github-advisory-database](images/getrepo.png)
-
-1. From the list of repositories click on **ghas-bootcamp-java** to begin working through this module. 
-
-   ![github-advisory-database](images/i7.png)
-
-1. Next, we're going to enable Advanced Setup for one of our compiled language repositories by going back to the `ghas-bootcamp-java` repository.
-
-1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
-
-   ![github-advisory-database](images/image1.png)
-
-1. If code scanning is already enabled, select "Advanced Security" from the dropdown to switch to the advanced option.
-   
-   ![github-advisory-database](images/switch_advance.png)
-
-1. A Pop-up Appears disbale Codeql
-
-   ![github-advisory-database](images/disable_codeql.png)
-   
-1. Scroll to the right then click on the **Setup (1)** button and then click on **Advanced (2)**
-
-   ![github-advisory-database](images/sec16.png)
-
-   >**Note:** If it is already enabled, click on **Switch to Advanced**
-
-1. Now you are redirect to the codeql.yml file in github/ workflows directory, and we need to copy the string **queries: security-extended (1)** from the **codeql.yml** file  and append this to a new line at number 66 under **Initialize CodeQL** section , which will read as **queries: security-extended (2)** as shown in the below screenshot. Commit these changes to your **main branch (3)**.
-
-   ![github-advisory-database](images/java-codeql-ymlat.png)
-
-   >**Note:** When updating the `codeql.yml` file, be aware that the line number for the **`Initialize CodeQL`** section may shift slightly, potentially changing from line 66 to one or two lines higher or lower. Ensure you append the string **`queries: security-extended`** to the correct location under this section based on the current line numbers in your file.
-  
-1. Now,  go to the **Actions** tab to confirm the CodeQL action is running.
-
-   ![github-advisory-database](images/gj.png)
-   
-1. You can also review the code and results of that action.
-
-   ![github-advisory-database](images/runactions.png)
 
    
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
@@ -149,7 +103,7 @@ In this task, you will learn how to enable and configure the advanced CodeQL set
 
 ### Task 3.1: Pull Request scans and Accurate Findings
 
-In this task, you will learn how to enhance CodeQL's security analysis by enabling advanced query configurations and integrating extended security queries. You will gain experience in modifying CodeQL workflows, committing changes related to security vulnerabilities in code, and understanding how CodeQL will accurately identify specific issues, such as clear-text logging of sensitive information, while filtering out less relevant findings. This will deepen your understanding of leveraging CodeQL for more precise and effective security scanning in your codebase.
+In this task, you will learn how to enhance CodeQL's security analysis by enabling advanced query configurations and integrating extended security queries. You will gain experience in modifying CodeQL workflows, committing changes related to security vulnerabilities in code, and understanding how CodeQL will accurately identify specific issues, such as clear-text logging of sensitive information, while filtering out less relevant findings. This will depend your understanding of leveraging CodeQL for more precise and effective security scanning in your codebase.
 
 1. Next, we're going to enable _Advanced setup_ for one of our interpreted language repositories by going back to the `ghas-bootcamp-python` repository. Follow the instructions from the **Getting Started** section to go to the `ghas-bootcamp-python` repository.
 
@@ -199,69 +153,11 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
      ![clear-text-logging-finding](images/prfailat01.png)
 
-     ![clear-text-logging-finding](images/prfailat02.png)
-
-## Task 4: Turn on GitHub Advanced Security for Organization.
-
-### About the GitHub-recommended security configuration
-
-The GitHub-recommended security configuration is a collection of enablement settings for GitHub's security features that is created and maintained by subject matter experts at GitHub. The GitHub-recommended security configuration is designed to successfully reduce the security risks for low- and high-impact repositories. We recommend you apply this configuration to all the repositories in your organization.
-
-   Refer to the link for more information. [About the GitHub-recommended security configuration](https://docs.github.com/en/enterprise-cloud@latest/code-security/securing-your-organization/enabling-security-features-in-your-organization/applying-the-github-recommended-security-configuration-in-your-organization)
-
-In this task, you will configure and apply security settings across all repositories within an organization. 
- 
-1. On the **Home** page, click on your **profile** icon in the top right corner.
-
-   ![Profile Menu](./images/orgprofile.png)
-
-2. Select **Your organizations** from the dropdown menu.
-
-   ![Your Organizations](./images/org.png)
-
-3. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
-
-   ![Select Organization](./images/ghas-exercise1-4.png)
-
-4. Navigate to the repository and click on the **Settings** tab.
-
-   ![Repository Settings](./images/mod1org.png)
-
-5. In the Settings menu, click-on **Configurations** under Code Security under Security section.
-
-   ![Code Security Configurations](./images/mod1org1.png)
-
-6. Click on **Apply to** and select **All repositories** to apply the configuration.
-
-   ![Apply to All Repositories](./images/mod1org2.png)
-
-7. Click on **Apply** to confirm the configuration changes, when the prompt appears.
-
-   ![Apply Configuration](./images/advance-scanning7.png)
-
-   > **Note**: If the configuration fails for any of the repositories, it could be due to the existing advanced setup.
-   
-   > **Note**: Follow the steps below for the repositories where the configuration is failed.
-
-   ![](./images/i9.png)
-
-8. Now navigate to that repository for which the configuration is getting failed.
-
-   ![](./images/i10.png)
-
-9. From left pane select **Code security**, and under Code scanning , click on **setup** and select **Default**.
-
-   ![](./images/i11.png)
-
-10. On the CodeQL default configuration pop up , click on **Enable CodeQL**
-
-    ![](./images/i12.png)
-
-11. Again perform step 1 to 7 to apply configurations for all the repositories.
+     ![clear-text-logging-finding](images/prfailat02.png) 
 
 # Fix code vulnerabilities using Github Copilot Autofix
 
-## Task 5:  Verify Github Autofix is enabled
+## Task 4:  Verify Github Autofix is enabled
 
 1. Navigate to your repository.
 2. Click on the Settings icon
@@ -272,7 +168,7 @@ In this task, you will configure and apply security settings across all reposito
 
     ![](./images/autofix.png)
 
-## Task 6: Create a code with potencial security vulnerabilities
+## Task 5: Create a code with potencial security vulnerabilities
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the Add file button and select Create new file.
@@ -327,7 +223,7 @@ if __name__ == '__main__':
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
 
-## Task 7: Run a code scan
+## Task 6: Run a code scan
 
 1. In the repository page, navigate to **Actions** tab to view the workflow.
 
@@ -345,7 +241,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
     > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
-## Task 8: Apply autofixes to vulnerabilities
+## Task 7: Apply autofixes to vulnerabilities
 
 1. Navigate to the Security tab in your repository, and then click on Code scanning.
 
@@ -379,6 +275,5 @@ In this lab you have completed the following:
 - Turned on the default setup on a Python repository 
 - Turned on the advanced setup on a Java repository
 - Added some vulnerable code via a pull request and viewed the scan results in the PR.
-- Turned on GitHub Advanced Security for Organization
 - Create a code with potencial security vulnerabilities
 - Apply autofixes to fix code vulnerabilities
