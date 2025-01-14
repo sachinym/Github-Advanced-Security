@@ -11,8 +11,9 @@ In this lab, you will perform:
 
 - Task 1: Applying security settings in your organization.
 
-## Estimated Timing: 20 minutes
+- Task 2: Activate Actions for All Repositories
 
+## Estimated Timing: 20 minutes
 
 ### Task 1: Applying security settings in your organization.
 
@@ -55,7 +56,7 @@ Applying the security configuration to all repositories in your organization
    ![dep1](./images/dep1.png)
    ![dep2](./images/dep3.png)
 
-   >**Note:** Here, we are enable this for all.
+   >**Note:** Here, we will leave it set to the default.
 
 1. In the **Code Scanning** section, the default setup for Code Scanning is enabled.
 
@@ -83,7 +84,7 @@ Applying the security configuration to all repositories in your organization
 
 1. You will find that the organization configurations for **Security_settings_enable** are enforced on 6 repositories.
 
-   ![Code Security Configurations](./images/codesec3.png)
+   ![Code Security Configurations](./images/codesec3n.png)
 
    >**Note:** If it’s not visible, please refresh your page.
 
@@ -101,12 +102,34 @@ Applying the security configuration to all repositories in your organization
 
 1. Here, you can review your alerts in the security overview.
 
-   ![Picture1](./images/advance-scanning6at.png)
+   ![Picture1](./images/advance-scanning6atn.png)
 
    >**Note:** Here, you will find that the security features are enabled for the repository present in the organization. You will also find this in other repositories, and you are free to check them as well.
+
+## Task 2: Activate Actions for All Repositories
+
+GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that run tests whenever you push a change to your repository, or that deploy merged pull requests to production. You will learn how to enable GitHub Actions for repositories to ensure workflows run seamlessly. This includes configuring the settings to allow all actions and reusable workflows.
+
+1. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
+
+   ![Select Organization](./images/ghas-exercise1-4.png)
+
+1. Navigate to the repository and click on the **Settings** tab.
+
+   ![Repository Settings](./images/mod1org.png)
+
+1. In the Settings menu, click-on **General** under **Actions** from the **Code, planning, and automation** section.
+
+   ![Code Security Configurations](./images/mod1org1n.png)
+
+1. Select **Allow all actions and reusable workflows (1)**, and then click **Save (2)** to apply the changes.
+
+   ![github-advisory-database](images/actionsn.png)
 
 ## Review
 
 In this module, we have completed the following:
 
 - Applying security settings in your organization
+
+- Activate Actions for All Repositories

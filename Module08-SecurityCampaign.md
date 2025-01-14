@@ -1,4 +1,4 @@
-# Module 05: Security Campaign
+# Module 06: Security Campaign
 
 ## Lab Scenario
 

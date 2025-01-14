@@ -1,4 +1,4 @@
-# Module 03: Software Composition Analysis
+# Module 04: Software Composition Analysis
 
 ## Lab Scenario
 
@@ -62,24 +62,6 @@ In this lab, you will perform:
 
 GitHub's dependency submission API supports Software Composition Analysis (SCA). It provides a GitHub API that allows uploading a complete list of the dependencies used by a repository (or, more precisely, a particular build of the application in the repository).
 The process involves adding all dependencies from a repository to the dependency graph. Particularly those resolved during software compilation or building. Even if they are not listed in a manifest file like pom.xml. When new dependency versions are released, Dependabot utilizes data submitted via the dependency submission API to generate Pull requests.
-
-### Enable Actions
-
-GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that run tests whenever you push a change to your repository, or that deploy merged pull requests to production. You will learn how to enable GitHub Actions for repositories to ensure workflows run seamlessly. This includes configuring the settings to allow all actions and reusable workflows.
-
-1. In the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxxx** organization, click on repositories from the top navigation pane.
-
-   ![github-advisory-database](images/getrepo.png)
-
-1. From the list of repositories click on **ghas-bootcamp-webgoat** to begin working through this module.
-
-   ![github-advisory-database](images/i6a.png)
-
-1. In the GitHub repository, go to **Settings (1)** from the top navigation bar, click on **General (3)** under **Actions (2)**, select **Allow all actions and reusable workflows (4)**, and then click **Save (5)** to apply the changes.
-
-   ![github-advisory-database](images/actions.png)
-
-1. Repeat the same process for the all repositories.
 
 ### Create Workflow
 
