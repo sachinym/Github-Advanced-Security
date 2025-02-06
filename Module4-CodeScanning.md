@@ -10,8 +10,6 @@
 
 In this lab, you will learn and perform:
 
-- Introduction to Code Scanning
-- What is CodeQL and how is it different from other static analysis tools? 
 - Task 1: Add some vulnerable code via a pull request and view the scan results in the PR 
 - Task 2: Verify Github Autofix is enabled
 - Task 3: Create a code with potencial security vulnerabilities
@@ -20,24 +18,6 @@ In this lab, you will learn and perform:
 
 ## Estimated timing: 90 minutes
    
-## Introduction to Code Scanning 
-
-Code scanning in GitHub is a powerful feature designed to enhance the security of your software projects by automatically identifying and alerting you to potential security vulnerabilities in your codebase. Leveraging advanced static analysis techniques, and code scanning helps detect security flaws, bugs, and other issues early in the development process, enabling developers to address them proactively before they escalate into larger problems. 
-
-### What is CodeQL and how is it different from other static analysis tools?
-
-1. Code Scanning, powered by the CodeQL engine, performs thorough static analysis by accessing source code and integrating with the build process for compiled languages (or simulating compilation for interpreted languages). This approach ensures precise mapping of data flow and the ability to differentiate between remote and local sources. 
-
-1. The fundamental difference is that all of the information about the application is aggregated in a relational database that allows for tracing complete data flows across the entire application.
-
-1. For `compiled` languages, the CodeQL engine running under the hood of the Code Scanning process will hook into the compiler at build time. The CodeQL engine will then listen for the creation of data flows by the compiler, such as linkers and callbacks, and map those data flows as nodes in the database -- aptly called `DataFlow` nodes.
-1.  This process allows CodeQL to avoid false positive vulnerability findings from dead code that has no existing dataflows. This is a common problem with other Static Analysis tools that do not have access to the compiler and instead rely on pattern matching and other techniques to identify vulnerabilities.
-1. Once the data flow analysis is complete, an extraction of the code is then performed. Every variable, expression (combination or modification of variable(s)), method/function/class declaration, etc. is extracted as individual nodes in the database.
-
-1. CodeQL then performs analysis by querying the database for _Remote_ flow sources that lead to sinks (where data is stored or executed) in ways that are exploitable and are otherwise not sanitized as part of that data flow.
-
-1. For `interpreted` languages, like Javascript and Python, the CodeQL engine performs a depth-first, recursive extraction of the code where `DataFlow` nodes are created from things like `return` statements and passing variables from one function to another. We can gain a comprehensive view of the application and avoid flagging false positive vulnerabilities in code that is never called or executed.
-
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  
 
 ### Task 1.1: Pull Request scans and Accurate Findings

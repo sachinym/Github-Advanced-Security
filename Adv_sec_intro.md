@@ -9,7 +9,7 @@ In this lab, you will perform:
 
 - Task 1: What is GitHub Advanced Security? 
 - Task 2: What are the components of GitHub Advanced Security?  
-- Task 3: Where to turn on the different components of GitHub Advanced Security at the repository level?  
+- Task 3: What is the value of using GHAS? 
 
 ## Estimated Timing: 20 minutes
 
@@ -70,85 +70,35 @@ Here are some of the components of GitHub Advanced Security:
    - **Bug Fixes**: These updates address bugs and issues that may not be security-related but improve the overall stability and usability of the software.
    - **Release Versions**: Version updates typically follow semantic versioning (e.g., major, minor, patch) to indicate the nature of changes (e.g., breaking changes, new features, or bug fixes).
 
-## Task 3: Where to turn on the different components of GitHub Advanced Security at the repository level?  
+## Task 3: What is the value of using GHAS? 
 
-In this task, we will learn how to enable GitHub Advanced Security features for a repository, including Dependabot, Code Scanning, and Secret Scanning. We will explore how to activate and configure essential security features such as the Dependency Graph, Dependabot Alerts, CodeQL analysis, and Push Protection, ensuring comprehensive security coverage for our repository. Additionally, we will review the alerts generated in the Security tab, gaining insights into potential vulnerabilities and securing our code.
+GitHub Advanced Security provides a comprehensive set of tools to help you build more secure software. By proactively identifying and addressing security vulnerabilities, you can reduce your risk, improve your development workflow, and deliver more secure applications to your customers.
 
-1. On the **Home** page, click on your **profile** on top of the right hand.
+### Improve security
 
-   ![Picture1](./images/orgprofile.png) 
+Ghas helps identify and address weaknesses in the development process. By integrating the security check directly into their growth work, it ensures that possible dangers are trapped before being caught. This active approach reduces the risk of security breach and helps maintain the integrity of the code base.
 
-1. Select **Your organizations**.
+### Automated procedures
 
-   ![Picture1](./images/org.png) 
+Automation with GHAS is a great advantage. Features such as code scan monitor their code for constant weaknesses and chronic addiction. This protects automation developers from time and effort, so they can focus on writing code instead of manually checking for security problems. Automatic security control also ensures continuity and perfection and reduces the possibility of human error.
 
-1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
+### Compliance and Governance
 
-   ![Picture1](./images/ghas-exercise1-4.png) 
+GHAS helps organizations to meet various safety standards and compliance requirements. By offering equipment to implement security policy and track compliance, it ensures that your code industry follows the best practices and regulatory requirements. This is especially important for organizations in regulated industries, where not following security standards can cause significant punishment.
 
-1. Click on the **Repositories** **(1)** and select **.github** **(2)**.
+### Better Code Quality
 
-   ![Picture1](./images/advance-scanning8.png) 
+Regular scanning and reviews lead to cleaner, safe code. By quickly identifying and fixing weaknesses and code errors, Ghas helps maintain high code quality. This not only improves the security of your applications, but also increases their general performance and reliability. It is easy to understand, maintain, maintain and expand the clean, well maintained code, leading to more efficient growth processes.
 
-1. In your repository, and click on **Settings**.
-
-   ![Picture1](./images/ghasr1.png)
-
-1. In the left sidebar, click on **Code security**.
-
-   ![Picture1](./images/mod1.1.png)
-
-1. Here, you can enable the features of **Dependabot**, **Code Scanning**, and **Secret Scanning** for the repository.
-
-1. Click on the **Enable** option next to **Dependency Graph (1)** if it is not already enabled.
-
-   ![github-advisory-database](images/advance-scanning32a.png)      
-
-   ![github-advisory-database](images/advance-scanning32.png)
-
-   > **Note:** By default, the **Dependency Graph** is enabled for public repositories. However, in this environment,if its not appear enabled initially. simply click **Enable** to activate it.
-
-1. Click on **enable** button next to the, **Dependabot Alerts** **(1)**, **Dependabot security updates** **(2)**, **Grouped security updates** **(3)**, and **Dependabot on Actions runners** **(4)**.
-
-   ![github-advisory-database](images/i4.png)
-   
-1. Under **Code Scanning** option. Click on the **Setup** **(1)** button next to the CodeQL analysis from the drop down select **Default** **(2)** option.
-
-   ![github-advisory-database](images/advance-scanning4.png)
-
-1. In the **CodeQL default configuration** pop-up, click on **Enable CodeQL** button.
-
-   ![github-advisory-database](images/mod1.2.png)
-
-1. Click on **Enable** for **Secret Scanning**,
-
-   ![Picture1](./images/mod2ss1.png)
-
-1. Select **Enable** button to activate Push Protection , under **Secret Scanning**.
-
-   ![Picture1](./images/mod1.3.png)
-
-1. To review, navigate to your repository’s **Security** tab.
-
-   ![Picture1](./images/security-tabat.png)
-
-1. Here, you can review your alerts in the security overview.
-
-   ![Picture1](./images/advance-scanning6at.png)
-
-   >**Note:** Currently, we're demonstrating this process using a sample repository. Since the repository does not contain any files, thats leads to generate any security alerts. Refer to the screenshots below to understand how the alerts will appear when they are triggered in a repository containing relevant files.
-
-   ![github-advisory-database](images/g15.1.png)
-   
-   ![Picture1](./images/advance-scanning6at1.png)
-
-   ![Picture1](./images/advance-scanning6at2.png)
-
-Please feel free to go through the links for further understanding:[GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) and [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
+Please feel free to go through the links for further understanding:
+1. [GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
+2. [Spot Light on GitHub Advanced Security](https://developer.microsoft.com/en-us/reactor/series/S-1311/?wt.mc_id=promotional_S-1311_email_reactor)
+3. [Adopting GitHub Advanced Security](https://docs.github.com/en/enterprise-cloud@latest/code-security/adopting-github-advanced-security-at-scale/introduction-to-adopting-github-advanced-security-at-scale)
+4. [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features)
 
 ## Review
  
 In this lab, you have completed the following:
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
-+ Where to turn on the different components of GitHub Advanced Security at the repository level? 
++ What is the value of using GHAS? 
