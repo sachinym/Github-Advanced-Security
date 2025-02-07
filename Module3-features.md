@@ -1,4 +1,4 @@
-# Module 03: Exploring Dependabot, Secret Scanning, and CodeQL in GHAS
+# Module 03: Exploring Dependabot, Secret Scanning, and CodeQL in GHAS [Read Only]
 
 ## Lab Scenario
 
