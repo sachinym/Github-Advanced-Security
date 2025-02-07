@@ -2,18 +2,32 @@
 
 ## Lab Scenario
 
+In this lab, you will explore Dependabot, Secret Scanning, and Code Scanning, gaining a deeper understanding of how each tool enhances software security and project maintenance within GitHub Advanced Security.
+
 ## Lab Objectives
 In this lab, you will perform:
 
-- Task 1: Depandabot and its features
-- Task 2: Secret Scanning and its features
-- Task 3: Code Scanning and its features
+- Depandabot and its features
+- Secret Scanning and its features
+- Code Scanning
 
 ## Estimated Timing: 30 minutes
 
-### Task 1: Dependabot and its features
+## Dependabot and its features
 
 Dependabot manages your project’s dependencies according to the dependency file available in the repository in an automated way. Dependabot checks dependencies in your project and creates pull requests whenever a new version is available. It saves a significant amount of time and makes the process autonomous. Dependabot helps to elevate the project’s robustness and reduce system vulnerabilities by keeping dependencies up-to-date.
+
+**[Dependabot alerts](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)**: Dependabot alerts tell you when your code depends on a package that is insecure. Often, software is built using open-source code packages from a large variety of sources. The complex relationships between these dependencies, and the ease with which malicious actors can insert malware into upstream code, mean that you may unknowingly be using dependencies that have security flaws, also known as vulnerabilities.
+
+If your code depends on a package with a security vulnerability, this can cause a range of problems for your project or the people who use it. Using a vulnerable package makes you a soft target for malicious users looking to exploit your system. For example, they may seek to get access to your code and data from your customers or contributors. You should upgrade to a secure version of the package as soon as possible. If your code uses malware, you need to replace the package with a secure alternative.
+
+**[Dependabot security updates](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates)**: Dependabot security updates make it easier for you to fix vulnerable dependencies in your repository. You typically add a `dependabot.yml` file to your repository to enable Dependabot security updates. You then configure options in this file to tell Dependabot how to maintain your repository.
+
+If you enable Dependabot security updates, when a Dependabot alert is raised for a vulnerable dependency in the dependency graph of your repository, Dependabot automatically tries to fix it
+
+**[Grouped security updates](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#groups)**: Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in `dependabot.yml`.
+
+**[Dependabot version updates](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)**: 
 
 ### Features of GitHub Dependabot
 
