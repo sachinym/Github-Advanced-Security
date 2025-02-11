@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-   ![Picture1](./images/ar05.png) 
+   ![Picture1](../images/ar05.png) 
 
 ## Task 1: How to grow adoption? How to communicate about GHAS internally? [Read Only]
 
@@ -62,28 +62,28 @@ In this task, you will explore the GHAS security overview dashboard and reports 
 
 1. Go to your **profile icon** in the top right corner, and then select **Your organizations**.
 
-   ![Picture1](./images/org.png) 
+   ![Picture1](../images/org.png) 
      
 1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from **organizations**.
 
-   ![Picture1](./images/org-new1.png) 
+   ![Picture1](../images/org-new1.png) 
 
 1. Navigate to the **security** tab of your **GitHub Organization**.
 
-   ![Picture1](./images/g5c.png)
+   ![Picture1](../images/g5c.png)
 
 1. Explore the security overview dashboard. Use the options at the top of the **overview page** to filter the group of alerts for which you want to see metrics. As you adjust the filters, all of the data and metrics on the page will change.
 
-   ![Picture1](./images/dashboard1.png)
+   ![Picture1](../images/dashboard1.png)
   
 
 1. Click on the **Risk** option to view a comprehensive overview of all security risks across your repositories. This section provides detailed information about potential vulnerabilities, exposures, and other security concerns identified throughout your organization's repositories. It aggregates risk data, allowing you to assess and prioritize security issues at an organizational level, ensuring that you can address and mitigate risks effectively.
 
-   ![Picture1](./images/mod1org8.png)
+   ![Picture1](../images/mod1org8.png)
 
 1. Click on the **Coverage** option to access detailed information about the security coverage for your repositories. This section provides insights into the extent to which your code is being analyzed for vulnerabilities, including the number of lines of code covered by security scans and the effectiveness of your security measures. By reviewing the coverage data, you can ensure that your security scanning is comprehensive and identify areas where additional coverage may be needed.
 
-   ![Picture1](./images/mod1org9.png)
+   ![Picture1](../images/mod1org9.png)
    
 1. Analyze the metrics and data provided in the reports to identify areas for improvement and prioritize security efforts.
 
@@ -100,23 +100,23 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-       ![Enter Your Username](./images/login1.png)
+       ![Enter Your Username](../images/login1.png)
  
 3. Next, provide your password to login:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-      ![Enter Your Password](./images/login2.png)
+      ![Enter Your Password](../images/login2.png)
 
 1. In the search bar of the Azure portal, type **Function app (1)**. From the search results, select **Function App (2)**.
 
-   ![Picture1](./images/functionapp.png)
+   ![Picture1](../images/functionapp.png)
 
 1. Click on **+ Create**.
 
 1. From the Create Function App tab, select **Consumption (1)** and click on **Select (2)**.
 
-   ![Picture1](./images/ghas-exercise1-9.png)
+   ![Picture1](../images/ghas-exercise1-9.png)
 
 1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (7)** at the bottom of the page and subsequently click on **Create**.
 
@@ -129,7 +129,7 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     | **Version** | **20 LTS (5)** |
     | **Operating System** | **Windows (6)** |
 
-   ![Picture1](./images/sec17.png)
+   ![Picture1](../images/sec17.png)
 
      >**Note:** Keep rest of the options as default.
  
@@ -137,25 +137,25 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
 1. On the **Overview (1)** page of the **Function app**, under the  **Functions** tab, click on **Create function (2)**. It will open a  page for **Create function**. Search for and select **HTTP trigger (3)**. Click on **Next (4)**.
 
-   ![Picture1](./images/functionapp3.png)
+   ![Picture1](../images/functionapp3.png)
 
 1. On Template details page, leave the default options and click on **Create**.
 
-   ![Picture1](./images/mod5functionapp3.png)
+   ![Picture1](../images/mod5functionapp3.png)
 
 1. Under the **Function** tab, you can see the created Function. Click on it.   
 
 1. Go to the **Developer** section of your **HttpTrigger** function, click on **Code + Test (1)**, then click on **Get function URL (2)**. Copy the **default (Function key) (3)** URL from **copy (4)** icon.
    
-    ![Picture1](./images/trigger1.png)
+    ![Picture1](../images/trigger1.png)
 
 1. Navigate to the **setting** tab of your **GitHub Organization**..
 
-   ![Picture1](./images/ghasr1.png)
+   ![Picture1](../images/ghasr1.png)
 
 1. Click on **Webhooks** from the left Navigation pane.
 
-   ![Picture1](./images/webhook1.png)
+   ![Picture1](../images/webhook1.png)
 
 1. Click on **Add Webhooks** and give your GitHub password.
 
@@ -168,23 +168,23 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    - **Active (5)**: Leave this checked to receive event details when the GitHub Webhook is triggered.
    - Click on **Add Webhooks (6)**.
 
-      ![Picture1](./images/payload1.png)
+      ![Picture1](../images/payload1.png)
 
       >**Note**: You can also select **"Send me everything"** or **"Let me select individual events"** for your webhook instead of **just the push event**. This approach allows you to gain a deeper understanding and experiment with different types of events.
 
 11. Now go to the **Repositories** section and click on **New Respsitories**.
 
-    ![Picture1](./images/newrepo.png)
+    ![Picture1](../images/newrepo.png)
 
 12. To create the repositories, name them **Test-webhook (1)** then select **Public** (2) then also ensure to add a **README file** (3). Finally, click on **Create repository** (4) to complete the process.
 
-    ![Picture1](./images/newrepo1.png)
+    ![Picture1](../images/newrepo1.png)
   
     >**Note**: You can make some more changes to your repositories. It will send the PUSH request to the function app.
 
 13. Click on **Add file** (1) (Sometimes you will be able to see **+** in place of Add file) and then click on **Create new file** (2).
 
-     ![Picture1](./images/lab7testwebhook1.png)
+     ![Picture1](../images/lab7testwebhook1.png)
 
 14. Create a file named **issue-template.md** (1), add the provided code into the file **(2)**, and then click on **Commit changes** (3) to save.
 
@@ -200,19 +200,19 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
     See the attached logs for more details.
     ```
 
-     ![Picture1](./images/lab7testwebhook2.png)
+     ![Picture1](../images/lab7testwebhook2.png)
 
 15. **Commit changes** the new file to your repository.
 
-     ![Picture1](./images/lab7testwebhook3.png)
+     ![Picture1](../images/lab7testwebhook3.png)
 
 16. Navigate to the **Actions** tab to view and manage your GitHub Actions workflows.
 
-     ![Picture1](./images/lab7testwebhook4.png)
+     ![Picture1](../images/lab7testwebhook4.png)
 
 17. On the **Get Started with GitHub Actions** page, click on the **Configure** button for **Simple workflow** to begin setting up a workflow.
 
-     ![Picture1](./images/lab7testwebhook5.png)
+     ![Picture1](../images/lab7testwebhook5.png)
 
 18. Change the file name of the YAML configuration file to **ci.yml** (1). Paste the provided **code** (2) into this file to define the workflow configuration. Finally, click on **Commit changes** (3) to save the file with these updates.
 
@@ -264,35 +264,35 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 	 
 	```
 
-     ![Picture1](./images/lab7testwebhook6.png)
+     ![Picture1](../images/lab7testwebhook6.png)
 
 19. **Commit changes** the new file to your repository.
 
-     ![Picture1](./images/lab7testwebhook7.png)
+     ![Picture1](../images/lab7testwebhook7.png)
 
 20. Navigate to the **Actions** tab (1) where you'll find that the creation of **ci.yml** (2) failed due to an issue.
 
-     ![Picture1](./images/lab7testwebhook8.png)
+     ![Picture1](../images/lab7testwebhook8.png)
 
 13. Navigate back to **your organization**, and click on **settings**.
 
-     ![Picture1](./images/ghasr1.png)
+     ![Picture1](../images/ghasr1.png)
 
 14. Click on **Webhooks** from the left Navigation pane and select the Webhook you have created.
 
 15. Scroll down to the bottom and you will find some **Recent Deliveries**.
 
-    ![Picture1](./images/recentdelivery.png)
+    ![Picture1](../images/recentdelivery.png)
 
 16.  Click on any deliveries. You will see their **Request** and **Response** column for more information.
 
-     ![Picture1](./images/request.png)
+     ![Picture1](../images/request.png)
 
-     ![Picture1](./images/response.png)
+     ![Picture1](../images/response.png)
 
 17. Navigate back to your **Function app** in the Azure portal and select the HTTP trigger function you created. Click on **Invocations (1)**. This section provides the most recent invocation traces, allowing you to review and analyze the function's execution history.
 
-    ![Picture1](./images/ghas-exercise1-12.png)
+    ![Picture1](../images/ghas-exercise1-12.png)
    
     >**Note:** It will take 5-7 minutes to show.
 <!--
@@ -325,18 +325,18 @@ You can create rulesets to control how users interact with selected branches and
 
 1. Under any of	 your repository name, click on **Settings**. If you cannot see the "Settings" tab, select the **...**  dropdown menu, then click on **Settings**.
 
-   ![Picture1](./images/ghasr1.png)  
+   ![Picture1](../images/ghasr1.png)  
 
 1. In the left sidebar, under **Code and automation (1)** click **Rules (2)** and then click on **Rulesets (3)**.
 
-   ![Picture1](./images/sec7.png)    
+   ![Picture1](../images/sec7.png)    
 
 1. You can create a ruleset targeting branches, or a ruleset targeting tags.
 
    - To create a ruleset targeting branches, click on **New branch ruleset**.
    - To create a ruleset targeting tags, select **New tag ruleset**.
 
-      ![Picture1](./images/rulesetbranch.png)  
+      ![Picture1](../images/rulesetbranch.png)  
   
 1. In the **"General"** section, type a name for the ruleset, then select **Disabled**  and click one of the following enforcement statuses:
 

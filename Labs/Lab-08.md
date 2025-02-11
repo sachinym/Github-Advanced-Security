@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-   ![](images/seccamp16.png)
+   ![](../images/seccamp16.png)
 
 ### Task 1: Turn on the default setup on a juice-shop repository
 
@@ -30,25 +30,25 @@ In this lab, you will perform:
 
 1. From the list of repositories click on **juice-shop** to begin working through this module.
 
-   ![](images/seccamp13.png)
+   ![](../images/seccamp13.png)
 
 1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
 
-   ![github-advisory-database](images/image1.png)
+   ![github-advisory-database](../images/image1.png)
 
    >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
 
 1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup (1)** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default (2)**
 
-   ![github-advisory-database](images/sec15.png)
+   ![github-advisory-database](../images/sec15.png)
 
 1. Leave the query suite on Default and click the **Enable CodeQL** button.
 
-   ![](images/seccamp14.png)
+   ![](../images/seccamp14.png)
 
 1. After you've clicked the **Enable CodeQL** button, go to the **_Actions_** tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes. You can also check more configuration and details inside the the github action run.
 
-   ![github-advisory-database](images/gf.png)
+   ![github-advisory-database](../images/gf.png)
 
 ### Task 2: Creating Security Camapaign
 
@@ -56,7 +56,7 @@ In this lab, you will perform:
 
 1. Select the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization from the top.
 
-   ![](images/seccamp15.png)
+   ![](../images/seccamp15.png)
 
 1. Navigate to your repository’s **Security** tab.
 
