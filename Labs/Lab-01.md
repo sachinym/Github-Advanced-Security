@@ -13,10 +13,6 @@ In this lab, you will perform:
 
 ## Estimated Timing: 20 minutes
 
-## Architecture Diagram
-
-   ![Picture1](./images/ar01.png)
-
 ## Task 1: What is GitHub Advanced Security?
 
 GitHub Advanced Security is an integrated security suite tailored to enhance your GitHub repositories against potential threats, vulnerabilities, and credential leaks without slowing development. It empowers developers with a robust set of tools and features to proactively identify, mitigate, and resolve security issues throughout the development lifecycle. 
@@ -102,8 +98,8 @@ Please feel free to go through the links for further understanding:
 4. [GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features)
 
 ## Review
- 
 In this lab, you have completed the following:
+
 + What is GitHub Advanced Security?
 + What are the components of GitHub Advanced Security?
 + What is the value of using GHAS? 
