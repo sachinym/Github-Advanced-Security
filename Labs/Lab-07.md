@@ -16,6 +16,10 @@ In this lab, you will learn and perform:
 - Task 4: Run a code scan
 - Task 5: Apply autofixes to vulnerabilities
 
+## Architecture Diagram
+
+![](../images/arch8.PNG)
+
 ## Estimated timing: 90 minutes
    
 ## Task 1: Add some vulnerable code via a pull request and view the scan results in the PR  
@@ -60,7 +64,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
    ![github-advisory-database](../images/gnat.png)
 
-   >**Note:** Uncomment the lines of code.   
+   >**Note:** Uncomment the lines of code by removing **#** from line 33.
+
+   ![](../images/comment1.png)   
 
 1. Click on commit to commit these changes to a **new branch** then click on **Propose changes.**  
  
@@ -86,66 +92,71 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 ## Task 2:  Verify Github Autofix is enabled
 
-1. Navigate to your repository.
-2. Click on the Settings icon
-3. In the left sidebar, find and click on Code security.
-4. Under this section, look for Code scanning.
-5. Locate the Copilot Autofix option.
-6. Ensure that the toggle is set to Enabled. If it’s not, click to enable it.
+1. Navigate to **your repository**.
+2. Click on the **Settings** icon
+3. In the left sidebar, click on **Code security**.
+4. Under this section, look for **Code scanning**.
+5. Locate the **Copilot Autofix** option.
+6. Ensure that the toggle is set to **Enabled**. If it’s not, click to enable it.
 
     ![](../images/autofix.png)
 
 ## Task 3: Create a code with potencial security vulnerabilities
 
 1. Create a new file in the repository **ghas-bootcamp-python**
-1. Click on the Add file button and select Create new file.
+1. Click on the **Add file (1)** button and select **+ Create new file (2)**.
+
+   ![](../images/file1.png)
+
 1. Name your file (e.g., app.py).
 1. Copy and paste the below code:
 
-In the new file, write the code that includes potential security vulnerabilities. For example, you can use the following code snippet:
-Python
+   In the new file, write the code that includes potential security vulnerabilities. For example, you can use the following code snippet:
+   Python
 
- ```
-from flask import Flask, request
-import sqlite3
-import os
+   ```
+   from flask import Flask, request
+   import sqlite3
+   import os
 
-app = Flask(__name__)
+   app = Flask(__name__)
 
-def init_db():
-    conn = sqlite3.connect(':memory:')
-    cursor = conn.cursor()
-    cursor.execute("CREATE TABLE user (id INTEGER PRIMARY KEY, name TEXT)")
-    cursor.execute("INSERT INTO user (name) VALUES ('Alice')")
-    cursor.execute("INSERT INTO user (name) VALUES ('Bob')")
-    conn.commit()
-    return conn
+   def init_db():
+      conn = sqlite3.connect(':memory:')
+      cursor = conn.cursor()
+      cursor.execute("CREATE TABLE user (id INTEGER PRIMARY KEY, name TEXT)")
+      cursor.execute("INSERT INTO user (name) VALUES ('Alice')")
+      cursor.execute("INSERT INTO user (name) VALUES ('Bob')")
+      conn.commit()
+      return conn
 
-conn = init_db()
+   conn = init_db()
 
-@app.route('/user')
-def get_user():
-    user_id = request.args.get('id')
-    cursor = conn.cursor()
-    # Introducing SQL Injection vulnerability
-    cursor.execute(f"SELECT name FROM user WHERE id = {user_id}")
-    user = cursor.fetchone()
-    if user:
-        return f"User: {user[0]}"
-    else:
-        return "User not found", 404
+   @app.route('/user')
+   def get_user():
+      user_id = request.args.get('id')
+      cursor = conn.cursor()
+      # Introducing SQL Injection vulnerability
+      cursor.execute(f"SELECT name FROM user WHERE id = {user_id}")
+      user = cursor.fetchone()
+      if user:
+         return f"User: {user[0]}"
+      else:
+         return "User not found", 404
 
-if __name__ == '__main__':
-    debug_mode = os.getenv('FLASK_DEBUG', 'False').lower() in ['true', '1', 't']
-    app.run(debug=debug_mode)
+   if __name__ == '__main__':
+      debug_mode = os.getenv('FLASK_DEBUG', 'False').lower() in ['true', '1', 't']
+      app.run(debug=debug_mode)
 
-```
+   ```
 
 6. Commit the changes:
-    - Scroll down to the Commit new file section. 
-    - Add a commit message describing the changes (e.g., “Add app.py with potential SQL Injection vulnerability”).
+    - Click on **Commit changes** on the top right corner. 
+    - Add a Extended description message describing the changes (e.g., “Add app.py with potential SQL Injection vulnerability”).
     - Choose whether to commit directly to the main branch or create a new branch for this commit.
     - Click on Commit new file to save your changes.
+
+      ![](../images/commit1.png)
 
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
@@ -154,7 +165,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 1. In the repository page, navigate to **Actions** tab to view the workflow.
 
-   ![](../images/mod4.1.png) 
+   ![](../images/action1.png) 
 
 2. Check the CodeQL workflow:
    - Look for the CodeQL workflow in the list of workflows.
@@ -164,9 +175,9 @@ Ensure that the file is created and the code is correctly saved in your reposito
    - Click on the latest run of the CodeQL workflow to view the details.
    - Check the results to see if any vulnerabilities were identified.
 
-    ![](../images/result.png) 
+     ![](../images/result.png) 
 
-    > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
+     > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
 ## Task 5: Apply autofixes to vulnerabilities
 
@@ -176,11 +187,11 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
    ![](../images/scan.png) 
 
-3. If an autofix is available, click on Apply fix to automatically apply the suggested fix.
+3. If an autofix is available, click on Generate fix to automatically apply the suggested fix.
 
    ![](../images/fix.png) 
 
-4. Commit the changes to your repository.
+4. Click on **Commit to new branch** and Commit the changes to your repository.
 
    ![](../images/newchange.png) 
 
@@ -190,7 +201,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 6. Autofix generates an updated text, just click confirm merge
 
-   ![](../images/confirmmerge.png) 
+   ![](../images/confirmmerge1.png) 
 
    > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
 

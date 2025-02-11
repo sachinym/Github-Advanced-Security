@@ -18,45 +18,13 @@ In this lab, you will perform:
 
    ![](../images/seccamp16.png)
 
-### Task 1: Turn on the default setup on a juice-shop repository
-
-1. Go to your profile on top of the right hand, and then select **Your organizations**.
-
-   ![Picture1](../images/org.png)
-
-1. Select **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from organizations.
-
-   ![Picture1](../images/ghas-exercise1-4.png)
-
-1. From the list of repositories click on **juice-shop** to begin working through this module.
-
-   ![](../images/seccamp13.png)
-
-1. In the GitHub repository navigate to **Settings** from the top navigation pane and click on **Code Security** under Security.
-
-   ![github-advisory-database](../images/image1.png)
-
-   >**Note**: Zoom out of the page if you are unable to see the **Settings** option from the top navigation pane.
-
-1. Scroll down and you will find the **Code Scanning** option. Scroll to the right then click on the **Setup (1)** button and we have two options to configure code scanning. That is **Default** and **Advanced** as depicted in the screenshot below. For now, click on **Default (2)**
-
-   ![github-advisory-database](../images/sec15.png)
-
-1. Leave the query suite on Default and click the **Enable CodeQL** button.
-
-   ![](../images/seccamp14.png)
-
-1. After you've clicked the **Enable CodeQL** button, go to the **_Actions_** tab to confirm that the initial scan has kicked off. The scan should take a couple of minutes. You can also check more configuration and details inside the the github action run.
-
-   ![github-advisory-database](../images/gf.png)
-
-### Task 2: Creating Security Camapaign
+### Task 1: Creating Security Camapaign
 
 **Security Campaigns:** [GitHub Security Campaigns](https://docs.github.com/ja/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/fixing-alerts-in-security-campaign) are a feature within GitHub Advanced Security designed to help teams address security vulnerabilities at scale. These campaigns use Copilot Autofix to suggest fixes for up to 1,000 code scanning alerts at a time, allowing developers and security teams to collaborate efficiently. By prioritizing and fixing these alerts, teams can significantly reduce security debt and improve the overall security of their codebase
 
 1. Select the **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** organization from the top.
 
-   ![](../images/seccamp15.png)
+   ![](../images/a41.png)
 
 1. Navigate to your repository’s **Security** tab.
 
@@ -66,7 +34,7 @@ In this lab, you will perform:
 
     ![](../images/securitycampaign1.png)
 
-1. Choose a **Critical CodeQL Alert** template to use for the campaign.
+1. Choose **Critical CodeQL Alert** template to use for the campaign.
 
 - **Critical CodeQL Alert:** It indicates a severe security vulnerability detected by GitHub's CodeQL analysis. CodeQL is a powerful semantic code analysis engine that identifies potential security issues in your codebase. Critical alerts often require immediate attention to prevent exploitation12.
 
@@ -82,13 +50,13 @@ In this lab, you will perform:
 
     ![](../images/seccamp1.png)
 
-8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **juice-shop** to view its alerts.
+8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **ghas-bootcamp-WebGoat** to view its alerts.
 
-    ![](../images/seccamp2a.png)
+    ![](../images/a42.png)
 
-9. Open **juice-shop**, select all its alerts, and from the right-hand panel, click **Commit autofix** and choose **Commit to new branch**.
+9. Open **ghas-bootcamp-WebGoat**, select all its alerts, and from the right-hand panel, click **Commit autofix** and choose **Commit to new branch**.
 
-    ![](../images/seccamp3a.png)
+    ![](../images/a43.png)
 
 10. Select the option to open a pull request, then click **Commit changes**.
 
@@ -103,7 +71,7 @@ In this lab, you will perform:
     ![](../images/seccamp6a.png)
     ![](../images/seccamp7a.png)
 
-### Task 3: Tracking Security Campaign
+### Task 2: Tracking Security Campaign
 
 When you create a campaign, the campaign tracking view is displayed and the campaign is listed in the sidebar of the **Security** tab for the organization. You can redisplay the campaign tracking view at any time by selecting it in the sidebar under "Campaigns".
 
@@ -114,13 +82,41 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
   ![](../images/seccamp8.png)
 
-2. Navigate to the **juice-shop** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **All alerts have been closed**.
+2. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **One of the alerts havs been closed**.
 
-   ![](../images/seccamp12.png)
+   ![](../images/a47.png)
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-### Task 4: Editing and Managing Security Campigns
+3. Now click on the open alert as metioned below.
+
+   ![](../images/a48.png)
+
+4. On the selected alert page click on **Generate fix** and once it is completed click on **Commit to new branch**
+
+   ![](../images/a49.png)
+
+5. Click on **Commit Changes** on Commit to new branch pane.
+
+6. Return to the Critical CodeQL alert page, select **all the alerts**, then click on **Commit to new branch** under the **Commit autofix** section. After that, click on **Commit Changes**.
+
+   ![](../images/a50.png)
+
+7. Now you can see that the alert has been closed.
+
+   ![](../images/a51.png)
+
+   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
+
+8. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix can't suggest a suitable fix for the alert**. 
+
+   ![](../images/a52.png)
+
+   ![](../images/a53.png)
+
+
+
+### Task 3: Editing and Managing Security Campigns
 
 There is a limit of 10 active campaigns. When a campaign is complete, or if you want to pause it, you should close it. When you close a campaign, it's no longer displayed for developers in the repository Security tab but you can still display the campaign tracking view to develop best practice. In addition, you can reopen a closed campaign from the "Closed campaigns" view, which is accessible from the sidebar in the Security tab of the organization.
 

@@ -12,6 +12,10 @@ In this lab, you will perform:
 - Task 3: Create a custom secret pattern and view the results 
 - Task 4: Understand the results 
 
+## Architecture Diagram
+
+![](../images/arch10.PNG)
+
 ## Estimated Timing: 60 minutes
 
 ## Task 1: Demonstrate Secret Scanning Functionality
@@ -54,7 +58,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
 
-   ![Picture1](../images/img4.png)
+   ![Picture1](../images/token1.png)
 
 1. Give your secret a name **Secret01 (1)** under *Note* field and set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so scroll to the bottom and click on **Generate token**. 
 
@@ -141,7 +145,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
-   >**Note:** Reusing the same secret from Task 1 may not trigger push protection if it was already committed; consider demonstrating with a new, slightly altered secret.
+>**Note:** Reusing the same secret from Task 1 may not trigger push protection if it was already committed; consider demonstrating with a new, slightly altered secret.
 
 In this task, you will enable push protection to prevent secrets from being committed to a repository and test its effectiveness. Begin by verifying if push protection is already enabled in the repository; if not, enable it in the repository settings. Generate a new PAT to use as a test secret for push protection. Modify the repository code to include the new PAT and attempt to commit the changes. Observe how push protection detects the secret and blocks the commit. Discuss how push protection behaves in different scenarios, including the handling of bypasses.
 
@@ -165,7 +169,7 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. In the Developer Settings page expand **Personal access tokens** **(1)**, click-on **Tokens (classic) (2)**, then click on **Generate new token** **(3)** , and click-on **Generate new token (classic) (4)**.
 
-   ![Picture1](../images/img4.png)
+   ![Picture1](../images/token1.png)
 
 1. In the New personal access token, provide secret a name, **secret2 (1)**, set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
@@ -177,14 +181,15 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Navigate to the **`ghas-bootcamp-javascript`** repository.
   
-1. Click on **_index.js_**.
-    >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 8.  
+1. Click on **_index.js_**. 
 
     ![Picture1](../images/index.png)
 
 1. Click the edit icon on the top-right of the code block, and add **`var secret2 = "Your-Secret-Value"`** to the code. Commit the changes by clicking on **Commit changes** with the default options to the attempt to push the code.    
 
-   ![Picture1](../images/sec2.png)    
+   ![Picture1](../images/sec2.png)
+
+   >**Note:** Replace **"Your-Secret-Value"** with the secret value copied in the step 8.     
 
    ![Picture1](../images/index2.png)    
 

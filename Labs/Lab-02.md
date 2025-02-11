@@ -13,6 +13,10 @@ In this lab, you will perform:
 
 - Task 2: Activate Actions for All Repositories
 
+## Architecture Diagram
+
+![](../images/arch5.PNG)
+
 ## Estimated Timing: 20 minutes
 
 ### Task 1: Applying security settings in your organization.
@@ -80,11 +84,11 @@ Applying the security configuration to all repositories in your organization
 
 1. On the **Apply Configuration** page, Click on **Select All (1)** , select **Apply Configuration (2)** to ensure the configuration applies universally. Next, click on the **Security_settings_enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
 
-   ![Code Security Configurations](../images/codesec3n.png)
+   ![Code Security Configurations](../images/a38.png)
 
-1. You will find that the organization configurations for **Security_settings_enable** are enforced on 6 repositories.
+1. You will find that the organization configurations for **Security_settings_enable** are enforced on 5 repositories.
 
-   ![Code Security Configurations](../images/codesec3.png)
+   ![Code Security Configurations](../images/a39.png)
 
    >**Note:** If it’s not visible, please refresh your page.
 
