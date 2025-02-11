@@ -80,7 +80,7 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 - **In progress:** when at least one branch or pull request is created to fix the alert through the campaign view or the alert page.
 - **Closed:** when the alert is fixed or dismissed, even if the development work was done outside the campaign framework.
 
-  ![](../images/seccamp8.png)
+  ![](../images/a54.png)
 
 2. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **One of the alerts havs been closed**.
 
@@ -88,33 +88,29 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-3. Now click on the open alert as metioned below.
+   > **Note :** Sometimes all the alerts might not get closed. you have to close them individually by following the below steps:
 
-   ![](../images/a48.png)
+      1. Click on the open alert as metioned below.
 
-4. On the selected alert page click on **Generate fix** and once it is completed click on **Commit to new branch**
+         ![](../images/a48.png)
 
-   ![](../images/a49.png)
+      1. On the selected alert page click on **Generate fix** and once it is completed click on **Commit to new branch**
 
-5. Click on **Commit Changes** on Commit to new branch pane.
+         ![](../images/a49.png)
 
-6. Return to the Critical CodeQL alert page, select **all the alerts**, then click on **Commit to new branch** under the **Commit autofix** section. After that, click on **Commit Changes**.
+      1. Now try refreshing the page.
 
-   ![](../images/a50.png)
+      1. Now you can see that the alert has been closed.
 
-7. Now you can see that the alert has been closed.
+         ![](../images/a51.png)
 
-   ![](../images/a51.png)
+         > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-   > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
+      1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix can't suggest a suitable fix for the alert**. 
 
-8. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix can't suggest a suitable fix for the alert**. 
+         ![](../images/a52.png)
 
-   ![](../images/a52.png)
-
-   ![](../images/a53.png)
-
-
+         ![](../images/a53.png)
 
 ### Task 3: Editing and Managing Security Campigns
 

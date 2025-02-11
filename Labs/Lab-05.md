@@ -2,6 +2,8 @@
 
 ## Lab Scenario
 
+In this lab, you'll explore the GitHub Advisory Database to identify, manage, and contribute security vulnerability information for open-source dependencies in your project.
+
 ## Lab Objectives
 In this lab, you will perform:
 
