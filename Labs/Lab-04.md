@@ -12,6 +12,10 @@ In this lab, you will perform:
 
 - Task 2: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
+## Architecture Diagram
+
+![](../images/arch6.PNG)
+
 ## Estimated Timing: 40 minutes
 
 ## Task 1: Create a registration token for a repository
@@ -44,7 +48,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
 
-   ![Picture1](../images/img4.png)
+   ![Picture1](../images/token1.png)
 
 1. Give your secret a name **Registration (1)** under *Note* field and set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. Select the checkboxes for **repo (4)** and **workflow (5)** to grant the necessary permissions, scroll to the bottom and click on **Generate token**. 
 
@@ -67,7 +71,7 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
 1. In the virtual machine, click on the search bar and type **Git Bash (1)**. From the search results, select and open **Git Bash (2)** to launch the terminal environment.
 
-   ![Picture1](../images/gitbash.png)
+   ![Picture1](../images/a44.png)
 
 1. Now, paste your code into the terminal and press **Enter**. This will execute the command and send a request to the designated endpoint.
 

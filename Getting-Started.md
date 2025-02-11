@@ -30,11 +30,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](./images/res.png)   
-
-1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
-
-     ![Picture1](./images/Sec1.png ) 
+   ![Manage Your Virtual Machine](./images/res.png)    
 
 1. Feel free to use Zoom in/Zoom out option in your respective browser to view the integrated environment clearly and to get the complete options in GitHub & VS Code.
 
