@@ -126,3 +126,9 @@ CodeQL is a programming language and associated tools that treat code like data.
 1. [Automatically updating dependencies with known vulnerabilities with Dependabot security updates](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates)
 
 1. [Keeping your dependencies updated automatically with Dependabot version updates](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates)
+
+1. [Code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+
+1. (Code Scanning)[https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning]
+
+1. [Secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
