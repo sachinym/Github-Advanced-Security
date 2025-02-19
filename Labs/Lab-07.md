@@ -68,6 +68,8 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
      ![clear-text-logging-finding](../images/prfailat02.png) 
 
+Refer to the link for more information: [Triaging code scanning alerts in pull requests](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests)
+
 ## Fix code vulnerabilities using Github Copilot Autofix
 
 ## Task 2: Create a code with potencial security vulnerabilities
