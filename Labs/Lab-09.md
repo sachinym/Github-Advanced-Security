@@ -1,4 +1,4 @@
-# Module 09: Scaling out GitHub Advanced Security (Optional)
+# Module 08: Scaling out GitHub Advanced Security (Optional)
 
 ## Lab Scenario
 

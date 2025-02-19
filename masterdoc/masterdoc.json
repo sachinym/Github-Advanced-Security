@@ -25,24 +25,20 @@
           "Order": 5
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-05.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-06.md",
           "Order": 6
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-06.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-07.md",
           "Order": 7
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-07.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-08.md",
           "Order": 8
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-08.md",
-          "Order": 9
-        },
-        {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/Github-Advanced-Security/refs/heads/prod-2/Labs/Lab-09.md",
-          "Order": 10
+          "Order": 9
         }
       ]
     }
