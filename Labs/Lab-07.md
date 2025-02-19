@@ -11,10 +11,9 @@
 In this lab, you will learn and perform:
 
 - Task 1: Add some vulnerable code via a pull request and view the scan results in the PR 
-- Task 2: Verify Github Autofix is enabled
-- Task 3: Create a code with potencial security vulnerabilities
-- Task 4: Run a code scan
-- Task 5: Apply autofixes to vulnerabilities
+- Task 2: Create a code with potencial security vulnerabilities
+- Task 3: Run a code scan
+- Task 4: Apply autofixes to vulnerabilities
 
 ## Architecture Diagram
 
@@ -75,18 +74,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
 ## Fix code vulnerabilities using Github Copilot Autofix
 
-## Task 2:  Verify Github Autofix is enabled
-
-1. Navigate to **your repository**.
-2. Click on the **Settings** icon
-3. In the left sidebar, click on **Code security**.
-4. Under this section, look for **Code scanning**.
-5. Locate the **Copilot Autofix** option.
-6. Ensure that the toggle is set to **Enabled**. If it’s not, click to enable it.
-
-    ![](../images/autofix.png)
-
-## Task 3: Create a code with potencial security vulnerabilities
+## Task 2: Create a code with potencial security vulnerabilities
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the **Add file (1)** button and select **+ Create new file (2)**.
@@ -146,7 +134,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 7. Verify the file:
 Ensure that the file is created and the code is correctly saved in your repository.
 
-## Task 4: Run a code scan
+## Task 3: Run a code scan
 
 1. In the repository page, navigate to **Actions** tab to view the workflow.
 
@@ -164,7 +152,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
      > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
-## Task 5: Apply autofixes to vulnerabilities
+## Task 4: Apply autofixes to vulnerabilities
 
 1. Navigate to the Security tab in your repository, and then click on Code scanning.
 

@@ -9,9 +9,9 @@ The steps will guide you through enabling these settings, creating a security co
 ## Lab Objectives
 In this lab, you will perform:
 
-- Task 1: Applying security settings in your organization.
-
+- Task 1: Applying security settings in your organization
 - Task 2: Activate Actions for All Repositories
+- Task 3: Enabling Copilot Autofix for Code Scanning
 
 ## Architecture Diagram
 
@@ -130,9 +130,31 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
    ![github-advisory-database](../images/actionsn.png)
 
+
+## Task 3: Enabling Copilot Autofix for Code Scanning
+
+In this task, you will navigate to your organization's repository settings and enable **Copilot Autofix** under the **Code Scanning** section. This ensures AI-powered automated fixes are available across your organization, enhancing security vulnerability remediation.
+
+1. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
+
+   ![Select Organization](../images/ghas-exercise1-4.png)
+
+1. Navigate to the repository and click on the **Settings** tab.
+
+   ![Repository Settings](../images/mod1org.png)
+
+1. In the Settings menu, click-on **Global Settings (2)** under **Code Security (1)** from the Security section.
+
+   ![Repository Settings](../images/mod1orga.png)
+
+1. Under the **Code Scanning** section, please ensure that **Copilot Autofix** is enabled across your entire organization.
+
+   ![Repository Settings](../images/mod1orgb.png)
+
 ## Review
 
 In this module, we have completed the following:
 
 - Applying security settings in your organization
 - Activate Actions for All Repositories
+- Enabled Copilot Autofix for Code Scanning
