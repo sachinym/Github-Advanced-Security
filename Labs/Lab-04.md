@@ -152,22 +152,6 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](../images/gx1.png)
 
-<!--
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-     >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your Organization name. Provide your **Organization name** which looks like **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
-    
-     >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
-    
-     ![github-advanced-security](../images/ghas-exercise1-8.png)
-   
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="401a8107-d558-4bed-a5b6-4b1e5ca50132" />
--->
-
 ## Review
 
 In this module, we have completed the following:

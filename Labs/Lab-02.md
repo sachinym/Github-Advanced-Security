@@ -1,4 +1,4 @@
-# Module 02: Enable Github Security configuration on your Organisation
+# Module 02: Enable Github Security configuration on your organization
 
 ## Lab Scenario
 
