@@ -14,11 +14,13 @@ Finally, you'll connect your GitHub account to Microsoft Defender for Cloud (for
 
 In this lab, you will complete the following modules:
 
-+ Module 1: GitHub Advanced Security Overview
-+ Module 2: Secret Scanning
-+ Module 3: Software Composition Analysis
-+ Module 4: Code Scanning
-+ Module 5: Scaling out GitHub Advanced Security
-+ Module 6: Microsoft Defender for Cloud Integration
++ Module 01: GitHub Advanced Security Overview
++ Module 02: Enable Github Security configuration on your organization
++ Module 03: Exploring Dependabot, Secret Scanning, and CodeQL in GHAS
++ Module 04: Software Composition Analysis
++ Module 05: Secret Scanning
++ Module 06: Code Scanning
++ Module 07: Security Campaign
++ Module 08: Scaling out GitHub Advanced Security
 
-## Estimated Timing: 300 minutes
+## Estimated Timing: 480 minutes
