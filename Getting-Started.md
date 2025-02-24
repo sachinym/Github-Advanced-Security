@@ -14,7 +14,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Click on the **GitHub Credentials** option to get GitHub credentials.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure and GitHub credentials. Click on the **GitHub Credentials** option to access the GitHub user credentials.
 
    ![Picture1](./images/2nd.png)
 
