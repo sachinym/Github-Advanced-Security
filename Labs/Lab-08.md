@@ -7,10 +7,9 @@
 ## Lab Objectives
 In this lab, you will perform:
 
-- Task 1: Turn on the default setup on a juice-shop repository
-- Task 2: Creating security camapaign
-- Task 3: Tracking Security Campaign
-- Task 4: Editing and Managing Security Campigns
+- Task 1: Creating security camapaign
+- Task 2: Tracking Security Campaign
+- Task 3: Editing and Managing Security Campigns
 
 ## Estimated Timing: 30 minutes
 
@@ -140,10 +139,8 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
    ![](../images/seccamp11.png)
 
 ## Review
-
 In this lab you have completed the following:
 
-- Turned on the default setup on a juice-shop repository
 - Created a campaign from a template
 - Tracked Security Campaigns
 - Edited and Managed Security Campigns
