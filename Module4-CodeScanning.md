@@ -16,7 +16,7 @@ In this lab, you will learn and perform:
 - Task 3: Add some vulnerable code via a pull request and view the scan results in the PR 
 - Task 4: Turn on GitHub Advanced Security for Organization
 - Task 5: Verify Github Autofix is enabled
-- Task 6: Create a code with potencial security vulnerabilities
+- Task 6: Create a code with potential security vulnerabilities
 - Task 7: Run a code scan
 - Task 8: Apply autofixes to vulnerabilities
 
@@ -272,7 +272,7 @@ In this task, you will configure and apply security settings across all reposito
 
     ![](./images/autofix.png)
 
-## Task 6: Create a code with potencial security vulnerabilities
+## Task 6: Create a code with potential security vulnerabilities
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the Add file button and select Create new file.
@@ -380,5 +380,5 @@ In this lab you have completed the following:
 - Turned on the advanced setup on a Java repository
 - Added some vulnerable code via a pull request and viewed the scan results in the PR.
 - Turned on GitHub Advanced Security for Organization
-- Create a code with potencial security vulnerabilities
+- Create a code with potential security vulnerabilities
 - Apply autofixes to fix code vulnerabilities
