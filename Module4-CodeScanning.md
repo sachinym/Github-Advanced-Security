@@ -220,6 +220,6 @@ In this lab you have completed the following:
 
 - Learned how CodeQL is different from other static analysis tools
 - Added some vulnerable code via a pull request and viewed the scan results in the PR.
-- Create a code with potencial security vulnerabilities
+- Create a code with potential security vulnerabilities
 - Run a code scan
 - Apply autofixes to fix code vulnerabilities
