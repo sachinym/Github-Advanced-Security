@@ -14,7 +14,7 @@ In this lab, you will learn and perform:
 - What is CodeQL and how is it different from other static analysis tools? 
 - Task 1: Add some vulnerable code via a pull request and view the scan results in the PR 
 - Task 2: Verify Github Autofix is enabled
-- Task 3: Create a code with potencial security vulnerabilities
+- Task 3: Create a code with potential security vulnerabilities
 - Task 4: Run a code scan
 - Task 5: Apply autofixes to vulnerabilities
 
@@ -115,7 +115,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
 
     ![](./images/autofix.png)
 
-## Task 3: Create a code with potencial security vulnerabilities
+## Task 3: Create a code with potential security vulnerabilities
 
 1. Create a new file in the repository **ghas-bootcamp-python**
 1. Click on the Add file button and select Create new file.
