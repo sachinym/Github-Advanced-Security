@@ -43,7 +43,7 @@ Applying the security configuration to all repositories in your organization
 
    ![Repository Settings](../images/mod1org.png)
 
-1. In the Settings menu, click-on **Configurations** under Code Security from the Security section.
+1. In the Settings menu, click-on **Configurations** under Advanced Security from the Security section.
 
    ![Code Security Configurations](../images/mod1org1.png)
 
@@ -143,7 +143,7 @@ In this task, you will navigate to your organization's repository settings and e
 
    ![Repository Settings](../images/mod1org.png)
 
-1. In the Settings menu, click-on **Global Settings (2)** under **Code Security (1)** from the Security section.
+1. In the Settings menu, click-on **Global Settings (2)** under **Advanced Security (1)** from the Security section.
 
    ![Repository Settings](../images/mod1orga.png)
 
