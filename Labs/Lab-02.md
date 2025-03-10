@@ -45,7 +45,7 @@ Applying the security configuration to all repositories in your organization
 
 1. In the Settings menu, click-on **Configurations** under Advanced Security from the Security section.
 
-   ![Code Security Configurations](../images/mod1org1.png)
+   ![Code Security Configurations](../images/ghass2.png)
 
 1. Click on **New Configuration** to start creating a new security configuration for the repository.
 
@@ -145,7 +145,7 @@ In this task, you will navigate to your organization's repository settings and e
 
 1. In the Settings menu, click-on **Global Settings (2)** under **Advanced Security (1)** from the Security section.
 
-   ![Repository Settings](../images/mod1orga.png)
+   ![Repository Settings](../images/ghass1.png)
 
 1. Under the **Code Scanning** section, please ensure that **Copilot Autofix** is enabled across your entire organization.
 
