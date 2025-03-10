@@ -8,9 +8,7 @@ In this lab, you will be focusing on improving security within your GitHub repos
 
 In this lab, you will perform:
 
-- Task 1:  Create a registration token for a repository 
-
-- Task 2: Use the dependency review action to stop a pull request that contains the log vulnerability. 
+- Task 1: Use the dependency review action to stop a pull request that contains the log vulnerability. 
 
 ## Architecture Diagram
 
@@ -18,66 +16,7 @@ In this lab, you will perform:
 
 ## Estimated Timing: 40 minutes
 
-## Task 1: Create a registration token for a repository
-
-### What is Personal Access Tokens?
-
-Personal access tokens or (PAT) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.
-
-Personal access tokens are intended to access GitHub resources on behalf of yourself. Users can generate PATs in their GitHub account settings and configure the specific permissions and scopes for the token, limiting what actions it can perform.
- 
-Refer to the link for more information. [Personal Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
-
-### Why are we using PAT Tokens?
-
-In this lab, Personal Access Tokens (PATs) are used as example secrets to demonstrate how GitHub’s secret scanning and push protection features work. Here’s why PATs are chosen for this exercise:
-
-- **Common Sensitive Data**: PATs are a common type of sensitive data that developers often accidentally commit to repositories. They provide a clear example of the kind of secrets that secret scanning is designed to detect and protect against.
-
-- **Realistic Scenario**: Using PATs creates a realistic scenario. PATs are real credentials that can be used to access GitHub’s API and perform actions on behalf of the user. This makes them a tangible example of how secret scanning prevents unauthorized access.
-
-- **Demonstration of Detection**: By using PATs, you can easily show how secret scanning identifies sensitive information in the codebase. This demonstrates the effectiveness of GitHub's security features in detecting and alerting on potential security risks.
-
-- **Educational Purpose**: PATs are widely understood by developers, making it easier for them to grasp the concept and importance of secret scanning. The exercise involves generating PATs, which helps users learn how to manage and secure their own tokens and other secrets.
-
-  >**Note:** If you haven't already **signed in** to GitHub, proceed to the Getting Started page and complete steps **1** through **4** of the **Login to Github** form.
-
-1. To create a GitHub PAT token, go to your profile on top of the right hand, and then select **Settings**.
-
-   ![Picture1](../images/profilesetting.png)
-
-1. Go to **Developer settings** from the left Navigation pane -> **Personal access tokens (1)** -> **Tokens (classic) (2)**, and then click on **Generate new token (3)** and select **Generate new token (classic) (4)**.
-
-   ![Picture1](../images/token1.png)
-
-1. Give your secret a name **Registration (1)** under *Note* field and set the **Expiration** to **Custom (2)** and select the next calendar day **(3)**. Select the checkboxes for **repo (4)** and **workflow (5)** to grant the necessary permissions, scroll to the bottom and click on **Generate token**. 
-
-   ![new personal acess token](../images/sec10b.png)
-
-1. Once you've generated the token, click the **Copy** icon to the right of the secret value.
-
-   ![Picture1](../images/token.png)
-
-1. In the code below, replace **<Token>** with your generated Personal Access Token (PAT). Additionally, update the organization name to match the required format, which should be similar to `ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx`.
-
-    ```
-    curl -L \
-    -X POST \
-    -H "Accept: application/vnd.github+json" \
-    -H "Authorization: Bearer <TOKEN>" \
-    -H "X-GitHub-Api-Version: 2022-11-28" \
-    https://api.github.com/repos/ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx/ghas-bootcamp-WebGoat/actions/runners/registration-token
-    ```
-
-1. In the virtual machine, click on the search bar and type **Git Bash (1)**. From the search results, select and open **Git Bash (2)** to launch the terminal environment.
-
-   ![Picture1](../images/a44.png)
-
-1. Now, paste your code into the terminal and press **Enter**. This will execute the command and send a request to the designated endpoint.
-
-   ![Picture1](../images/tokenab.png)
-
-## Task 2: Use the dependency review action to stop a pull request that contains the log vulnerability
+## Task 1: Use the dependency review action to stop a pull request that contains the log vulnerability
 
 ### Dependency Review Action
 
@@ -155,5 +94,4 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 ## Review
 
 In this module, we have completed the following:
--  Used the dependency submission action on a Java project
 -  Used the dependency review action to stop a Pull Request that contains the log vulnerability
