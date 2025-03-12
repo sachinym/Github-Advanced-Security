@@ -55,20 +55,20 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/mod1org5.png)
 
+1. In the **Secret scanning** section. You'll find that all options are enabled by default.
+
+   ![Code Security Configurations](../images/mod1org6a.png)
+
+1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is enabled.
+
+   ![Code Security Configurations](../images/codesec.png)
+
 1. Scroll down to the **Dependency graph and Dependabot** section. You'll find that all options are enabled by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
 
    ![dep1](../images/dep1.png)
    ![dep2](../images/dep3.png)
 
    >**Note:** Here, we will leave it set to the default.
-
-1. In the **Code Scanning** section, the default setup for Code Scanning is enabled.
-
-   ![Code Security Configurations](../images/codesec.png)
-
-1. Scroll down to the **Secret scanning** section. You'll find that all options are enabled by default.
-
-   ![Code Security Configurations](../images/mod1org6a.png)
 
 1. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**.
 
@@ -82,13 +82,13 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/saveconf.png)
 
-1. On the **Apply Configuration** page, Click on **Select All (1)** , select **Apply Configuration (2)** to ensure the configuration applies universally. Next, click on the **Security_settings_enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
+1. On the **Apply Configuration** page, click on **Select 4 repos (1)** while leaving out the **.github** public repository. Then, click on **Apply Configuration (2)** to apply the settings across all repositories. Next, select **Security_settings_enable (3)** and click **Apply** when prompted. This will activate Security alerts for all repositories in your organization, helping to detect any exposed secrets or sensitive information.
 
-   ![Code Security Configurations](../images/a38.png)
+   ![Code Security Configurations](../images/a38a.png)
 
-1. You will find that the organization configurations for **Security_settings_enable** are enforced on 5 repositories.
+1. You will find that the organization configurations for **Security_settings_enable** are enforced on 4 repositories.
 
-   ![Code Security Configurations](../images/a39.png)
+   ![Code Security Configurations](../images/a39a.png)
 
    >**Note:** If it’s not visible, please refresh your page.
 
@@ -98,7 +98,7 @@ Applying the security configuration to all repositories in your organization
 
 1. From the list of repositories, click on **ghas-bootcamp-WebGoat** to begin working through this module. 
 
-   ![github-advisory-database](../images/mod3.1.png)
+   ![github-advisory-database](../images/mod3a.1.png)
 
 1. To review, navigate to your repository’s **Security** tab.
 
