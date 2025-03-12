@@ -6,6 +6,8 @@ Welcome to our GitHub Advanced Security workshop!, you'll learn about key featur
  
 Once you're ready to begin, you’ll find the **Lab Guide**, which you will use throughout the lab.
 
+   ![Picture1](./images/guide.png)
+
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure and GitHub credentials. Click on the **GitHub Credentials** option to access the GitHub user credentials.
