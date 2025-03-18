@@ -66,6 +66,8 @@ has a context menu.
    ```
    https://outlook.office365.com/mail/
    ```
+   
+   >**Note:** Make sure to log in to Outlook using the **GitHub credentials** provided to you from the environment details page of your lab.
 
    >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
    
