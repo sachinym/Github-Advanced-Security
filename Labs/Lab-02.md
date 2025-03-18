@@ -59,6 +59,10 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/mod1org6a.png)
 
+1. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**.
+
+   ![Code Security Configurations](../images/mod1org6.png)
+
 1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is enabled.
 
    ![Code Security Configurations](../images/codesec.png)
@@ -69,10 +73,6 @@ Applying the security configuration to all repositories in your organization
    ![dep2](../images/dep3.png)
 
    >**Note:** Here, we will leave it set to the default.
-
-1. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**.
-
-   ![Code Security Configurations](../images/mod1org6.png)
 
 1. In the **Policy** section, next to **Enforce configuration**, select **Don't enforce** from the dropdown menu.
 
