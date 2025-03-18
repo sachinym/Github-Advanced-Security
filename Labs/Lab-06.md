@@ -119,7 +119,9 @@ In this task, you will enable push protection to prevent secrets from being comm
 
 1. Scroll down to **Push protection** under Secret scanning and click **Enable**.
 
-   ![Picture1](../images/advance-scanning5.png)
+   ![Picture1](../images/advance-scanning5z.png)
+
+   ![Picture1](../images/advance-scanning5y.png)
 
    >**Note**: If it's already enabled, then there is no need to change it.
 
