@@ -132,6 +132,8 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
    ![Picture1](../images/sec17.png)
 
      >**Note:** Keep rest of the options as default.
+
+     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as Canada Central, East US 2, etc.
  
 1. Once the deployment is completed, click on **Go to resource**.
 

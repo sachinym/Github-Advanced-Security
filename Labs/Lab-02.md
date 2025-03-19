@@ -130,6 +130,7 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
    ![github-advisory-database](../images/actionsn.png)
 
+   >**Note:** Make sure to click on the **Save** button, even if **Allow all actions and reusable workflows** is already selected.
 
 ## Task 3: Enabling Copilot Autofix for Code Scanning
 
