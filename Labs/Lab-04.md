@@ -26,7 +26,7 @@ The dependency review action is a GitHub Action designed for this purpose, preve
 
    ![github-advisory-database](../images/g2.1.png)
 
-   ![github-advisory-database](../images/g3at.png)
+   ![github-advisory-database](../images/g3atz.png)
  
 1. Now, search **Dependency Review** to find and configure the action by clicking the **Configure** button.
    

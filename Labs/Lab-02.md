@@ -55,13 +55,13 @@ Applying the security configuration to all repositories in your organization
 
    ![Code Security Configurations](../images/mod1org5.png)
 
-1. In the **Secret scanning** section. You'll find that all options are enabled by default.
+1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
-   ![Code Security Configurations](../images/mod1org6a.png)
+   ![Code Security Configurations](../images/mod1org6z.png)
 
 1. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**.
 
-   ![Code Security Configurations](../images/mod1org6.png)
+   ![Code Security Configurations](../images/mod1org6x.png)
 
 1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is enabled.
 
@@ -133,17 +133,9 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 ## Task 3: Enabling Copilot Autofix for Code Scanning
 
-In this task, you will navigate to your organization's repository settings and enable **Copilot Autofix** under the **Code Scanning** section. This ensures AI-powered automated fixes are available across your organization, enhancing security vulnerability remediation.
+In this task, On your organization's settings and you will enable **Copilot Autofix** under the **Code Scanning** section. This ensures AI-powered automated fixes are available across your organization, enhancing security vulnerability remediation.
 
-1. Choose **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx** from the list of organizations.
-
-   ![Select Organization](../images/ghas-exercise1-4.png)
-
-1. Navigate to the repository and click on the **Settings** tab.
-
-   ![Repository Settings](../images/mod1org.png)
-
-1. In the Settings menu, click-on **Global Settings (2)** under **Advanced Security (1)** from the Security section.
+1. In your organization's **Settings** menu, click-on **Global Settings (2)** under **Advanced Security (1)** from the Security section.
 
    ![Repository Settings](../images/ghass1.png)
 
