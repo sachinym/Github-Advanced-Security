@@ -37,16 +37,9 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
   
 1. Notice that this part of the code is related to the vulnerabilities that have to do with SQL.
 
-1. Add a **space** at the end of line 73:
-`data = subprocess.check_output(command, shell=True)`.This is necessary to trigger the CodeQL alert for the **user-controlled-sources vulnerability**. Click on **Commit changes**.
+1. Uncomment the lines of code by removing **`#`** from **line 33 to the last line**.
 
-   ![github-advisory-database](../images/gnat01.png)
-
-   ![github-advisory-database](../images/gnat.png)
-
-   >**Note:** Uncomment the lines of code by removing **#** from line 33.
-
-   ![](../images/comment1.png)   
+   ![](../images/comment1.png) 
 
 1. Click on commit to commit these changes to a **new branch** then click on **Propose changes.**  
  
@@ -64,7 +57,7 @@ In this task, you will learn how to enhance CodeQL's security analysis by enabli
    
    - CodeQL flag this pull request with a _Query built from user-controlled sources_ finding.
 
-     ![clear-text-logging-finding](../images/prfailat01.png)
+     ![clear-text-logging-finding](../images/prfailat02a.png)
 
      ![clear-text-logging-finding](../images/prfailat02.png) 
 
@@ -136,7 +129,7 @@ Ensure that the file is created and the code is correctly saved in your reposito
 
 1. In the repository page, navigate to **Actions** tab to view the workflow.
 
-   ![](../images/action1.png) 
+   ![](../images/action1a.png) 
 
 2. Check the CodeQL workflow:
    - Look for the CodeQL workflow in the list of workflows.
@@ -146,33 +139,43 @@ Ensure that the file is created and the code is correctly saved in your reposito
    - Click on the latest run of the CodeQL workflow to view the details.
    - Check the results to see if any vulnerabilities were identified.
 
-     ![](../images/result.png) 
+     ![](../images/resulta.png) 
 
      > Note: Ensure that the CodeQL scan completes successfully and identifies any vulnerabilities.
 
 ## Task 4: Apply autofixes to vulnerabilities
 
-1. Navigate to the Security tab in your repository, and then click on Code scanning.
+1. Navigate to the **Security (1)** tab in your repository, and then click on **Code scanning (2)**.
+
+   ![](../images/scant.png)
 
 1. Review the list of vulnerabilities and click on an alert to view details.
 
-   ![](../images/scan.png) 
+   ![](../images/scana.png) 
 
 3. If an autofix is available, click on Generate fix to automatically apply the suggested fix.
 
-   ![](../images/fix.png) 
+   ![](../images/fixa.png)
+
+   > **Note:** It will take approximately a minute to generate the fix.
 
 4. Click on **Commit to new branch** and Commit the changes to your repository.
 
-   ![](../images/newchange.png) 
+   ![](../images/newchangea.png) 
+
+   ![](../images/newchangeb.png)
+
+1. Click on **Ready for review**.
+
+   ![](../images/newchangec.png)
 
 5. Make sure to merge and pull the request.
 
-   ![](../images/Merge.png) 
+   ![](../images/Mergea.png) 
 
-6. Autofix generates an updated text, just click confirm merge
+6. Autofix generates an updated text, just click **Confirm merge**.
 
-   ![](../images/confirmmerge1.png) 
+   ![](../images/confirmmerge1a.png) 
 
    > Note: Ensure that the autofixes are applied successfully and the vulnerabilities are resolved.
 

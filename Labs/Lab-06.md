@@ -100,6 +100,8 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 1. Review the secret. You will be able to see the secret value and other details related to the same. and get to know how you can remediate the secret. When you click on **Verify Secret** and it shows up as an **Active Secret**, it means that the secret (such as an API key or token) is still valid and can be used to access the associated service. This indicates that the secret is still exploitable and should be addressed immediately to prevent any potential security risks.
 
+   >**Note:** There is a chance that it will be automatically verified, and you will directly see it as an **Active Secret**.
+
    ![Picture1](../images/mod1.4n.png)
    ![Picture1](../images/mod1.4na.png)
 
@@ -170,6 +172,8 @@ In this task, you will enable push protection to prevent secrets from being comm
 11. Navigate to the **Security** -> **Secret Scanning (1)** -> **Default (2)**. Change the finding option to the **Closed (3)** section to demonstrate that this is a secret.
 
     ![push-protection1](../images/sec13.png)
+
+    >**Note:** If it is not visible, please refresh the page once.
 
     >**Note:** If you bypass push protection by selecting options such as "It's used in tests" and still commit the secret, it will not prevent the commit entirely. However, GitHub will generate a security finding under the "Closed" section in the Security tab. This finding is crucial because it allows you to track and review secrets that were committed despite push protection. Even though the commit was allowed, the security finding helps identify and address potential issues, ensuring that any committed secrets are still reviewed and remediated.    
 

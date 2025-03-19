@@ -47,15 +47,21 @@ In this lab, you will perform:
 
 7. Edit the **Campaign name** and **Short description**, define a **Campaign due date**, assign a **Campaign manager** as the primary contact, and finally, click **Create campaign** to initiate it.
 
-    ![](../images/seccamp1.png)
+    ![](../images/seccamp1a.png)
 
 8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **ghas-bootcamp-WebGoat** to view its alerts.
 
-    ![](../images/a42.png)
+    ![](../images/a42a.png)
 
-9. Open **ghas-bootcamp-WebGoat**, select all its alerts, and from the right-hand panel, click **Commit autofix** and choose **Commit to new branch**.
+1. Now, click on the first **Server-Side request forgery** issue. Here, you will see an **Autofix** appearing on the side.
 
-    ![](../images/a43.png)
+    ![](../images/a42b.png)
+
+1. Click on **Commit to new branch.**
+
+    ![](../images/a42c.png)
+
+   >**Note:** There is a chance that the option to **Commit** may not appear. In this case, look for the **Generate Fix** option, click on it, and once the fix is generated, you will be able to commit.
 
 10. Select the option to open a pull request, then click **Commit changes**.
 
@@ -79,7 +85,11 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 - **In progress:** when at least one branch or pull request is created to fix the alert through the campaign view or the alert page.
 - **Closed:** when the alert is fixed or dismissed, even if the development work was done outside the campaign framework.
 
-  ![](../images/a54.png)
+   ![](../images/a54a.png)
+
+   ![](../images/a54b.png)
+
+   >**Note:** It will take a few minutes to complete.
 
 2. Navigate to the **ghas-bootcamp-WebGoat** repository from the repository section. Select **Security** from the top menu, then click on **Critical CodeQL alert** under Campaigns. Here, you will see that **One of the alerts havs been closed**.
 
@@ -87,29 +97,29 @@ When you create a campaign, the campaign tracking view is displayed and the camp
 
    > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
 
-   > **Note :** Sometimes all the alerts might not get closed. you have to close them individually by following the below steps:
-
       1. Click on the open alert as metioned below.
 
          ![](../images/a48.png)
 
       1. On the selected alert page click on **Generate fix** and once it is completed click on **Commit to new branch**
 
-         ![](../images/a49.png)
+         ![](../images/a49a.png)
 
       1. Now try refreshing the page.
 
       1. Now you can see that the alert has been closed.
 
+         ![](../images/a51a.png)
+
          ![](../images/a51.png)
 
-         > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update.
+         > **Note:** This status will also be reflected on the Security Campaign page, but it may take a few minutes to update. Refresh the page after a few minutes.
 
-      1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix can't suggest a suitable fix for the alert**. 
+      1. Now, Click on the **alert** that is left and you can see that you will not be able to close it as the **Copilot Autofix attempted to generate an autofix for this alert, but wasn't able to**. 
 
          ![](../images/a52.png)
 
-         ![](../images/a53.png)
+         ![](../images/a53a.png)
 
 ### Task 3: Editing and Managing Security Campigns
 
@@ -125,7 +135,7 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 
 1. In the campaign title row, click and select **Edit campaign**.
 
-   ![](../images/seccamp9.png)
+   ![Picture1](../images/security-tabata.png)
 
 1. In the **Edit Campaign** section, you can update the **Campaign name**, **Short description**, **Campaign due date**, and **Campaign manager**. Once done, click on **Save changes** to apply the updates.
 
@@ -136,7 +146,7 @@ There is a limit of 10 active campaigns. When a campaign is complete, or if you 
 - **Close campaign** to remove it from the active campaigns list and display it on the Closed campaigns view.
 - **Delete campaign** to delete the campaign permanently. In the "Delete campaign" dialog, click Delete to confirm that you want to delete the campaign.
 
-   ![](../images/seccamp11.png)
+   ![](../images/seccamp11a.png)
 
 ## Review
 In this lab you have completed the following:
