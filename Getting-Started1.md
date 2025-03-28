@@ -6,7 +6,7 @@ Welcome to our GitHub Advanced Security workshop!, you'll learn about key featur
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser. To complete the lab, utilize this virtual machine during the session.
  
-   ![Access Your VM and Lab Guide](./images/i13.png)
+   ![Access Your VM and Lab Guide](./images/i13a.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -16,21 +16,21 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure and GitHub credentials. Click on the **GitHub Credentials** option to access the GitHub user credentials.
 
-   ![Picture1](./images/2nd.png)
+   ![Picture1](./images/2ndz.png)
 
-   ![Picture1](./images/2nd1.png)   
+   ![Picture1](./images/2nd1z.png)   
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Use the Split Window Feature](./images/spl.png)
+![Use the Split Window Feature](./images/splt.png)
  
 ## Managing Your Virtual Machine
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](./images/res.png)    
+   ![Manage Your Virtual Machine](./images/rest.png)    
 
 1. Feel free to use Zoom in/Zoom out option in your respective browser to view the integrated environment clearly and to get the complete options in GitHub & VS Code.
 
