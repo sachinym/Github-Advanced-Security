@@ -118,22 +118,23 @@ GitHub webhooks are a mechanism for automatically triggering actions or notifica
 
    ![Picture1](../images/ghas-exercise1-9.png)
 
-1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (7)** at the bottom of the page and subsequently click on **Create**.
+1. On the **Basics** tab of Create Function App, provide details as mentioned in the table below and select **Review + create (8)** at the bottom of the page and subsequently click on **Create**.
 
     | Setting | Action |
     | -- | -- |
     | **Subscription** | Keep it as default **(1)** |
     | **Resource Group** | Lab-VM **(2)** |
     | **Function App name** | **function-webhooks-<inject key="DeploymentID" enableCopy="false"/> (3)** |
-    | **Runtime stack** | **Node.js (4)** |
-    | **Version** | **20 LTS (5)** |
-    | **Operating System** | **Windows (6)** |
+    | **Operating System** | **Windows (4)** |    
+    | **Runtime stack** | **Node.js (5)** |
+    | **Version** | **20 LTS (6)** |
+    | **Region** | **East US (7)** |
 
-   ![Picture1](../images/sec17.png)
+   ![Picture1](../images/sec17-1.png)
 
      >**Note:** Keep rest of the options as default.
 
-     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as Canada Central, East US 2, etc.
+     >**Note:** If you encounter any issues related to the region, you can try using a different region, such as **Canada Central, East US 2**, etc.
  
 1. Once the deployment is completed, click on **Go to resource**.
 
