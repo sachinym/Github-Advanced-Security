@@ -48,31 +48,31 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![Repository Settings](./images/mod1org.png)
 
-5. In the Settings menu, click-on **Configurations** under Code Security from the Security section.
+5. In the Settings menu, click-on **Configurations** under Advanced Security from the Security section.
 
-   ![Code Security Configurations](./images/mod1org1.png)
+   ![Code Security Configurations](./images/mod1org1-1.png)
 
 6. Click on **New Configuration** to start creating a new security configuration for the repository.
 
-   ![Code Security Configurations](./images/mod1org4.png)
+   ![Code Security Configurations](./images/mod1org4-1.png)
 
 7. The **Name** field should be filled with `Secret_Scanning_Enable`, which identifies the configuration's purpose. The **Description** should be `Secret Scanning Enable`, offering a brief overview of what the configuration will accomplish.
 
-   ![Code Security Configurations](./images/mod1org5.png)
+   ![Code Security Configurations](./images/mod1org5-1.png)
 
 8. Scroll down to the **Secret Scanning** section. You'll find that all options are enabled by default. However, you have the flexibility to adjust these settings. You can modify the options to **Enable**, **Disable**, or leave them as **Not set** based on our requirements or preferences.
 
-   ![Code Security Configurations](./images/mod1org6a.png)
+   ![Code Security Configurations](./images/mod1org6a-1.png)
 
-   ![Code Security Configurations](./images/mod1org6b.png)   
+   ![Code Security Configurations](./images/mod1org6b-1.png)   
 
 9. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**. Finally, click **Save Configurations** to apply your changes.
 
-   ![Code Security Configurations](./images/mod1org6.png)
+   ![Code Security Configurations](./images/mod1org6-1.png)
 
 9. On the **Apply Configuration** page, Click on **Apply Configuration (1),** select **All repositories (2)** to ensure the configuration applies universally. Next, click on the **Secret_Scanning_Enable (3)** configuration to select it. When prompted, click on **Apply** to implement the changes across all repositories in your organization. This will activate the secret scanning alerts for all repositories, helping to detect any exposed secrets or sensitive information.
 
-   ![Code Security Configurations](./images/sec9.png)
+   ![Code Security Configurations](./images/sec9-1.png)
 
    >**Note:** The above mentioned steps are for informational purposes only and do not need to be performed .You can now proceed with generating and using the Personal Access Tokens (PAT) for testing secret scanning feature.
 
@@ -136,9 +136,9 @@ In this lab, Personal Access Tokens (PATs) are used as example secrets to demons
 
    ![github-advisory-database](images/image1.png)
 
-1. Scroll down to **Secret Scanning**, click on **enable**.
+1. Scroll down to **Secret Protection**, click on **enable**.
 
-   ![Picture1](./images/mod2ss1.png)
+   ![Picture1](./images/mod2ss1-1.png)
 
    > **Note:** Ensure that **Push Protection** is disabled to properly perform and understand the task.
 
@@ -207,9 +207,9 @@ In this task, you will enable push protection to prevent secrets from being comm
    
    ![Picture1](./images/img3.png)
 
-1. Scroll down to **Push protection** under Secret scanning and click **Enable**.
+1. Scroll down to **Push protection** under Secret Protection and click **Enable**.
 
-   ![Picture1](./images/advance-scanning5.png)
+   ![Picture1](./images/mod1-3-1.png)
 
    >**Note**: If it's already enabled, then there is no need to change it.
 
