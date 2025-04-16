@@ -45,11 +45,11 @@ Applying the security configuration to all repositories in your organization
 
 1. In the Settings menu, click-on **Configurations** under Advanced Security from the Security section.
 
-   ![Code Security Configurations](../images/ghass2.png)
+   ![Code Security Configurations](../images/mod1org1-1.png)
 
 1. Click on **New Configuration** to start creating a new security configuration for the repository.
 
-   ![Code Security Configurations](../images/mod1org4.png)
+   ![Code Security Configurations](../images/mod1org4-1.png)
 
 1. The **Name** field should be filled with `Security_settings_enable`, which identifies the configuration's purpose. The **Description** should be `Settings for Dependabot, secret scanning, and code scanning`, offering a brief overview of what the configuration will accomplish.
 
@@ -57,11 +57,11 @@ Applying the security configuration to all repositories in your organization
 
 1. In the **Secret scanning** section. You'll find that some options are enabled by default.
 
-   ![Code Security Configurations](../images/mod1org6z.png)
+   ![Code Security Configurations](../images/mod1org6a-1.png)
 
 1. Leave the **Alerts** option set to **Enable**, and change the remaining options to **Not set**.
 
-   ![Code Security Configurations](../images/mod1org6x.png)
+   ![Code Security Configurations](../images/mod1org6-1.png)
 
 1. Scroll down to the **Code Scanning** section, the default setup for Code Scanning is enabled.
 
