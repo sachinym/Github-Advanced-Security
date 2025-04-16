@@ -68,9 +68,9 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
    ![github-advisory-database](../images/image1.png)
 
-1. Scroll down to **Secret Scanning**, where you will see that **Secret Scanning** is already enabled, as it has been configured at the organization level.
+1. Scroll down to **Secret Protection**, where you will see that **Secret Protection** is already enabled, as it has been configured at the organization level.
 
-   ![Picture1](../images/mod2ss1n.png)
+   ![Picture1](../images/mod2ss1n-1.png)
 
    > **Note:** Ensure that **Push Protection** is disabled to properly perform and understand the task.
 
@@ -119,7 +119,7 @@ In this task, you will enable push protection to prevent secrets from being comm
    
    ![Picture1](../images/img3.png)
 
-1. Scroll down to **Push protection** under Secret scanning and click **Enable**.
+1. Scroll down to **Push protection** under Secret Protection and click **Enable**.
 
    ![Picture1](../images/advance-scanning5z.png)
 
