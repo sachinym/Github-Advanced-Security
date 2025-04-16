@@ -29,33 +29,38 @@ In this lab, you will perform:
 
    ![Picture1](../images/security-tabat.png)
 
-1. In the left sidebar, click on the **Start a new security campaign** next to "Campaigns" to begin creating a new campaign.
+1. In the left sidebar, click on the **Campaigns (1)**, click on **Create campaign (2)** and select **From template (3)**.
 
-    ![](../images/securitycampaign1.png)
+    ![](../images/securitycampaign1-1.png)
 
 1. Choose **Critical CodeQL Alert** template to use for the campaign.
 
-- **Critical CodeQL Alert:** It indicates a severe security vulnerability detected by GitHub's CodeQL analysis. CodeQL is a powerful semantic code analysis engine that identifies potential security issues in your codebase. Critical alerts often require immediate attention to prevent exploitation12.
+   - **Critical CodeQL Alert:** It indicates a severe security vulnerability detected by GitHub's CodeQL analysis. CodeQL is a powerful semantic code analysis engine that identifies potential security issues in your codebase. Critical alerts often require immediate attention to prevent exploitation12.
 
-- **MITRE Top 10 KEV:** The MITRE Top 10 Known Exploited Vulnerabilities (KEV) list highlights the most critical and frequently exploited software weaknesses. These weaknesses are prioritized based on their prevalence and potential impact34. This reduces risk, prevents breaches and can help protect sensitive data.
+   - **MITRE Top 10 KEV:** The MITRE Top 10 Known Exploited Vulnerabilities (KEV) list highlights the most critical and frequently exploited software weaknesses. These weaknesses are prioritized based on their prevalence and potential impact34. This reduces risk, prevents breaches and can help protect sensitive data.
 
-- **SQL Injection (CWE-89):** It occurs when an application improperly neutralizes special elements in SQL commands. This allows attackers to manipulate SQL queries, potentially leading to unauthorized data access or modification. Mitigations include using parameterized queries, prepared statements, and input validation
+   - **SQL Injection (CWE-89):** It occurs when an application improperly neutralizes special elements in SQL commands. This allows attackers to manipulate SQL queries, potentially leading to unauthorized data access or modification. Mitigations include using parameterized queries, prepared statements, and input validation
 
-- **Cross-Site Scripting (CWE-79):** It involves injecting malicious scripts into web pages viewed by other users. This can lead to data theft, session hijacking, or defacement. Preventing XSS involves proper input validation, output encoding, and using security frameworks that automatically handle these issues78.
+   - **Cross-Site Scripting (CWE-79):** It involves injecting malicious scripts into web pages viewed by other users. This can lead to data theft, session hijacking, or defacement. Preventing XSS involves proper input validation, output encoding, and using security frameworks that automatically handle these issues78.
 
-    ![](../images/template2.png)
+   ![](../images/template2.png)
 
-7. Edit the **Campaign name** and **Short description**, define a **Campaign due date**, assign a **Campaign manager** as the primary contact, and finally, click **Create campaign** to initiate it.
 
-    ![](../images/seccamp1a.png)
+1. Click on **Save as** and select **Published campaign**.
+
+   ![](../images/securitycampaign1-2.png)
+
+1. Edit the **Campaign name** and **Short description**, define a **Campaign due date**, assign a **Campaign manager** as the primary contact, and finally, click **Create campaign** to initiate it.
+
+    ![](../images/seccamp1a-1.png)
 
 8. It will display all the CodeQL Critical Alerts; next, open the dropdown for **ghas-bootcamp-WebGoat** to view its alerts.
 
-    ![](../images/a42a.png)
+    ![](../images/a42a-1.png)
 
-1. Now, click on the first **Server-Side request forgery** issue. Here, you will see an **Autofix** appearing on the side.
+1. Now, click on the first **Server-Side request forgery** issue.
 
-    ![](../images/a42b.png)
+    ![](../images/a42b-1.png)
 
 1. Click on **Commit to new branch.**
 
